@@ -3,6 +3,9 @@ cmake_policy(SET CMP0167 NEW) # Use the new method for finding Boost
 
 project(game VERSION 0.1)
 
+# vscode 整合 IntelliSense 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # 指定 C++ 編譯器
 set(CMAKE_CXX_COMPILER "C:/ProgramData/mingw64/bin/g++.exe")
 # 指定 C 編譯器
@@ -31,6 +34,7 @@ set(Boost_ROOT "C://Users/godpk/vcpkg/installed/x64-windows")
 # find_package(Boost REQUIRED)
 find_package(Boost REQUIRED COMPONENTS filesystem system)
 # find_package(jsoncpp REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
 
 # 獲取 include 目錄
 # get_target_property(JSONCPP_INCLUDE_DIRS JsonCpp::JsonCpp INTERFACE_INCLUDE_DIRECTORIES)
@@ -56,35 +60,45 @@ find_package(Boost REQUIRED COMPONENTS filesystem system)
 
 if(Boost_FOUND)
   message(STATUS "Boost include path: ${Boost_INCLUDE_DIRS}")
-#   message(STATUS "jsoncppConfig.cmake path: ${jsoncpp_DIR}")
-#   message(STATUS "FOUND CONFIG: ${jsoncpp_CONFIG}")
-
-#   include_directories(${Boost_INCLUDE_DIRS} ${JSONCPP_INCLUDE_DIRS})
   include_directories(${Boost_INCLUDE_DIRS})
+else()
+  message(STATUS "Boost NOT Found !")
+endif(Boost_FOUND)
 
-  link_directories("C:/Users/godpk/vcpkg/installed/x64-windows/lib" "C:/Users/godpk/vcpkg/installed/x64-windows/bin")
-  # link_directories("C:/Users/godpk/vcpkg/installed/x64-mingw-static/lib")
+if(nlohmann_json_FOUND)
+  message(STATUS "nlohmann_json include path: ${nlohmann_json_INCLUDE_DIRS}")
+  # include_directories(${nlohmann_json_INCLUDE_DIRS})
+else()
+  message(STATUS "nlohmann_json NOT Found !")
+endif(nlohmann_json_FOUND)
 
-  # file(GLOB SOURCES "src/*/*.cpp")
+# x64-windows：MSVC 編譯器使用的 Windows 靜態或動態庫
+# link_directories("C:/Users/godpk/vcpkg/installed/x64-windows/lib" "C:/Users/godpk/vcpkg/installed/x64-windows/bin")
+# x64-mingw-static：MinGW 編譯器使用的靜態版本
+# link_directories("C:/Users/godpk/vcpkg/installed/x64-mingw-static/lib")
 
-  # 找出所有 src/ecs/*.cpp 檔案
-  file(GLOB ECS_SOURCES "src/ecs/*.cpp")
 
-  # 設定您的其他編譯選項
-  add_executable(${PROJECT_NAME} 
-    src/main.cpp
-    ${ECS_SOURCES}
-    # src/request/impl/handle_request.cpp
-    # src/json/impl/json_example.cpp
-  )
-#   header-only 使用：#include <boost/algorithm/string.hpp>
-#   target_include_directories(${PROJECT_NAME} PRIVATE ${Boost_INCLUDE_DIRS})
-#   target_link_libraries(${PROJECT_NAME} Boost::Boost)
-#   target_link_libraries(${PROJECT_NAME} Boost::)
-  # 靜態連結與動態連結版本，靜態則需要到 vcpkg 下載靜態版本：vcpkg install jsoncpp:x64-windows-static
-  # target_link_libraries(${PROJECT_NAME} PRIVATE jsoncpp_static)
-  # target_link_libraries(${PROJECT_NAME} PRIVATE JsonCpp::JsonCpp)
-  # target_link_libraries(${PROJECT_NAME} PRIVATE Boost::Boost JsonCpp::JsonCpp)
-  # 連結 Boost 元件
-  target_link_libraries(${PROJECT_NAME} PRIVATE Boost::filesystem Boost::system)
-endif()
+# file(GLOB SOURCES "src/*/*.cpp")
+
+# 收集 source 檔案
+file(GLOB GAME_SERVER_SOURCES "src/*/*.cpp")
+
+# 建立可執行檔
+add_executable(${PROJECT_NAME} 
+src/main.cpp
+${GAME_SERVER_SOURCES}
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/src")
+# header-only 使用：#include <boost/algorithm/string.hpp>
+# target_include_directories(${PROJECT_NAME} PRIVATE ${Boost_INCLUDE_DIRS})
+# target_link_libraries(${PROJECT_NAME} Boost::Boost)
+# target_link_libraries(${PROJECT_NAME} Boost::)
+# 靜態連結與動態連結版本，靜態則需要到 vcpkg 下載靜態版本：vcpkg install jsoncpp:x64-windows-static
+# target_link_libraries(${PROJECT_NAME} PRIVATE jsoncpp_static)
+# target_link_libraries(${PROJECT_NAME} PRIVATE JsonCpp::JsonCpp)
+# target_link_libraries(${PROJECT_NAME} PRIVATE Boost::Boost JsonCpp::JsonCpp)
+# Boost components
+target_link_libraries(${PROJECT_NAME} PRIVATE Boost::filesystem Boost::system)
+# JSON support
+target_link_libraries(${PROJECT_NAME} PRIVATE nlohmann_json::nlohmann_json)
