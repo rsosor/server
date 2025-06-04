@@ -1,0 +1,47 @@
+# CMake build directories
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Compiled binary files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# VCPKG
+/vcpkg_installed/
+/vcpkg_buildtrees/
+/vcpkg_downloads/
+/vcpkg/packages/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# User-specific files
+*.log
+*.tmp
+*.swp
+*~
+
+# Qt Creator / CLion
+.idea/
+*.user
+*.pro.user
+*.autosave
+
+# Generated files
+*.generated.*
+
+# Backup files
+*.bak
+*.old
