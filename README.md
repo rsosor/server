@@ -1,3 +1,33 @@
+# cmake & compile
+
+~~~
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE --no-warn-unused-cli -S . -B build -G "Visual Studio 17 2022" -T host=x64 -A x64 -DCMAKE_TOOLCHAIN_FILE=C://Users/godpk/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+msbuild build\你的方案檔.sln /p:Configuration=Release
+cmake --build build --config Release
+~~~
+- MSVC + MSBuild | 通用
+~~~
+cmake -B build -S . -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE=C:/Users/godpk/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_C_COMPILER=C:/ProgramData/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/ProgramData/mingw64/bin/g++.exe -DVCPKG_TARGET_TRIPLET=x64-mingw-static
+
+mingw32-make
+~~~
+- MinGW
+
+# gRPC
+
+https://grpc.io/docs/languages/cpp/quickstart/
+
+# Coding Style
+
+自由函式
+- 數學計算（sin, cos, sqrt, clamp, dot）
+- 圖像處理中的轉換（如 RGB to HSV）
+- 文件處理：讀檔轉字串
+- 單純演算法：排序、搜尋
+
+這些函式不需要物件來記住前後狀態，甚至設計上就希望避免副作用（Side Effect）。
+
 # 常見需求整理
 
 ~~~
@@ -98,16 +128,27 @@ JSON 封包格式	nlohmann/json	                header-only、易於整合
 ## 連線管理
 
 - Todo
-  - 玩家連接與斷線通知（誰連上/誰掉線）
-  - 玩家驗證與授權（身份認證）
+  - 玩家身份認證（例如密碼、Token）與授權
+    - 連線底層的網路管理（用 TCP 或 WebSocket）
+    - 密碼 / Token 認證（目前玩家只是輸入名字，沒有驗證）
+    - 玩家授權（尚未分辨合法/非法玩家）
+    - 儲存完整玩家資訊（例如 IP、連線時間）
+    - 授權後的身份狀態維護（還沒定義 Player struct/class 來儲存）
+      - ✅ 定義 Player 類別：包含名稱、ID、IP、登入時間、是否通過驗證等
+      - ✅ 在連線後要求玩家輸入格式為：LOGIN \<username> \<token>
+      - ✅ 驗證格式與合法性（token 暫時可以是硬編碼測試）
+      - ✅ 建立 ConnectionManager 或 PlayerRegistry 管理登入玩家
+      - ✅ 若驗證成功 → 加入遊戲房間等待區（之後再啟用 matchmaking）
+      - ✅ 若驗證失敗 → 關閉連線，提示「身份驗證失敗」
 - Complete
+  - 玩家連接與斷線通知（誰連上/誰掉線）
 
 ## 遊戲狀態同步
 
 - Todo
   - 正確維護遊戲狀態（回合、玩家手牌、牌堆等）
-  - 廣播狀態更新給所有玩家
-  - 具備狀態恢復功能，支援重連
+  - 廣播狀態更新給所有玩家（目前只是單人 Welcome 回應）
+  - 具備狀態恢復功能，支援重連（尚未記錄玩家狀態或做身份綁定）
 - Complete
 
 ## 指令與事件處理

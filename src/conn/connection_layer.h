@@ -1,9 +1,13 @@
+/**
+ * 日後希望讓 Connection 專心處理「接收 / 發送」資料，而不介入遊戲邏輯
+ * 那 ConnectionLayer 是合理存在的：
+ */
 #pragma once
+
+#include "game_room/game_room.h"
 
 #include <string>
 #include <memory>
-
-#include "game_room/game_room.h"
 
 #include <nlohmann/json.hpp>
 
