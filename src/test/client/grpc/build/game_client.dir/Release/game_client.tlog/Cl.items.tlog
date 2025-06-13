@@ -1,0 +1,4 @@
+D:\rsosor\cpp\game\src\test\client\grpc\src\main.cpp;D:\rsosor\cpp\game\src\test\client\grpc\build\game_client.dir\Release\main.obj
+D:\rsosor\cpp\game\src\test\client\grpc\src\grpc\bigtwo_client.cpp;D:\rsosor\cpp\game\src\test\client\grpc\build\game_client.dir\Release\bigtwo_client.obj
+D:\rsosor\cpp\game\src\test\client\grpc\src\generated\bigtwo.grpc.pb.cc;D:\rsosor\cpp\game\src\test\client\grpc\build\game_client.dir\Release\bigtwo.grpc.pb.obj
+D:\rsosor\cpp\game\src\test\client\grpc\src\generated\bigtwo.pb.cc;D:\rsosor\cpp\game\src\test\client\grpc\build\game_client.dir\Release\bigtwo.pb.obj

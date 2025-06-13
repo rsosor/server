@@ -1,0 +1,185 @@
+syntax = "proto3";
+
+package bigtwo;
+
+// ---------------------------------------------------------------------------
+// 前台遊戲主要功能
+// ---------------------------------------------------------------------------
+service BigTwoService {
+  rpc PlayCards (PlayRequest) returns (PlayResponse);
+  rpc Pass (PassRequest) returns (PassResponse);
+  rpc GetGameState (GameStateRequest) returns (GameStateResponse);
+  rpc JoinGame (JoinRequest) returns (JoinResponse);
+  rpc Chat (ChatRequest) returns (ChatResponse);
+
+  // 新增：可以由遊戲主持人/server 觸發遊戲開始
+  rpc  StartGame (StartGameRequest) returns (StartGameResponse);
+}
+
+message PlayRequest {
+  int32 player_id = 1;
+  repeated Card cards = 2;
+}
+
+message PlayResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message PassRequest {
+  int32 player_id = 1;
+}
+
+message PassResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message JoinRequest {
+  string player_name = 1;
+}
+
+message JoinResponse {
+  int32 player_id = 1;
+  repeated Card hand = 2;
+  string message = 3;
+}
+
+message GameStateRequest {
+  int32 player_id = 1;
+}
+
+message GameStateResponse {
+  repeated Card hand = 1;
+  int32 current_turn_player_id = 2;
+  repeated Card last_played_cards = 3;
+  string phase = 4;
+}
+
+message ChatRequest {
+  int32 player_id = 1;
+  string message = 2;
+}
+
+message ChatResponse {
+  bool success = 1;
+}
+
+message StartGameRequest {
+  int32 initiator_player_id = 1;
+}
+
+message StartGameResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message Card {
+  string suit = 1; // "spades", "hearts", "clubs", "diamonds"
+  int32 rank = 2;  // 3 ~ 15 (11=J, 12=Q, 13=K, 14=A, 15=2)
+}
+
+// ----------------------------------------------------------------------------
+// Table service - handles game flow
+// ----------------------------------------------------------------------------
+service BigTwoTableService {
+  // Deal cards to all players
+  rpc Deal (DealRequest) returns (DealResponse);
+  
+  // Validate whether a set of cards is a legal move
+  rpc ValidatePlay (PlayValidationRequest) returns (PlayValidationResponse);
+  
+  // Handle timeout when a player fails to move in time
+  rpc HandleTimeout (TimeoutRequest) returns (TimeoutResponse);
+  
+  // Score the game at the end of a match
+  rpc Score (ScoreRequest) returns (ScoreResponse);
+}
+
+message DealRequest {
+  repeated int32 player_ids = 1;
+}
+
+message DealResponse {
+  map<int32, Hand> dealt_hands = 1; // key = player_id
+}
+
+message Hand {
+  repeated Card cards = 1;
+}
+
+message PlayValidationRequest {
+  int32 player_id = 1;
+  repeated Card cards = 2;
+  repeated Card last_played = 3;
+}
+
+message PlayValidationResponse {
+  bool is_valid = 1;
+  string message = 2;
+}
+
+message TimeoutRequest {
+  int32 player_id = 1;
+}
+
+message TimeoutResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message ScoreRequest {
+  repeated int32 player_ids = 1;
+  map<int32, Hand> final_hands = 2;
+}
+
+message ScoreResponse {
+  map<int32, int32> scores = 1;
+}
+
+// ---------------------------------------------------------------------------
+// 後台管理功能
+// ---------------------------------------------------------------------------
+service BigTwoManagementService {
+  rpc GetRanking (RankingRequest) returns (RankingResponse);
+  rpc GetPlayerWinRate (PlayerRateRequest) returns (PlayerRateResponse);
+  rpc GetActivityLog (ActivityLogRequest) returns (ActivityLogResponse);
+}
+
+message RankingRequest {
+  int32 top = 1;
+}
+
+message RankingResponse {
+  repeated PlayerRanking ranking = 1;
+}
+
+message PlayerRanking {
+  int32 player_id = 1;
+  string player_name = 2;
+  int32 wins = 3;
+}
+
+message PlayerRateRequest {
+  int32 player_id = 1;
+}
+
+message PlayerRateResponse {
+  int32 total_games = 1;
+  int32 wins = 2;
+  float win_ratio = 3;
+}
+
+message ActivityLogRequest {
+  int32 limit = 1;
+}
+
+message ActivityLogResponse {
+  repeated ActivityEntry entries = 1;
+}
+
+message ActivityEntry {
+  int32 game_id = 1;
+  int32 winner = 2;
+  string timestamp = 3;
+}
