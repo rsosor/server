@@ -25,7 +25,8 @@
 #include <grpcpp/support/stub_options.h>
 #include <grpcpp/support/sync_stream.h>
 
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 
 // ---------------------------------------------------------------------------
 // 前台遊戲主要功能
@@ -33,148 +34,148 @@ namespace bigtwo {
 class BigTwoService final {
  public:
   static constexpr char const* service_full_name() {
-    return "bigtwo.BigTwoService";
+    return "rsosor.generated.BigTwoService";
   }
   class StubInterface {
    public:
     virtual ~StubInterface() {}
-    virtual ::grpc::Status PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::bigtwo::PlayResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>> AsyncPlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>>(AsyncPlayCardsRaw(context, request, cq));
+    virtual ::grpc::Status PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::rsosor::generated::PlayResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>> AsyncPlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>>(AsyncPlayCardsRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>> PrepareAsyncPlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>>(PrepareAsyncPlayCardsRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>> PrepareAsyncPlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>>(PrepareAsyncPlayCardsRaw(context, request, cq));
     }
-    virtual ::grpc::Status Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::bigtwo::PassResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>> AsyncPass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>>(AsyncPassRaw(context, request, cq));
+    virtual ::grpc::Status Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::rsosor::generated::PassResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>> AsyncPass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>>(AsyncPassRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>> PrepareAsyncPass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>>(PrepareAsyncPassRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>> PrepareAsyncPass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>>(PrepareAsyncPassRaw(context, request, cq));
     }
-    virtual ::grpc::Status GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::bigtwo::GameStateResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>> AsyncGetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>>(AsyncGetGameStateRaw(context, request, cq));
+    virtual ::grpc::Status GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::rsosor::generated::GameStateResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>> AsyncGetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>>(AsyncGetGameStateRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>> PrepareAsyncGetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>>(PrepareAsyncGetGameStateRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>> PrepareAsyncGetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>>(PrepareAsyncGetGameStateRaw(context, request, cq));
     }
-    virtual ::grpc::Status JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::bigtwo::JoinResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>> AsyncJoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>>(AsyncJoinGameRaw(context, request, cq));
+    virtual ::grpc::Status JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::rsosor::generated::JoinResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>> AsyncJoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>>(AsyncJoinGameRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>> PrepareAsyncJoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>>(PrepareAsyncJoinGameRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>> PrepareAsyncJoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>>(PrepareAsyncJoinGameRaw(context, request, cq));
     }
-    virtual ::grpc::Status Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::bigtwo::ChatResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>> AsyncChat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>>(AsyncChatRaw(context, request, cq));
+    virtual ::grpc::Status Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::rsosor::generated::ChatResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>> AsyncChat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>>(AsyncChatRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>> PrepareAsyncChat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>>(PrepareAsyncChatRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>> PrepareAsyncChat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>>(PrepareAsyncChatRaw(context, request, cq));
     }
     // 新增：可以由遊戲主持人/server 觸發遊戲開始
-    virtual ::grpc::Status StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::bigtwo::StartGameResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>> AsyncStartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>>(AsyncStartGameRaw(context, request, cq));
+    virtual ::grpc::Status StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::rsosor::generated::StartGameResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>> AsyncStartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>>(AsyncStartGameRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>> PrepareAsyncStartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>>(PrepareAsyncStartGameRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>> PrepareAsyncStartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>>(PrepareAsyncStartGameRaw(context, request, cq));
     }
     class async_interface {
      public:
       virtual ~async_interface() {}
-      virtual void PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       // 新增：可以由遊戲主持人/server 觸發遊戲開始
-      virtual void StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
     class async_interface* experimental_async() { return async(); }
    private:
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>* AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayResponse>* PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>* AsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PassResponse>* PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>* AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::GameStateResponse>* PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>* AsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::JoinResponse>* PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>* AsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ChatResponse>* PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>* AsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::StartGameResponse>* PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>* AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayResponse>* PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>* AsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PassResponse>* PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>* AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::GameStateResponse>* PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>* AsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::JoinResponse>* PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>* AsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ChatResponse>* PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>* AsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::StartGameResponse>* PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
-    ::grpc::Status PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::bigtwo::PlayResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>> AsyncPlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>>(AsyncPlayCardsRaw(context, request, cq));
+    ::grpc::Status PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::rsosor::generated::PlayResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>> AsyncPlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>>(AsyncPlayCardsRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>> PrepareAsyncPlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>>(PrepareAsyncPlayCardsRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>> PrepareAsyncPlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>>(PrepareAsyncPlayCardsRaw(context, request, cq));
     }
-    ::grpc::Status Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::bigtwo::PassResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>> AsyncPass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>>(AsyncPassRaw(context, request, cq));
+    ::grpc::Status Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::rsosor::generated::PassResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>> AsyncPass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>>(AsyncPassRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>> PrepareAsyncPass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>>(PrepareAsyncPassRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>> PrepareAsyncPass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>>(PrepareAsyncPassRaw(context, request, cq));
     }
-    ::grpc::Status GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::bigtwo::GameStateResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>> AsyncGetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>>(AsyncGetGameStateRaw(context, request, cq));
+    ::grpc::Status GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::rsosor::generated::GameStateResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>> AsyncGetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>>(AsyncGetGameStateRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>> PrepareAsyncGetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>>(PrepareAsyncGetGameStateRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>> PrepareAsyncGetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>>(PrepareAsyncGetGameStateRaw(context, request, cq));
     }
-    ::grpc::Status JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::bigtwo::JoinResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>> AsyncJoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>>(AsyncJoinGameRaw(context, request, cq));
+    ::grpc::Status JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::rsosor::generated::JoinResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>> AsyncJoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>>(AsyncJoinGameRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>> PrepareAsyncJoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>>(PrepareAsyncJoinGameRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>> PrepareAsyncJoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>>(PrepareAsyncJoinGameRaw(context, request, cq));
     }
-    ::grpc::Status Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::bigtwo::ChatResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>> AsyncChat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>>(AsyncChatRaw(context, request, cq));
+    ::grpc::Status Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::rsosor::generated::ChatResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>> AsyncChat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>>(AsyncChatRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>> PrepareAsyncChat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>>(PrepareAsyncChatRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>> PrepareAsyncChat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>>(PrepareAsyncChatRaw(context, request, cq));
     }
-    ::grpc::Status StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::bigtwo::StartGameResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>> AsyncStartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>>(AsyncStartGameRaw(context, request, cq));
+    ::grpc::Status StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::rsosor::generated::StartGameResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>> AsyncStartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>>(AsyncStartGameRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>> PrepareAsyncStartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>>(PrepareAsyncStartGameRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>> PrepareAsyncStartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>>(PrepareAsyncStartGameRaw(context, request, cq));
     }
     class async final :
       public StubInterface::async_interface {
      public:
-      void PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, std::function<void(::grpc::Status)>) override;
-      void PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, std::function<void(::grpc::Status)>) override;
-      void Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, std::function<void(::grpc::Status)>) override;
-      void GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, std::function<void(::grpc::Status)>) override;
-      void JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, std::function<void(::grpc::Status)>) override;
-      void Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, std::function<void(::grpc::Status)>) override;
-      void StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, std::function<void(::grpc::Status)>) override;
+      void PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, std::function<void(::grpc::Status)>) override;
+      void Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, std::function<void(::grpc::Status)>) override;
+      void JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, std::function<void(::grpc::Status)>) override;
+      void Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, std::function<void(::grpc::Status)>) override;
+      void StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -186,18 +187,18 @@ class BigTwoService final {
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     class async async_stub_{this};
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>* AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>* PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>* AsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>* PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>* AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>* PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>* AsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>* PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>* AsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>* PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>* AsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>* PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>* AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>* PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>* AsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>* PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>* AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>* PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>* AsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>* PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>* AsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>* PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>* AsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>* PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_PlayCards_;
     const ::grpc::internal::RpcMethod rpcmethod_Pass_;
     const ::grpc::internal::RpcMethod rpcmethod_GetGameState_;
@@ -211,13 +212,13 @@ class BigTwoService final {
    public:
     Service();
     virtual ~Service();
-    virtual ::grpc::Status PlayCards(::grpc::ServerContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response);
-    virtual ::grpc::Status Pass(::grpc::ServerContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response);
-    virtual ::grpc::Status GetGameState(::grpc::ServerContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response);
-    virtual ::grpc::Status JoinGame(::grpc::ServerContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response);
-    virtual ::grpc::Status Chat(::grpc::ServerContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response);
+    virtual ::grpc::Status PlayCards(::grpc::ServerContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response);
+    virtual ::grpc::Status Pass(::grpc::ServerContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response);
+    virtual ::grpc::Status GetGameState(::grpc::ServerContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response);
+    virtual ::grpc::Status JoinGame(::grpc::ServerContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response);
+    virtual ::grpc::Status Chat(::grpc::ServerContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response);
     // 新增：可以由遊戲主持人/server 觸發遊戲開始
-    virtual ::grpc::Status StartGame(::grpc::ServerContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response);
+    virtual ::grpc::Status StartGame(::grpc::ServerContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response);
   };
   template <class BaseClass>
   class WithAsyncMethod_PlayCards : public BaseClass {
@@ -231,11 +232,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestPlayCards(::grpc::ServerContext* context, ::bigtwo::PlayRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::PlayResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestPlayCards(::grpc::ServerContext* context, ::rsosor::generated::PlayRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::PlayResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -251,11 +252,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestPass(::grpc::ServerContext* context, ::bigtwo::PassRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::PassResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestPass(::grpc::ServerContext* context, ::rsosor::generated::PassRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::PassResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -271,11 +272,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGetGameState(::grpc::ServerContext* context, ::bigtwo::GameStateRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::GameStateResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGetGameState(::grpc::ServerContext* context, ::rsosor::generated::GameStateRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::GameStateResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(2, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -291,11 +292,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestJoinGame(::grpc::ServerContext* context, ::bigtwo::JoinRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::JoinResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestJoinGame(::grpc::ServerContext* context, ::rsosor::generated::JoinRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::JoinResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(3, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -311,11 +312,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestChat(::grpc::ServerContext* context, ::bigtwo::ChatRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::ChatResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestChat(::grpc::ServerContext* context, ::rsosor::generated::ChatRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::ChatResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(4, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -331,11 +332,11 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestStartGame(::grpc::ServerContext* context, ::bigtwo::StartGameRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::StartGameResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestStartGame(::grpc::ServerContext* context, ::rsosor::generated::StartGameRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::StartGameResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(5, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -347,25 +348,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_PlayCards() {
       ::grpc::Service::MarkMethodCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayRequest, ::bigtwo::PlayResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response) { return this->PlayCards(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response) { return this->PlayCards(context, request, response); }));}
     void SetMessageAllocatorFor_PlayCards(
-        ::grpc::MessageAllocator< ::bigtwo::PlayRequest, ::bigtwo::PlayResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayRequest, ::bigtwo::PlayResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_PlayCards() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* PlayCards(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_Pass : public BaseClass {
@@ -374,25 +375,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_Pass() {
       ::grpc::Service::MarkMethodCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::PassRequest, ::bigtwo::PassResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response) { return this->Pass(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response) { return this->Pass(context, request, response); }));}
     void SetMessageAllocatorFor_Pass(
-        ::grpc::MessageAllocator< ::bigtwo::PassRequest, ::bigtwo::PassResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::PassRequest, ::bigtwo::PassResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_Pass() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* Pass(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GetGameState : public BaseClass {
@@ -401,25 +402,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_GetGameState() {
       ::grpc::Service::MarkMethodCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response) { return this->GetGameState(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response) { return this->GetGameState(context, request, response); }));}
     void SetMessageAllocatorFor_GetGameState(
-        ::grpc::MessageAllocator< ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GetGameState() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GetGameState(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_JoinGame : public BaseClass {
@@ -428,25 +429,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_JoinGame() {
       ::grpc::Service::MarkMethodCallback(3,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::JoinRequest, ::bigtwo::JoinResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response) { return this->JoinGame(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response) { return this->JoinGame(context, request, response); }));}
     void SetMessageAllocatorFor_JoinGame(
-        ::grpc::MessageAllocator< ::bigtwo::JoinRequest, ::bigtwo::JoinResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(3);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::JoinRequest, ::bigtwo::JoinResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_JoinGame() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* JoinGame(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_Chat : public BaseClass {
@@ -455,25 +456,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_Chat() {
       ::grpc::Service::MarkMethodCallback(4,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::ChatRequest, ::bigtwo::ChatResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response) { return this->Chat(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response) { return this->Chat(context, request, response); }));}
     void SetMessageAllocatorFor_Chat(
-        ::grpc::MessageAllocator< ::bigtwo::ChatRequest, ::bigtwo::ChatResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(4);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::ChatRequest, ::bigtwo::ChatResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_Chat() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* Chat(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_StartGame : public BaseClass {
@@ -482,25 +483,25 @@ class BigTwoService final {
    public:
     WithCallbackMethod_StartGame() {
       ::grpc::Service::MarkMethodCallback(5,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response) { return this->StartGame(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response) { return this->StartGame(context, request, response); }));}
     void SetMessageAllocatorFor_StartGame(
-        ::grpc::MessageAllocator< ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(5);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_StartGame() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* StartGame(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/)  { return nullptr; }
   };
   typedef WithCallbackMethod_PlayCards<WithCallbackMethod_Pass<WithCallbackMethod_GetGameState<WithCallbackMethod_JoinGame<WithCallbackMethod_Chat<WithCallbackMethod_StartGame<Service > > > > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
@@ -516,7 +517,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -533,7 +534,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -550,7 +551,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -567,7 +568,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -584,7 +585,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -601,7 +602,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -618,7 +619,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -638,7 +639,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -658,7 +659,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -678,7 +679,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -698,7 +699,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -718,7 +719,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -741,7 +742,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -763,7 +764,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -785,7 +786,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -807,7 +808,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -829,7 +830,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -851,7 +852,7 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -866,10 +867,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_PlayCards() {
       ::grpc::Service::MarkMethodStreamed(0,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::PlayRequest, ::bigtwo::PlayResponse>(
+          ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::PlayRequest, ::bigtwo::PlayResponse>* streamer) {
+                     ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse>* streamer) {
                        return this->StreamedPlayCards(context,
                          streamer);
                   }));
@@ -878,12 +879,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayRequest* /*request*/, ::bigtwo::PlayResponse* /*response*/) override {
+    ::grpc::Status PlayCards(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayRequest* /*request*/, ::rsosor::generated::PlayResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedPlayCards(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::PlayRequest,::bigtwo::PlayResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedPlayCards(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::PlayRequest,::rsosor::generated::PlayResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Pass : public BaseClass {
@@ -893,10 +894,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_Pass() {
       ::grpc::Service::MarkMethodStreamed(1,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::PassRequest, ::bigtwo::PassResponse>(
+          ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::PassRequest, ::bigtwo::PassResponse>* streamer) {
+                     ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse>* streamer) {
                        return this->StreamedPass(context,
                          streamer);
                   }));
@@ -905,12 +906,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::bigtwo::PassRequest* /*request*/, ::bigtwo::PassResponse* /*response*/) override {
+    ::grpc::Status Pass(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PassRequest* /*request*/, ::rsosor::generated::PassResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedPass(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::PassRequest,::bigtwo::PassResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedPass(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::PassRequest,::rsosor::generated::PassResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetGameState : public BaseClass {
@@ -920,10 +921,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_GetGameState() {
       ::grpc::Service::MarkMethodStreamed(2,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse>(
+          ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse>* streamer) {
+                     ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse>* streamer) {
                        return this->StreamedGetGameState(context,
                          streamer);
                   }));
@@ -932,12 +933,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::bigtwo::GameStateRequest* /*request*/, ::bigtwo::GameStateResponse* /*response*/) override {
+    ::grpc::Status GetGameState(::grpc::ServerContext* /*context*/, const ::rsosor::generated::GameStateRequest* /*request*/, ::rsosor::generated::GameStateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGetGameState(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::GameStateRequest,::bigtwo::GameStateResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGetGameState(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::GameStateRequest,::rsosor::generated::GameStateResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_JoinGame : public BaseClass {
@@ -947,10 +948,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_JoinGame() {
       ::grpc::Service::MarkMethodStreamed(3,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::JoinRequest, ::bigtwo::JoinResponse>(
+          ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::JoinRequest, ::bigtwo::JoinResponse>* streamer) {
+                     ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse>* streamer) {
                        return this->StreamedJoinGame(context,
                          streamer);
                   }));
@@ -959,12 +960,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::bigtwo::JoinRequest* /*request*/, ::bigtwo::JoinResponse* /*response*/) override {
+    ::grpc::Status JoinGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::JoinRequest* /*request*/, ::rsosor::generated::JoinResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedJoinGame(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::JoinRequest,::bigtwo::JoinResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedJoinGame(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::JoinRequest,::rsosor::generated::JoinResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Chat : public BaseClass {
@@ -974,10 +975,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_Chat() {
       ::grpc::Service::MarkMethodStreamed(4,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::ChatRequest, ::bigtwo::ChatResponse>(
+          ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::ChatRequest, ::bigtwo::ChatResponse>* streamer) {
+                     ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse>* streamer) {
                        return this->StreamedChat(context,
                          streamer);
                   }));
@@ -986,12 +987,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::bigtwo::ChatRequest* /*request*/, ::bigtwo::ChatResponse* /*response*/) override {
+    ::grpc::Status Chat(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ChatRequest* /*request*/, ::rsosor::generated::ChatResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedChat(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::ChatRequest,::bigtwo::ChatResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedChat(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::ChatRequest,::rsosor::generated::ChatResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_StartGame : public BaseClass {
@@ -1001,10 +1002,10 @@ class BigTwoService final {
     WithStreamedUnaryMethod_StartGame() {
       ::grpc::Service::MarkMethodStreamed(5,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse>(
+          ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse>* streamer) {
+                     ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse>* streamer) {
                        return this->StreamedStartGame(context,
                          streamer);
                   }));
@@ -1013,12 +1014,12 @@ class BigTwoService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::bigtwo::StartGameRequest* /*request*/, ::bigtwo::StartGameResponse* /*response*/) override {
+    ::grpc::Status StartGame(::grpc::ServerContext* /*context*/, const ::rsosor::generated::StartGameRequest* /*request*/, ::rsosor::generated::StartGameResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedStartGame(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::StartGameRequest,::bigtwo::StartGameResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedStartGame(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::StartGameRequest,::rsosor::generated::StartGameResponse>* server_unary_streamer) = 0;
   };
   typedef WithStreamedUnaryMethod_PlayCards<WithStreamedUnaryMethod_Pass<WithStreamedUnaryMethod_GetGameState<WithStreamedUnaryMethod_JoinGame<WithStreamedUnaryMethod_Chat<WithStreamedUnaryMethod_StartGame<Service > > > > > > StreamedUnaryService;
   typedef Service SplitStreamedService;
@@ -1031,114 +1032,114 @@ class BigTwoService final {
 class BigTwoTableService final {
  public:
   static constexpr char const* service_full_name() {
-    return "bigtwo.BigTwoTableService";
+    return "rsosor.generated.BigTwoTableService";
   }
   class StubInterface {
    public:
     virtual ~StubInterface() {}
     // Deal cards to all players
-    virtual ::grpc::Status Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::bigtwo::DealResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>> AsyncDeal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>>(AsyncDealRaw(context, request, cq));
+    virtual ::grpc::Status Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::rsosor::generated::DealResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>> AsyncDeal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>>(AsyncDealRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>> PrepareAsyncDeal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>>(PrepareAsyncDealRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>> PrepareAsyncDeal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>>(PrepareAsyncDealRaw(context, request, cq));
     }
     // Validate whether a set of cards is a legal move
-    virtual ::grpc::Status ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::bigtwo::PlayValidationResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>> AsyncValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>>(AsyncValidatePlayRaw(context, request, cq));
+    virtual ::grpc::Status ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::rsosor::generated::PlayValidationResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>> AsyncValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>>(AsyncValidatePlayRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>> PrepareAsyncValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>>(PrepareAsyncValidatePlayRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>> PrepareAsyncValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>>(PrepareAsyncValidatePlayRaw(context, request, cq));
     }
     // Handle timeout when a player fails to move in time
-    virtual ::grpc::Status HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::bigtwo::TimeoutResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>> AsyncHandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>>(AsyncHandleTimeoutRaw(context, request, cq));
+    virtual ::grpc::Status HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::rsosor::generated::TimeoutResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>> AsyncHandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>>(AsyncHandleTimeoutRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>> PrepareAsyncHandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>>(PrepareAsyncHandleTimeoutRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>> PrepareAsyncHandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>>(PrepareAsyncHandleTimeoutRaw(context, request, cq));
     }
     // Score the game at the end of a match
-    virtual ::grpc::Status Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::bigtwo::ScoreResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>> AsyncScore(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>>(AsyncScoreRaw(context, request, cq));
+    virtual ::grpc::Status Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::rsosor::generated::ScoreResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>> AsyncScore(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>>(AsyncScoreRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>> PrepareAsyncScore(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>>(PrepareAsyncScoreRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>> PrepareAsyncScore(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>>(PrepareAsyncScoreRaw(context, request, cq));
     }
     class async_interface {
      public:
       virtual ~async_interface() {}
       // Deal cards to all players
-      virtual void Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       // Validate whether a set of cards is a legal move
-      virtual void ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       // Handle timeout when a player fails to move in time
-      virtual void HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       // Score the game at the end of a match
-      virtual void Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
     class async_interface* experimental_async() { return async(); }
    private:
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>* AsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::DealResponse>* PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>* AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayValidationResponse>* PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>* AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::TimeoutResponse>* PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>* AsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ScoreResponse>* PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>* AsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::DealResponse>* PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>* AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayValidationResponse>* PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>* AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::TimeoutResponse>* PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>* AsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ScoreResponse>* PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
-    ::grpc::Status Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::bigtwo::DealResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>> AsyncDeal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>>(AsyncDealRaw(context, request, cq));
+    ::grpc::Status Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::rsosor::generated::DealResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>> AsyncDeal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>>(AsyncDealRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>> PrepareAsyncDeal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>>(PrepareAsyncDealRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>> PrepareAsyncDeal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>>(PrepareAsyncDealRaw(context, request, cq));
     }
-    ::grpc::Status ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::bigtwo::PlayValidationResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>> AsyncValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>>(AsyncValidatePlayRaw(context, request, cq));
+    ::grpc::Status ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::rsosor::generated::PlayValidationResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>> AsyncValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>>(AsyncValidatePlayRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>> PrepareAsyncValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>>(PrepareAsyncValidatePlayRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>> PrepareAsyncValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>>(PrepareAsyncValidatePlayRaw(context, request, cq));
     }
-    ::grpc::Status HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::bigtwo::TimeoutResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>> AsyncHandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>>(AsyncHandleTimeoutRaw(context, request, cq));
+    ::grpc::Status HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::rsosor::generated::TimeoutResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>> AsyncHandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>>(AsyncHandleTimeoutRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>> PrepareAsyncHandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>>(PrepareAsyncHandleTimeoutRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>> PrepareAsyncHandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>>(PrepareAsyncHandleTimeoutRaw(context, request, cq));
     }
-    ::grpc::Status Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::bigtwo::ScoreResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>> AsyncScore(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>>(AsyncScoreRaw(context, request, cq));
+    ::grpc::Status Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::rsosor::generated::ScoreResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>> AsyncScore(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>>(AsyncScoreRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>> PrepareAsyncScore(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>>(PrepareAsyncScoreRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>> PrepareAsyncScore(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>>(PrepareAsyncScoreRaw(context, request, cq));
     }
     class async final :
       public StubInterface::async_interface {
      public:
-      void Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, std::function<void(::grpc::Status)>) override;
-      void Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, std::function<void(::grpc::Status)>) override;
-      void ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, std::function<void(::grpc::Status)>) override;
-      void HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, std::function<void(::grpc::Status)>) override;
-      void Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, std::function<void(::grpc::Status)>) override;
+      void Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, std::function<void(::grpc::Status)>) override;
+      void ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, std::function<void(::grpc::Status)>) override;
+      void HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, std::function<void(::grpc::Status)>) override;
+      void Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -1150,14 +1151,14 @@ class BigTwoTableService final {
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     class async async_stub_{this};
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>* AsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>* PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>* AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>* PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>* AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>* PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>* AsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>* PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>* AsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>* PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>* AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>* PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>* AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>* PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>* AsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>* PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_Deal_;
     const ::grpc::internal::RpcMethod rpcmethod_ValidatePlay_;
     const ::grpc::internal::RpcMethod rpcmethod_HandleTimeout_;
@@ -1170,13 +1171,13 @@ class BigTwoTableService final {
     Service();
     virtual ~Service();
     // Deal cards to all players
-    virtual ::grpc::Status Deal(::grpc::ServerContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response);
+    virtual ::grpc::Status Deal(::grpc::ServerContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response);
     // Validate whether a set of cards is a legal move
-    virtual ::grpc::Status ValidatePlay(::grpc::ServerContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response);
+    virtual ::grpc::Status ValidatePlay(::grpc::ServerContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response);
     // Handle timeout when a player fails to move in time
-    virtual ::grpc::Status HandleTimeout(::grpc::ServerContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response);
+    virtual ::grpc::Status HandleTimeout(::grpc::ServerContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response);
     // Score the game at the end of a match
-    virtual ::grpc::Status Score(::grpc::ServerContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response);
+    virtual ::grpc::Status Score(::grpc::ServerContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response);
   };
   template <class BaseClass>
   class WithAsyncMethod_Deal : public BaseClass {
@@ -1190,11 +1191,11 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestDeal(::grpc::ServerContext* context, ::bigtwo::DealRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::DealResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestDeal(::grpc::ServerContext* context, ::rsosor::generated::DealRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::DealResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1210,11 +1211,11 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestValidatePlay(::grpc::ServerContext* context, ::bigtwo::PlayValidationRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::PlayValidationResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestValidatePlay(::grpc::ServerContext* context, ::rsosor::generated::PlayValidationRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::PlayValidationResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1230,11 +1231,11 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestHandleTimeout(::grpc::ServerContext* context, ::bigtwo::TimeoutRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::TimeoutResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestHandleTimeout(::grpc::ServerContext* context, ::rsosor::generated::TimeoutRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::TimeoutResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(2, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1250,11 +1251,11 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestScore(::grpc::ServerContext* context, ::bigtwo::ScoreRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::ScoreResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestScore(::grpc::ServerContext* context, ::rsosor::generated::ScoreRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::ScoreResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(3, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1266,25 +1267,25 @@ class BigTwoTableService final {
    public:
     WithCallbackMethod_Deal() {
       ::grpc::Service::MarkMethodCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::DealRequest, ::bigtwo::DealResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response) { return this->Deal(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response) { return this->Deal(context, request, response); }));}
     void SetMessageAllocatorFor_Deal(
-        ::grpc::MessageAllocator< ::bigtwo::DealRequest, ::bigtwo::DealResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::DealRequest, ::bigtwo::DealResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_Deal() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* Deal(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_ValidatePlay : public BaseClass {
@@ -1293,25 +1294,25 @@ class BigTwoTableService final {
    public:
     WithCallbackMethod_ValidatePlay() {
       ::grpc::Service::MarkMethodCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response) { return this->ValidatePlay(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response) { return this->ValidatePlay(context, request, response); }));}
     void SetMessageAllocatorFor_ValidatePlay(
-        ::grpc::MessageAllocator< ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_ValidatePlay() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* ValidatePlay(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_HandleTimeout : public BaseClass {
@@ -1320,25 +1321,25 @@ class BigTwoTableService final {
    public:
     WithCallbackMethod_HandleTimeout() {
       ::grpc::Service::MarkMethodCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response) { return this->HandleTimeout(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response) { return this->HandleTimeout(context, request, response); }));}
     void SetMessageAllocatorFor_HandleTimeout(
-        ::grpc::MessageAllocator< ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_HandleTimeout() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* HandleTimeout(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_Score : public BaseClass {
@@ -1347,25 +1348,25 @@ class BigTwoTableService final {
    public:
     WithCallbackMethod_Score() {
       ::grpc::Service::MarkMethodCallback(3,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response) { return this->Score(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response) { return this->Score(context, request, response); }));}
     void SetMessageAllocatorFor_Score(
-        ::grpc::MessageAllocator< ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(3);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_Score() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* Score(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/)  { return nullptr; }
   };
   typedef WithCallbackMethod_Deal<WithCallbackMethod_ValidatePlay<WithCallbackMethod_HandleTimeout<WithCallbackMethod_Score<Service > > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
@@ -1381,7 +1382,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1398,7 +1399,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1415,7 +1416,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1432,7 +1433,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1449,7 +1450,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1469,7 +1470,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1489,7 +1490,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1509,7 +1510,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1532,7 +1533,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1554,7 +1555,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1576,7 +1577,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1598,7 +1599,7 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1613,10 +1614,10 @@ class BigTwoTableService final {
     WithStreamedUnaryMethod_Deal() {
       ::grpc::Service::MarkMethodStreamed(0,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::DealRequest, ::bigtwo::DealResponse>(
+          ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::DealRequest, ::bigtwo::DealResponse>* streamer) {
+                     ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse>* streamer) {
                        return this->StreamedDeal(context,
                          streamer);
                   }));
@@ -1625,12 +1626,12 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::bigtwo::DealRequest* /*request*/, ::bigtwo::DealResponse* /*response*/) override {
+    ::grpc::Status Deal(::grpc::ServerContext* /*context*/, const ::rsosor::generated::DealRequest* /*request*/, ::rsosor::generated::DealResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedDeal(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::DealRequest,::bigtwo::DealResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedDeal(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::DealRequest,::rsosor::generated::DealResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_ValidatePlay : public BaseClass {
@@ -1640,10 +1641,10 @@ class BigTwoTableService final {
     WithStreamedUnaryMethod_ValidatePlay() {
       ::grpc::Service::MarkMethodStreamed(1,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse>(
+          ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse>* streamer) {
+                     ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse>* streamer) {
                        return this->StreamedValidatePlay(context,
                          streamer);
                   }));
@@ -1652,12 +1653,12 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayValidationRequest* /*request*/, ::bigtwo::PlayValidationResponse* /*response*/) override {
+    ::grpc::Status ValidatePlay(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayValidationRequest* /*request*/, ::rsosor::generated::PlayValidationResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedValidatePlay(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::PlayValidationRequest,::bigtwo::PlayValidationResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedValidatePlay(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::PlayValidationRequest,::rsosor::generated::PlayValidationResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_HandleTimeout : public BaseClass {
@@ -1667,10 +1668,10 @@ class BigTwoTableService final {
     WithStreamedUnaryMethod_HandleTimeout() {
       ::grpc::Service::MarkMethodStreamed(2,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse>(
+          ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse>* streamer) {
+                     ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse>* streamer) {
                        return this->StreamedHandleTimeout(context,
                          streamer);
                   }));
@@ -1679,12 +1680,12 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::bigtwo::TimeoutRequest* /*request*/, ::bigtwo::TimeoutResponse* /*response*/) override {
+    ::grpc::Status HandleTimeout(::grpc::ServerContext* /*context*/, const ::rsosor::generated::TimeoutRequest* /*request*/, ::rsosor::generated::TimeoutResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedHandleTimeout(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::TimeoutRequest,::bigtwo::TimeoutResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedHandleTimeout(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::TimeoutRequest,::rsosor::generated::TimeoutResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Score : public BaseClass {
@@ -1694,10 +1695,10 @@ class BigTwoTableService final {
     WithStreamedUnaryMethod_Score() {
       ::grpc::Service::MarkMethodStreamed(3,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse>(
+          ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse>* streamer) {
+                     ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse>* streamer) {
                        return this->StreamedScore(context,
                          streamer);
                   }));
@@ -1706,12 +1707,12 @@ class BigTwoTableService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::bigtwo::ScoreRequest* /*request*/, ::bigtwo::ScoreResponse* /*response*/) override {
+    ::grpc::Status Score(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ScoreRequest* /*request*/, ::rsosor::generated::ScoreResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedScore(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::ScoreRequest,::bigtwo::ScoreResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedScore(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::ScoreRequest,::rsosor::generated::ScoreResponse>* server_unary_streamer) = 0;
   };
   typedef WithStreamedUnaryMethod_Deal<WithStreamedUnaryMethod_ValidatePlay<WithStreamedUnaryMethod_HandleTimeout<WithStreamedUnaryMethod_Score<Service > > > > StreamedUnaryService;
   typedef Service SplitStreamedService;
@@ -1724,86 +1725,86 @@ class BigTwoTableService final {
 class BigTwoManagementService final {
  public:
   static constexpr char const* service_full_name() {
-    return "bigtwo.BigTwoManagementService";
+    return "rsosor.generated.BigTwoManagementService";
   }
   class StubInterface {
    public:
     virtual ~StubInterface() {}
-    virtual ::grpc::Status GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::bigtwo::RankingResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>> AsyncGetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>>(AsyncGetRankingRaw(context, request, cq));
+    virtual ::grpc::Status GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::rsosor::generated::RankingResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>> AsyncGetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>>(AsyncGetRankingRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>> PrepareAsyncGetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>>(PrepareAsyncGetRankingRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>> PrepareAsyncGetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>>(PrepareAsyncGetRankingRaw(context, request, cq));
     }
-    virtual ::grpc::Status GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::bigtwo::PlayerRateResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>> AsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>>(AsyncGetPlayerWinRateRaw(context, request, cq));
+    virtual ::grpc::Status GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::rsosor::generated::PlayerRateResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>> AsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>>(AsyncGetPlayerWinRateRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>> PrepareAsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>>(PrepareAsyncGetPlayerWinRateRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>> PrepareAsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>>(PrepareAsyncGetPlayerWinRateRaw(context, request, cq));
     }
-    virtual ::grpc::Status GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::bigtwo::ActivityLogResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>> AsyncGetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>>(AsyncGetActivityLogRaw(context, request, cq));
+    virtual ::grpc::Status GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::rsosor::generated::ActivityLogResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>> AsyncGetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>>(AsyncGetActivityLogRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>> PrepareAsyncGetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>>(PrepareAsyncGetActivityLogRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>> PrepareAsyncGetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>>(PrepareAsyncGetActivityLogRaw(context, request, cq));
     }
     class async_interface {
      public:
       virtual ~async_interface() {}
-      virtual void GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
-      virtual void GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
     class async_interface* experimental_async() { return async(); }
    private:
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>* AsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::RankingResponse>* PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>* AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::PlayerRateResponse>* PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>* AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::bigtwo::ActivityLogResponse>* PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>* AsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::RankingResponse>* PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>* AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::PlayerRateResponse>* PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>* AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::rsosor::generated::ActivityLogResponse>* PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
-    ::grpc::Status GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::bigtwo::RankingResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>> AsyncGetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>>(AsyncGetRankingRaw(context, request, cq));
+    ::grpc::Status GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::rsosor::generated::RankingResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>> AsyncGetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>>(AsyncGetRankingRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>> PrepareAsyncGetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>>(PrepareAsyncGetRankingRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>> PrepareAsyncGetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>>(PrepareAsyncGetRankingRaw(context, request, cq));
     }
-    ::grpc::Status GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::bigtwo::PlayerRateResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>> AsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>>(AsyncGetPlayerWinRateRaw(context, request, cq));
+    ::grpc::Status GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::rsosor::generated::PlayerRateResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>> AsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>>(AsyncGetPlayerWinRateRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>> PrepareAsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>>(PrepareAsyncGetPlayerWinRateRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>> PrepareAsyncGetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>>(PrepareAsyncGetPlayerWinRateRaw(context, request, cq));
     }
-    ::grpc::Status GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::bigtwo::ActivityLogResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>> AsyncGetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>>(AsyncGetActivityLogRaw(context, request, cq));
+    ::grpc::Status GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::rsosor::generated::ActivityLogResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>> AsyncGetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>>(AsyncGetActivityLogRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>> PrepareAsyncGetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>>(PrepareAsyncGetActivityLogRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>> PrepareAsyncGetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>>(PrepareAsyncGetActivityLogRaw(context, request, cq));
     }
     class async final :
       public StubInterface::async_interface {
      public:
-      void GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, std::function<void(::grpc::Status)>) override;
-      void GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, std::function<void(::grpc::Status)>) override;
-      void GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
-      void GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, std::function<void(::grpc::Status)>) override;
-      void GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -1815,12 +1816,12 @@ class BigTwoManagementService final {
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     class async async_stub_{this};
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>* AsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>* PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>* AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>* PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>* AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>* PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>* AsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>* PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>* AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>* PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>* AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>* PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_GetRanking_;
     const ::grpc::internal::RpcMethod rpcmethod_GetPlayerWinRate_;
     const ::grpc::internal::RpcMethod rpcmethod_GetActivityLog_;
@@ -1831,9 +1832,9 @@ class BigTwoManagementService final {
    public:
     Service();
     virtual ~Service();
-    virtual ::grpc::Status GetRanking(::grpc::ServerContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response);
-    virtual ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response);
-    virtual ::grpc::Status GetActivityLog(::grpc::ServerContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response);
+    virtual ::grpc::Status GetRanking(::grpc::ServerContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response);
+    virtual ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response);
+    virtual ::grpc::Status GetActivityLog(::grpc::ServerContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response);
   };
   template <class BaseClass>
   class WithAsyncMethod_GetRanking : public BaseClass {
@@ -1847,11 +1848,11 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGetRanking(::grpc::ServerContext* context, ::bigtwo::RankingRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::RankingResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGetRanking(::grpc::ServerContext* context, ::rsosor::generated::RankingRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::RankingResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1867,11 +1868,11 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGetPlayerWinRate(::grpc::ServerContext* context, ::bigtwo::PlayerRateRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::PlayerRateResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGetPlayerWinRate(::grpc::ServerContext* context, ::rsosor::generated::PlayerRateRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::PlayerRateResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1887,11 +1888,11 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGetActivityLog(::grpc::ServerContext* context, ::bigtwo::ActivityLogRequest* request, ::grpc::ServerAsyncResponseWriter< ::bigtwo::ActivityLogResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGetActivityLog(::grpc::ServerContext* context, ::rsosor::generated::ActivityLogRequest* request, ::grpc::ServerAsyncResponseWriter< ::rsosor::generated::ActivityLogResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(2, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -1903,25 +1904,25 @@ class BigTwoManagementService final {
    public:
     WithCallbackMethod_GetRanking() {
       ::grpc::Service::MarkMethodCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::RankingRequest, ::bigtwo::RankingResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response) { return this->GetRanking(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response) { return this->GetRanking(context, request, response); }));}
     void SetMessageAllocatorFor_GetRanking(
-        ::grpc::MessageAllocator< ::bigtwo::RankingRequest, ::bigtwo::RankingResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::RankingRequest, ::bigtwo::RankingResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GetRanking() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GetRanking(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GetPlayerWinRate : public BaseClass {
@@ -1930,25 +1931,25 @@ class BigTwoManagementService final {
    public:
     WithCallbackMethod_GetPlayerWinRate() {
       ::grpc::Service::MarkMethodCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response) { return this->GetPlayerWinRate(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response) { return this->GetPlayerWinRate(context, request, response); }));}
     void SetMessageAllocatorFor_GetPlayerWinRate(
-        ::grpc::MessageAllocator< ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GetPlayerWinRate() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GetPlayerWinRate(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
   class WithCallbackMethod_GetActivityLog : public BaseClass {
@@ -1957,25 +1958,25 @@ class BigTwoManagementService final {
    public:
     WithCallbackMethod_GetActivityLog() {
       ::grpc::Service::MarkMethodCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response) { return this->GetActivityLog(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response) { return this->GetActivityLog(context, request, response); }));}
     void SetMessageAllocatorFor_GetActivityLog(
-        ::grpc::MessageAllocator< ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse>* allocator) {
+        ::grpc::MessageAllocator< ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GetActivityLog() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GetActivityLog(
-      ::grpc::CallbackServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/)  { return nullptr; }
   };
   typedef WithCallbackMethod_GetRanking<WithCallbackMethod_GetPlayerWinRate<WithCallbackMethod_GetActivityLog<Service > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
@@ -1991,7 +1992,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2008,7 +2009,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2025,7 +2026,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2042,7 +2043,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2062,7 +2063,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2082,7 +2083,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2105,7 +2106,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2127,7 +2128,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2149,7 +2150,7 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -2164,10 +2165,10 @@ class BigTwoManagementService final {
     WithStreamedUnaryMethod_GetRanking() {
       ::grpc::Service::MarkMethodStreamed(0,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::RankingRequest, ::bigtwo::RankingResponse>(
+          ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::RankingRequest, ::bigtwo::RankingResponse>* streamer) {
+                     ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse>* streamer) {
                        return this->StreamedGetRanking(context,
                          streamer);
                   }));
@@ -2176,12 +2177,12 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::bigtwo::RankingRequest* /*request*/, ::bigtwo::RankingResponse* /*response*/) override {
+    ::grpc::Status GetRanking(::grpc::ServerContext* /*context*/, const ::rsosor::generated::RankingRequest* /*request*/, ::rsosor::generated::RankingResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGetRanking(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::RankingRequest,::bigtwo::RankingResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGetRanking(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::RankingRequest,::rsosor::generated::RankingResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetPlayerWinRate : public BaseClass {
@@ -2191,10 +2192,10 @@ class BigTwoManagementService final {
     WithStreamedUnaryMethod_GetPlayerWinRate() {
       ::grpc::Service::MarkMethodStreamed(1,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse>(
+          ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse>* streamer) {
+                     ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse>* streamer) {
                        return this->StreamedGetPlayerWinRate(context,
                          streamer);
                   }));
@@ -2203,12 +2204,12 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::bigtwo::PlayerRateRequest* /*request*/, ::bigtwo::PlayerRateResponse* /*response*/) override {
+    ::grpc::Status GetPlayerWinRate(::grpc::ServerContext* /*context*/, const ::rsosor::generated::PlayerRateRequest* /*request*/, ::rsosor::generated::PlayerRateResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGetPlayerWinRate(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::PlayerRateRequest,::bigtwo::PlayerRateResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGetPlayerWinRate(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::PlayerRateRequest,::rsosor::generated::PlayerRateResponse>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetActivityLog : public BaseClass {
@@ -2218,10 +2219,10 @@ class BigTwoManagementService final {
     WithStreamedUnaryMethod_GetActivityLog() {
       ::grpc::Service::MarkMethodStreamed(2,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse>(
+          ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse>* streamer) {
+                     ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse>* streamer) {
                        return this->StreamedGetActivityLog(context,
                          streamer);
                   }));
@@ -2230,19 +2231,20 @@ class BigTwoManagementService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::bigtwo::ActivityLogRequest* /*request*/, ::bigtwo::ActivityLogResponse* /*response*/) override {
+    ::grpc::Status GetActivityLog(::grpc::ServerContext* /*context*/, const ::rsosor::generated::ActivityLogRequest* /*request*/, ::rsosor::generated::ActivityLogResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGetActivityLog(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::bigtwo::ActivityLogRequest,::bigtwo::ActivityLogResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGetActivityLog(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::rsosor::generated::ActivityLogRequest,::rsosor::generated::ActivityLogResponse>* server_unary_streamer) = 0;
   };
   typedef WithStreamedUnaryMethod_GetRanking<WithStreamedUnaryMethod_GetPlayerWinRate<WithStreamedUnaryMethod_GetActivityLog<Service > > > StreamedUnaryService;
   typedef Service SplitStreamedService;
   typedef WithStreamedUnaryMethod_GetRanking<WithStreamedUnaryMethod_GetPlayerWinRate<WithStreamedUnaryMethod_GetActivityLog<Service > > > StreamedService;
 };
 
-}  // namespace bigtwo
+}  // namespace generated
+}  // namespace rsosor
 
 
 #endif  // GRPC_bigtwo_2eproto__INCLUDED

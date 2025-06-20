@@ -19,15 +19,16 @@
 #include <grpcpp/server_context.h>
 #include <grpcpp/impl/service_type.h>
 #include <grpcpp/support/sync_stream.h>
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 
 static const char* BigTwoService_method_names[] = {
-  "/bigtwo.BigTwoService/PlayCards",
-  "/bigtwo.BigTwoService/Pass",
-  "/bigtwo.BigTwoService/GetGameState",
-  "/bigtwo.BigTwoService/JoinGame",
-  "/bigtwo.BigTwoService/Chat",
-  "/bigtwo.BigTwoService/StartGame",
+  "/rsosor.generated.BigTwoService/PlayCards",
+  "/rsosor.generated.BigTwoService/Pass",
+  "/rsosor.generated.BigTwoService/GetGameState",
+  "/rsosor.generated.BigTwoService/JoinGame",
+  "/rsosor.generated.BigTwoService/Chat",
+  "/rsosor.generated.BigTwoService/StartGame",
 };
 
 std::unique_ptr< BigTwoService::Stub> BigTwoService::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -45,138 +46,138 @@ BigTwoService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& chan
   , rpcmethod_StartGame_(BigTwoService_method_names[5], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
-::grpc::Status BigTwoService::Stub::PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::bigtwo::PlayResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::PlayRequest, ::bigtwo::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_PlayCards_, context, request, response);
+::grpc::Status BigTwoService::Stub::PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::rsosor::generated::PlayResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_PlayCards_, context, request, response);
 }
 
-void BigTwoService::Stub::async::PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::PlayRequest, ::bigtwo::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_PlayCards_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_PlayCards_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::PlayCards(::grpc::ClientContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::PlayCards(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_PlayCards_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>* BigTwoService::Stub::PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::PlayResponse, ::bigtwo::PlayRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_PlayCards_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>* BigTwoService::Stub::PrepareAsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::PlayResponse, ::rsosor::generated::PlayRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_PlayCards_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayResponse>* BigTwoService::Stub::AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::bigtwo::PlayRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayResponse>* BigTwoService::Stub::AsyncPlayCardsRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncPlayCardsRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoService::Stub::Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::bigtwo::PassResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::PassRequest, ::bigtwo::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Pass_, context, request, response);
+::grpc::Status BigTwoService::Stub::Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::rsosor::generated::PassResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Pass_, context, request, response);
 }
 
-void BigTwoService::Stub::async::Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::PassRequest, ::bigtwo::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Pass_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Pass_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::Pass(::grpc::ClientContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::Pass(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Pass_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>* BigTwoService::Stub::PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::PassResponse, ::bigtwo::PassRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Pass_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>* BigTwoService::Stub::PrepareAsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::PassResponse, ::rsosor::generated::PassRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Pass_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PassResponse>* BigTwoService::Stub::AsyncPassRaw(::grpc::ClientContext* context, const ::bigtwo::PassRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PassResponse>* BigTwoService::Stub::AsyncPassRaw(::grpc::ClientContext* context, const ::rsosor::generated::PassRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncPassRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoService::Stub::GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::bigtwo::GameStateResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetGameState_, context, request, response);
+::grpc::Status BigTwoService::Stub::GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::rsosor::generated::GameStateResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetGameState_, context, request, response);
 }
 
-void BigTwoService::Stub::async::GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetGameState_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetGameState_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::GetGameState(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::GetGameState(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetGameState_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>* BigTwoService::Stub::PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::GameStateResponse, ::bigtwo::GameStateRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetGameState_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>* BigTwoService::Stub::PrepareAsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::GameStateResponse, ::rsosor::generated::GameStateRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetGameState_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::GameStateResponse>* BigTwoService::Stub::AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::bigtwo::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::GameStateResponse>* BigTwoService::Stub::AsyncGetGameStateRaw(::grpc::ClientContext* context, const ::rsosor::generated::GameStateRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncGetGameStateRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoService::Stub::JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::bigtwo::JoinResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::JoinRequest, ::bigtwo::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_JoinGame_, context, request, response);
+::grpc::Status BigTwoService::Stub::JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::rsosor::generated::JoinResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_JoinGame_, context, request, response);
 }
 
-void BigTwoService::Stub::async::JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::JoinRequest, ::bigtwo::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_JoinGame_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_JoinGame_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::JoinGame(::grpc::ClientContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::JoinGame(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_JoinGame_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>* BigTwoService::Stub::PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::JoinResponse, ::bigtwo::JoinRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_JoinGame_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>* BigTwoService::Stub::PrepareAsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::JoinResponse, ::rsosor::generated::JoinRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_JoinGame_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::JoinResponse>* BigTwoService::Stub::AsyncJoinGameRaw(::grpc::ClientContext* context, const ::bigtwo::JoinRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::JoinResponse>* BigTwoService::Stub::AsyncJoinGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::JoinRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncJoinGameRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoService::Stub::Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::bigtwo::ChatResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::ChatRequest, ::bigtwo::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Chat_, context, request, response);
+::grpc::Status BigTwoService::Stub::Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::rsosor::generated::ChatResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Chat_, context, request, response);
 }
 
-void BigTwoService::Stub::async::Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::ChatRequest, ::bigtwo::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Chat_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Chat_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::Chat(::grpc::ClientContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::Chat(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Chat_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>* BigTwoService::Stub::PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::ChatResponse, ::bigtwo::ChatRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Chat_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>* BigTwoService::Stub::PrepareAsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::ChatResponse, ::rsosor::generated::ChatRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Chat_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ChatResponse>* BigTwoService::Stub::AsyncChatRaw(::grpc::ClientContext* context, const ::bigtwo::ChatRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ChatResponse>* BigTwoService::Stub::AsyncChatRaw(::grpc::ClientContext* context, const ::rsosor::generated::ChatRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncChatRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoService::Stub::StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::bigtwo::StartGameResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_StartGame_, context, request, response);
+::grpc::Status BigTwoService::Stub::StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::rsosor::generated::StartGameResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_StartGame_, context, request, response);
 }
 
-void BigTwoService::Stub::async::StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_StartGame_, context, request, response, std::move(f));
+void BigTwoService::Stub::async::StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_StartGame_, context, request, response, std::move(f));
 }
 
-void BigTwoService::Stub::async::StartGame(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoService::Stub::async::StartGame(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_StartGame_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>* BigTwoService::Stub::PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::StartGameResponse, ::bigtwo::StartGameRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_StartGame_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>* BigTwoService::Stub::PrepareAsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::StartGameResponse, ::rsosor::generated::StartGameRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_StartGame_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::StartGameResponse>* BigTwoService::Stub::AsyncStartGameRaw(::grpc::ClientContext* context, const ::bigtwo::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::StartGameResponse>* BigTwoService::Stub::AsyncStartGameRaw(::grpc::ClientContext* context, const ::rsosor::generated::StartGameRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncStartGameRaw(context, request, cq);
   result->StartCall();
@@ -187,61 +188,61 @@ BigTwoService::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::PlayRequest, ::bigtwo::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::PlayRequest, ::rsosor::generated::PlayResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::PlayRequest* req,
-             ::bigtwo::PlayResponse* resp) {
+             const ::rsosor::generated::PlayRequest* req,
+             ::rsosor::generated::PlayResponse* resp) {
                return service->PlayCards(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::PassRequest, ::bigtwo::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::PassRequest, ::rsosor::generated::PassResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::PassRequest* req,
-             ::bigtwo::PassResponse* resp) {
+             const ::rsosor::generated::PassRequest* req,
+             ::rsosor::generated::PassResponse* resp) {
                return service->Pass(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::GameStateRequest, ::bigtwo::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::GameStateRequest, ::rsosor::generated::GameStateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::GameStateRequest* req,
-             ::bigtwo::GameStateResponse* resp) {
+             const ::rsosor::generated::GameStateRequest* req,
+             ::rsosor::generated::GameStateResponse* resp) {
                return service->GetGameState(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::JoinRequest, ::bigtwo::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::JoinRequest, ::rsosor::generated::JoinResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::JoinRequest* req,
-             ::bigtwo::JoinResponse* resp) {
+             const ::rsosor::generated::JoinRequest* req,
+             ::rsosor::generated::JoinResponse* resp) {
                return service->JoinGame(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::ChatRequest, ::bigtwo::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::ChatRequest, ::rsosor::generated::ChatResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::ChatRequest* req,
-             ::bigtwo::ChatResponse* resp) {
+             const ::rsosor::generated::ChatRequest* req,
+             ::rsosor::generated::ChatResponse* resp) {
                return service->Chat(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoService_method_names[5],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::bigtwo::StartGameRequest, ::bigtwo::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoService::Service, ::rsosor::generated::StartGameRequest, ::rsosor::generated::StartGameResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::StartGameRequest* req,
-             ::bigtwo::StartGameResponse* resp) {
+             const ::rsosor::generated::StartGameRequest* req,
+             ::rsosor::generated::StartGameResponse* resp) {
                return service->StartGame(ctx, req, resp);
              }, this)));
 }
@@ -249,42 +250,42 @@ BigTwoService::Service::Service() {
 BigTwoService::Service::~Service() {
 }
 
-::grpc::Status BigTwoService::Service::PlayCards(::grpc::ServerContext* context, const ::bigtwo::PlayRequest* request, ::bigtwo::PlayResponse* response) {
+::grpc::Status BigTwoService::Service::PlayCards(::grpc::ServerContext* context, const ::rsosor::generated::PlayRequest* request, ::rsosor::generated::PlayResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoService::Service::Pass(::grpc::ServerContext* context, const ::bigtwo::PassRequest* request, ::bigtwo::PassResponse* response) {
+::grpc::Status BigTwoService::Service::Pass(::grpc::ServerContext* context, const ::rsosor::generated::PassRequest* request, ::rsosor::generated::PassResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoService::Service::GetGameState(::grpc::ServerContext* context, const ::bigtwo::GameStateRequest* request, ::bigtwo::GameStateResponse* response) {
+::grpc::Status BigTwoService::Service::GetGameState(::grpc::ServerContext* context, const ::rsosor::generated::GameStateRequest* request, ::rsosor::generated::GameStateResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoService::Service::JoinGame(::grpc::ServerContext* context, const ::bigtwo::JoinRequest* request, ::bigtwo::JoinResponse* response) {
+::grpc::Status BigTwoService::Service::JoinGame(::grpc::ServerContext* context, const ::rsosor::generated::JoinRequest* request, ::rsosor::generated::JoinResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoService::Service::Chat(::grpc::ServerContext* context, const ::bigtwo::ChatRequest* request, ::bigtwo::ChatResponse* response) {
+::grpc::Status BigTwoService::Service::Chat(::grpc::ServerContext* context, const ::rsosor::generated::ChatRequest* request, ::rsosor::generated::ChatResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoService::Service::StartGame(::grpc::ServerContext* context, const ::bigtwo::StartGameRequest* request, ::bigtwo::StartGameResponse* response) {
+::grpc::Status BigTwoService::Service::StartGame(::grpc::ServerContext* context, const ::rsosor::generated::StartGameRequest* request, ::rsosor::generated::StartGameResponse* response) {
   (void) context;
   (void) request;
   (void) response;
@@ -293,10 +294,10 @@ BigTwoService::Service::~Service() {
 
 
 static const char* BigTwoTableService_method_names[] = {
-  "/bigtwo.BigTwoTableService/Deal",
-  "/bigtwo.BigTwoTableService/ValidatePlay",
-  "/bigtwo.BigTwoTableService/HandleTimeout",
-  "/bigtwo.BigTwoTableService/Score",
+  "/rsosor.generated.BigTwoTableService/Deal",
+  "/rsosor.generated.BigTwoTableService/ValidatePlay",
+  "/rsosor.generated.BigTwoTableService/HandleTimeout",
+  "/rsosor.generated.BigTwoTableService/Score",
 };
 
 std::unique_ptr< BigTwoTableService::Stub> BigTwoTableService::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -312,92 +313,92 @@ BigTwoTableService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>&
   , rpcmethod_Score_(BigTwoTableService_method_names[3], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
-::grpc::Status BigTwoTableService::Stub::Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::bigtwo::DealResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::DealRequest, ::bigtwo::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Deal_, context, request, response);
+::grpc::Status BigTwoTableService::Stub::Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::rsosor::generated::DealResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Deal_, context, request, response);
 }
 
-void BigTwoTableService::Stub::async::Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::DealRequest, ::bigtwo::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Deal_, context, request, response, std::move(f));
+void BigTwoTableService::Stub::async::Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Deal_, context, request, response, std::move(f));
 }
 
-void BigTwoTableService::Stub::async::Deal(::grpc::ClientContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoTableService::Stub::async::Deal(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Deal_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>* BigTwoTableService::Stub::PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::DealResponse, ::bigtwo::DealRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Deal_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>* BigTwoTableService::Stub::PrepareAsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::DealResponse, ::rsosor::generated::DealRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Deal_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::DealResponse>* BigTwoTableService::Stub::AsyncDealRaw(::grpc::ClientContext* context, const ::bigtwo::DealRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::DealResponse>* BigTwoTableService::Stub::AsyncDealRaw(::grpc::ClientContext* context, const ::rsosor::generated::DealRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncDealRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoTableService::Stub::ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::bigtwo::PlayValidationResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_ValidatePlay_, context, request, response);
+::grpc::Status BigTwoTableService::Stub::ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::rsosor::generated::PlayValidationResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_ValidatePlay_, context, request, response);
 }
 
-void BigTwoTableService::Stub::async::ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_ValidatePlay_, context, request, response, std::move(f));
+void BigTwoTableService::Stub::async::ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_ValidatePlay_, context, request, response, std::move(f));
 }
 
-void BigTwoTableService::Stub::async::ValidatePlay(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoTableService::Stub::async::ValidatePlay(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_ValidatePlay_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>* BigTwoTableService::Stub::PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::PlayValidationResponse, ::bigtwo::PlayValidationRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_ValidatePlay_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>* BigTwoTableService::Stub::PrepareAsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::PlayValidationResponse, ::rsosor::generated::PlayValidationRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_ValidatePlay_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayValidationResponse>* BigTwoTableService::Stub::AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::bigtwo::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayValidationResponse>* BigTwoTableService::Stub::AsyncValidatePlayRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayValidationRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncValidatePlayRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoTableService::Stub::HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::bigtwo::TimeoutResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_HandleTimeout_, context, request, response);
+::grpc::Status BigTwoTableService::Stub::HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::rsosor::generated::TimeoutResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_HandleTimeout_, context, request, response);
 }
 
-void BigTwoTableService::Stub::async::HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_HandleTimeout_, context, request, response, std::move(f));
+void BigTwoTableService::Stub::async::HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_HandleTimeout_, context, request, response, std::move(f));
 }
 
-void BigTwoTableService::Stub::async::HandleTimeout(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoTableService::Stub::async::HandleTimeout(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_HandleTimeout_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>* BigTwoTableService::Stub::PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::TimeoutResponse, ::bigtwo::TimeoutRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_HandleTimeout_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>* BigTwoTableService::Stub::PrepareAsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::TimeoutResponse, ::rsosor::generated::TimeoutRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_HandleTimeout_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::TimeoutResponse>* BigTwoTableService::Stub::AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::bigtwo::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::TimeoutResponse>* BigTwoTableService::Stub::AsyncHandleTimeoutRaw(::grpc::ClientContext* context, const ::rsosor::generated::TimeoutRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncHandleTimeoutRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoTableService::Stub::Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::bigtwo::ScoreResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Score_, context, request, response);
+::grpc::Status BigTwoTableService::Stub::Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::rsosor::generated::ScoreResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_Score_, context, request, response);
 }
 
-void BigTwoTableService::Stub::async::Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Score_, context, request, response, std::move(f));
+void BigTwoTableService::Stub::async::Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Score_, context, request, response, std::move(f));
 }
 
-void BigTwoTableService::Stub::async::Score(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoTableService::Stub::async::Score(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_Score_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>* BigTwoTableService::Stub::PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::ScoreResponse, ::bigtwo::ScoreRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Score_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>* BigTwoTableService::Stub::PrepareAsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::ScoreResponse, ::rsosor::generated::ScoreRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_Score_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ScoreResponse>* BigTwoTableService::Stub::AsyncScoreRaw(::grpc::ClientContext* context, const ::bigtwo::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ScoreResponse>* BigTwoTableService::Stub::AsyncScoreRaw(::grpc::ClientContext* context, const ::rsosor::generated::ScoreRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncScoreRaw(context, request, cq);
   result->StartCall();
@@ -408,41 +409,41 @@ BigTwoTableService::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoTableService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::bigtwo::DealRequest, ::bigtwo::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::rsosor::generated::DealRequest, ::rsosor::generated::DealResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoTableService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::DealRequest* req,
-             ::bigtwo::DealResponse* resp) {
+             const ::rsosor::generated::DealRequest* req,
+             ::rsosor::generated::DealResponse* resp) {
                return service->Deal(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoTableService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::bigtwo::PlayValidationRequest, ::bigtwo::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::rsosor::generated::PlayValidationRequest, ::rsosor::generated::PlayValidationResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoTableService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::PlayValidationRequest* req,
-             ::bigtwo::PlayValidationResponse* resp) {
+             const ::rsosor::generated::PlayValidationRequest* req,
+             ::rsosor::generated::PlayValidationResponse* resp) {
                return service->ValidatePlay(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoTableService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::bigtwo::TimeoutRequest, ::bigtwo::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::rsosor::generated::TimeoutRequest, ::rsosor::generated::TimeoutResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoTableService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::TimeoutRequest* req,
-             ::bigtwo::TimeoutResponse* resp) {
+             const ::rsosor::generated::TimeoutRequest* req,
+             ::rsosor::generated::TimeoutResponse* resp) {
                return service->HandleTimeout(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoTableService_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::bigtwo::ScoreRequest, ::bigtwo::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoTableService::Service, ::rsosor::generated::ScoreRequest, ::rsosor::generated::ScoreResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoTableService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::ScoreRequest* req,
-             ::bigtwo::ScoreResponse* resp) {
+             const ::rsosor::generated::ScoreRequest* req,
+             ::rsosor::generated::ScoreResponse* resp) {
                return service->Score(ctx, req, resp);
              }, this)));
 }
@@ -450,28 +451,28 @@ BigTwoTableService::Service::Service() {
 BigTwoTableService::Service::~Service() {
 }
 
-::grpc::Status BigTwoTableService::Service::Deal(::grpc::ServerContext* context, const ::bigtwo::DealRequest* request, ::bigtwo::DealResponse* response) {
+::grpc::Status BigTwoTableService::Service::Deal(::grpc::ServerContext* context, const ::rsosor::generated::DealRequest* request, ::rsosor::generated::DealResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoTableService::Service::ValidatePlay(::grpc::ServerContext* context, const ::bigtwo::PlayValidationRequest* request, ::bigtwo::PlayValidationResponse* response) {
+::grpc::Status BigTwoTableService::Service::ValidatePlay(::grpc::ServerContext* context, const ::rsosor::generated::PlayValidationRequest* request, ::rsosor::generated::PlayValidationResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoTableService::Service::HandleTimeout(::grpc::ServerContext* context, const ::bigtwo::TimeoutRequest* request, ::bigtwo::TimeoutResponse* response) {
+::grpc::Status BigTwoTableService::Service::HandleTimeout(::grpc::ServerContext* context, const ::rsosor::generated::TimeoutRequest* request, ::rsosor::generated::TimeoutResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoTableService::Service::Score(::grpc::ServerContext* context, const ::bigtwo::ScoreRequest* request, ::bigtwo::ScoreResponse* response) {
+::grpc::Status BigTwoTableService::Service::Score(::grpc::ServerContext* context, const ::rsosor::generated::ScoreRequest* request, ::rsosor::generated::ScoreResponse* response) {
   (void) context;
   (void) request;
   (void) response;
@@ -480,9 +481,9 @@ BigTwoTableService::Service::~Service() {
 
 
 static const char* BigTwoManagementService_method_names[] = {
-  "/bigtwo.BigTwoManagementService/GetRanking",
-  "/bigtwo.BigTwoManagementService/GetPlayerWinRate",
-  "/bigtwo.BigTwoManagementService/GetActivityLog",
+  "/rsosor.generated.BigTwoManagementService/GetRanking",
+  "/rsosor.generated.BigTwoManagementService/GetPlayerWinRate",
+  "/rsosor.generated.BigTwoManagementService/GetActivityLog",
 };
 
 std::unique_ptr< BigTwoManagementService::Stub> BigTwoManagementService::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -497,69 +498,69 @@ BigTwoManagementService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterf
   , rpcmethod_GetActivityLog_(BigTwoManagementService_method_names[2], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
-::grpc::Status BigTwoManagementService::Stub::GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::bigtwo::RankingResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::RankingRequest, ::bigtwo::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetRanking_, context, request, response);
+::grpc::Status BigTwoManagementService::Stub::GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::rsosor::generated::RankingResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetRanking_, context, request, response);
 }
 
-void BigTwoManagementService::Stub::async::GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::RankingRequest, ::bigtwo::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetRanking_, context, request, response, std::move(f));
+void BigTwoManagementService::Stub::async::GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetRanking_, context, request, response, std::move(f));
 }
 
-void BigTwoManagementService::Stub::async::GetRanking(::grpc::ClientContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoManagementService::Stub::async::GetRanking(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetRanking_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>* BigTwoManagementService::Stub::PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::RankingResponse, ::bigtwo::RankingRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetRanking_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>* BigTwoManagementService::Stub::PrepareAsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::RankingResponse, ::rsosor::generated::RankingRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetRanking_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::RankingResponse>* BigTwoManagementService::Stub::AsyncGetRankingRaw(::grpc::ClientContext* context, const ::bigtwo::RankingRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::RankingResponse>* BigTwoManagementService::Stub::AsyncGetRankingRaw(::grpc::ClientContext* context, const ::rsosor::generated::RankingRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncGetRankingRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoManagementService::Stub::GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::bigtwo::PlayerRateResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetPlayerWinRate_, context, request, response);
+::grpc::Status BigTwoManagementService::Stub::GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::rsosor::generated::PlayerRateResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetPlayerWinRate_, context, request, response);
 }
 
-void BigTwoManagementService::Stub::async::GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetPlayerWinRate_, context, request, response, std::move(f));
+void BigTwoManagementService::Stub::async::GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetPlayerWinRate_, context, request, response, std::move(f));
 }
 
-void BigTwoManagementService::Stub::async::GetPlayerWinRate(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoManagementService::Stub::async::GetPlayerWinRate(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetPlayerWinRate_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>* BigTwoManagementService::Stub::PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::PlayerRateResponse, ::bigtwo::PlayerRateRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetPlayerWinRate_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>* BigTwoManagementService::Stub::PrepareAsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::PlayerRateResponse, ::rsosor::generated::PlayerRateRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetPlayerWinRate_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::PlayerRateResponse>* BigTwoManagementService::Stub::AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::bigtwo::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::PlayerRateResponse>* BigTwoManagementService::Stub::AsyncGetPlayerWinRateRaw(::grpc::ClientContext* context, const ::rsosor::generated::PlayerRateRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncGetPlayerWinRateRaw(context, request, cq);
   result->StartCall();
   return result;
 }
 
-::grpc::Status BigTwoManagementService::Stub::GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::bigtwo::ActivityLogResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetActivityLog_, context, request, response);
+::grpc::Status BigTwoManagementService::Stub::GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::rsosor::generated::ActivityLogResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetActivityLog_, context, request, response);
 }
 
-void BigTwoManagementService::Stub::async::GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetActivityLog_, context, request, response, std::move(f));
+void BigTwoManagementService::Stub::async::GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetActivityLog_, context, request, response, std::move(f));
 }
 
-void BigTwoManagementService::Stub::async::GetActivityLog(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void BigTwoManagementService::Stub::async::GetActivityLog(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetActivityLog_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>* BigTwoManagementService::Stub::PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::bigtwo::ActivityLogResponse, ::bigtwo::ActivityLogRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetActivityLog_, context, request);
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>* BigTwoManagementService::Stub::PrepareAsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::rsosor::generated::ActivityLogResponse, ::rsosor::generated::ActivityLogRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetActivityLog_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::bigtwo::ActivityLogResponse>* BigTwoManagementService::Stub::AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::bigtwo::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::rsosor::generated::ActivityLogResponse>* BigTwoManagementService::Stub::AsyncGetActivityLogRaw(::grpc::ClientContext* context, const ::rsosor::generated::ActivityLogRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncGetActivityLogRaw(context, request, cq);
   result->StartCall();
@@ -570,31 +571,31 @@ BigTwoManagementService::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoManagementService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::bigtwo::RankingRequest, ::bigtwo::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::rsosor::generated::RankingRequest, ::rsosor::generated::RankingResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoManagementService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::RankingRequest* req,
-             ::bigtwo::RankingResponse* resp) {
+             const ::rsosor::generated::RankingRequest* req,
+             ::rsosor::generated::RankingResponse* resp) {
                return service->GetRanking(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoManagementService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::bigtwo::PlayerRateRequest, ::bigtwo::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::rsosor::generated::PlayerRateRequest, ::rsosor::generated::PlayerRateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoManagementService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::PlayerRateRequest* req,
-             ::bigtwo::PlayerRateResponse* resp) {
+             const ::rsosor::generated::PlayerRateRequest* req,
+             ::rsosor::generated::PlayerRateResponse* resp) {
                return service->GetPlayerWinRate(ctx, req, resp);
              }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       BigTwoManagementService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::bigtwo::ActivityLogRequest, ::bigtwo::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< BigTwoManagementService::Service, ::rsosor::generated::ActivityLogRequest, ::rsosor::generated::ActivityLogResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](BigTwoManagementService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::bigtwo::ActivityLogRequest* req,
-             ::bigtwo::ActivityLogResponse* resp) {
+             const ::rsosor::generated::ActivityLogRequest* req,
+             ::rsosor::generated::ActivityLogResponse* resp) {
                return service->GetActivityLog(ctx, req, resp);
              }, this)));
 }
@@ -602,21 +603,21 @@ BigTwoManagementService::Service::Service() {
 BigTwoManagementService::Service::~Service() {
 }
 
-::grpc::Status BigTwoManagementService::Service::GetRanking(::grpc::ServerContext* context, const ::bigtwo::RankingRequest* request, ::bigtwo::RankingResponse* response) {
+::grpc::Status BigTwoManagementService::Service::GetRanking(::grpc::ServerContext* context, const ::rsosor::generated::RankingRequest* request, ::rsosor::generated::RankingResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoManagementService::Service::GetPlayerWinRate(::grpc::ServerContext* context, const ::bigtwo::PlayerRateRequest* request, ::bigtwo::PlayerRateResponse* response) {
+::grpc::Status BigTwoManagementService::Service::GetPlayerWinRate(::grpc::ServerContext* context, const ::rsosor::generated::PlayerRateRequest* request, ::rsosor::generated::PlayerRateResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status BigTwoManagementService::Service::GetActivityLog(::grpc::ServerContext* context, const ::bigtwo::ActivityLogRequest* request, ::bigtwo::ActivityLogResponse* response) {
+::grpc::Status BigTwoManagementService::Service::GetActivityLog(::grpc::ServerContext* context, const ::rsosor::generated::ActivityLogRequest* request, ::rsosor::generated::ActivityLogResponse* response) {
   (void) context;
   (void) request;
   (void) response;
@@ -624,5 +625,6 @@ BigTwoManagementService::Service::~Service() {
 }
 
 
-}  // namespace bigtwo
+}  // namespace rsosor
+}  // namespace generated
 

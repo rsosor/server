@@ -87,3 +87,17 @@ cl /std:c++23 /EHsc /MT src/test/client/grpc/bigtwo_client.cpp src/generated/big
 cl /std:c++23 /EHsc /MD src/test/client/grpc/bigtwo_client.cpp src/generated/bigtwo.pb.cc src/generated/bigtwo.grpc.pb.cc /Isrc /Isrc/generated /IC:\Users\godpk\vcpkg\installed\x64-windows\include /DPROTOBUF_USE_DLLS /DGRPC_USE_DLLS /Fe:src/test/client/grpc /link /LIBPATH:C:\Users\godpk\vcpkg\installed\x64-windows\lib grpc++.lib grpc.lib gpr.lib libprotobuf.lib libprotoc.lib ws2_32.lib
 ~~~
 - fatal error LNK1120: 455 個無法解析的外部符號
+
+# websocekt
+
+你可以使用 wscat 測試：
+~~~
+wscat -c wss://localhost:8080 --no-check
+~~~
+
+或者瀏覽器 JS:
+~~~
+let ws = new WebSocket("wss://localhost:8080");
+ws.onmessage = msg => console.log(msg.data);
+ws.send("Hello from browser!");
+~~~

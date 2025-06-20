@@ -136,8 +136,8 @@ endif(nlohmann_json_FOUND)
 
 # 收集 source 檔案
 # file(GLOB_RECURSE GAME_SERVER_SOURCES "src/*/*.cpp")
-file(GLOB GAME_SERVER_SOURCES_CPP "src/*/*.cpp")
-file(GLOB GAME_SERVER_SOURCES_CC "src/*/*.cc")
+file(GLOB_RECURSE GAME_SERVER_SOURCES_CPP "src/**/*.cpp")
+file(GLOB_RECURSE GAME_SERVER_SOURCES_CC "src/**/*.cc")
 # 合併兩個列表
 set(GAME_SERVER_SOURCES ${GAME_SERVER_SOURCES_CPP} ${GAME_SERVER_SOURCES_CC})
 

@@ -1,13 +1,15 @@
 #pragma once
 
-#include "player/player.h"
+#include "game/player/player.h"
 
 #include <iostream>
 #include <unordered_map>
 #include <memory>
 
+namespace player = rsosor::game::player;
+
 class ConnectionManager {
-    std::unordered_map<int, std::shared_ptr<Player>> players;
+    std::unordered_map<int, std::shared_ptr<player::Player>> players;
 
 public:
     bool add_player(int id, const std::string& name) {
@@ -15,7 +17,7 @@ public:
             std::cout << "Player " << id << " already connected.\n";
             return false;
         }
-        players[id] = std::make_shared<Player>(id, name);
+        players[id] = std::make_shared<player::Player>(id, name);
         std::cout << "Player " << name << " (ID " << id << ") connected.\n";
         return true;
     }
@@ -30,7 +32,7 @@ public:
         return true;
     }
 
-    std::shared_ptr<Player> get_player(int id) {
+    std::shared_ptr<player::Player> get_player(int id) {
         if (players.count(id) == 0) return nullptr;
         return players[id];
     }

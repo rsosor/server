@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package bigtwo;
+package rsosor.generated;
 
 // ---------------------------------------------------------------------------
 // 前台遊戲主要功能
@@ -75,7 +75,7 @@ message StartGameResponse {
 }
 
 message Card {
-  string suit = 1; // "spades", "hearts", "clubs", "diamonds"
+  string suit = 1; // "spades", "hearts", "diamonds", "clubs"
   int32 rank = 2;  // 3 ~ 15 (11=J, 12=Q, 13=K, 14=A, 15=2)
 }
 

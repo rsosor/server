@@ -14,6 +14,20 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost
+
+Boost_FILESYSTEM_LIBRARY_DEBUG:STRING=C:/Users/godpk/vcpkg/installed/x64-windows/debug/bin/boost_filesystem-vc143-mt-gd-x64-1_87.dll
+
+Boost_FILESYSTEM_LIBRARY_RELEASE:STRING=C:/Users/godpk/vcpkg/installed/x64-windows/bin/boost_filesystem-vc143-mt-x64-1_87.dll
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/include
+
+Boost_SYSTEM_LIBRARY_DEBUG:STRING=C:/Users/godpk/vcpkg/installed/x64-windows/debug/bin/boost_system-vc143-mt-gd-x64-1_87.dll
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=C:/Users/godpk/vcpkg/installed/x64-windows/bin/boost_system-vc143-mt-x64-1_87.dll
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe
 
@@ -267,6 +281,108 @@ bigtwo_client_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 bigtwo_client_SOURCE_DIR:STATIC=D:/rsosor/cpp/game/src/test/client/grpc
 
+//The directory containing a CMake configuration file for boost_align.
+boost_align_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_align
+
+//The directory containing a CMake configuration file for boost_assert.
+boost_assert_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_assert
+
+//The directory containing a CMake configuration file for boost_atomic.
+boost_atomic_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_atomic
+
+//The directory containing a CMake configuration file for boost_bind.
+boost_bind_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_bind
+
+//The directory containing a CMake configuration file for boost_concept_check.
+boost_concept_check_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_concept_check
+
+//The directory containing a CMake configuration file for boost_config.
+boost_config_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_config
+
+//The directory containing a CMake configuration file for boost_container_hash.
+boost_container_hash_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_container_hash
+
+//The directory containing a CMake configuration file for boost_core.
+boost_core_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_core
+
+//The directory containing a CMake configuration file for boost_describe.
+boost_describe_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_describe
+
+//The directory containing a CMake configuration file for boost_detail.
+boost_detail_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_detail
+
+//The directory containing a CMake configuration file for boost_filesystem.
+boost_filesystem_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_filesystem
+
+//The directory containing a CMake configuration file for boost_function.
+boost_function_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_function
+
+//The directory containing a CMake configuration file for boost_function_types.
+boost_function_types_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_function_types
+
+//The directory containing a CMake configuration file for boost_functional.
+boost_functional_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_functional
+
+//The directory containing a CMake configuration file for boost_fusion.
+boost_fusion_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_fusion
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_headers
+
+//The directory containing a CMake configuration file for boost_io.
+boost_io_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_io
+
+//The directory containing a CMake configuration file for boost_iterator.
+boost_iterator_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_iterator
+
+//The directory containing a CMake configuration file for boost_mp11.
+boost_mp11_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_mp11
+
+//The directory containing a CMake configuration file for boost_mpl.
+boost_mpl_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_mpl
+
+//The directory containing a CMake configuration file for boost_optional.
+boost_optional_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_optional
+
+//The directory containing a CMake configuration file for boost_predef.
+boost_predef_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_predef
+
+//The directory containing a CMake configuration file for boost_preprocessor.
+boost_preprocessor_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_preprocessor
+
+//The directory containing a CMake configuration file for boost_scope.
+boost_scope_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_scope
+
+//The directory containing a CMake configuration file for boost_smart_ptr.
+boost_smart_ptr_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_smart_ptr
+
+//The directory containing a CMake configuration file for boost_static_assert.
+boost_static_assert_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_static_assert
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_system
+
+//The directory containing a CMake configuration file for boost_throw_exception.
+boost_throw_exception_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_throw_exception
+
+//The directory containing a CMake configuration file for boost_tuple.
+boost_tuple_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_tuple
+
+//The directory containing a CMake configuration file for boost_type_traits.
+boost_type_traits_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_type_traits
+
+//The directory containing a CMake configuration file for boost_typeof.
+boost_typeof_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_typeof
+
+//The directory containing a CMake configuration file for boost_utility.
+boost_utility_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_utility
+
+//The directory containing a CMake configuration file for boost_variant2.
+boost_variant2_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_variant2
+
+//The directory containing a CMake configuration file for boost_winapi.
+boost_winapi_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/boost_winapi
+
 //The directory containing a CMake configuration file for c-ares.
 c-ares_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/c-ares
 
@@ -299,6 +415,8 @@ utf8_range_DIR:PATH=C:/Users/godpk/vcpkg/installed/x64-windows/share/utf8_range
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -421,6 +539,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[C:/Users/godpk/vcpkg/installed/x64-windows/share/boost/BoostConfig.cmake][cfound components: filesystem system ][v1.87.0()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[optimized;C:/Users/godpk/vcpkg/installed/x64-windows/lib/libcrypto.lib;debug;C:/Users/godpk/vcpkg/installed/x64-windows/debug/lib/libcrypto.lib][C:/Users/godpk/vcpkg/installed/x64-windows/include][c ][v3.4.1()]
 //Details about finding Protobuf
@@ -431,6 +551,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[optimized;C:/Users/godpk/vcpkg/installed/x64-windows/lib/zlib.lib;debug;C:/Users/godpk/vcpkg/installed/x64-windows/debug/lib/zlibd.lib][C:/Users/godpk/vcpkg/installed/x64-windows/include][c ][v1.3.1()]
 //Details about finding c-ares
 FIND_PACKAGE_MESSAGE_DETAILS_c-ares:INTERNAL=[C:/Users/godpk/vcpkg/installed/x64-windows/share/c-ares/c-ares-config.cmake][v1.34.4()]
+//Details about finding nlohmann_json
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[C:/Users/godpk/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.3()]
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR
 OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Install the dependencies listed in your manifest:

@@ -32,7 +32,7 @@ message PassResponse {
 }
 
 message Card {
-  string suit = 1; // "spades", "hearts", "clubs", "diamonds"
+  string suit = 1; // "spades", "hearts", "diamonds", "clubs"
   int32 rank = 2;  // 3 ~ 15，J=11, Q=12, K=13, A=14, 2=15
 }
 
@@ -85,3 +85,8 @@ TiDB 如何與後台 service 整合
 ✅ 遊戲歷史紀錄（可以留到 TiDB 儲存）
 ✅ AI/bot（若有需要可以由 server 控制）
 ✅ 房間管理（可以有不同遊戲房）
+
+BigTwoService、BigTwoTableService、BigTwoManagementService
+- 可以增加 SpectatorService（觀眾）、TournamentService（賽事服務）
+
+

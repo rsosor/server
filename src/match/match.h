@@ -1,15 +1,23 @@
 #pragma once
 
-#include "player/player.h"
-#include "game_room/game_room.h"
+#include "game/player/player.h"
+#include "game/game_room/game_room.h"
 
 #include <queue>
 #include <vector>
 
-class Match {
-    std::queue<Player*> waiting_list;
+namespace player = rsosor::game::player;
 
-public:
-    void start_new_game(const std::vector<Player*>& players);
-    void add_to_match(Player* p);
-};
+namespace rsosor {
+namespace match {
+
+    class Match {
+        std::queue<player::Player*> waiting_list;
+        
+        public:
+        void start_new_game(const std::vector<player::Player*>& players);
+        void add_to_match(player::Player* p);
+    };
+    
+}   // match
+}   // rsosor

@@ -1,12 +1,18 @@
 ﻿#include "conn/connection_layer.h"
-#include "game_room/game_room.h"
 #include "conn/connection_manager.h"
+#include "game/game_room/game_room.h"
 #include "server/server.h"
-#include "server/core_server.h"
+// #include "server/core_server.h" // old
 #include "grpc/bigtwo_server.h"
+#include "util/env.h"
 
 #include <iostream>
 #include <memory>
+
+#include <boost/asio/ssl.hpp>
+
+namespace net = boost::asio;
+namespace ssl = net::ssl;
 
 int main() {
     UINT out_codepage = GetConsoleOutputCP();
@@ -108,7 +114,7 @@ int main() {
      * 同步、非同步的差異：
      * 
      * 同步版本：用 core_server（或類似的程式碼）直接用阻塞方式 accept() + read_until() + write()，一個連線一個線程（或阻塞等待），流程比較直覺但效能較差。
-     * 非同步版本：用 Server + Connection 類別架構，利用 Boost.Asio 的非同步 async_accept 和非同步讀寫，透過事件迴圈 io_context.run() 驅動，單線程可以同時管理多連線，效率較高。
+     * 非同步版本：用 Server + Connection 類別架構，利用 Boost.Asio 的非同步 async_accept 和非同步讀寫，透過事件迴圈 ioc.run() 驅動，單線程可以同時管理多連線，效率較高。
      * 兩者不是用同一套函式來處理，寫法與架構會不同，尤其：
      * 同步版多半在主線程阻塞等待連線和資料，連線一多就要拆多線程。
      * 非同步版設計非同步 callback，讓事件驅動架構能用單一線程高效處理大量連線。
@@ -118,9 +124,9 @@ int main() {
      * 非同步事件驅動	async_accept() → async_read() → async_write()	Server + Connection	    非阻塞，多連線可單線程高效管理
      */
     // try {
-    //     boost::asio::io_context io_context;
-    //     boost::asio::ip::tcp::acceptor acceptor(io_context, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 12345));
-    //     std::cout << "Server listening on port 12345..." << '\n';
+    //     boost::asio::io_context ioc;
+    //     boost::asio::ip::tcp::acceptor acceptor(ioc, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 12345));
+    //     std::cout << "Server is listening on port：12345..." << '\n';
 
     //     while (true) {
     //         // 優點：
@@ -130,7 +136,7 @@ int main() {
     //         // 每個連線都會卡住在 accept() 等待，阻塞主執行緒。
     //         // 如果你要同時處理多個玩家，只能用 std::thread 拆線程，每條連線佔一個 thread，效能不佳。
     //         // 沒辦法好好整合 Boost.Asio 的事件驅動特性（像 IO multiplexing、coroutine、handler queue 等）。
-    //         auto socket = std::make_shared<boost::asio::ip::tcp::socket>(io_context);
+    //         auto socket = std::make_shared<boost::asio::ip::tcp::socket>(ioc);
     //         acceptor.accept(*socket);
     //         std::thread(handle_client, socket).detach();
     //     }
@@ -145,7 +151,7 @@ int main() {
      * 
      * output: 
      * 
-     * Server listening on port 12345...
+     * Server is listening on port：12345...
      * Client error: read_until: End of file [asio.misc:2]
      * 
      * 
@@ -155,11 +161,11 @@ int main() {
      * 
      * output: 
      * 
-     * Server listening on port 12345...
+     * Server is listening on port：12345...
      * Received from client: LOGIN Alice letmein
      * Client 1 logged in: Alice
      * 
-     * Server listening on port 12345...
+     * Server is listening on port：12345...
      * Received from client: LOGIN Alice letmein
      * Player Alice 加入等待區，目前等待人數: 1
      * Client 1 logged in: Alice
@@ -168,9 +174,9 @@ int main() {
     // 你不是在 main() 裡面用 acceptor.accept() 去等待連線。
     // 你已經在 Server 類裡用非同步的方式接受玩家連線。
     // try {
-    //     boost::asio::io_context io_context;
-    //     Server server(io_context, 12345);   // 建立 server 物件並初始化 acceptor
-    //     std::cout << "Server listening on port 12345..." << '\n';
+    //     boost::asio::io_context ioc;
+    //     Server server(ioc, 12345);   // 建立 server 物件並初始化 acceptor
+    //     std::cout << "Server is listening on port：12345..." << '\n';
 
     //     // 確認有多少可用的硬體執行緒（CPU 核心數）
     //     unsigned int thread_count = std::thread::hardware_concurrency();
@@ -179,8 +185,8 @@ int main() {
 
     //     std::vector<std::thread> threads;
     //     for (unsigned int i = 0; i < thread_count; ++i) {
-    //         threads.emplace_back([&io_context]() {
-    //             io_context.run(); // 每條 thread 都執行 io_context 的事件處理迴圈
+    //         threads.emplace_back([&ioc]() {
+    //             ioc.run(); // 每條 thread 都執行 ioc 的事件處理迴圈
     //         });
     //     }
 
@@ -189,7 +195,7 @@ int main() {
     //     //     grpc::Channel::RunGrpcServer();
     //     // });
 
-    //     // io_context.run();   // 開始事件循環
+    //     // ioc.run();   // 開始事件循環
     //     // grpc_thread.join();
 
     //     // 等待所有 threads 結束
@@ -209,7 +215,7 @@ int main() {
      * 
      * output:
      * 
-     * Server listening on port 12345...
+     * Server is listening on port：12345...
      * thread_count: 24
      * New player connected.
      * Player name: LOGIN Alice letmein
@@ -231,7 +237,7 @@ int main() {
      * 
      * output:
      * 
-     * Server listening on port 12345...
+     * Server is listening on port12345...
      * thread_count: 24
      * New player connected.
      * Player name: LOGIN Alice letmein
@@ -346,21 +352,41 @@ int main() {
     try {
         // 確認有多少可用的硬體執行緒（CPU 核心數）
         unsigned int thread_count = std::thread::hardware_concurrency();
-        std::cout << "thread_count: " << thread_count << '\n';
         if (thread_count == 0) thread_count = 2; // 若偵測不到就預設 2 條
+        std::cout << "thread_count: " << thread_count << '\n';
 
-        boost::asio::io_context io_context;
-        Server server(io_context, 12345);   // 建立 server 物件並初始化 acceptor
-        std::cout << "Server listening on port 12345..." << '\n';
+        net::io_context ioc;
+        // 設定 TLS 憑證與私鑰
+        ssl::context ssl_ctx{ssl::context::tlsv12_server};
+
+        auto env_ump = load_env();
+
+        setup_ssl_context(ssl_ctx, env_ump["TLS_CERT_PATH"], env_ump["TLS_KEY_PATH"]);
+
+        const unsigned short socket_port = 12345;
+        const unsigned short http_port = 8080;
+        const std::string grpc_addr = "0.0.0.0:50051";
+        const unsigned short ws_port = 8443;
+
+        // 建立 server 物件並初始化 acceptor
+        Server socket_server(ioc, socket_port);
+
+        // 建立 shared_ptr 的 HttpServer 並啟動非同步 accept
+        auto http_server = std::make_shared<HttpServer>(ioc, http_port);
+        http_server->run();
 
         // 啟動 gRPC server thread
-        std::thread grpc_thread(RunGrpcServer);
+        std::thread grpc_thread(rsosor::grpc_api::RunGrpcServer, grpc_addr);
 
-        // 啟動多個 io_context threads
+        // 啟動 websocket server
+        auto ws_server = std::make_shared<WebSocketServer>(ioc, ssl_ctx, ws_port);
+        ws_server->run();
+
+        // 啟動多個 ioc threads
         std::vector<std::thread> threads;
         for (unsigned int i = 0; i < thread_count; ++i) {
-            threads.emplace_back([&io_context]() {
-                io_context.run(); // 每條 thread 都執行 io_context 的事件處理迴圈
+            threads.emplace_back([&ioc]() {
+                ioc.run(); // 每條 thread 都執行同一個 ioc 的事件處理迴圈
             });
         }
 
@@ -369,7 +395,7 @@ int main() {
         //     grpc::Channel::RunGrpcServer();
         // });
 
-        // io_context.run();   // 開始事件循環
+        // ioc.run();   // 開始事件循環
         // grpc_thread.join();
 
         // 等待所有 threads 結束

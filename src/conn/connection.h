@@ -1,6 +1,6 @@
 #pragma once
 
-#include "player/player.h"
+#include "game/player/player.h"
 
 #include <iostream>
 #include <memory>
@@ -8,8 +8,10 @@
 
 #include <boost/asio.hpp>
 
+namespace player = rsosor::game::player;
+
 extern int next_client_id;
-extern std::unordered_map<int, Player> player_registry;
+extern std::unordered_map<int, player::Player> player_registry;
 
 // extern int next_client_id;
 // extern std::unordered_map<int, Player> player_registry;

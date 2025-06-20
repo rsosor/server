@@ -39,9 +39,36 @@ set(CMAKE_TOOLCHAIN_FILE "C://Users/godpk/vcpkg/scripts/buildsystems/vcpkg.cmake
 # ---------- vcpkg end ----------
 #
 
+set(Boost_ROOT "C://Users/godpk/vcpkg/installed/x64-windows")
+set(nlohmann_json_DIR "C://Users/godpk/vcpkg/installed/x64-windows/share/nlohmann_json")
+
+find_package(Boost REQUIRED COMPONENTS filesystem system)
+find_package(nlohmann_json CONFIG REQUIRED)
 find_package(Protobuf CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 find_package(absl CONFIG REQUIRED)
+
+# Find Boost headers and some static (release only) libraries:
+# set(Boost_USE_STATIC_LIBS        ON)  # only find static libs
+# set(Boost_USE_DEBUG_LIBS        OFF)  # ignore debug libs and
+# set(Boost_USE_RELEASE_LIBS       ON)  # only find release libs
+# set(Boost_USE_MULTITHREADED      ON)
+# set(Boost_USE_STATIC_RUNTIME    OFF)
+# set(CMAKE_VERBOSE_MAKEFILE       ON)  # 編譯時顯示更多的詳細訊息
+
+if(Boost_FOUND)
+  message(STATUS "Boost include path: ${Boost_INCLUDE_DIRS}")
+  include_directories(${Boost_INCLUDE_DIRS})
+else()
+  message(STATUS "Boost NOT Found !")
+endif(Boost_FOUND)
+
+if(nlohmann_json_FOUND)
+  message(STATUS "nlohmann_json include path: ${nlohmann_json_INCLUDE_DIRS}")
+  include_directories(${nlohmann_json_INCLUDE_DIRS})
+else()
+  message(STATUS "nlohmann_json NOT Found !")
+endif(nlohmann_json_FOUND)
 
 # 收集 source 檔案
 # file(GLOB_RECURSE GAME_SERVER_SOURCES "src/*/*.cpp")
@@ -65,6 +92,11 @@ add_executable(${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/src")
 target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/src/generated")
+
+# Boost components
+target_link_libraries(${PROJECT_NAME} PRIVATE Boost::filesystem Boost::system)
+# JSON
+target_link_libraries(${PROJECT_NAME} PRIVATE nlohmann_json::nlohmann_json)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE

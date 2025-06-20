@@ -54,7 +54,8 @@ struct TableStruct_bigtwo_2eproto {
 };
 extern const ::google::protobuf::internal::DescriptorTable
     descriptor_table_bigtwo_2eproto;
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 class ActivityEntry;
 struct ActivityEntryDefaultTypeInternal;
 extern ActivityEntryDefaultTypeInternal _ActivityEntry_default_instance_;
@@ -154,13 +155,15 @@ extern TimeoutRequestDefaultTypeInternal _TimeoutRequest_default_instance_;
 class TimeoutResponse;
 struct TimeoutResponseDefaultTypeInternal;
 extern TimeoutResponseDefaultTypeInternal _TimeoutResponse_default_instance_;
-}  // namespace bigtwo
+}  // namespace generated
+}  // namespace rsosor
 namespace google {
 namespace protobuf {
 }  // namespace protobuf
 }  // namespace google
 
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 
 // ===================================================================
 
@@ -168,7 +171,7 @@ namespace bigtwo {
 // -------------------------------------------------------------------
 
 class TimeoutResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.TimeoutResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.TimeoutResponse) */ {
  public:
   inline TimeoutResponse() : TimeoutResponse(nullptr) {}
   ~TimeoutResponse() PROTOBUF_FINAL;
@@ -292,7 +295,7 @@ class TimeoutResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.TimeoutResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.TimeoutResponse"; }
 
  protected:
   explicit TimeoutResponse(::google::protobuf::Arena* arena);
@@ -342,13 +345,13 @@ class TimeoutResponse final : public ::google::protobuf::Message
   void _internal_set_success(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.TimeoutResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.TimeoutResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      38, 2>
+      48, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -376,7 +379,7 @@ class TimeoutResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class TimeoutRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.TimeoutRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.TimeoutRequest) */ {
  public:
   inline TimeoutRequest() : TimeoutRequest(nullptr) {}
   ~TimeoutRequest() PROTOBUF_FINAL;
@@ -500,7 +503,7 @@ class TimeoutRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.TimeoutRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.TimeoutRequest"; }
 
  protected:
   explicit TimeoutRequest(::google::protobuf::Arena* arena);
@@ -533,7 +536,7 @@ class TimeoutRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.TimeoutRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.TimeoutRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -566,7 +569,7 @@ class TimeoutRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class StartGameResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.StartGameResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.StartGameResponse) */ {
  public:
   inline StartGameResponse() : StartGameResponse(nullptr) {}
   ~StartGameResponse() PROTOBUF_FINAL;
@@ -690,7 +693,7 @@ class StartGameResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.StartGameResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.StartGameResponse"; }
 
  protected:
   explicit StartGameResponse(::google::protobuf::Arena* arena);
@@ -740,13 +743,13 @@ class StartGameResponse final : public ::google::protobuf::Message
   void _internal_set_success(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.StartGameResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.StartGameResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      40, 2>
+      50, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -774,7 +777,7 @@ class StartGameResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class StartGameRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.StartGameRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.StartGameRequest) */ {
  public:
   inline StartGameRequest() : StartGameRequest(nullptr) {}
   ~StartGameRequest() PROTOBUF_FINAL;
@@ -898,7 +901,7 @@ class StartGameRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.StartGameRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.StartGameRequest"; }
 
  protected:
   explicit StartGameRequest(::google::protobuf::Arena* arena);
@@ -931,7 +934,7 @@ class StartGameRequest final : public ::google::protobuf::Message
   void _internal_set_initiator_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.StartGameRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.StartGameRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -1003,7 +1006,7 @@ class ScoreResponse_ScoresEntry_DoNotUse final
 // -------------------------------------------------------------------
 
 class RankingRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.RankingRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.RankingRequest) */ {
  public:
   inline RankingRequest() : RankingRequest(nullptr) {}
   ~RankingRequest() PROTOBUF_FINAL;
@@ -1127,7 +1130,7 @@ class RankingRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.RankingRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.RankingRequest"; }
 
  protected:
   explicit RankingRequest(::google::protobuf::Arena* arena);
@@ -1160,7 +1163,7 @@ class RankingRequest final : public ::google::protobuf::Message
   void _internal_set_top(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.RankingRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.RankingRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -1193,7 +1196,7 @@ class RankingRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayerRateResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayerRateResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayerRateResponse) */ {
  public:
   inline PlayerRateResponse() : PlayerRateResponse(nullptr) {}
   ~PlayerRateResponse() PROTOBUF_FINAL;
@@ -1317,7 +1320,7 @@ class PlayerRateResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayerRateResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayerRateResponse"; }
 
  protected:
   explicit PlayerRateResponse(::google::protobuf::Arena* arena);
@@ -1372,7 +1375,7 @@ class PlayerRateResponse final : public ::google::protobuf::Message
   void _internal_set_win_ratio(float value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayerRateResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayerRateResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -1407,7 +1410,7 @@ class PlayerRateResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayerRateRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayerRateRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayerRateRequest) */ {
  public:
   inline PlayerRateRequest() : PlayerRateRequest(nullptr) {}
   ~PlayerRateRequest() PROTOBUF_FINAL;
@@ -1531,7 +1534,7 @@ class PlayerRateRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayerRateRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayerRateRequest"; }
 
  protected:
   explicit PlayerRateRequest(::google::protobuf::Arena* arena);
@@ -1564,7 +1567,7 @@ class PlayerRateRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayerRateRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayerRateRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -1597,7 +1600,7 @@ class PlayerRateRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayerRanking final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayerRanking) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayerRanking) */ {
  public:
   inline PlayerRanking() : PlayerRanking(nullptr) {}
   ~PlayerRanking() PROTOBUF_FINAL;
@@ -1721,7 +1724,7 @@ class PlayerRanking final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayerRanking"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayerRanking"; }
 
  protected:
   explicit PlayerRanking(::google::protobuf::Arena* arena);
@@ -1782,13 +1785,13 @@ class PlayerRanking final : public ::google::protobuf::Message
   void _internal_set_wins(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayerRanking)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayerRanking)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      40, 2>
+      50, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -1817,7 +1820,7 @@ class PlayerRanking final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayValidationResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayValidationResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayValidationResponse) */ {
  public:
   inline PlayValidationResponse() : PlayValidationResponse(nullptr) {}
   ~PlayValidationResponse() PROTOBUF_FINAL;
@@ -1941,7 +1944,7 @@ class PlayValidationResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayValidationResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayValidationResponse"; }
 
  protected:
   explicit PlayValidationResponse(::google::protobuf::Arena* arena);
@@ -1991,13 +1994,13 @@ class PlayValidationResponse final : public ::google::protobuf::Message
   void _internal_set_is_valid(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayValidationResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayValidationResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      45, 2>
+      55, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -2025,7 +2028,7 @@ class PlayValidationResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayResponse) */ {
  public:
   inline PlayResponse() : PlayResponse(nullptr) {}
   ~PlayResponse() PROTOBUF_FINAL;
@@ -2149,7 +2152,7 @@ class PlayResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayResponse"; }
 
  protected:
   explicit PlayResponse(::google::protobuf::Arena* arena);
@@ -2199,13 +2202,13 @@ class PlayResponse final : public ::google::protobuf::Message
   void _internal_set_success(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      35, 2>
+      45, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -2233,7 +2236,7 @@ class PlayResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PassResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PassResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PassResponse) */ {
  public:
   inline PassResponse() : PassResponse(nullptr) {}
   ~PassResponse() PROTOBUF_FINAL;
@@ -2357,7 +2360,7 @@ class PassResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PassResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PassResponse"; }
 
  protected:
   explicit PassResponse(::google::protobuf::Arena* arena);
@@ -2407,13 +2410,13 @@ class PassResponse final : public ::google::protobuf::Message
   void _internal_set_success(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PassResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PassResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      35, 2>
+      45, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -2441,7 +2444,7 @@ class PassResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PassRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PassRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PassRequest) */ {
  public:
   inline PassRequest() : PassRequest(nullptr) {}
   ~PassRequest() PROTOBUF_FINAL;
@@ -2565,7 +2568,7 @@ class PassRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PassRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PassRequest"; }
 
  protected:
   explicit PassRequest(::google::protobuf::Arena* arena);
@@ -2598,7 +2601,7 @@ class PassRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PassRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PassRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -2631,7 +2634,7 @@ class PassRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class JoinRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.JoinRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.JoinRequest) */ {
  public:
   inline JoinRequest() : JoinRequest(nullptr) {}
   ~JoinRequest() PROTOBUF_FINAL;
@@ -2755,7 +2758,7 @@ class JoinRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.JoinRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.JoinRequest"; }
 
  protected:
   explicit JoinRequest(::google::protobuf::Arena* arena);
@@ -2794,13 +2797,13 @@ class JoinRequest final : public ::google::protobuf::Message
   std::string* _internal_mutable_player_name();
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.JoinRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.JoinRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       0, 1, 0,
-      38, 2>
+      48, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -2827,7 +2830,7 @@ class JoinRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class GameStateRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.GameStateRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.GameStateRequest) */ {
  public:
   inline GameStateRequest() : GameStateRequest(nullptr) {}
   ~GameStateRequest() PROTOBUF_FINAL;
@@ -2951,7 +2954,7 @@ class GameStateRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.GameStateRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.GameStateRequest"; }
 
  protected:
   explicit GameStateRequest(::google::protobuf::Arena* arena);
@@ -2984,7 +2987,7 @@ class GameStateRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.GameStateRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.GameStateRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -3017,7 +3020,7 @@ class GameStateRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class DealRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.DealRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.DealRequest) */ {
  public:
   inline DealRequest() : DealRequest(nullptr) {}
   ~DealRequest() PROTOBUF_FINAL;
@@ -3141,7 +3144,7 @@ class DealRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.DealRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.DealRequest"; }
 
  protected:
   explicit DealRequest(::google::protobuf::Arena* arena);
@@ -3182,7 +3185,7 @@ class DealRequest final : public ::google::protobuf::Message
   ::google::protobuf::RepeatedField<::int32_t>* _internal_mutable_player_ids();
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.DealRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.DealRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -3216,7 +3219,7 @@ class DealRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ChatResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ChatResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ChatResponse) */ {
  public:
   inline ChatResponse() : ChatResponse(nullptr) {}
   ~ChatResponse() PROTOBUF_FINAL;
@@ -3340,7 +3343,7 @@ class ChatResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ChatResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ChatResponse"; }
 
  protected:
   explicit ChatResponse(::google::protobuf::Arena* arena);
@@ -3373,7 +3376,7 @@ class ChatResponse final : public ::google::protobuf::Message
   void _internal_set_success(bool value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ChatResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ChatResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -3406,7 +3409,7 @@ class ChatResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ChatRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ChatRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ChatRequest) */ {
  public:
   inline ChatRequest() : ChatRequest(nullptr) {}
   ~ChatRequest() PROTOBUF_FINAL;
@@ -3530,7 +3533,7 @@ class ChatRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ChatRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ChatRequest"; }
 
  protected:
   explicit ChatRequest(::google::protobuf::Arena* arena);
@@ -3580,13 +3583,13 @@ class ChatRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ChatRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ChatRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      34, 2>
+      44, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -3614,7 +3617,7 @@ class ChatRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class Card final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.Card) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.Card) */ {
  public:
   inline Card() : Card(nullptr) {}
   ~Card() PROTOBUF_FINAL;
@@ -3738,7 +3741,7 @@ class Card final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.Card"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.Card"; }
 
  protected:
   explicit Card(::google::protobuf::Arena* arena);
@@ -3788,13 +3791,13 @@ class Card final : public ::google::protobuf::Message
   void _internal_set_rank(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.Card)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.Card)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      24, 2>
+      34, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -3822,7 +3825,7 @@ class Card final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ActivityLogRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ActivityLogRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ActivityLogRequest) */ {
  public:
   inline ActivityLogRequest() : ActivityLogRequest(nullptr) {}
   ~ActivityLogRequest() PROTOBUF_FINAL;
@@ -3946,7 +3949,7 @@ class ActivityLogRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ActivityLogRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ActivityLogRequest"; }
 
  protected:
   explicit ActivityLogRequest(::google::protobuf::Arena* arena);
@@ -3979,7 +3982,7 @@ class ActivityLogRequest final : public ::google::protobuf::Message
   void _internal_set_limit(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ActivityLogRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ActivityLogRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -4012,7 +4015,7 @@ class ActivityLogRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ActivityEntry final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ActivityEntry) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ActivityEntry) */ {
  public:
   inline ActivityEntry() : ActivityEntry(nullptr) {}
   ~ActivityEntry() PROTOBUF_FINAL;
@@ -4136,7 +4139,7 @@ class ActivityEntry final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ActivityEntry"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ActivityEntry"; }
 
  protected:
   explicit ActivityEntry(::google::protobuf::Arena* arena);
@@ -4197,13 +4200,13 @@ class ActivityEntry final : public ::google::protobuf::Message
   void _internal_set_winner(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ActivityEntry)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ActivityEntry)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      38, 2>
+      48, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -4232,7 +4235,7 @@ class ActivityEntry final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ScoreResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ScoreResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ScoreResponse) */ {
  public:
   inline ScoreResponse() : ScoreResponse(nullptr) {}
   ~ScoreResponse() PROTOBUF_FINAL;
@@ -4356,7 +4359,7 @@ class ScoreResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ScoreResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ScoreResponse"; }
 
  protected:
   explicit ScoreResponse(::google::protobuf::Arena* arena);
@@ -4394,7 +4397,7 @@ class ScoreResponse final : public ::google::protobuf::Message
   ::google::protobuf::Map<::int32_t, ::int32_t>* _internal_mutable_scores();
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ScoreResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ScoreResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -4430,7 +4433,7 @@ class ScoreResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class RankingResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.RankingResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.RankingResponse) */ {
  public:
   inline RankingResponse() : RankingResponse(nullptr) {}
   ~RankingResponse() PROTOBUF_FINAL;
@@ -4554,7 +4557,7 @@ class RankingResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.RankingResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.RankingResponse"; }
 
  protected:
   explicit RankingResponse(::google::protobuf::Arena* arena);
@@ -4577,24 +4580,24 @@ class RankingResponse final : public ::google::protobuf::Message
   enum : int {
     kRankingFieldNumber = 1,
   };
-  // repeated .bigtwo.PlayerRanking ranking = 1;
+  // repeated .rsosor.generated.PlayerRanking ranking = 1;
   int ranking_size() const;
   private:
   int _internal_ranking_size() const;
 
   public:
   void clear_ranking() ;
-  ::bigtwo::PlayerRanking* mutable_ranking(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>* mutable_ranking();
+  ::rsosor::generated::PlayerRanking* mutable_ranking(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>* mutable_ranking();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>& _internal_ranking() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>* _internal_mutable_ranking();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>& _internal_ranking() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>* _internal_mutable_ranking();
   public:
-  const ::bigtwo::PlayerRanking& ranking(int index) const;
-  ::bigtwo::PlayerRanking* add_ranking();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>& ranking() const;
-  // @@protoc_insertion_point(class_scope:bigtwo.RankingResponse)
+  const ::rsosor::generated::PlayerRanking& ranking(int index) const;
+  ::rsosor::generated::PlayerRanking* add_ranking();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>& ranking() const;
+  // @@protoc_insertion_point(class_scope:rsosor.generated.RankingResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -4617,7 +4620,7 @@ class RankingResponse final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const RankingResponse& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::PlayerRanking > ranking_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::PlayerRanking > ranking_;
     ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -4627,7 +4630,7 @@ class RankingResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayValidationRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayValidationRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayValidationRequest) */ {
  public:
   inline PlayValidationRequest() : PlayValidationRequest(nullptr) {}
   ~PlayValidationRequest() PROTOBUF_FINAL;
@@ -4751,7 +4754,7 @@ class PlayValidationRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayValidationRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayValidationRequest"; }
 
  protected:
   explicit PlayValidationRequest(::google::protobuf::Arena* arena);
@@ -4776,40 +4779,40 @@ class PlayValidationRequest final : public ::google::protobuf::Message
     kLastPlayedFieldNumber = 3,
     kPlayerIdFieldNumber = 1,
   };
-  // repeated .bigtwo.Card cards = 2;
+  // repeated .rsosor.generated.Card cards = 2;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
 
   public:
   void clear_cards() ;
-  ::bigtwo::Card* mutable_cards(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_cards();
+  ::rsosor::generated::Card* mutable_cards(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_cards();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_cards() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_cards() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_cards();
   public:
-  const ::bigtwo::Card& cards(int index) const;
-  ::bigtwo::Card* add_cards();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& cards() const;
-  // repeated .bigtwo.Card last_played = 3;
+  const ::rsosor::generated::Card& cards(int index) const;
+  ::rsosor::generated::Card* add_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& cards() const;
+  // repeated .rsosor.generated.Card last_played = 3;
   int last_played_size() const;
   private:
   int _internal_last_played_size() const;
 
   public:
   void clear_last_played() ;
-  ::bigtwo::Card* mutable_last_played(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_last_played();
+  ::rsosor::generated::Card* mutable_last_played(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_last_played();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_last_played() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_last_played();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_last_played() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_last_played();
   public:
-  const ::bigtwo::Card& last_played(int index) const;
-  ::bigtwo::Card* add_last_played();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& last_played() const;
+  const ::rsosor::generated::Card& last_played(int index) const;
+  ::rsosor::generated::Card* add_last_played();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& last_played() const;
   // int32 player_id = 1;
   void clear_player_id() ;
   ::int32_t player_id() const;
@@ -4820,7 +4823,7 @@ class PlayValidationRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayValidationRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayValidationRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -4843,8 +4846,8 @@ class PlayValidationRequest final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const PlayValidationRequest& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > cards_;
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > last_played_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > cards_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > last_played_;
     ::int32_t player_id_;
     ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -4855,7 +4858,7 @@ class PlayValidationRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class PlayRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.PlayRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.PlayRequest) */ {
  public:
   inline PlayRequest() : PlayRequest(nullptr) {}
   ~PlayRequest() PROTOBUF_FINAL;
@@ -4979,7 +4982,7 @@ class PlayRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.PlayRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.PlayRequest"; }
 
  protected:
   explicit PlayRequest(::google::protobuf::Arena* arena);
@@ -5003,23 +5006,23 @@ class PlayRequest final : public ::google::protobuf::Message
     kCardsFieldNumber = 2,
     kPlayerIdFieldNumber = 1,
   };
-  // repeated .bigtwo.Card cards = 2;
+  // repeated .rsosor.generated.Card cards = 2;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
 
   public:
   void clear_cards() ;
-  ::bigtwo::Card* mutable_cards(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_cards();
+  ::rsosor::generated::Card* mutable_cards(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_cards();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_cards() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_cards() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_cards();
   public:
-  const ::bigtwo::Card& cards(int index) const;
-  ::bigtwo::Card* add_cards();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& cards() const;
+  const ::rsosor::generated::Card& cards(int index) const;
+  ::rsosor::generated::Card* add_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& cards() const;
   // int32 player_id = 1;
   void clear_player_id() ;
   ::int32_t player_id() const;
@@ -5030,7 +5033,7 @@ class PlayRequest final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.PlayRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.PlayRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -5053,7 +5056,7 @@ class PlayRequest final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const PlayRequest& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > cards_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > cards_;
     ::int32_t player_id_;
     ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
@@ -5064,7 +5067,7 @@ class PlayRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class JoinResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.JoinResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.JoinResponse) */ {
  public:
   inline JoinResponse() : JoinResponse(nullptr) {}
   ~JoinResponse() PROTOBUF_FINAL;
@@ -5188,7 +5191,7 @@ class JoinResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.JoinResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.JoinResponse"; }
 
  protected:
   explicit JoinResponse(::google::protobuf::Arena* arena);
@@ -5213,23 +5216,23 @@ class JoinResponse final : public ::google::protobuf::Message
     kMessageFieldNumber = 3,
     kPlayerIdFieldNumber = 1,
   };
-  // repeated .bigtwo.Card hand = 2;
+  // repeated .rsosor.generated.Card hand = 2;
   int hand_size() const;
   private:
   int _internal_hand_size() const;
 
   public:
   void clear_hand() ;
-  ::bigtwo::Card* mutable_hand(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_hand();
+  ::rsosor::generated::Card* mutable_hand(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_hand();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_hand() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_hand();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_hand() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_hand();
   public:
-  const ::bigtwo::Card& hand(int index) const;
-  ::bigtwo::Card* add_hand();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& hand() const;
+  const ::rsosor::generated::Card& hand(int index) const;
+  ::rsosor::generated::Card* add_hand();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& hand() const;
   // string message = 3;
   void clear_message() ;
   const std::string& message() const;
@@ -5256,13 +5259,13 @@ class JoinResponse final : public ::google::protobuf::Message
   void _internal_set_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.JoinResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.JoinResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 1,
-      35, 2>
+      45, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -5279,7 +5282,7 @@ class JoinResponse final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const JoinResponse& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > hand_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > hand_;
     ::google::protobuf::internal::ArenaStringPtr message_;
     ::int32_t player_id_;
     ::google::protobuf::internal::CachedSize _cached_size_;
@@ -5291,7 +5294,7 @@ class JoinResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class Hand final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.Hand) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.Hand) */ {
  public:
   inline Hand() : Hand(nullptr) {}
   ~Hand() PROTOBUF_FINAL;
@@ -5415,7 +5418,7 @@ class Hand final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.Hand"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.Hand"; }
 
  protected:
   explicit Hand(::google::protobuf::Arena* arena);
@@ -5438,24 +5441,24 @@ class Hand final : public ::google::protobuf::Message
   enum : int {
     kCardsFieldNumber = 1,
   };
-  // repeated .bigtwo.Card cards = 1;
+  // repeated .rsosor.generated.Card cards = 1;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
 
   public:
   void clear_cards() ;
-  ::bigtwo::Card* mutable_cards(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_cards();
+  ::rsosor::generated::Card* mutable_cards(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_cards();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_cards() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_cards() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_cards();
   public:
-  const ::bigtwo::Card& cards(int index) const;
-  ::bigtwo::Card* add_cards();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& cards() const;
-  // @@protoc_insertion_point(class_scope:bigtwo.Hand)
+  const ::rsosor::generated::Card& cards(int index) const;
+  ::rsosor::generated::Card* add_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& cards() const;
+  // @@protoc_insertion_point(class_scope:rsosor.generated.Hand)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -5478,7 +5481,7 @@ class Hand final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const Hand& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > cards_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > cards_;
     ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -5488,7 +5491,7 @@ class Hand final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class GameStateResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.GameStateResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.GameStateResponse) */ {
  public:
   inline GameStateResponse() : GameStateResponse(nullptr) {}
   ~GameStateResponse() PROTOBUF_FINAL;
@@ -5612,7 +5615,7 @@ class GameStateResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.GameStateResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.GameStateResponse"; }
 
  protected:
   explicit GameStateResponse(::google::protobuf::Arena* arena);
@@ -5638,40 +5641,40 @@ class GameStateResponse final : public ::google::protobuf::Message
     kPhaseFieldNumber = 4,
     kCurrentTurnPlayerIdFieldNumber = 2,
   };
-  // repeated .bigtwo.Card hand = 1;
+  // repeated .rsosor.generated.Card hand = 1;
   int hand_size() const;
   private:
   int _internal_hand_size() const;
 
   public:
   void clear_hand() ;
-  ::bigtwo::Card* mutable_hand(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_hand();
+  ::rsosor::generated::Card* mutable_hand(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_hand();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_hand() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_hand();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_hand() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_hand();
   public:
-  const ::bigtwo::Card& hand(int index) const;
-  ::bigtwo::Card* add_hand();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& hand() const;
-  // repeated .bigtwo.Card last_played_cards = 3;
+  const ::rsosor::generated::Card& hand(int index) const;
+  ::rsosor::generated::Card* add_hand();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& hand() const;
+  // repeated .rsosor.generated.Card last_played_cards = 3;
   int last_played_cards_size() const;
   private:
   int _internal_last_played_cards_size() const;
 
   public:
   void clear_last_played_cards() ;
-  ::bigtwo::Card* mutable_last_played_cards(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* mutable_last_played_cards();
+  ::rsosor::generated::Card* mutable_last_played_cards(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* mutable_last_played_cards();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& _internal_last_played_cards() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* _internal_mutable_last_played_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& _internal_last_played_cards() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* _internal_mutable_last_played_cards();
   public:
-  const ::bigtwo::Card& last_played_cards(int index) const;
-  ::bigtwo::Card* add_last_played_cards();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& last_played_cards() const;
+  const ::rsosor::generated::Card& last_played_cards(int index) const;
+  ::rsosor::generated::Card* add_last_played_cards();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& last_played_cards() const;
   // string phase = 4;
   void clear_phase() ;
   const std::string& phase() const;
@@ -5698,13 +5701,13 @@ class GameStateResponse final : public ::google::protobuf::Message
   void _internal_set_current_turn_player_id(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.GameStateResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.GameStateResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 4, 2,
-      38, 2>
+      48, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -5721,8 +5724,8 @@ class GameStateResponse final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const GameStateResponse& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > hand_;
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::Card > last_played_cards_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > hand_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::Card > last_played_cards_;
     ::google::protobuf::internal::ArenaStringPtr phase_;
     ::int32_t current_turn_player_id_;
     ::google::protobuf::internal::CachedSize _cached_size_;
@@ -5734,7 +5737,7 @@ class GameStateResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class ActivityLogResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ActivityLogResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ActivityLogResponse) */ {
  public:
   inline ActivityLogResponse() : ActivityLogResponse(nullptr) {}
   ~ActivityLogResponse() PROTOBUF_FINAL;
@@ -5858,7 +5861,7 @@ class ActivityLogResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ActivityLogResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ActivityLogResponse"; }
 
  protected:
   explicit ActivityLogResponse(::google::protobuf::Arena* arena);
@@ -5881,24 +5884,24 @@ class ActivityLogResponse final : public ::google::protobuf::Message
   enum : int {
     kEntriesFieldNumber = 1,
   };
-  // repeated .bigtwo.ActivityEntry entries = 1;
+  // repeated .rsosor.generated.ActivityEntry entries = 1;
   int entries_size() const;
   private:
   int _internal_entries_size() const;
 
   public:
   void clear_entries() ;
-  ::bigtwo::ActivityEntry* mutable_entries(int index);
-  ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>* mutable_entries();
+  ::rsosor::generated::ActivityEntry* mutable_entries(int index);
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>* mutable_entries();
 
   private:
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>& _internal_entries() const;
-  ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>* _internal_mutable_entries();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>& _internal_entries() const;
+  ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>* _internal_mutable_entries();
   public:
-  const ::bigtwo::ActivityEntry& entries(int index) const;
-  ::bigtwo::ActivityEntry* add_entries();
-  const ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>& entries() const;
-  // @@protoc_insertion_point(class_scope:bigtwo.ActivityLogResponse)
+  const ::rsosor::generated::ActivityEntry& entries(int index) const;
+  ::rsosor::generated::ActivityEntry* add_entries();
+  const ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>& entries() const;
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ActivityLogResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -5921,7 +5924,7 @@ class ActivityLogResponse final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const ActivityLogResponse& from_msg);
-    ::google::protobuf::RepeatedPtrField< ::bigtwo::ActivityEntry > entries_;
+    ::google::protobuf::RepeatedPtrField< ::rsosor::generated::ActivityEntry > entries_;
     ::google::protobuf::internal::CachedSize _cached_size_;
     PROTOBUF_TSAN_DECLARE_MEMBER
   };
@@ -6009,7 +6012,7 @@ class DealResponse_DealtHandsEntry_DoNotUse final
 // -------------------------------------------------------------------
 
 class ScoreRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.ScoreRequest) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.ScoreRequest) */ {
  public:
   inline ScoreRequest() : ScoreRequest(nullptr) {}
   ~ScoreRequest() PROTOBUF_FINAL;
@@ -6133,7 +6136,7 @@ class ScoreRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.ScoreRequest"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.ScoreRequest"; }
 
  protected:
   explicit ScoreRequest(::google::protobuf::Arena* arena);
@@ -6175,22 +6178,22 @@ class ScoreRequest final : public ::google::protobuf::Message
   ::google::protobuf::RepeatedField<::int32_t>* _internal_mutable_player_ids();
 
   public:
-  // map<int32, .bigtwo.Hand> final_hands = 2;
+  // map<int32, .rsosor.generated.Hand> final_hands = 2;
   int final_hands_size() const;
   private:
   int _internal_final_hands_size() const;
 
   public:
   void clear_final_hands() ;
-  const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& final_hands() const;
-  ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* mutable_final_hands();
+  const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& final_hands() const;
+  ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* mutable_final_hands();
 
   private:
-  const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& _internal_final_hands() const;
-  ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* _internal_mutable_final_hands();
+  const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& _internal_final_hands() const;
+  ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* _internal_mutable_final_hands();
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.ScoreRequest)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.ScoreRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -6215,7 +6218,7 @@ class ScoreRequest final : public ::google::protobuf::Message
                           const ScoreRequest& from_msg);
     ::google::protobuf::RepeatedField<::int32_t> player_ids_;
     ::google::protobuf::internal::CachedSize _player_ids_cached_byte_size_;
-    ::google::protobuf::internal::MapField<ScoreRequest_FinalHandsEntry_DoNotUse, ::int32_t, ::bigtwo::Hand,
+    ::google::protobuf::internal::MapField<ScoreRequest_FinalHandsEntry_DoNotUse, ::int32_t, ::rsosor::generated::Hand,
                       ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
                       ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
         final_hands_;
@@ -6228,7 +6231,7 @@ class ScoreRequest final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class DealResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:bigtwo.DealResponse) */ {
+/* @@protoc_insertion_point(class_definition:rsosor.generated.DealResponse) */ {
  public:
   inline DealResponse() : DealResponse(nullptr) {}
   ~DealResponse() PROTOBUF_FINAL;
@@ -6352,7 +6355,7 @@ class DealResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "bigtwo.DealResponse"; }
+  static ::absl::string_view FullMessageName() { return "rsosor.generated.DealResponse"; }
 
  protected:
   explicit DealResponse(::google::protobuf::Arena* arena);
@@ -6375,22 +6378,22 @@ class DealResponse final : public ::google::protobuf::Message
   enum : int {
     kDealtHandsFieldNumber = 1,
   };
-  // map<int32, .bigtwo.Hand> dealt_hands = 1;
+  // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
   int dealt_hands_size() const;
   private:
   int _internal_dealt_hands_size() const;
 
   public:
   void clear_dealt_hands() ;
-  const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& dealt_hands() const;
-  ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* mutable_dealt_hands();
+  const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& dealt_hands() const;
+  ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* mutable_dealt_hands();
 
   private:
-  const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& _internal_dealt_hands() const;
-  ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* _internal_mutable_dealt_hands();
+  const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& _internal_dealt_hands() const;
+  ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* _internal_mutable_dealt_hands();
 
   public:
-  // @@protoc_insertion_point(class_scope:bigtwo.DealResponse)
+  // @@protoc_insertion_point(class_scope:rsosor.generated.DealResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
@@ -6413,7 +6416,7 @@ class DealResponse final : public ::google::protobuf::Message
     inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
                           ::google::protobuf::Arena* arena, const Impl_& from,
                           const DealResponse& from_msg);
-    ::google::protobuf::internal::MapField<DealResponse_DealtHandsEntry_DoNotUse, ::int32_t, ::bigtwo::Hand,
+    ::google::protobuf::internal::MapField<DealResponse_DealtHandsEntry_DoNotUse, ::int32_t, ::rsosor::generated::Hand,
                       ::google::protobuf::internal::WireFormatLite::TYPE_INT32,
                       ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE>
         dealt_hands_;
@@ -6446,12 +6449,12 @@ inline void PlayRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t PlayRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayRequest.player_id)
   return _internal_player_id();
 }
 inline void PlayRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayRequest.player_id)
 }
 inline ::int32_t PlayRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6462,7 +6465,7 @@ inline void PlayRequest::_internal_set_player_id(::int32_t value) {
   _impl_.player_id_ = value;
 }
 
-// repeated .bigtwo.Card cards = 2;
+// repeated .rsosor.generated.Card cards = 2;
 inline int PlayRequest::_internal_cards_size() const {
   return _internal_cards().size();
 }
@@ -6473,39 +6476,39 @@ inline void PlayRequest::clear_cards() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.cards_.Clear();
 }
-inline ::bigtwo::Card* PlayRequest::mutable_cards(int index)
+inline ::rsosor::generated::Card* PlayRequest::mutable_cards(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayRequest.cards)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayRequest.cards)
   return _internal_mutable_cards()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* PlayRequest::mutable_cards()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* PlayRequest::mutable_cards()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.PlayRequest.cards)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.PlayRequest.cards)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_cards();
 }
-inline const ::bigtwo::Card& PlayRequest::cards(int index) const
+inline const ::rsosor::generated::Card& PlayRequest::cards(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayRequest.cards)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayRequest.cards)
   return _internal_cards().Get(index);
 }
-inline ::bigtwo::Card* PlayRequest::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* PlayRequest::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_cards()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.PlayRequest.cards)
+  ::rsosor::generated::Card* _add = _internal_mutable_cards()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.PlayRequest.cards)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& PlayRequest::cards() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& PlayRequest::cards() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.PlayRequest.cards)
+  // @@protoc_insertion_point(field_list:rsosor.generated.PlayRequest.cards)
   return _internal_cards();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 PlayRequest::_internal_cards() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.cards_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 PlayRequest::_internal_mutable_cards() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.cards_;
@@ -6521,12 +6524,12 @@ inline void PlayResponse::clear_success() {
   _impl_.success_ = false;
 }
 inline bool PlayResponse::success() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayResponse.success)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayResponse.success)
   return _internal_success();
 }
 inline void PlayResponse::set_success(bool value) {
   _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayResponse.success)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayResponse.success)
 }
 inline bool PlayResponse::_internal_success() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6544,7 +6547,7 @@ inline void PlayResponse::clear_message() {
 }
 inline const std::string& PlayResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -6552,11 +6555,11 @@ inline PROTOBUF_ALWAYS_INLINE void PlayResponse::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.PlayResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayResponse.message)
 }
 inline std::string* PlayResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayResponse.message)
   return _s;
 }
 inline const std::string& PlayResponse::_internal_message() const {
@@ -6573,7 +6576,7 @@ inline std::string* PlayResponse::_internal_mutable_message() {
 }
 inline std::string* PlayResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.PlayResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.PlayResponse.message)
   return _impl_.message_.Release();
 }
 inline void PlayResponse::set_allocated_message(std::string* value) {
@@ -6582,7 +6585,7 @@ inline void PlayResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.PlayResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.PlayResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -6595,12 +6598,12 @@ inline void PassRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t PassRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PassRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PassRequest.player_id)
   return _internal_player_id();
 }
 inline void PassRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PassRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PassRequest.player_id)
 }
 inline ::int32_t PassRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6621,12 +6624,12 @@ inline void PassResponse::clear_success() {
   _impl_.success_ = false;
 }
 inline bool PassResponse::success() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PassResponse.success)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PassResponse.success)
   return _internal_success();
 }
 inline void PassResponse::set_success(bool value) {
   _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PassResponse.success)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PassResponse.success)
 }
 inline bool PassResponse::_internal_success() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6644,7 +6647,7 @@ inline void PassResponse::clear_message() {
 }
 inline const std::string& PassResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PassResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PassResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -6652,11 +6655,11 @@ inline PROTOBUF_ALWAYS_INLINE void PassResponse::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.PassResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PassResponse.message)
 }
 inline std::string* PassResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.PassResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PassResponse.message)
   return _s;
 }
 inline const std::string& PassResponse::_internal_message() const {
@@ -6673,7 +6676,7 @@ inline std::string* PassResponse::_internal_mutable_message() {
 }
 inline std::string* PassResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.PassResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.PassResponse.message)
   return _impl_.message_.Release();
 }
 inline void PassResponse::set_allocated_message(std::string* value) {
@@ -6682,7 +6685,7 @@ inline void PassResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.PassResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.PassResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -6696,7 +6699,7 @@ inline void JoinRequest::clear_player_name() {
 }
 inline const std::string& JoinRequest::player_name() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.JoinRequest.player_name)
+  // @@protoc_insertion_point(field_get:rsosor.generated.JoinRequest.player_name)
   return _internal_player_name();
 }
 template <typename Arg_, typename... Args_>
@@ -6704,11 +6707,11 @@ inline PROTOBUF_ALWAYS_INLINE void JoinRequest::set_player_name(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.player_name_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.JoinRequest.player_name)
+  // @@protoc_insertion_point(field_set:rsosor.generated.JoinRequest.player_name)
 }
 inline std::string* JoinRequest::mutable_player_name() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_player_name();
-  // @@protoc_insertion_point(field_mutable:bigtwo.JoinRequest.player_name)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.JoinRequest.player_name)
   return _s;
 }
 inline const std::string& JoinRequest::_internal_player_name() const {
@@ -6725,7 +6728,7 @@ inline std::string* JoinRequest::_internal_mutable_player_name() {
 }
 inline std::string* JoinRequest::release_player_name() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.JoinRequest.player_name)
+  // @@protoc_insertion_point(field_release:rsosor.generated.JoinRequest.player_name)
   return _impl_.player_name_.Release();
 }
 inline void JoinRequest::set_allocated_player_name(std::string* value) {
@@ -6734,7 +6737,7 @@ inline void JoinRequest::set_allocated_player_name(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.player_name_.IsDefault()) {
     _impl_.player_name_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.JoinRequest.player_name)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.JoinRequest.player_name)
 }
 
 // -------------------------------------------------------------------
@@ -6747,12 +6750,12 @@ inline void JoinResponse::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t JoinResponse::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.JoinResponse.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.JoinResponse.player_id)
   return _internal_player_id();
 }
 inline void JoinResponse::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.JoinResponse.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.JoinResponse.player_id)
 }
 inline ::int32_t JoinResponse::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6763,7 +6766,7 @@ inline void JoinResponse::_internal_set_player_id(::int32_t value) {
   _impl_.player_id_ = value;
 }
 
-// repeated .bigtwo.Card hand = 2;
+// repeated .rsosor.generated.Card hand = 2;
 inline int JoinResponse::_internal_hand_size() const {
   return _internal_hand().size();
 }
@@ -6774,39 +6777,39 @@ inline void JoinResponse::clear_hand() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.hand_.Clear();
 }
-inline ::bigtwo::Card* JoinResponse::mutable_hand(int index)
+inline ::rsosor::generated::Card* JoinResponse::mutable_hand(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.JoinResponse.hand)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.JoinResponse.hand)
   return _internal_mutable_hand()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* JoinResponse::mutable_hand()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* JoinResponse::mutable_hand()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.JoinResponse.hand)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.JoinResponse.hand)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_hand();
 }
-inline const ::bigtwo::Card& JoinResponse::hand(int index) const
+inline const ::rsosor::generated::Card& JoinResponse::hand(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.JoinResponse.hand)
+  // @@protoc_insertion_point(field_get:rsosor.generated.JoinResponse.hand)
   return _internal_hand().Get(index);
 }
-inline ::bigtwo::Card* JoinResponse::add_hand() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* JoinResponse::add_hand() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_hand()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.JoinResponse.hand)
+  ::rsosor::generated::Card* _add = _internal_mutable_hand()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.JoinResponse.hand)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& JoinResponse::hand() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& JoinResponse::hand() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.JoinResponse.hand)
+  // @@protoc_insertion_point(field_list:rsosor.generated.JoinResponse.hand)
   return _internal_hand();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 JoinResponse::_internal_hand() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.hand_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 JoinResponse::_internal_mutable_hand() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.hand_;
@@ -6819,7 +6822,7 @@ inline void JoinResponse::clear_message() {
 }
 inline const std::string& JoinResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.JoinResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.JoinResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -6827,11 +6830,11 @@ inline PROTOBUF_ALWAYS_INLINE void JoinResponse::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.JoinResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.JoinResponse.message)
 }
 inline std::string* JoinResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.JoinResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.JoinResponse.message)
   return _s;
 }
 inline const std::string& JoinResponse::_internal_message() const {
@@ -6848,7 +6851,7 @@ inline std::string* JoinResponse::_internal_mutable_message() {
 }
 inline std::string* JoinResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.JoinResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.JoinResponse.message)
   return _impl_.message_.Release();
 }
 inline void JoinResponse::set_allocated_message(std::string* value) {
@@ -6857,7 +6860,7 @@ inline void JoinResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.JoinResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.JoinResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -6870,12 +6873,12 @@ inline void GameStateRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t GameStateRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.GameStateRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.GameStateRequest.player_id)
   return _internal_player_id();
 }
 inline void GameStateRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.GameStateRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.GameStateRequest.player_id)
 }
 inline ::int32_t GameStateRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6890,7 +6893,7 @@ inline void GameStateRequest::_internal_set_player_id(::int32_t value) {
 
 // GameStateResponse
 
-// repeated .bigtwo.Card hand = 1;
+// repeated .rsosor.generated.Card hand = 1;
 inline int GameStateResponse::_internal_hand_size() const {
   return _internal_hand().size();
 }
@@ -6901,39 +6904,39 @@ inline void GameStateResponse::clear_hand() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.hand_.Clear();
 }
-inline ::bigtwo::Card* GameStateResponse::mutable_hand(int index)
+inline ::rsosor::generated::Card* GameStateResponse::mutable_hand(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.GameStateResponse.hand)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.GameStateResponse.hand)
   return _internal_mutable_hand()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* GameStateResponse::mutable_hand()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* GameStateResponse::mutable_hand()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.GameStateResponse.hand)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.GameStateResponse.hand)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_hand();
 }
-inline const ::bigtwo::Card& GameStateResponse::hand(int index) const
+inline const ::rsosor::generated::Card& GameStateResponse::hand(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.GameStateResponse.hand)
+  // @@protoc_insertion_point(field_get:rsosor.generated.GameStateResponse.hand)
   return _internal_hand().Get(index);
 }
-inline ::bigtwo::Card* GameStateResponse::add_hand() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* GameStateResponse::add_hand() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_hand()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.GameStateResponse.hand)
+  ::rsosor::generated::Card* _add = _internal_mutable_hand()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.GameStateResponse.hand)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& GameStateResponse::hand() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& GameStateResponse::hand() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.GameStateResponse.hand)
+  // @@protoc_insertion_point(field_list:rsosor.generated.GameStateResponse.hand)
   return _internal_hand();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 GameStateResponse::_internal_hand() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.hand_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 GameStateResponse::_internal_mutable_hand() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.hand_;
@@ -6945,12 +6948,12 @@ inline void GameStateResponse::clear_current_turn_player_id() {
   _impl_.current_turn_player_id_ = 0;
 }
 inline ::int32_t GameStateResponse::current_turn_player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.GameStateResponse.current_turn_player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.GameStateResponse.current_turn_player_id)
   return _internal_current_turn_player_id();
 }
 inline void GameStateResponse::set_current_turn_player_id(::int32_t value) {
   _internal_set_current_turn_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.GameStateResponse.current_turn_player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.GameStateResponse.current_turn_player_id)
 }
 inline ::int32_t GameStateResponse::_internal_current_turn_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -6961,7 +6964,7 @@ inline void GameStateResponse::_internal_set_current_turn_player_id(::int32_t va
   _impl_.current_turn_player_id_ = value;
 }
 
-// repeated .bigtwo.Card last_played_cards = 3;
+// repeated .rsosor.generated.Card last_played_cards = 3;
 inline int GameStateResponse::_internal_last_played_cards_size() const {
   return _internal_last_played_cards().size();
 }
@@ -6972,39 +6975,39 @@ inline void GameStateResponse::clear_last_played_cards() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.last_played_cards_.Clear();
 }
-inline ::bigtwo::Card* GameStateResponse::mutable_last_played_cards(int index)
+inline ::rsosor::generated::Card* GameStateResponse::mutable_last_played_cards(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.GameStateResponse.last_played_cards)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.GameStateResponse.last_played_cards)
   return _internal_mutable_last_played_cards()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* GameStateResponse::mutable_last_played_cards()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* GameStateResponse::mutable_last_played_cards()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.GameStateResponse.last_played_cards)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.GameStateResponse.last_played_cards)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_last_played_cards();
 }
-inline const ::bigtwo::Card& GameStateResponse::last_played_cards(int index) const
+inline const ::rsosor::generated::Card& GameStateResponse::last_played_cards(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.GameStateResponse.last_played_cards)
+  // @@protoc_insertion_point(field_get:rsosor.generated.GameStateResponse.last_played_cards)
   return _internal_last_played_cards().Get(index);
 }
-inline ::bigtwo::Card* GameStateResponse::add_last_played_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* GameStateResponse::add_last_played_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_last_played_cards()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.GameStateResponse.last_played_cards)
+  ::rsosor::generated::Card* _add = _internal_mutable_last_played_cards()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.GameStateResponse.last_played_cards)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& GameStateResponse::last_played_cards() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& GameStateResponse::last_played_cards() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.GameStateResponse.last_played_cards)
+  // @@protoc_insertion_point(field_list:rsosor.generated.GameStateResponse.last_played_cards)
   return _internal_last_played_cards();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 GameStateResponse::_internal_last_played_cards() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.last_played_cards_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 GameStateResponse::_internal_mutable_last_played_cards() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.last_played_cards_;
@@ -7017,7 +7020,7 @@ inline void GameStateResponse::clear_phase() {
 }
 inline const std::string& GameStateResponse::phase() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.GameStateResponse.phase)
+  // @@protoc_insertion_point(field_get:rsosor.generated.GameStateResponse.phase)
   return _internal_phase();
 }
 template <typename Arg_, typename... Args_>
@@ -7025,11 +7028,11 @@ inline PROTOBUF_ALWAYS_INLINE void GameStateResponse::set_phase(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.phase_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.GameStateResponse.phase)
+  // @@protoc_insertion_point(field_set:rsosor.generated.GameStateResponse.phase)
 }
 inline std::string* GameStateResponse::mutable_phase() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_phase();
-  // @@protoc_insertion_point(field_mutable:bigtwo.GameStateResponse.phase)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.GameStateResponse.phase)
   return _s;
 }
 inline const std::string& GameStateResponse::_internal_phase() const {
@@ -7046,7 +7049,7 @@ inline std::string* GameStateResponse::_internal_mutable_phase() {
 }
 inline std::string* GameStateResponse::release_phase() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.GameStateResponse.phase)
+  // @@protoc_insertion_point(field_release:rsosor.generated.GameStateResponse.phase)
   return _impl_.phase_.Release();
 }
 inline void GameStateResponse::set_allocated_phase(std::string* value) {
@@ -7055,7 +7058,7 @@ inline void GameStateResponse::set_allocated_phase(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.phase_.IsDefault()) {
     _impl_.phase_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.GameStateResponse.phase)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.GameStateResponse.phase)
 }
 
 // -------------------------------------------------------------------
@@ -7068,12 +7071,12 @@ inline void ChatRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t ChatRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.ChatRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ChatRequest.player_id)
   return _internal_player_id();
 }
 inline void ChatRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.ChatRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ChatRequest.player_id)
 }
 inline ::int32_t ChatRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7091,7 +7094,7 @@ inline void ChatRequest::clear_message() {
 }
 inline const std::string& ChatRequest::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.ChatRequest.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ChatRequest.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -7099,11 +7102,11 @@ inline PROTOBUF_ALWAYS_INLINE void ChatRequest::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.ChatRequest.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ChatRequest.message)
 }
 inline std::string* ChatRequest::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.ChatRequest.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.ChatRequest.message)
   return _s;
 }
 inline const std::string& ChatRequest::_internal_message() const {
@@ -7120,7 +7123,7 @@ inline std::string* ChatRequest::_internal_mutable_message() {
 }
 inline std::string* ChatRequest::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.ChatRequest.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.ChatRequest.message)
   return _impl_.message_.Release();
 }
 inline void ChatRequest::set_allocated_message(std::string* value) {
@@ -7129,7 +7132,7 @@ inline void ChatRequest::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.ChatRequest.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.ChatRequest.message)
 }
 
 // -------------------------------------------------------------------
@@ -7142,12 +7145,12 @@ inline void ChatResponse::clear_success() {
   _impl_.success_ = false;
 }
 inline bool ChatResponse::success() const {
-  // @@protoc_insertion_point(field_get:bigtwo.ChatResponse.success)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ChatResponse.success)
   return _internal_success();
 }
 inline void ChatResponse::set_success(bool value) {
   _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:bigtwo.ChatResponse.success)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ChatResponse.success)
 }
 inline bool ChatResponse::_internal_success() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7168,12 +7171,12 @@ inline void StartGameRequest::clear_initiator_player_id() {
   _impl_.initiator_player_id_ = 0;
 }
 inline ::int32_t StartGameRequest::initiator_player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.StartGameRequest.initiator_player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.StartGameRequest.initiator_player_id)
   return _internal_initiator_player_id();
 }
 inline void StartGameRequest::set_initiator_player_id(::int32_t value) {
   _internal_set_initiator_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.StartGameRequest.initiator_player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.StartGameRequest.initiator_player_id)
 }
 inline ::int32_t StartGameRequest::_internal_initiator_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7194,12 +7197,12 @@ inline void StartGameResponse::clear_success() {
   _impl_.success_ = false;
 }
 inline bool StartGameResponse::success() const {
-  // @@protoc_insertion_point(field_get:bigtwo.StartGameResponse.success)
+  // @@protoc_insertion_point(field_get:rsosor.generated.StartGameResponse.success)
   return _internal_success();
 }
 inline void StartGameResponse::set_success(bool value) {
   _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:bigtwo.StartGameResponse.success)
+  // @@protoc_insertion_point(field_set:rsosor.generated.StartGameResponse.success)
 }
 inline bool StartGameResponse::_internal_success() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7217,7 +7220,7 @@ inline void StartGameResponse::clear_message() {
 }
 inline const std::string& StartGameResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.StartGameResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.StartGameResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -7225,11 +7228,11 @@ inline PROTOBUF_ALWAYS_INLINE void StartGameResponse::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.StartGameResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.StartGameResponse.message)
 }
 inline std::string* StartGameResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.StartGameResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.StartGameResponse.message)
   return _s;
 }
 inline const std::string& StartGameResponse::_internal_message() const {
@@ -7246,7 +7249,7 @@ inline std::string* StartGameResponse::_internal_mutable_message() {
 }
 inline std::string* StartGameResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.StartGameResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.StartGameResponse.message)
   return _impl_.message_.Release();
 }
 inline void StartGameResponse::set_allocated_message(std::string* value) {
@@ -7255,7 +7258,7 @@ inline void StartGameResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.StartGameResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.StartGameResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -7269,7 +7272,7 @@ inline void Card::clear_suit() {
 }
 inline const std::string& Card::suit() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.Card.suit)
+  // @@protoc_insertion_point(field_get:rsosor.generated.Card.suit)
   return _internal_suit();
 }
 template <typename Arg_, typename... Args_>
@@ -7277,11 +7280,11 @@ inline PROTOBUF_ALWAYS_INLINE void Card::set_suit(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.suit_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.Card.suit)
+  // @@protoc_insertion_point(field_set:rsosor.generated.Card.suit)
 }
 inline std::string* Card::mutable_suit() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_suit();
-  // @@protoc_insertion_point(field_mutable:bigtwo.Card.suit)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.Card.suit)
   return _s;
 }
 inline const std::string& Card::_internal_suit() const {
@@ -7298,7 +7301,7 @@ inline std::string* Card::_internal_mutable_suit() {
 }
 inline std::string* Card::release_suit() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.Card.suit)
+  // @@protoc_insertion_point(field_release:rsosor.generated.Card.suit)
   return _impl_.suit_.Release();
 }
 inline void Card::set_allocated_suit(std::string* value) {
@@ -7307,7 +7310,7 @@ inline void Card::set_allocated_suit(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.suit_.IsDefault()) {
     _impl_.suit_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.Card.suit)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.Card.suit)
 }
 
 // int32 rank = 2;
@@ -7316,12 +7319,12 @@ inline void Card::clear_rank() {
   _impl_.rank_ = 0;
 }
 inline ::int32_t Card::rank() const {
-  // @@protoc_insertion_point(field_get:bigtwo.Card.rank)
+  // @@protoc_insertion_point(field_get:rsosor.generated.Card.rank)
   return _internal_rank();
 }
 inline void Card::set_rank(::int32_t value) {
   _internal_set_rank(value);
-  // @@protoc_insertion_point(field_set:bigtwo.Card.rank)
+  // @@protoc_insertion_point(field_set:rsosor.generated.Card.rank)
 }
 inline ::int32_t Card::_internal_rank() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7348,26 +7351,26 @@ inline void DealRequest::clear_player_ids() {
   _impl_.player_ids_.Clear();
 }
 inline ::int32_t DealRequest::player_ids(int index) const {
-  // @@protoc_insertion_point(field_get:bigtwo.DealRequest.player_ids)
+  // @@protoc_insertion_point(field_get:rsosor.generated.DealRequest.player_ids)
   return _internal_player_ids().Get(index);
 }
 inline void DealRequest::set_player_ids(int index, ::int32_t value) {
   _internal_mutable_player_ids()->Set(index, value);
-  // @@protoc_insertion_point(field_set:bigtwo.DealRequest.player_ids)
+  // @@protoc_insertion_point(field_set:rsosor.generated.DealRequest.player_ids)
 }
 inline void DealRequest::add_player_ids(::int32_t value) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _internal_mutable_player_ids()->Add(value);
-  // @@protoc_insertion_point(field_add:bigtwo.DealRequest.player_ids)
+  // @@protoc_insertion_point(field_add:rsosor.generated.DealRequest.player_ids)
 }
 inline const ::google::protobuf::RepeatedField<::int32_t>& DealRequest::player_ids() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.DealRequest.player_ids)
+  // @@protoc_insertion_point(field_list:rsosor.generated.DealRequest.player_ids)
   return _internal_player_ids();
 }
 inline ::google::protobuf::RepeatedField<::int32_t>* DealRequest::mutable_player_ids()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.DealRequest.player_ids)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.DealRequest.player_ids)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_player_ids();
 }
@@ -7387,7 +7390,7 @@ inline ::google::protobuf::RepeatedField<::int32_t>* DealRequest::_internal_muta
 
 // DealResponse
 
-// map<int32, .bigtwo.Hand> dealt_hands = 1;
+// map<int32, .rsosor.generated.Hand> dealt_hands = 1;
 inline int DealResponse::_internal_dealt_hands_size() const {
   return _internal_dealt_hands().size();
 }
@@ -7398,20 +7401,20 @@ inline void DealResponse::clear_dealt_hands() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.dealt_hands_.Clear();
 }
-inline const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& DealResponse::_internal_dealt_hands() const {
+inline const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& DealResponse::_internal_dealt_hands() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.dealt_hands_.GetMap();
 }
-inline const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& DealResponse::dealt_hands() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_map:bigtwo.DealResponse.dealt_hands)
+inline const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& DealResponse::dealt_hands() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_map:rsosor.generated.DealResponse.dealt_hands)
   return _internal_dealt_hands();
 }
-inline ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* DealResponse::_internal_mutable_dealt_hands() {
+inline ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* DealResponse::_internal_mutable_dealt_hands() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _impl_.dealt_hands_.MutableMap();
 }
-inline ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* DealResponse::mutable_dealt_hands() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_map:bigtwo.DealResponse.dealt_hands)
+inline ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* DealResponse::mutable_dealt_hands() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_map:rsosor.generated.DealResponse.dealt_hands)
   return _internal_mutable_dealt_hands();
 }
 
@@ -7419,7 +7422,7 @@ inline ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* DealResponse::mutable
 
 // Hand
 
-// repeated .bigtwo.Card cards = 1;
+// repeated .rsosor.generated.Card cards = 1;
 inline int Hand::_internal_cards_size() const {
   return _internal_cards().size();
 }
@@ -7430,39 +7433,39 @@ inline void Hand::clear_cards() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.cards_.Clear();
 }
-inline ::bigtwo::Card* Hand::mutable_cards(int index)
+inline ::rsosor::generated::Card* Hand::mutable_cards(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.Hand.cards)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.Hand.cards)
   return _internal_mutable_cards()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* Hand::mutable_cards()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* Hand::mutable_cards()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.Hand.cards)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.Hand.cards)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_cards();
 }
-inline const ::bigtwo::Card& Hand::cards(int index) const
+inline const ::rsosor::generated::Card& Hand::cards(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.Hand.cards)
+  // @@protoc_insertion_point(field_get:rsosor.generated.Hand.cards)
   return _internal_cards().Get(index);
 }
-inline ::bigtwo::Card* Hand::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* Hand::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_cards()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.Hand.cards)
+  ::rsosor::generated::Card* _add = _internal_mutable_cards()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.Hand.cards)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& Hand::cards() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& Hand::cards() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.Hand.cards)
+  // @@protoc_insertion_point(field_list:rsosor.generated.Hand.cards)
   return _internal_cards();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 Hand::_internal_cards() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.cards_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 Hand::_internal_mutable_cards() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.cards_;
@@ -7478,12 +7481,12 @@ inline void PlayValidationRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t PlayValidationRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayValidationRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayValidationRequest.player_id)
   return _internal_player_id();
 }
 inline void PlayValidationRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayValidationRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayValidationRequest.player_id)
 }
 inline ::int32_t PlayValidationRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7494,7 +7497,7 @@ inline void PlayValidationRequest::_internal_set_player_id(::int32_t value) {
   _impl_.player_id_ = value;
 }
 
-// repeated .bigtwo.Card cards = 2;
+// repeated .rsosor.generated.Card cards = 2;
 inline int PlayValidationRequest::_internal_cards_size() const {
   return _internal_cards().size();
 }
@@ -7505,45 +7508,45 @@ inline void PlayValidationRequest::clear_cards() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.cards_.Clear();
 }
-inline ::bigtwo::Card* PlayValidationRequest::mutable_cards(int index)
+inline ::rsosor::generated::Card* PlayValidationRequest::mutable_cards(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayValidationRequest.cards)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayValidationRequest.cards)
   return _internal_mutable_cards()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* PlayValidationRequest::mutable_cards()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* PlayValidationRequest::mutable_cards()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.PlayValidationRequest.cards)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.PlayValidationRequest.cards)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_cards();
 }
-inline const ::bigtwo::Card& PlayValidationRequest::cards(int index) const
+inline const ::rsosor::generated::Card& PlayValidationRequest::cards(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayValidationRequest.cards)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayValidationRequest.cards)
   return _internal_cards().Get(index);
 }
-inline ::bigtwo::Card* PlayValidationRequest::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* PlayValidationRequest::add_cards() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_cards()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.PlayValidationRequest.cards)
+  ::rsosor::generated::Card* _add = _internal_mutable_cards()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.PlayValidationRequest.cards)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& PlayValidationRequest::cards() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& PlayValidationRequest::cards() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.PlayValidationRequest.cards)
+  // @@protoc_insertion_point(field_list:rsosor.generated.PlayValidationRequest.cards)
   return _internal_cards();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 PlayValidationRequest::_internal_cards() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.cards_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 PlayValidationRequest::_internal_mutable_cards() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.cards_;
 }
 
-// repeated .bigtwo.Card last_played = 3;
+// repeated .rsosor.generated.Card last_played = 3;
 inline int PlayValidationRequest::_internal_last_played_size() const {
   return _internal_last_played().size();
 }
@@ -7554,39 +7557,39 @@ inline void PlayValidationRequest::clear_last_played() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.last_played_.Clear();
 }
-inline ::bigtwo::Card* PlayValidationRequest::mutable_last_played(int index)
+inline ::rsosor::generated::Card* PlayValidationRequest::mutable_last_played(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayValidationRequest.last_played)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayValidationRequest.last_played)
   return _internal_mutable_last_played()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>* PlayValidationRequest::mutable_last_played()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>* PlayValidationRequest::mutable_last_played()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.PlayValidationRequest.last_played)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.PlayValidationRequest.last_played)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_last_played();
 }
-inline const ::bigtwo::Card& PlayValidationRequest::last_played(int index) const
+inline const ::rsosor::generated::Card& PlayValidationRequest::last_played(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayValidationRequest.last_played)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayValidationRequest.last_played)
   return _internal_last_played().Get(index);
 }
-inline ::bigtwo::Card* PlayValidationRequest::add_last_played() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::Card* PlayValidationRequest::add_last_played() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::Card* _add = _internal_mutable_last_played()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.PlayValidationRequest.last_played)
+  ::rsosor::generated::Card* _add = _internal_mutable_last_played()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.PlayValidationRequest.last_played)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>& PlayValidationRequest::last_played() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>& PlayValidationRequest::last_played() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.PlayValidationRequest.last_played)
+  // @@protoc_insertion_point(field_list:rsosor.generated.PlayValidationRequest.last_played)
   return _internal_last_played();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::Card>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>&
 PlayValidationRequest::_internal_last_played() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.last_played_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::Card>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::Card>*
 PlayValidationRequest::_internal_mutable_last_played() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.last_played_;
@@ -7602,12 +7605,12 @@ inline void PlayValidationResponse::clear_is_valid() {
   _impl_.is_valid_ = false;
 }
 inline bool PlayValidationResponse::is_valid() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayValidationResponse.is_valid)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayValidationResponse.is_valid)
   return _internal_is_valid();
 }
 inline void PlayValidationResponse::set_is_valid(bool value) {
   _internal_set_is_valid(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayValidationResponse.is_valid)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayValidationResponse.is_valid)
 }
 inline bool PlayValidationResponse::_internal_is_valid() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7625,7 +7628,7 @@ inline void PlayValidationResponse::clear_message() {
 }
 inline const std::string& PlayValidationResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayValidationResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayValidationResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -7633,11 +7636,11 @@ inline PROTOBUF_ALWAYS_INLINE void PlayValidationResponse::set_message(Arg_&& ar
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.PlayValidationResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayValidationResponse.message)
 }
 inline std::string* PlayValidationResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayValidationResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayValidationResponse.message)
   return _s;
 }
 inline const std::string& PlayValidationResponse::_internal_message() const {
@@ -7654,7 +7657,7 @@ inline std::string* PlayValidationResponse::_internal_mutable_message() {
 }
 inline std::string* PlayValidationResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.PlayValidationResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.PlayValidationResponse.message)
   return _impl_.message_.Release();
 }
 inline void PlayValidationResponse::set_allocated_message(std::string* value) {
@@ -7663,7 +7666,7 @@ inline void PlayValidationResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.PlayValidationResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.PlayValidationResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -7676,12 +7679,12 @@ inline void TimeoutRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t TimeoutRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.TimeoutRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.TimeoutRequest.player_id)
   return _internal_player_id();
 }
 inline void TimeoutRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.TimeoutRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.TimeoutRequest.player_id)
 }
 inline ::int32_t TimeoutRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7702,12 +7705,12 @@ inline void TimeoutResponse::clear_success() {
   _impl_.success_ = false;
 }
 inline bool TimeoutResponse::success() const {
-  // @@protoc_insertion_point(field_get:bigtwo.TimeoutResponse.success)
+  // @@protoc_insertion_point(field_get:rsosor.generated.TimeoutResponse.success)
   return _internal_success();
 }
 inline void TimeoutResponse::set_success(bool value) {
   _internal_set_success(value);
-  // @@protoc_insertion_point(field_set:bigtwo.TimeoutResponse.success)
+  // @@protoc_insertion_point(field_set:rsosor.generated.TimeoutResponse.success)
 }
 inline bool TimeoutResponse::_internal_success() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7725,7 +7728,7 @@ inline void TimeoutResponse::clear_message() {
 }
 inline const std::string& TimeoutResponse::message() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.TimeoutResponse.message)
+  // @@protoc_insertion_point(field_get:rsosor.generated.TimeoutResponse.message)
   return _internal_message();
 }
 template <typename Arg_, typename... Args_>
@@ -7733,11 +7736,11 @@ inline PROTOBUF_ALWAYS_INLINE void TimeoutResponse::set_message(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.message_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.TimeoutResponse.message)
+  // @@protoc_insertion_point(field_set:rsosor.generated.TimeoutResponse.message)
 }
 inline std::string* TimeoutResponse::mutable_message() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:bigtwo.TimeoutResponse.message)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.TimeoutResponse.message)
   return _s;
 }
 inline const std::string& TimeoutResponse::_internal_message() const {
@@ -7754,7 +7757,7 @@ inline std::string* TimeoutResponse::_internal_mutable_message() {
 }
 inline std::string* TimeoutResponse::release_message() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.TimeoutResponse.message)
+  // @@protoc_insertion_point(field_release:rsosor.generated.TimeoutResponse.message)
   return _impl_.message_.Release();
 }
 inline void TimeoutResponse::set_allocated_message(std::string* value) {
@@ -7763,7 +7766,7 @@ inline void TimeoutResponse::set_allocated_message(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.message_.IsDefault()) {
     _impl_.message_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.TimeoutResponse.message)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.TimeoutResponse.message)
 }
 
 // -------------------------------------------------------------------
@@ -7784,26 +7787,26 @@ inline void ScoreRequest::clear_player_ids() {
   _impl_.player_ids_.Clear();
 }
 inline ::int32_t ScoreRequest::player_ids(int index) const {
-  // @@protoc_insertion_point(field_get:bigtwo.ScoreRequest.player_ids)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ScoreRequest.player_ids)
   return _internal_player_ids().Get(index);
 }
 inline void ScoreRequest::set_player_ids(int index, ::int32_t value) {
   _internal_mutable_player_ids()->Set(index, value);
-  // @@protoc_insertion_point(field_set:bigtwo.ScoreRequest.player_ids)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ScoreRequest.player_ids)
 }
 inline void ScoreRequest::add_player_ids(::int32_t value) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _internal_mutable_player_ids()->Add(value);
-  // @@protoc_insertion_point(field_add:bigtwo.ScoreRequest.player_ids)
+  // @@protoc_insertion_point(field_add:rsosor.generated.ScoreRequest.player_ids)
 }
 inline const ::google::protobuf::RepeatedField<::int32_t>& ScoreRequest::player_ids() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.ScoreRequest.player_ids)
+  // @@protoc_insertion_point(field_list:rsosor.generated.ScoreRequest.player_ids)
   return _internal_player_ids();
 }
 inline ::google::protobuf::RepeatedField<::int32_t>* ScoreRequest::mutable_player_ids()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.ScoreRequest.player_ids)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.ScoreRequest.player_ids)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_player_ids();
 }
@@ -7817,7 +7820,7 @@ inline ::google::protobuf::RepeatedField<::int32_t>* ScoreRequest::_internal_mut
   return &_impl_.player_ids_;
 }
 
-// map<int32, .bigtwo.Hand> final_hands = 2;
+// map<int32, .rsosor.generated.Hand> final_hands = 2;
 inline int ScoreRequest::_internal_final_hands_size() const {
   return _internal_final_hands().size();
 }
@@ -7828,20 +7831,20 @@ inline void ScoreRequest::clear_final_hands() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.final_hands_.Clear();
 }
-inline const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& ScoreRequest::_internal_final_hands() const {
+inline const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& ScoreRequest::_internal_final_hands() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.final_hands_.GetMap();
 }
-inline const ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>& ScoreRequest::final_hands() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_map:bigtwo.ScoreRequest.final_hands)
+inline const ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>& ScoreRequest::final_hands() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_map:rsosor.generated.ScoreRequest.final_hands)
   return _internal_final_hands();
 }
-inline ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* ScoreRequest::_internal_mutable_final_hands() {
+inline ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* ScoreRequest::_internal_mutable_final_hands() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _impl_.final_hands_.MutableMap();
 }
-inline ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>* ScoreRequest::mutable_final_hands() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_map:bigtwo.ScoreRequest.final_hands)
+inline ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>* ScoreRequest::mutable_final_hands() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_mutable_map:rsosor.generated.ScoreRequest.final_hands)
   return _internal_mutable_final_hands();
 }
 
@@ -7867,7 +7870,7 @@ inline const ::google::protobuf::Map<::int32_t, ::int32_t>& ScoreResponse::_inte
   return _impl_.scores_.GetMap();
 }
 inline const ::google::protobuf::Map<::int32_t, ::int32_t>& ScoreResponse::scores() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_map:bigtwo.ScoreResponse.scores)
+  // @@protoc_insertion_point(field_map:rsosor.generated.ScoreResponse.scores)
   return _internal_scores();
 }
 inline ::google::protobuf::Map<::int32_t, ::int32_t>* ScoreResponse::_internal_mutable_scores() {
@@ -7875,7 +7878,7 @@ inline ::google::protobuf::Map<::int32_t, ::int32_t>* ScoreResponse::_internal_m
   return _impl_.scores_.MutableMap();
 }
 inline ::google::protobuf::Map<::int32_t, ::int32_t>* ScoreResponse::mutable_scores() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_map:bigtwo.ScoreResponse.scores)
+  // @@protoc_insertion_point(field_mutable_map:rsosor.generated.ScoreResponse.scores)
   return _internal_mutable_scores();
 }
 
@@ -7889,12 +7892,12 @@ inline void RankingRequest::clear_top() {
   _impl_.top_ = 0;
 }
 inline ::int32_t RankingRequest::top() const {
-  // @@protoc_insertion_point(field_get:bigtwo.RankingRequest.top)
+  // @@protoc_insertion_point(field_get:rsosor.generated.RankingRequest.top)
   return _internal_top();
 }
 inline void RankingRequest::set_top(::int32_t value) {
   _internal_set_top(value);
-  // @@protoc_insertion_point(field_set:bigtwo.RankingRequest.top)
+  // @@protoc_insertion_point(field_set:rsosor.generated.RankingRequest.top)
 }
 inline ::int32_t RankingRequest::_internal_top() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7909,7 +7912,7 @@ inline void RankingRequest::_internal_set_top(::int32_t value) {
 
 // RankingResponse
 
-// repeated .bigtwo.PlayerRanking ranking = 1;
+// repeated .rsosor.generated.PlayerRanking ranking = 1;
 inline int RankingResponse::_internal_ranking_size() const {
   return _internal_ranking().size();
 }
@@ -7920,39 +7923,39 @@ inline void RankingResponse::clear_ranking() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.ranking_.Clear();
 }
-inline ::bigtwo::PlayerRanking* RankingResponse::mutable_ranking(int index)
+inline ::rsosor::generated::PlayerRanking* RankingResponse::mutable_ranking(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.RankingResponse.ranking)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.RankingResponse.ranking)
   return _internal_mutable_ranking()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>* RankingResponse::mutable_ranking()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>* RankingResponse::mutable_ranking()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.RankingResponse.ranking)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.RankingResponse.ranking)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_ranking();
 }
-inline const ::bigtwo::PlayerRanking& RankingResponse::ranking(int index) const
+inline const ::rsosor::generated::PlayerRanking& RankingResponse::ranking(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.RankingResponse.ranking)
+  // @@protoc_insertion_point(field_get:rsosor.generated.RankingResponse.ranking)
   return _internal_ranking().Get(index);
 }
-inline ::bigtwo::PlayerRanking* RankingResponse::add_ranking() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::PlayerRanking* RankingResponse::add_ranking() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::PlayerRanking* _add = _internal_mutable_ranking()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.RankingResponse.ranking)
+  ::rsosor::generated::PlayerRanking* _add = _internal_mutable_ranking()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.RankingResponse.ranking)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>& RankingResponse::ranking() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>& RankingResponse::ranking() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.RankingResponse.ranking)
+  // @@protoc_insertion_point(field_list:rsosor.generated.RankingResponse.ranking)
   return _internal_ranking();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>&
 RankingResponse::_internal_ranking() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.ranking_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::PlayerRanking>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::PlayerRanking>*
 RankingResponse::_internal_mutable_ranking() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.ranking_;
@@ -7968,12 +7971,12 @@ inline void PlayerRanking::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t PlayerRanking::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRanking.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRanking.player_id)
   return _internal_player_id();
 }
 inline void PlayerRanking::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRanking.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRanking.player_id)
 }
 inline ::int32_t PlayerRanking::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -7991,7 +7994,7 @@ inline void PlayerRanking::clear_player_name() {
 }
 inline const std::string& PlayerRanking::player_name() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRanking.player_name)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRanking.player_name)
   return _internal_player_name();
 }
 template <typename Arg_, typename... Args_>
@@ -7999,11 +8002,11 @@ inline PROTOBUF_ALWAYS_INLINE void PlayerRanking::set_player_name(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.player_name_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRanking.player_name)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRanking.player_name)
 }
 inline std::string* PlayerRanking::mutable_player_name() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_player_name();
-  // @@protoc_insertion_point(field_mutable:bigtwo.PlayerRanking.player_name)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.PlayerRanking.player_name)
   return _s;
 }
 inline const std::string& PlayerRanking::_internal_player_name() const {
@@ -8020,7 +8023,7 @@ inline std::string* PlayerRanking::_internal_mutable_player_name() {
 }
 inline std::string* PlayerRanking::release_player_name() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.PlayerRanking.player_name)
+  // @@protoc_insertion_point(field_release:rsosor.generated.PlayerRanking.player_name)
   return _impl_.player_name_.Release();
 }
 inline void PlayerRanking::set_allocated_player_name(std::string* value) {
@@ -8029,7 +8032,7 @@ inline void PlayerRanking::set_allocated_player_name(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.player_name_.IsDefault()) {
     _impl_.player_name_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.PlayerRanking.player_name)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.PlayerRanking.player_name)
 }
 
 // int32 wins = 3;
@@ -8038,12 +8041,12 @@ inline void PlayerRanking::clear_wins() {
   _impl_.wins_ = 0;
 }
 inline ::int32_t PlayerRanking::wins() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRanking.wins)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRanking.wins)
   return _internal_wins();
 }
 inline void PlayerRanking::set_wins(::int32_t value) {
   _internal_set_wins(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRanking.wins)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRanking.wins)
 }
 inline ::int32_t PlayerRanking::_internal_wins() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8064,12 +8067,12 @@ inline void PlayerRateRequest::clear_player_id() {
   _impl_.player_id_ = 0;
 }
 inline ::int32_t PlayerRateRequest::player_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRateRequest.player_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRateRequest.player_id)
   return _internal_player_id();
 }
 inline void PlayerRateRequest::set_player_id(::int32_t value) {
   _internal_set_player_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRateRequest.player_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRateRequest.player_id)
 }
 inline ::int32_t PlayerRateRequest::_internal_player_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8090,12 +8093,12 @@ inline void PlayerRateResponse::clear_total_games() {
   _impl_.total_games_ = 0;
 }
 inline ::int32_t PlayerRateResponse::total_games() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRateResponse.total_games)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRateResponse.total_games)
   return _internal_total_games();
 }
 inline void PlayerRateResponse::set_total_games(::int32_t value) {
   _internal_set_total_games(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRateResponse.total_games)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRateResponse.total_games)
 }
 inline ::int32_t PlayerRateResponse::_internal_total_games() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8112,12 +8115,12 @@ inline void PlayerRateResponse::clear_wins() {
   _impl_.wins_ = 0;
 }
 inline ::int32_t PlayerRateResponse::wins() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRateResponse.wins)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRateResponse.wins)
   return _internal_wins();
 }
 inline void PlayerRateResponse::set_wins(::int32_t value) {
   _internal_set_wins(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRateResponse.wins)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRateResponse.wins)
 }
 inline ::int32_t PlayerRateResponse::_internal_wins() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8134,12 +8137,12 @@ inline void PlayerRateResponse::clear_win_ratio() {
   _impl_.win_ratio_ = 0;
 }
 inline float PlayerRateResponse::win_ratio() const {
-  // @@protoc_insertion_point(field_get:bigtwo.PlayerRateResponse.win_ratio)
+  // @@protoc_insertion_point(field_get:rsosor.generated.PlayerRateResponse.win_ratio)
   return _internal_win_ratio();
 }
 inline void PlayerRateResponse::set_win_ratio(float value) {
   _internal_set_win_ratio(value);
-  // @@protoc_insertion_point(field_set:bigtwo.PlayerRateResponse.win_ratio)
+  // @@protoc_insertion_point(field_set:rsosor.generated.PlayerRateResponse.win_ratio)
 }
 inline float PlayerRateResponse::_internal_win_ratio() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8160,12 +8163,12 @@ inline void ActivityLogRequest::clear_limit() {
   _impl_.limit_ = 0;
 }
 inline ::int32_t ActivityLogRequest::limit() const {
-  // @@protoc_insertion_point(field_get:bigtwo.ActivityLogRequest.limit)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ActivityLogRequest.limit)
   return _internal_limit();
 }
 inline void ActivityLogRequest::set_limit(::int32_t value) {
   _internal_set_limit(value);
-  // @@protoc_insertion_point(field_set:bigtwo.ActivityLogRequest.limit)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ActivityLogRequest.limit)
 }
 inline ::int32_t ActivityLogRequest::_internal_limit() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8180,7 +8183,7 @@ inline void ActivityLogRequest::_internal_set_limit(::int32_t value) {
 
 // ActivityLogResponse
 
-// repeated .bigtwo.ActivityEntry entries = 1;
+// repeated .rsosor.generated.ActivityEntry entries = 1;
 inline int ActivityLogResponse::_internal_entries_size() const {
   return _internal_entries().size();
 }
@@ -8191,39 +8194,39 @@ inline void ActivityLogResponse::clear_entries() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.entries_.Clear();
 }
-inline ::bigtwo::ActivityEntry* ActivityLogResponse::mutable_entries(int index)
+inline ::rsosor::generated::ActivityEntry* ActivityLogResponse::mutable_entries(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:bigtwo.ActivityLogResponse.entries)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.ActivityLogResponse.entries)
   return _internal_mutable_entries()->Mutable(index);
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>* ActivityLogResponse::mutable_entries()
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>* ActivityLogResponse::mutable_entries()
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:bigtwo.ActivityLogResponse.entries)
+  // @@protoc_insertion_point(field_mutable_list:rsosor.generated.ActivityLogResponse.entries)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_entries();
 }
-inline const ::bigtwo::ActivityEntry& ActivityLogResponse::entries(int index) const
+inline const ::rsosor::generated::ActivityEntry& ActivityLogResponse::entries(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.ActivityLogResponse.entries)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ActivityLogResponse.entries)
   return _internal_entries().Get(index);
 }
-inline ::bigtwo::ActivityEntry* ActivityLogResponse::add_entries() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+inline ::rsosor::generated::ActivityEntry* ActivityLogResponse::add_entries() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::bigtwo::ActivityEntry* _add = _internal_mutable_entries()->Add();
-  // @@protoc_insertion_point(field_add:bigtwo.ActivityLogResponse.entries)
+  ::rsosor::generated::ActivityEntry* _add = _internal_mutable_entries()->Add();
+  // @@protoc_insertion_point(field_add:rsosor.generated.ActivityLogResponse.entries)
   return _add;
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>& ActivityLogResponse::entries() const
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>& ActivityLogResponse::entries() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:bigtwo.ActivityLogResponse.entries)
+  // @@protoc_insertion_point(field_list:rsosor.generated.ActivityLogResponse.entries)
   return _internal_entries();
 }
-inline const ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>&
+inline const ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>&
 ActivityLogResponse::_internal_entries() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return _impl_.entries_;
 }
-inline ::google::protobuf::RepeatedPtrField<::bigtwo::ActivityEntry>*
+inline ::google::protobuf::RepeatedPtrField<::rsosor::generated::ActivityEntry>*
 ActivityLogResponse::_internal_mutable_entries() {
   ::google::protobuf::internal::TSanRead(&_impl_);
   return &_impl_.entries_;
@@ -8239,12 +8242,12 @@ inline void ActivityEntry::clear_game_id() {
   _impl_.game_id_ = 0;
 }
 inline ::int32_t ActivityEntry::game_id() const {
-  // @@protoc_insertion_point(field_get:bigtwo.ActivityEntry.game_id)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ActivityEntry.game_id)
   return _internal_game_id();
 }
 inline void ActivityEntry::set_game_id(::int32_t value) {
   _internal_set_game_id(value);
-  // @@protoc_insertion_point(field_set:bigtwo.ActivityEntry.game_id)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ActivityEntry.game_id)
 }
 inline ::int32_t ActivityEntry::_internal_game_id() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8261,12 +8264,12 @@ inline void ActivityEntry::clear_winner() {
   _impl_.winner_ = 0;
 }
 inline ::int32_t ActivityEntry::winner() const {
-  // @@protoc_insertion_point(field_get:bigtwo.ActivityEntry.winner)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ActivityEntry.winner)
   return _internal_winner();
 }
 inline void ActivityEntry::set_winner(::int32_t value) {
   _internal_set_winner(value);
-  // @@protoc_insertion_point(field_set:bigtwo.ActivityEntry.winner)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ActivityEntry.winner)
 }
 inline ::int32_t ActivityEntry::_internal_winner() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -8284,7 +8287,7 @@ inline void ActivityEntry::clear_timestamp() {
 }
 inline const std::string& ActivityEntry::timestamp() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:bigtwo.ActivityEntry.timestamp)
+  // @@protoc_insertion_point(field_get:rsosor.generated.ActivityEntry.timestamp)
   return _internal_timestamp();
 }
 template <typename Arg_, typename... Args_>
@@ -8292,11 +8295,11 @@ inline PROTOBUF_ALWAYS_INLINE void ActivityEntry::set_timestamp(Arg_&& arg,
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.timestamp_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:bigtwo.ActivityEntry.timestamp)
+  // @@protoc_insertion_point(field_set:rsosor.generated.ActivityEntry.timestamp)
 }
 inline std::string* ActivityEntry::mutable_timestamp() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_timestamp();
-  // @@protoc_insertion_point(field_mutable:bigtwo.ActivityEntry.timestamp)
+  // @@protoc_insertion_point(field_mutable:rsosor.generated.ActivityEntry.timestamp)
   return _s;
 }
 inline const std::string& ActivityEntry::_internal_timestamp() const {
@@ -8313,7 +8316,7 @@ inline std::string* ActivityEntry::_internal_mutable_timestamp() {
 }
 inline std::string* ActivityEntry::release_timestamp() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:bigtwo.ActivityEntry.timestamp)
+  // @@protoc_insertion_point(field_release:rsosor.generated.ActivityEntry.timestamp)
   return _impl_.timestamp_.Release();
 }
 inline void ActivityEntry::set_allocated_timestamp(std::string* value) {
@@ -8322,7 +8325,7 @@ inline void ActivityEntry::set_allocated_timestamp(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.timestamp_.IsDefault()) {
     _impl_.timestamp_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:bigtwo.ActivityEntry.timestamp)
+  // @@protoc_insertion_point(field_set_allocated:rsosor.generated.ActivityEntry.timestamp)
 }
 
 #ifdef __GNUC__
@@ -8330,7 +8333,8 @@ inline void ActivityEntry::set_allocated_timestamp(std::string* value) {
 #endif  // __GNUC__
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace bigtwo
+}  // namespace generated
+}  // namespace rsosor
 
 
 // @@protoc_insertion_point(global_scope)

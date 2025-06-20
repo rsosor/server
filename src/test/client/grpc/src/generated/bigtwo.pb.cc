@@ -24,7 +24,8 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::google::protobuf;
 namespace _pbi = ::google::protobuf::internal;
 namespace _fl = ::google::protobuf::internal::field_layout;
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 
 inline constexpr TimeoutResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -877,7 +878,8 @@ struct DealResponseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DealResponseDefaultTypeInternal _DealResponse_default_instance_;
-}  // namespace bigtwo
+}  // namespace generated
+}  // namespace rsosor
 static constexpr const ::_pb::EnumDescriptor**
     file_level_enum_descriptors_bigtwo_2eproto = nullptr;
 static constexpr const ::_pb::ServiceDescriptor**
@@ -886,485 +888,495 @@ const ::uint32_t
     TableStruct_bigtwo_2eproto::offsets[] ABSL_ATTRIBUTE_SECTION_VARIABLE(
         protodesc_cold) = {
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayRequest, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayRequest, _impl_.cards_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayRequest, _impl_.cards_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayResponse, _impl_.success_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayResponse, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PassRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PassRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PassRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PassRequest, _impl_.player_id_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PassResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PassResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PassResponse, _impl_.success_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PassResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PassResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PassResponse, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinRequest, _impl_.player_name_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinRequest, _impl_.player_name_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinResponse, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinResponse, _impl_.hand_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::JoinResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.hand_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateRequest, _impl_.player_id_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateResponse, _impl_.hand_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateResponse, _impl_.current_turn_player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateResponse, _impl_.last_played_cards_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::GameStateResponse, _impl_.phase_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.hand_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.current_turn_player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.last_played_cards_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.phase_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ChatRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ChatRequest, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ChatRequest, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatRequest, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ChatResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ChatResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatResponse, _impl_.success_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::StartGameRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::StartGameRequest, _impl_.initiator_player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameRequest, _impl_.initiator_player_id_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::StartGameResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::StartGameResponse, _impl_.success_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::StartGameResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::Card, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::Card, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::Card, _impl_.suit_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::Card, _impl_.rank_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::Card, _impl_.suit_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::Card, _impl_.rank_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealRequest, _impl_.player_ids_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse_DealtHandsEntry_DoNotUse, _impl_._has_bits_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse_DealtHandsEntry_DoNotUse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealRequest, _impl_.player_ids_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_),
         0,
         1,
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::DealResponse, _impl_.dealt_hands_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _impl_.dealt_hands_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::Hand, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::Hand, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::Hand, _impl_.cards_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::Hand, _impl_.cards_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationRequest, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationRequest, _impl_.cards_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationRequest, _impl_.last_played_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.cards_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.last_played_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationResponse, _impl_.is_valid_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayValidationResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationResponse, _impl_.is_valid_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationResponse, _impl_.message_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::TimeoutRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::TimeoutRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::TimeoutRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::TimeoutRequest, _impl_.player_id_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::TimeoutResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::TimeoutResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::TimeoutResponse, _impl_.success_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::TimeoutResponse, _impl_.message_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_._has_bits_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::TimeoutResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::TimeoutResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.key_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.value_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.key_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.value_),
         0,
         1,
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest, _impl_.player_ids_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreRequest, _impl_.final_hands_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse_ScoresEntry_DoNotUse, _impl_._has_bits_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse_ScoresEntry_DoNotUse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest, _impl_.player_ids_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreRequest, _impl_.final_hands_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse_ScoresEntry_DoNotUse, _impl_.key_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse_ScoresEntry_DoNotUse, _impl_.value_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse, _impl_.key_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse, _impl_.value_),
         0,
         1,
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ScoreResponse, _impl_.scores_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse, _impl_.scores_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::RankingRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::RankingRequest, _impl_.top_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingRequest, _impl_.top_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::RankingResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::RankingResponse, _impl_.ranking_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingResponse, _impl_.ranking_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRanking, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRanking, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRanking, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRanking, _impl_.player_name_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRanking, _impl_.wins_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRanking, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRanking, _impl_.player_name_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRanking, _impl_.wins_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateRequest, _impl_.player_id_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateResponse, _impl_.total_games_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateResponse, _impl_.wins_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::PlayerRateResponse, _impl_.win_ratio_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.total_games_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.wins_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.win_ratio_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityLogRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityLogRequest, _impl_.limit_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogRequest, _impl_.limit_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityLogResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityLogResponse, _impl_.entries_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogResponse, _impl_.entries_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityEntry, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityEntry, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityEntry, _impl_.game_id_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityEntry, _impl_.winner_),
-        PROTOBUF_FIELD_OFFSET(::bigtwo::ActivityEntry, _impl_.timestamp_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityEntry, _impl_.game_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityEntry, _impl_.winner_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityEntry, _impl_.timestamp_),
 };
 
 static const ::_pbi::MigrationSchema
     schemas[] ABSL_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-        {0, -1, -1, sizeof(::bigtwo::PlayRequest)},
-        {10, -1, -1, sizeof(::bigtwo::PlayResponse)},
-        {20, -1, -1, sizeof(::bigtwo::PassRequest)},
-        {29, -1, -1, sizeof(::bigtwo::PassResponse)},
-        {39, -1, -1, sizeof(::bigtwo::JoinRequest)},
-        {48, -1, -1, sizeof(::bigtwo::JoinResponse)},
-        {59, -1, -1, sizeof(::bigtwo::GameStateRequest)},
-        {68, -1, -1, sizeof(::bigtwo::GameStateResponse)},
-        {80, -1, -1, sizeof(::bigtwo::ChatRequest)},
-        {90, -1, -1, sizeof(::bigtwo::ChatResponse)},
-        {99, -1, -1, sizeof(::bigtwo::StartGameRequest)},
-        {108, -1, -1, sizeof(::bigtwo::StartGameResponse)},
-        {118, -1, -1, sizeof(::bigtwo::Card)},
-        {128, -1, -1, sizeof(::bigtwo::DealRequest)},
-        {137, 147, -1, sizeof(::bigtwo::DealResponse_DealtHandsEntry_DoNotUse)},
-        {149, -1, -1, sizeof(::bigtwo::DealResponse)},
-        {158, -1, -1, sizeof(::bigtwo::Hand)},
-        {167, -1, -1, sizeof(::bigtwo::PlayValidationRequest)},
-        {178, -1, -1, sizeof(::bigtwo::PlayValidationResponse)},
-        {188, -1, -1, sizeof(::bigtwo::TimeoutRequest)},
-        {197, -1, -1, sizeof(::bigtwo::TimeoutResponse)},
-        {207, 217, -1, sizeof(::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse)},
-        {219, -1, -1, sizeof(::bigtwo::ScoreRequest)},
-        {229, 239, -1, sizeof(::bigtwo::ScoreResponse_ScoresEntry_DoNotUse)},
-        {241, -1, -1, sizeof(::bigtwo::ScoreResponse)},
-        {250, -1, -1, sizeof(::bigtwo::RankingRequest)},
-        {259, -1, -1, sizeof(::bigtwo::RankingResponse)},
-        {268, -1, -1, sizeof(::bigtwo::PlayerRanking)},
-        {279, -1, -1, sizeof(::bigtwo::PlayerRateRequest)},
-        {288, -1, -1, sizeof(::bigtwo::PlayerRateResponse)},
-        {299, -1, -1, sizeof(::bigtwo::ActivityLogRequest)},
-        {308, -1, -1, sizeof(::bigtwo::ActivityLogResponse)},
-        {317, -1, -1, sizeof(::bigtwo::ActivityEntry)},
+        {0, -1, -1, sizeof(::rsosor::generated::PlayRequest)},
+        {10, -1, -1, sizeof(::rsosor::generated::PlayResponse)},
+        {20, -1, -1, sizeof(::rsosor::generated::PassRequest)},
+        {29, -1, -1, sizeof(::rsosor::generated::PassResponse)},
+        {39, -1, -1, sizeof(::rsosor::generated::JoinRequest)},
+        {48, -1, -1, sizeof(::rsosor::generated::JoinResponse)},
+        {59, -1, -1, sizeof(::rsosor::generated::GameStateRequest)},
+        {68, -1, -1, sizeof(::rsosor::generated::GameStateResponse)},
+        {80, -1, -1, sizeof(::rsosor::generated::ChatRequest)},
+        {90, -1, -1, sizeof(::rsosor::generated::ChatResponse)},
+        {99, -1, -1, sizeof(::rsosor::generated::StartGameRequest)},
+        {108, -1, -1, sizeof(::rsosor::generated::StartGameResponse)},
+        {118, -1, -1, sizeof(::rsosor::generated::Card)},
+        {128, -1, -1, sizeof(::rsosor::generated::DealRequest)},
+        {137, 147, -1, sizeof(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse)},
+        {149, -1, -1, sizeof(::rsosor::generated::DealResponse)},
+        {158, -1, -1, sizeof(::rsosor::generated::Hand)},
+        {167, -1, -1, sizeof(::rsosor::generated::PlayValidationRequest)},
+        {178, -1, -1, sizeof(::rsosor::generated::PlayValidationResponse)},
+        {188, -1, -1, sizeof(::rsosor::generated::TimeoutRequest)},
+        {197, -1, -1, sizeof(::rsosor::generated::TimeoutResponse)},
+        {207, 217, -1, sizeof(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse)},
+        {219, -1, -1, sizeof(::rsosor::generated::ScoreRequest)},
+        {229, 239, -1, sizeof(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse)},
+        {241, -1, -1, sizeof(::rsosor::generated::ScoreResponse)},
+        {250, -1, -1, sizeof(::rsosor::generated::RankingRequest)},
+        {259, -1, -1, sizeof(::rsosor::generated::RankingResponse)},
+        {268, -1, -1, sizeof(::rsosor::generated::PlayerRanking)},
+        {279, -1, -1, sizeof(::rsosor::generated::PlayerRateRequest)},
+        {288, -1, -1, sizeof(::rsosor::generated::PlayerRateResponse)},
+        {299, -1, -1, sizeof(::rsosor::generated::ActivityLogRequest)},
+        {308, -1, -1, sizeof(::rsosor::generated::ActivityLogResponse)},
+        {317, -1, -1, sizeof(::rsosor::generated::ActivityEntry)},
 };
 static const ::_pb::Message* const file_default_instances[] = {
-    &::bigtwo::_PlayRequest_default_instance_._instance,
-    &::bigtwo::_PlayResponse_default_instance_._instance,
-    &::bigtwo::_PassRequest_default_instance_._instance,
-    &::bigtwo::_PassResponse_default_instance_._instance,
-    &::bigtwo::_JoinRequest_default_instance_._instance,
-    &::bigtwo::_JoinResponse_default_instance_._instance,
-    &::bigtwo::_GameStateRequest_default_instance_._instance,
-    &::bigtwo::_GameStateResponse_default_instance_._instance,
-    &::bigtwo::_ChatRequest_default_instance_._instance,
-    &::bigtwo::_ChatResponse_default_instance_._instance,
-    &::bigtwo::_StartGameRequest_default_instance_._instance,
-    &::bigtwo::_StartGameResponse_default_instance_._instance,
-    &::bigtwo::_Card_default_instance_._instance,
-    &::bigtwo::_DealRequest_default_instance_._instance,
-    &::bigtwo::_DealResponse_DealtHandsEntry_DoNotUse_default_instance_._instance,
-    &::bigtwo::_DealResponse_default_instance_._instance,
-    &::bigtwo::_Hand_default_instance_._instance,
-    &::bigtwo::_PlayValidationRequest_default_instance_._instance,
-    &::bigtwo::_PlayValidationResponse_default_instance_._instance,
-    &::bigtwo::_TimeoutRequest_default_instance_._instance,
-    &::bigtwo::_TimeoutResponse_default_instance_._instance,
-    &::bigtwo::_ScoreRequest_FinalHandsEntry_DoNotUse_default_instance_._instance,
-    &::bigtwo::_ScoreRequest_default_instance_._instance,
-    &::bigtwo::_ScoreResponse_ScoresEntry_DoNotUse_default_instance_._instance,
-    &::bigtwo::_ScoreResponse_default_instance_._instance,
-    &::bigtwo::_RankingRequest_default_instance_._instance,
-    &::bigtwo::_RankingResponse_default_instance_._instance,
-    &::bigtwo::_PlayerRanking_default_instance_._instance,
-    &::bigtwo::_PlayerRateRequest_default_instance_._instance,
-    &::bigtwo::_PlayerRateResponse_default_instance_._instance,
-    &::bigtwo::_ActivityLogRequest_default_instance_._instance,
-    &::bigtwo::_ActivityLogResponse_default_instance_._instance,
-    &::bigtwo::_ActivityEntry_default_instance_._instance,
+    &::rsosor::generated::_PlayRequest_default_instance_._instance,
+    &::rsosor::generated::_PlayResponse_default_instance_._instance,
+    &::rsosor::generated::_PassRequest_default_instance_._instance,
+    &::rsosor::generated::_PassResponse_default_instance_._instance,
+    &::rsosor::generated::_JoinRequest_default_instance_._instance,
+    &::rsosor::generated::_JoinResponse_default_instance_._instance,
+    &::rsosor::generated::_GameStateRequest_default_instance_._instance,
+    &::rsosor::generated::_GameStateResponse_default_instance_._instance,
+    &::rsosor::generated::_ChatRequest_default_instance_._instance,
+    &::rsosor::generated::_ChatResponse_default_instance_._instance,
+    &::rsosor::generated::_StartGameRequest_default_instance_._instance,
+    &::rsosor::generated::_StartGameResponse_default_instance_._instance,
+    &::rsosor::generated::_Card_default_instance_._instance,
+    &::rsosor::generated::_DealRequest_default_instance_._instance,
+    &::rsosor::generated::_DealResponse_DealtHandsEntry_DoNotUse_default_instance_._instance,
+    &::rsosor::generated::_DealResponse_default_instance_._instance,
+    &::rsosor::generated::_Hand_default_instance_._instance,
+    &::rsosor::generated::_PlayValidationRequest_default_instance_._instance,
+    &::rsosor::generated::_PlayValidationResponse_default_instance_._instance,
+    &::rsosor::generated::_TimeoutRequest_default_instance_._instance,
+    &::rsosor::generated::_TimeoutResponse_default_instance_._instance,
+    &::rsosor::generated::_ScoreRequest_FinalHandsEntry_DoNotUse_default_instance_._instance,
+    &::rsosor::generated::_ScoreRequest_default_instance_._instance,
+    &::rsosor::generated::_ScoreResponse_ScoresEntry_DoNotUse_default_instance_._instance,
+    &::rsosor::generated::_ScoreResponse_default_instance_._instance,
+    &::rsosor::generated::_RankingRequest_default_instance_._instance,
+    &::rsosor::generated::_RankingResponse_default_instance_._instance,
+    &::rsosor::generated::_PlayerRanking_default_instance_._instance,
+    &::rsosor::generated::_PlayerRateRequest_default_instance_._instance,
+    &::rsosor::generated::_PlayerRateResponse_default_instance_._instance,
+    &::rsosor::generated::_ActivityLogRequest_default_instance_._instance,
+    &::rsosor::generated::_ActivityLogResponse_default_instance_._instance,
+    &::rsosor::generated::_ActivityEntry_default_instance_._instance,
 };
 const char descriptor_table_protodef_bigtwo_2eproto[] ABSL_ATTRIBUTE_SECTION_VARIABLE(
     protodesc_cold) = {
-    "\n\014bigtwo.proto\022\006bigtwo\"=\n\013PlayRequest\022\021\n"
-    "\tplayer_id\030\001 \001(\005\022\033\n\005cards\030\002 \003(\0132\014.bigtwo"
-    ".Card\"0\n\014PlayResponse\022\017\n\007success\030\001 \001(\010\022\017"
-    "\n\007message\030\002 \001(\t\" \n\013PassRequest\022\021\n\tplayer"
-    "_id\030\001 \001(\005\"0\n\014PassResponse\022\017\n\007success\030\001 \001"
-    "(\010\022\017\n\007message\030\002 \001(\t\"\"\n\013JoinRequest\022\023\n\013pl"
-    "ayer_name\030\001 \001(\t\"N\n\014JoinResponse\022\021\n\tplaye"
-    "r_id\030\001 \001(\005\022\032\n\004hand\030\002 \003(\0132\014.bigtwo.Card\022\017"
-    "\n\007message\030\003 \001(\t\"%\n\020GameStateRequest\022\021\n\tp"
-    "layer_id\030\001 \001(\005\"\207\001\n\021GameStateResponse\022\032\n\004"
-    "hand\030\001 \003(\0132\014.bigtwo.Card\022\036\n\026current_turn"
-    "_player_id\030\002 \001(\005\022\'\n\021last_played_cards\030\003 "
-    "\003(\0132\014.bigtwo.Card\022\r\n\005phase\030\004 \001(\t\"1\n\013Chat"
-    "Request\022\021\n\tplayer_id\030\001 \001(\005\022\017\n\007message\030\002 "
-    "\001(\t\"\037\n\014ChatResponse\022\017\n\007success\030\001 \001(\010\"/\n\020"
-    "StartGameRequest\022\033\n\023initiator_player_id\030"
-    "\001 \001(\005\"5\n\021StartGameResponse\022\017\n\007success\030\001 "
-    "\001(\010\022\017\n\007message\030\002 \001(\t\"\"\n\004Card\022\014\n\004suit\030\001 \001"
-    "(\t\022\014\n\004rank\030\002 \001(\005\"!\n\013DealRequest\022\022\n\nplaye"
-    "r_ids\030\001 \003(\005\"\212\001\n\014DealResponse\0229\n\013dealt_ha"
-    "nds\030\001 \003(\0132$.bigtwo.DealResponse.DealtHan"
-    "dsEntry\032\?\n\017DealtHandsEntry\022\013\n\003key\030\001 \001(\005\022"
-    "\033\n\005value\030\002 \001(\0132\014.bigtwo.Hand:\0028\001\"#\n\004Hand"
-    "\022\033\n\005cards\030\001 \003(\0132\014.bigtwo.Card\"j\n\025PlayVal"
-    "idationRequest\022\021\n\tplayer_id\030\001 \001(\005\022\033\n\005car"
-    "ds\030\002 \003(\0132\014.bigtwo.Card\022!\n\013last_played\030\003 "
-    "\003(\0132\014.bigtwo.Card\";\n\026PlayValidationRespo"
-    "nse\022\020\n\010is_valid\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"#"
-    "\n\016TimeoutRequest\022\021\n\tplayer_id\030\001 \001(\005\"3\n\017T"
-    "imeoutResponse\022\017\n\007success\030\001 \001(\010\022\017\n\007messa"
-    "ge\030\002 \001(\t\"\236\001\n\014ScoreRequest\022\022\n\nplayer_ids\030"
-    "\001 \003(\005\0229\n\013final_hands\030\002 \003(\0132$.bigtwo.Scor"
-    "eRequest.FinalHandsEntry\032\?\n\017FinalHandsEn"
-    "try\022\013\n\003key\030\001 \001(\005\022\033\n\005value\030\002 \001(\0132\014.bigtwo"
-    ".Hand:\0028\001\"q\n\rScoreResponse\0221\n\006scores\030\001 \003"
-    "(\0132!.bigtwo.ScoreResponse.ScoresEntry\032-\n"
-    "\013ScoresEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\005"
-    ":\0028\001\"\035\n\016RankingRequest\022\013\n\003top\030\001 \001(\005\"9\n\017R"
-    "ankingResponse\022&\n\007ranking\030\001 \003(\0132\025.bigtwo"
-    ".PlayerRanking\"E\n\rPlayerRanking\022\021\n\tplaye"
-    "r_id\030\001 \001(\005\022\023\n\013player_name\030\002 \001(\t\022\014\n\004wins\030"
-    "\003 \001(\005\"&\n\021PlayerRateRequest\022\021\n\tplayer_id\030"
-    "\001 \001(\005\"J\n\022PlayerRateResponse\022\023\n\013total_gam"
-    "es\030\001 \001(\005\022\014\n\004wins\030\002 \001(\005\022\021\n\twin_ratio\030\003 \001("
-    "\002\"#\n\022ActivityLogRequest\022\r\n\005limit\030\001 \001(\005\"="
-    "\n\023ActivityLogResponse\022&\n\007entries\030\001 \003(\0132\025"
-    ".bigtwo.ActivityEntry\"C\n\rActivityEntry\022\017"
-    "\n\007game_id\030\001 \001(\005\022\016\n\006winner\030\002 \001(\005\022\021\n\ttimes"
-    "tamp\030\003 \001(\t2\353\002\n\rBigTwoService\0226\n\tPlayCard"
-    "s\022\023.bigtwo.PlayRequest\032\024.bigtwo.PlayResp"
-    "onse\0221\n\004Pass\022\023.bigtwo.PassRequest\032\024.bigt"
-    "wo.PassResponse\022C\n\014GetGameState\022\030.bigtwo"
-    ".GameStateRequest\032\031.bigtwo.GameStateResp"
-    "onse\0225\n\010JoinGame\022\023.bigtwo.JoinRequest\032\024."
-    "bigtwo.JoinResponse\0221\n\004Chat\022\023.bigtwo.Cha"
-    "tRequest\032\024.bigtwo.ChatResponse\022@\n\tStartG"
-    "ame\022\030.bigtwo.StartGameRequest\032\031.bigtwo.S"
-    "tartGameResponse2\216\002\n\022BigTwoTableService\022"
-    "1\n\004Deal\022\023.bigtwo.DealRequest\032\024.bigtwo.De"
-    "alResponse\022M\n\014ValidatePlay\022\035.bigtwo.Play"
-    "ValidationRequest\032\036.bigtwo.PlayValidatio"
-    "nResponse\022@\n\rHandleTimeout\022\026.bigtwo.Time"
-    "outRequest\032\027.bigtwo.TimeoutResponse\0224\n\005S"
-    "core\022\024.bigtwo.ScoreRequest\032\025.bigtwo.Scor"
-    "eResponse2\356\001\n\027BigTwoManagementService\022=\n"
-    "\nGetRanking\022\026.bigtwo.RankingRequest\032\027.bi"
-    "gtwo.RankingResponse\022I\n\020GetPlayerWinRate"
-    "\022\031.bigtwo.PlayerRateRequest\032\032.bigtwo.Pla"
-    "yerRateResponse\022I\n\016GetActivityLog\022\032.bigt"
-    "wo.ActivityLogRequest\032\033.bigtwo.ActivityL"
-    "ogResponseb\006proto3"
+    "\n\014bigtwo.proto\022\020rsosor.generated\"G\n\013Play"
+    "Request\022\021\n\tplayer_id\030\001 \001(\005\022%\n\005cards\030\002 \003("
+    "\0132\026.rsosor.generated.Card\"0\n\014PlayRespons"
+    "e\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\" \n\013P"
+    "assRequest\022\021\n\tplayer_id\030\001 \001(\005\"0\n\014PassRes"
+    "ponse\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\""
+    "\"\n\013JoinRequest\022\023\n\013player_name\030\001 \001(\t\"X\n\014J"
+    "oinResponse\022\021\n\tplayer_id\030\001 \001(\005\022$\n\004hand\030\002"
+    " \003(\0132\026.rsosor.generated.Card\022\017\n\007message\030"
+    "\003 \001(\t\"%\n\020GameStateRequest\022\021\n\tplayer_id\030\001"
+    " \001(\005\"\233\001\n\021GameStateResponse\022$\n\004hand\030\001 \003(\013"
+    "2\026.rsosor.generated.Card\022\036\n\026current_turn"
+    "_player_id\030\002 \001(\005\0221\n\021last_played_cards\030\003 "
+    "\003(\0132\026.rsosor.generated.Card\022\r\n\005phase\030\004 \001"
+    "(\t\"1\n\013ChatRequest\022\021\n\tplayer_id\030\001 \001(\005\022\017\n\007"
+    "message\030\002 \001(\t\"\037\n\014ChatResponse\022\017\n\007success"
+    "\030\001 \001(\010\"/\n\020StartGameRequest\022\033\n\023initiator_"
+    "player_id\030\001 \001(\005\"5\n\021StartGameResponse\022\017\n\007"
+    "success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"\"\n\004Card\022\014"
+    "\n\004suit\030\001 \001(\t\022\014\n\004rank\030\002 \001(\005\"!\n\013DealReques"
+    "t\022\022\n\nplayer_ids\030\001 \003(\005\"\236\001\n\014DealResponse\022C"
+    "\n\013dealt_hands\030\001 \003(\0132..rsosor.generated.D"
+    "ealResponse.DealtHandsEntry\032I\n\017DealtHand"
+    "sEntry\022\013\n\003key\030\001 \001(\005\022%\n\005value\030\002 \001(\0132\026.rso"
+    "sor.generated.Hand:\0028\001\"-\n\004Hand\022%\n\005cards\030"
+    "\001 \003(\0132\026.rsosor.generated.Card\"~\n\025PlayVal"
+    "idationRequest\022\021\n\tplayer_id\030\001 \001(\005\022%\n\005car"
+    "ds\030\002 \003(\0132\026.rsosor.generated.Card\022+\n\013last"
+    "_played\030\003 \003(\0132\026.rsosor.generated.Card\";\n"
+    "\026PlayValidationResponse\022\020\n\010is_valid\030\001 \001("
+    "\010\022\017\n\007message\030\002 \001(\t\"#\n\016TimeoutRequest\022\021\n\t"
+    "player_id\030\001 \001(\005\"3\n\017TimeoutResponse\022\017\n\007su"
+    "ccess\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"\262\001\n\014ScoreRe"
+    "quest\022\022\n\nplayer_ids\030\001 \003(\005\022C\n\013final_hands"
+    "\030\002 \003(\0132..rsosor.generated.ScoreRequest.F"
+    "inalHandsEntry\032I\n\017FinalHandsEntry\022\013\n\003key"
+    "\030\001 \001(\005\022%\n\005value\030\002 \001(\0132\026.rsosor.generated"
+    ".Hand:\0028\001\"{\n\rScoreResponse\022;\n\006scores\030\001 \003"
+    "(\0132+.rsosor.generated.ScoreResponse.Scor"
+    "esEntry\032-\n\013ScoresEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005v"
+    "alue\030\002 \001(\005:\0028\001\"\035\n\016RankingRequest\022\013\n\003top\030"
+    "\001 \001(\005\"C\n\017RankingResponse\0220\n\007ranking\030\001 \003("
+    "\0132\037.rsosor.generated.PlayerRanking\"E\n\rPl"
+    "ayerRanking\022\021\n\tplayer_id\030\001 \001(\005\022\023\n\013player"
+    "_name\030\002 \001(\t\022\014\n\004wins\030\003 \001(\005\"&\n\021PlayerRateR"
+    "equest\022\021\n\tplayer_id\030\001 \001(\005\"J\n\022PlayerRateR"
+    "esponse\022\023\n\013total_games\030\001 \001(\005\022\014\n\004wins\030\002 \001"
+    "(\005\022\021\n\twin_ratio\030\003 \001(\002\"#\n\022ActivityLogRequ"
+    "est\022\r\n\005limit\030\001 \001(\005\"G\n\023ActivityLogRespons"
+    "e\0220\n\007entries\030\001 \003(\0132\037.rsosor.generated.Ac"
+    "tivityEntry\"C\n\rActivityEntry\022\017\n\007game_id\030"
+    "\001 \001(\005\022\016\n\006winner\030\002 \001(\005\022\021\n\ttimestamp\030\003 \001(\t"
+    "2\343\003\n\rBigTwoService\022J\n\tPlayCards\022\035.rsosor"
+    ".generated.PlayRequest\032\036.rsosor.generate"
+    "d.PlayResponse\022E\n\004Pass\022\035.rsosor.generate"
+    "d.PassRequest\032\036.rsosor.generated.PassRes"
+    "ponse\022W\n\014GetGameState\022\".rsosor.generated"
+    ".GameStateRequest\032#.rsosor.generated.Gam"
+    "eStateResponse\022I\n\010JoinGame\022\035.rsosor.gene"
+    "rated.JoinRequest\032\036.rsosor.generated.Joi"
+    "nResponse\022E\n\004Chat\022\035.rsosor.generated.Cha"
+    "tRequest\032\036.rsosor.generated.ChatResponse"
+    "\022T\n\tStartGame\022\".rsosor.generated.StartGa"
+    "meRequest\032#.rsosor.generated.StartGameRe"
+    "sponse2\336\002\n\022BigTwoTableService\022E\n\004Deal\022\035."
+    "rsosor.generated.DealRequest\032\036.rsosor.ge"
+    "nerated.DealResponse\022a\n\014ValidatePlay\022\'.r"
+    "sosor.generated.PlayValidationRequest\032(."
+    "rsosor.generated.PlayValidationResponse\022"
+    "T\n\rHandleTimeout\022 .rsosor.generated.Time"
+    "outRequest\032!.rsosor.generated.TimeoutRes"
+    "ponse\022H\n\005Score\022\036.rsosor.generated.ScoreR"
+    "equest\032\037.rsosor.generated.ScoreResponse2"
+    "\252\002\n\027BigTwoManagementService\022Q\n\nGetRankin"
+    "g\022 .rsosor.generated.RankingRequest\032!.rs"
+    "osor.generated.RankingResponse\022]\n\020GetPla"
+    "yerWinRate\022#.rsosor.generated.PlayerRate"
+    "Request\032$.rsosor.generated.PlayerRateRes"
+    "ponse\022]\n\016GetActivityLog\022$.rsosor.generat"
+    "ed.ActivityLogRequest\032%.rsosor.generated"
+    ".ActivityLogResponseb\006proto3"
 };
 static ::absl::once_flag descriptor_table_bigtwo_2eproto_once;
 PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_bigtwo_2eproto = {
     false,
     false,
-    2818,
+    3228,
     descriptor_table_protodef_bigtwo_2eproto,
     "bigtwo.proto",
     &descriptor_table_bigtwo_2eproto_once,
@@ -1377,7 +1389,8 @@ PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_bigtwo_2eproto
     file_level_enum_descriptors_bigtwo_2eproto,
     file_level_service_descriptors_bigtwo_2eproto,
 };
-namespace bigtwo {
+namespace rsosor {
+namespace generated {
 // ===================================================================
 
 class PlayRequest::_Internal {
@@ -1391,11 +1404,11 @@ PlayRequest::PlayRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PlayRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::PlayRequest& from_msg)
       : cards_{visibility, arena, from.cards_},
         _cached_size_{0} {}
 
@@ -1414,7 +1427,7 @@ PlayRequest::PlayRequest(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.player_id_ = from._impl_.player_id_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PlayRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PlayRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -1427,7 +1440,7 @@ inline void PlayRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 PlayRequest::~PlayRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayRequest)
   SharedDtor(*this);
 }
 inline void PlayRequest::SharedDtor(MessageLite& self) {
@@ -1500,10 +1513,10 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> PlayRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .bigtwo.Card cards = 2;
+    // repeated .rsosor.generated.Card cards = 2;
     {::_pbi::TcParser::FastMtR1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(PlayRequest, _impl_.cards_)}},
     // int32 player_id = 1;
@@ -1515,17 +1528,17 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> PlayRequest::_table_ = {
     // int32 player_id = 1;
     {PROTOBUF_FIELD_OFFSET(PlayRequest, _impl_.player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .bigtwo.Card cards = 2;
+    // repeated .rsosor.generated.Card cards = 2;
     {PROTOBUF_FIELD_OFFSET(PlayRequest, _impl_.cards_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void PlayRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -1547,7 +1560,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -1558,7 +1571,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
                     stream, this_._internal_player_id(), target);
           }
 
-          // repeated .bigtwo.Card cards = 2;
+          // repeated .rsosor.generated.Card cards = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_cards_size());
                i < n; i++) {
@@ -1574,7 +1587,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayRequest)
           return target;
         }
 
@@ -1585,7 +1598,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
         ::size_t PlayRequest::ByteSizeLong() const {
           const PlayRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -1594,7 +1607,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.Card cards = 2;
+            // repeated .rsosor.generated.Card cards = 2;
             {
               total_size += 1UL * this_._internal_cards_size();
               for (const auto& msg : this_._internal_cards()) {
@@ -1616,7 +1629,7 @@ PROTOBUF_NOINLINE void PlayRequest::Clear() {
 void PlayRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayRequest*>(&to_msg);
   auto& from = static_cast<const PlayRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1630,7 +1643,7 @@ void PlayRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 }
 
 void PlayRequest::CopyFrom(const PlayRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1660,11 +1673,11 @@ PlayResponse::PlayResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PlayResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::PlayResponse& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -1683,7 +1696,7 @@ PlayResponse::PlayResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.success_ = from._impl_.success_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PlayResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PlayResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -1696,7 +1709,7 @@ inline void PlayResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.success_ = {};
 }
 PlayResponse::~PlayResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayResponse)
   SharedDtor(*this);
 }
 inline void PlayResponse::SharedDtor(MessageLite& self) {
@@ -1743,7 +1756,7 @@ const ::google::protobuf::internal::ClassData* PlayResponse::GetClassData() cons
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PlayResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 45, 2> PlayResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -1758,7 +1771,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PlayResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -1779,14 +1792,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PlayResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\23\0\7\0\0\0\0\0"
-    "bigtwo.PlayResponse"
+    "\35\0\7\0\0\0\0\0"
+    "rsosor.generated.PlayResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void PlayResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -1808,7 +1821,7 @@ PROTOBUF_NOINLINE void PlayResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -1823,7 +1836,7 @@ PROTOBUF_NOINLINE void PlayResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.PlayResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.PlayResponse.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -1832,7 +1845,7 @@ PROTOBUF_NOINLINE void PlayResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayResponse)
           return target;
         }
 
@@ -1843,7 +1856,7 @@ PROTOBUF_NOINLINE void PlayResponse::Clear() {
         ::size_t PlayResponse::ByteSizeLong() const {
           const PlayResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -1869,7 +1882,7 @@ PROTOBUF_NOINLINE void PlayResponse::Clear() {
 void PlayResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayResponse*>(&to_msg);
   auto& from = static_cast<const PlayResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1884,7 +1897,7 @@ void PlayResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void PlayResponse::CopyFrom(const PlayResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1916,7 +1929,7 @@ PassRequest::PassRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PassRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PassRequest)
 }
 PassRequest::PassRequest(
     ::google::protobuf::Arena* arena, const PassRequest& from)
@@ -1933,7 +1946,7 @@ inline void PassRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 PassRequest::~PassRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.PassRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PassRequest)
   SharedDtor(*this);
 }
 inline void PassRequest::SharedDtor(MessageLite& self) {
@@ -1994,7 +2007,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> PassRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PassRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PassRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 player_id = 1;
@@ -2013,7 +2026,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> PassRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void PassRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PassRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PassRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2034,7 +2047,7 @@ PROTOBUF_NOINLINE void PassRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PassRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PassRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PassRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -2050,7 +2063,7 @@ PROTOBUF_NOINLINE void PassRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PassRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PassRequest)
           return target;
         }
 
@@ -2061,7 +2074,7 @@ PROTOBUF_NOINLINE void PassRequest::Clear() {
         ::size_t PassRequest::ByteSizeLong() const {
           const PassRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PassRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PassRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -2082,7 +2095,7 @@ PROTOBUF_NOINLINE void PassRequest::Clear() {
 void PassRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PassRequest*>(&to_msg);
   auto& from = static_cast<const PassRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PassRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PassRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2094,7 +2107,7 @@ void PassRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 }
 
 void PassRequest::CopyFrom(const PassRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PassRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PassRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2123,11 +2136,11 @@ PassResponse::PassResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PassResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PassResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PassResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PassResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::PassResponse& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -2146,7 +2159,7 @@ PassResponse::PassResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.success_ = from._impl_.success_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PassResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PassResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PassResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -2159,7 +2172,7 @@ inline void PassResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.success_ = {};
 }
 PassResponse::~PassResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.PassResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PassResponse)
   SharedDtor(*this);
 }
 inline void PassResponse::SharedDtor(MessageLite& self) {
@@ -2206,7 +2219,7 @@ const ::google::protobuf::internal::ClassData* PassResponse::GetClassData() cons
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PassResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 45, 2> PassResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -2221,7 +2234,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PassResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PassResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PassResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -2242,14 +2255,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 35, 2> PassResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\23\0\7\0\0\0\0\0"
-    "bigtwo.PassResponse"
+    "\35\0\7\0\0\0\0\0"
+    "rsosor.generated.PassResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void PassResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PassResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PassResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2271,7 +2284,7 @@ PROTOBUF_NOINLINE void PassResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PassResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PassResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PassResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -2286,7 +2299,7 @@ PROTOBUF_NOINLINE void PassResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.PassResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.PassResponse.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -2295,7 +2308,7 @@ PROTOBUF_NOINLINE void PassResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PassResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PassResponse)
           return target;
         }
 
@@ -2306,7 +2319,7 @@ PROTOBUF_NOINLINE void PassResponse::Clear() {
         ::size_t PassResponse::ByteSizeLong() const {
           const PassResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PassResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PassResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -2332,7 +2345,7 @@ PROTOBUF_NOINLINE void PassResponse::Clear() {
 void PassResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PassResponse*>(&to_msg);
   auto& from = static_cast<const PassResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PassResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PassResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2347,7 +2360,7 @@ void PassResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void PassResponse::CopyFrom(const PassResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PassResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PassResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2379,11 +2392,11 @@ JoinRequest::JoinRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.JoinRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.JoinRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE JoinRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::JoinRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::JoinRequest& from_msg)
       : player_name_(arena, from.player_name_),
         _cached_size_{0} {}
 
@@ -2401,7 +2414,7 @@ JoinRequest::JoinRequest(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.JoinRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.JoinRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE JoinRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -2413,7 +2426,7 @@ inline void JoinRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 JoinRequest::~JoinRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.JoinRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.JoinRequest)
   SharedDtor(*this);
 }
 inline void JoinRequest::SharedDtor(MessageLite& self) {
@@ -2460,7 +2473,7 @@ const ::google::protobuf::internal::ClassData* JoinRequest::GetClassData() const
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 38, 2> JoinRequest::_table_ = {
+const ::_pbi::TcParseTable<0, 1, 0, 48, 2> JoinRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -2475,7 +2488,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 38, 2> JoinRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::JoinRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::JoinRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string player_name = 1;
@@ -2490,14 +2503,14 @@ const ::_pbi::TcParseTable<0, 1, 0, 38, 2> JoinRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\22\13\0\0\0\0\0\0"
-    "bigtwo.JoinRequest"
+    "\34\13\0\0\0\0\0\0"
+    "rsosor.generated.JoinRequest"
     "player_name"
   }},
 };
 
 PROTOBUF_NOINLINE void JoinRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.JoinRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.JoinRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2518,7 +2531,7 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const JoinRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.JoinRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.JoinRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -2526,7 +2539,7 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
           if (!this_._internal_player_name().empty()) {
             const std::string& _s = this_._internal_player_name();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.JoinRequest.player_name");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinRequest.player_name");
             target = stream->WriteStringMaybeAliased(1, _s, target);
           }
 
@@ -2535,7 +2548,7 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.JoinRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.JoinRequest)
           return target;
         }
 
@@ -2546,7 +2559,7 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
         ::size_t JoinRequest::ByteSizeLong() const {
           const JoinRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.JoinRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.JoinRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -2567,7 +2580,7 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
 void JoinRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<JoinRequest*>(&to_msg);
   auto& from = static_cast<const JoinRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.JoinRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.JoinRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2579,7 +2592,7 @@ void JoinRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 }
 
 void JoinRequest::CopyFrom(const JoinRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.JoinRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.JoinRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2610,11 +2623,11 @@ JoinResponse::JoinResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.JoinResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.JoinResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE JoinResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::JoinResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::JoinResponse& from_msg)
       : hand_{visibility, arena, from.hand_},
         message_(arena, from.message_),
         _cached_size_{0} {}
@@ -2634,7 +2647,7 @@ JoinResponse::JoinResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.player_id_ = from._impl_.player_id_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.JoinResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.JoinResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE JoinResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -2648,7 +2661,7 @@ inline void JoinResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 JoinResponse::~JoinResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.JoinResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.JoinResponse)
   SharedDtor(*this);
 }
 inline void JoinResponse::SharedDtor(MessageLite& self) {
@@ -2707,7 +2720,7 @@ const ::google::protobuf::internal::ClassData* JoinResponse::GetClassData() cons
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 1, 35, 2> JoinResponse::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 1, 45, 2> JoinResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -2722,14 +2735,14 @@ const ::_pbi::TcParseTable<2, 3, 1, 35, 2> JoinResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::JoinResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::JoinResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
     // int32 player_id = 1;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(JoinResponse, _impl_.player_id_), 63>(),
      {8, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_)}},
-    // repeated .bigtwo.Card hand = 2;
+    // repeated .rsosor.generated.Card hand = 2;
     {::_pbi::TcParser::FastMtR1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.hand_)}},
     // string message = 3;
@@ -2741,23 +2754,23 @@ const ::_pbi::TcParseTable<2, 3, 1, 35, 2> JoinResponse::_table_ = {
     // int32 player_id = 1;
     {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .bigtwo.Card hand = 2;
+    // repeated .rsosor.generated.Card hand = 2;
     {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.hand_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
     // string message = 3;
     {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.message_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
-    "\23\0\0\7\0\0\0\0"
-    "bigtwo.JoinResponse"
+    "\35\0\0\7\0\0\0\0"
+    "rsosor.generated.JoinResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void JoinResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.JoinResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.JoinResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -2780,7 +2793,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const JoinResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.JoinResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.JoinResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -2791,7 +2804,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
                     stream, this_._internal_player_id(), target);
           }
 
-          // repeated .bigtwo.Card hand = 2;
+          // repeated .rsosor.generated.Card hand = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_hand_size());
                i < n; i++) {
@@ -2806,7 +2819,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.JoinResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinResponse.message");
             target = stream->WriteStringMaybeAliased(3, _s, target);
           }
 
@@ -2815,7 +2828,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.JoinResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.JoinResponse)
           return target;
         }
 
@@ -2826,7 +2839,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
         ::size_t JoinResponse::ByteSizeLong() const {
           const JoinResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.JoinResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.JoinResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -2835,7 +2848,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.Card hand = 2;
+            // repeated .rsosor.generated.Card hand = 2;
             {
               total_size += 1UL * this_._internal_hand_size();
               for (const auto& msg : this_._internal_hand()) {
@@ -2862,7 +2875,7 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
 void JoinResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<JoinResponse*>(&to_msg);
   auto& from = static_cast<const JoinResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.JoinResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.JoinResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2879,7 +2892,7 @@ void JoinResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void JoinResponse::CopyFrom(const JoinResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.JoinResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.JoinResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2912,7 +2925,7 @@ GameStateRequest::GameStateRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.GameStateRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.GameStateRequest)
 }
 GameStateRequest::GameStateRequest(
     ::google::protobuf::Arena* arena, const GameStateRequest& from)
@@ -2929,7 +2942,7 @@ inline void GameStateRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 GameStateRequest::~GameStateRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.GameStateRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.GameStateRequest)
   SharedDtor(*this);
 }
 inline void GameStateRequest::SharedDtor(MessageLite& self) {
@@ -2990,7 +3003,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> GameStateRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::GameStateRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameStateRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 player_id = 1;
@@ -3009,7 +3022,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> GameStateRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void GameStateRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.GameStateRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.GameStateRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3030,7 +3043,7 @@ PROTOBUF_NOINLINE void GameStateRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const GameStateRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.GameStateRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.GameStateRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -3046,7 +3059,7 @@ PROTOBUF_NOINLINE void GameStateRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.GameStateRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.GameStateRequest)
           return target;
         }
 
@@ -3057,7 +3070,7 @@ PROTOBUF_NOINLINE void GameStateRequest::Clear() {
         ::size_t GameStateRequest::ByteSizeLong() const {
           const GameStateRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.GameStateRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.GameStateRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -3078,7 +3091,7 @@ PROTOBUF_NOINLINE void GameStateRequest::Clear() {
 void GameStateRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<GameStateRequest*>(&to_msg);
   auto& from = static_cast<const GameStateRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.GameStateRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.GameStateRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3090,7 +3103,7 @@ void GameStateRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const 
 }
 
 void GameStateRequest::CopyFrom(const GameStateRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.GameStateRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.GameStateRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3119,11 +3132,11 @@ GameStateResponse::GameStateResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.GameStateResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.GameStateResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE GameStateResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::GameStateResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::GameStateResponse& from_msg)
       : hand_{visibility, arena, from.hand_},
         last_played_cards_{visibility, arena, from.last_played_cards_},
         phase_(arena, from.phase_),
@@ -3144,7 +3157,7 @@ GameStateResponse::GameStateResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.current_turn_player_id_ = from._impl_.current_turn_player_id_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.GameStateResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.GameStateResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE GameStateResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -3159,7 +3172,7 @@ inline void GameStateResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.current_turn_player_id_ = {};
 }
 GameStateResponse::~GameStateResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.GameStateResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.GameStateResponse)
   SharedDtor(*this);
 }
 inline void GameStateResponse::SharedDtor(MessageLite& self) {
@@ -3222,7 +3235,7 @@ const ::google::protobuf::internal::ClassData* GameStateResponse::GetClassData()
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 2, 38, 2> GameStateResponse::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 2, 48, 2> GameStateResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -3237,48 +3250,48 @@ const ::_pbi::TcParseTable<2, 4, 2, 38, 2> GameStateResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::GameStateResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameStateResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string phase = 4;
     {::_pbi::TcParser::FastUS1,
      {34, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.phase_)}},
-    // repeated .bigtwo.Card hand = 1;
+    // repeated .rsosor.generated.Card hand = 1;
     {::_pbi::TcParser::FastMtR1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_)}},
     // int32 current_turn_player_id = 2;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameStateResponse, _impl_.current_turn_player_id_), 63>(),
      {16, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_)}},
-    // repeated .bigtwo.Card last_played_cards = 3;
+    // repeated .rsosor.generated.Card last_played_cards = 3;
     {::_pbi::TcParser::FastMtR1,
      {26, 63, 1, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .bigtwo.Card hand = 1;
+    // repeated .rsosor.generated.Card hand = 1;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
     // int32 current_turn_player_id = 2;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .bigtwo.Card last_played_cards = 3;
+    // repeated .rsosor.generated.Card last_played_cards = 3;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_), 0, 1,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
     // string phase = 4;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.phase_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
-    "\30\0\0\0\5\0\0\0"
-    "bigtwo.GameStateResponse"
+    "\42\0\0\0\5\0\0\0"
+    "rsosor.generated.GameStateResponse"
     "phase"
   }},
 };
 
 PROTOBUF_NOINLINE void GameStateResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.GameStateResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.GameStateResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3302,11 +3315,11 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const GameStateResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.GameStateResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.GameStateResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .bigtwo.Card hand = 1;
+          // repeated .rsosor.generated.Card hand = 1;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_hand_size());
                i < n; i++) {
@@ -3324,7 +3337,7 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
                     stream, this_._internal_current_turn_player_id(), target);
           }
 
-          // repeated .bigtwo.Card last_played_cards = 3;
+          // repeated .rsosor.generated.Card last_played_cards = 3;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_last_played_cards_size());
                i < n; i++) {
@@ -3339,7 +3352,7 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
           if (!this_._internal_phase().empty()) {
             const std::string& _s = this_._internal_phase();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.GameStateResponse.phase");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.GameStateResponse.phase");
             target = stream->WriteStringMaybeAliased(4, _s, target);
           }
 
@@ -3348,7 +3361,7 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.GameStateResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.GameStateResponse)
           return target;
         }
 
@@ -3359,7 +3372,7 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
         ::size_t GameStateResponse::ByteSizeLong() const {
           const GameStateResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.GameStateResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.GameStateResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -3368,14 +3381,14 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.Card hand = 1;
+            // repeated .rsosor.generated.Card hand = 1;
             {
               total_size += 1UL * this_._internal_hand_size();
               for (const auto& msg : this_._internal_hand()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
-            // repeated .bigtwo.Card last_played_cards = 3;
+            // repeated .rsosor.generated.Card last_played_cards = 3;
             {
               total_size += 1UL * this_._internal_last_played_cards_size();
               for (const auto& msg : this_._internal_last_played_cards()) {
@@ -3402,7 +3415,7 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
 void GameStateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<GameStateResponse*>(&to_msg);
   auto& from = static_cast<const GameStateResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.GameStateResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.GameStateResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3421,7 +3434,7 @@ void GameStateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const
 }
 
 void GameStateResponse::CopyFrom(const GameStateResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.GameStateResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.GameStateResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3455,11 +3468,11 @@ ChatRequest::ChatRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ChatRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ChatRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE ChatRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::ChatRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::ChatRequest& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -3478,7 +3491,7 @@ ChatRequest::ChatRequest(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.player_id_ = from._impl_.player_id_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.ChatRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.ChatRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE ChatRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -3491,7 +3504,7 @@ inline void ChatRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 ChatRequest::~ChatRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.ChatRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ChatRequest)
   SharedDtor(*this);
 }
 inline void ChatRequest::SharedDtor(MessageLite& self) {
@@ -3538,7 +3551,7 @@ const ::google::protobuf::internal::ClassData* ChatRequest::GetClassData() const
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 34, 2> ChatRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 44, 2> ChatRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -3553,7 +3566,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 34, 2> ChatRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ChatRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ChatRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -3574,14 +3587,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 34, 2> ChatRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\22\0\7\0\0\0\0\0"
-    "bigtwo.ChatRequest"
+    "\34\0\7\0\0\0\0\0"
+    "rsosor.generated.ChatRequest"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void ChatRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ChatRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ChatRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3603,7 +3616,7 @@ PROTOBUF_NOINLINE void ChatRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ChatRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ChatRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ChatRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -3618,7 +3631,7 @@ PROTOBUF_NOINLINE void ChatRequest::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.ChatRequest.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.ChatRequest.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -3627,7 +3640,7 @@ PROTOBUF_NOINLINE void ChatRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ChatRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ChatRequest)
           return target;
         }
 
@@ -3638,7 +3651,7 @@ PROTOBUF_NOINLINE void ChatRequest::Clear() {
         ::size_t ChatRequest::ByteSizeLong() const {
           const ChatRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ChatRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ChatRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -3665,7 +3678,7 @@ PROTOBUF_NOINLINE void ChatRequest::Clear() {
 void ChatRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ChatRequest*>(&to_msg);
   auto& from = static_cast<const ChatRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ChatRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ChatRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3680,7 +3693,7 @@ void ChatRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 }
 
 void ChatRequest::CopyFrom(const ChatRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ChatRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ChatRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3712,7 +3725,7 @@ ChatResponse::ChatResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ChatResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ChatResponse)
 }
 ChatResponse::ChatResponse(
     ::google::protobuf::Arena* arena, const ChatResponse& from)
@@ -3729,7 +3742,7 @@ inline void ChatResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.success_ = {};
 }
 ChatResponse::~ChatResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.ChatResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ChatResponse)
   SharedDtor(*this);
 }
 inline void ChatResponse::SharedDtor(MessageLite& self) {
@@ -3790,7 +3803,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> ChatResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ChatResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ChatResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // bool success = 1;
@@ -3809,7 +3822,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> ChatResponse::_table_ = {
 };
 
 PROTOBUF_NOINLINE void ChatResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ChatResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ChatResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -3830,7 +3843,7 @@ PROTOBUF_NOINLINE void ChatResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ChatResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ChatResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ChatResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -3846,7 +3859,7 @@ PROTOBUF_NOINLINE void ChatResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ChatResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ChatResponse)
           return target;
         }
 
@@ -3857,7 +3870,7 @@ PROTOBUF_NOINLINE void ChatResponse::Clear() {
         ::size_t ChatResponse::ByteSizeLong() const {
           const ChatResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ChatResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ChatResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -3877,7 +3890,7 @@ PROTOBUF_NOINLINE void ChatResponse::Clear() {
 void ChatResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ChatResponse*>(&to_msg);
   auto& from = static_cast<const ChatResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ChatResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ChatResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3889,7 +3902,7 @@ void ChatResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void ChatResponse::CopyFrom(const ChatResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ChatResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ChatResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3918,7 +3931,7 @@ StartGameRequest::StartGameRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.StartGameRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.StartGameRequest)
 }
 StartGameRequest::StartGameRequest(
     ::google::protobuf::Arena* arena, const StartGameRequest& from)
@@ -3935,7 +3948,7 @@ inline void StartGameRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.initiator_player_id_ = {};
 }
 StartGameRequest::~StartGameRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.StartGameRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.StartGameRequest)
   SharedDtor(*this);
 }
 inline void StartGameRequest::SharedDtor(MessageLite& self) {
@@ -3996,7 +4009,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> StartGameRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::StartGameRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::StartGameRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 initiator_player_id = 1;
@@ -4015,7 +4028,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> StartGameRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void StartGameRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.StartGameRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.StartGameRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4036,7 +4049,7 @@ PROTOBUF_NOINLINE void StartGameRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const StartGameRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.StartGameRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.StartGameRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -4052,7 +4065,7 @@ PROTOBUF_NOINLINE void StartGameRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.StartGameRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.StartGameRequest)
           return target;
         }
 
@@ -4063,7 +4076,7 @@ PROTOBUF_NOINLINE void StartGameRequest::Clear() {
         ::size_t StartGameRequest::ByteSizeLong() const {
           const StartGameRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.StartGameRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.StartGameRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -4084,7 +4097,7 @@ PROTOBUF_NOINLINE void StartGameRequest::Clear() {
 void StartGameRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<StartGameRequest*>(&to_msg);
   auto& from = static_cast<const StartGameRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.StartGameRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.StartGameRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4096,7 +4109,7 @@ void StartGameRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const 
 }
 
 void StartGameRequest::CopyFrom(const StartGameRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.StartGameRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.StartGameRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4125,11 +4138,11 @@ StartGameResponse::StartGameResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.StartGameResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.StartGameResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE StartGameResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::StartGameResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::StartGameResponse& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -4148,7 +4161,7 @@ StartGameResponse::StartGameResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.success_ = from._impl_.success_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.StartGameResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.StartGameResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE StartGameResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -4161,7 +4174,7 @@ inline void StartGameResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.success_ = {};
 }
 StartGameResponse::~StartGameResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.StartGameResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.StartGameResponse)
   SharedDtor(*this);
 }
 inline void StartGameResponse::SharedDtor(MessageLite& self) {
@@ -4208,7 +4221,7 @@ const ::google::protobuf::internal::ClassData* StartGameResponse::GetClassData()
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 40, 2> StartGameResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 50, 2> StartGameResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -4223,7 +4236,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 40, 2> StartGameResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::StartGameResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::StartGameResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -4244,14 +4257,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 40, 2> StartGameResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\30\0\7\0\0\0\0\0"
-    "bigtwo.StartGameResponse"
+    "\42\0\7\0\0\0\0\0"
+    "rsosor.generated.StartGameResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void StartGameResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.StartGameResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.StartGameResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4273,7 +4286,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const StartGameResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.StartGameResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.StartGameResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -4288,7 +4301,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.StartGameResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.StartGameResponse.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -4297,7 +4310,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.StartGameResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.StartGameResponse)
           return target;
         }
 
@@ -4308,7 +4321,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
         ::size_t StartGameResponse::ByteSizeLong() const {
           const StartGameResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.StartGameResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.StartGameResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -4334,7 +4347,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
 void StartGameResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<StartGameResponse*>(&to_msg);
   auto& from = static_cast<const StartGameResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.StartGameResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.StartGameResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4349,7 +4362,7 @@ void StartGameResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const
 }
 
 void StartGameResponse::CopyFrom(const StartGameResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.StartGameResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.StartGameResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4381,11 +4394,11 @@ Card::Card(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.Card)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.Card)
 }
 inline PROTOBUF_NDEBUG_INLINE Card::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::Card& from_msg)
+    const Impl_& from, const ::rsosor::generated::Card& from_msg)
       : suit_(arena, from.suit_),
         _cached_size_{0} {}
 
@@ -4404,7 +4417,7 @@ Card::Card(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.rank_ = from._impl_.rank_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.Card)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.Card)
 }
 inline PROTOBUF_NDEBUG_INLINE Card::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -4417,7 +4430,7 @@ inline void Card::SharedCtor(::_pb::Arena* arena) {
   _impl_.rank_ = {};
 }
 Card::~Card() {
-  // @@protoc_insertion_point(destructor:bigtwo.Card)
+  // @@protoc_insertion_point(destructor:rsosor.generated.Card)
   SharedDtor(*this);
 }
 inline void Card::SharedDtor(MessageLite& self) {
@@ -4464,7 +4477,7 @@ const ::google::protobuf::internal::ClassData* Card::GetClassData() const {
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 24, 2> Card::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 34, 2> Card::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -4479,7 +4492,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 24, 2> Card::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::Card>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::Card>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 rank = 2;
@@ -4500,14 +4513,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 24, 2> Card::_table_ = {
   }},
   // no aux_entries
   {{
-    "\13\4\0\0\0\0\0\0"
-    "bigtwo.Card"
+    "\25\4\0\0\0\0\0\0"
+    "rsosor.generated.Card"
     "suit"
   }},
 };
 
 PROTOBUF_NOINLINE void Card::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.Card)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.Card)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4529,7 +4542,7 @@ PROTOBUF_NOINLINE void Card::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const Card& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.Card)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.Card)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -4537,7 +4550,7 @@ PROTOBUF_NOINLINE void Card::Clear() {
           if (!this_._internal_suit().empty()) {
             const std::string& _s = this_._internal_suit();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.Card.suit");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.Card.suit");
             target = stream->WriteStringMaybeAliased(1, _s, target);
           }
 
@@ -4553,7 +4566,7 @@ PROTOBUF_NOINLINE void Card::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.Card)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.Card)
           return target;
         }
 
@@ -4564,7 +4577,7 @@ PROTOBUF_NOINLINE void Card::Clear() {
         ::size_t Card::ByteSizeLong() const {
           const Card& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.Card)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.Card)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -4591,7 +4604,7 @@ PROTOBUF_NOINLINE void Card::Clear() {
 void Card::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<Card*>(&to_msg);
   auto& from = static_cast<const Card&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.Card)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.Card)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4606,7 +4619,7 @@ void Card::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::pr
 }
 
 void Card::CopyFrom(const Card& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.Card)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.Card)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4638,11 +4651,11 @@ DealRequest::DealRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.DealRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.DealRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE DealRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::DealRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::DealRequest& from_msg)
       : player_ids_{visibility, arena, from.player_ids_},
         _player_ids_cached_byte_size_{0},
         _cached_size_{0} {}
@@ -4661,7 +4674,7 @@ DealRequest::DealRequest(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.DealRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.DealRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE DealRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -4674,7 +4687,7 @@ inline void DealRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 DealRequest::~DealRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.DealRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.DealRequest)
   SharedDtor(*this);
 }
 inline void DealRequest::SharedDtor(MessageLite& self) {
@@ -4747,7 +4760,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> DealRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::DealRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::DealRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // repeated int32 player_ids = 1;
@@ -4766,7 +4779,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> DealRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void DealRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.DealRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.DealRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -4787,7 +4800,7 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const DealRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.DealRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.DealRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -4805,7 +4818,7 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.DealRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.DealRequest)
           return target;
         }
 
@@ -4816,7 +4829,7 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
         ::size_t DealRequest::ByteSizeLong() const {
           const DealRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.DealRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.DealRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -4840,7 +4853,7 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
 void DealRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<DealRequest*>(&to_msg);
   auto& from = static_cast<const DealRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.DealRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.DealRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4850,7 +4863,7 @@ void DealRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 }
 
 void DealRequest::CopyFrom(const DealRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.DealRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.DealRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4929,10 +4942,10 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> DealResponse_DealtHandsEntry_DoNotUse:
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::DealResponse_DealtHandsEntry_DoNotUse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // .bigtwo.Hand value = 2;
+    // .rsosor.generated.Hand value = 2;
     {::_pbi::TcParser::FastMtS1,
      {18, 0, 0, PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_)}},
     // int32 key = 1;
@@ -4944,11 +4957,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> DealResponse_DealtHandsEntry_DoNotUse:
     // int32 key = 1;
     {PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // .bigtwo.Hand value = 2;
+    // .rsosor.generated.Hand value = 2;
     {PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_), _Internal::kHasBitsOffset + 0, 0,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Hand>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
   }}, {{
   }},
 };
@@ -4966,11 +4979,11 @@ DealResponse::DealResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.DealResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.DealResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE DealResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::DealResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::DealResponse& from_msg)
       : dealt_hands_{visibility, arena, from.dealt_hands_},
         _cached_size_{0} {}
 
@@ -4988,7 +5001,7 @@ DealResponse::DealResponse(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.DealResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.DealResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE DealResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -5000,7 +5013,7 @@ inline void DealResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 DealResponse::~DealResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.DealResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.DealResponse)
   SharedDtor(*this);
 }
 inline void DealResponse::SharedDtor(MessageLite& self) {
@@ -5077,14 +5090,14 @@ const ::_pbi::TcParseTable<0, 1, 2, 0, 2> DealResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::DealResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::DealResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
-    // map<int32, .bigtwo.Hand> dealt_hands = 1;
+    // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
     {PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.dealt_hands_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
   }}, {{
@@ -5092,13 +5105,13 @@ const ::_pbi::TcParseTable<0, 1, 2, 0, 2> DealResponse::_table_ = {
         decltype(DealResponse()._impl_.dealt_hands_)>(
         0, 0, 0, 5,
         11)},
-    {::_pbi::TcParser::GetTable<::bigtwo::Hand>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void DealResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.DealResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.DealResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5119,14 +5132,14 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const DealResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.DealResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.DealResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // map<int32, .bigtwo.Hand> dealt_hands = 1;
+          // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
           if (!this_._internal_dealt_hands().empty()) {
-            using MapType = ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>;
-            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::bigtwo::Hand,
+            using MapType = ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>;
+            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
                                            _pbi::WireFormatLite::TYPE_INT32,
                                            _pbi::WireFormatLite::TYPE_MESSAGE>;
             const auto& field = this_._internal_dealt_hands();
@@ -5149,7 +5162,7 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.DealResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.DealResponse)
           return target;
         }
 
@@ -5160,7 +5173,7 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
         ::size_t DealResponse::ByteSizeLong() const {
           const DealResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.DealResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.DealResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -5169,12 +5182,12 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // map<int32, .bigtwo.Hand> dealt_hands = 1;
+            // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
             {
               total_size +=
                   1 * ::google::protobuf::internal::FromIntSize(this_._internal_dealt_hands_size());
               for (const auto& entry : this_._internal_dealt_hands()) {
-                total_size += _pbi::MapEntryFuncs<::int32_t, ::bigtwo::Hand,
+                total_size += _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
                                                _pbi::WireFormatLite::TYPE_INT32,
                                                _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
               }
@@ -5187,7 +5200,7 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
 void DealResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<DealResponse*>(&to_msg);
   auto& from = static_cast<const DealResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.DealResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.DealResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5197,7 +5210,7 @@ void DealResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void DealResponse::CopyFrom(const DealResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.DealResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.DealResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5226,11 +5239,11 @@ Hand::Hand(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.Hand)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.Hand)
 }
 inline PROTOBUF_NDEBUG_INLINE Hand::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::Hand& from_msg)
+    const Impl_& from, const ::rsosor::generated::Hand& from_msg)
       : cards_{visibility, arena, from.cards_},
         _cached_size_{0} {}
 
@@ -5248,7 +5261,7 @@ Hand::Hand(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.Hand)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.Hand)
 }
 inline PROTOBUF_NDEBUG_INLINE Hand::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -5260,7 +5273,7 @@ inline void Hand::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 Hand::~Hand() {
-  // @@protoc_insertion_point(destructor:bigtwo.Hand)
+  // @@protoc_insertion_point(destructor:rsosor.generated.Hand)
   SharedDtor(*this);
 }
 inline void Hand::SharedDtor(MessageLite& self) {
@@ -5333,26 +5346,26 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> Hand::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::Hand>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::Hand>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .bigtwo.Card cards = 1;
+    // repeated .rsosor.generated.Card cards = 1;
     {::_pbi::TcParser::FastMtR1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(Hand, _impl_.cards_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .bigtwo.Card cards = 1;
+    // repeated .rsosor.generated.Card cards = 1;
     {PROTOBUF_FIELD_OFFSET(Hand, _impl_.cards_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void Hand::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.Hand)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.Hand)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5373,11 +5386,11 @@ PROTOBUF_NOINLINE void Hand::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const Hand& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.Hand)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.Hand)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .bigtwo.Card cards = 1;
+          // repeated .rsosor.generated.Card cards = 1;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_cards_size());
                i < n; i++) {
@@ -5393,7 +5406,7 @@ PROTOBUF_NOINLINE void Hand::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.Hand)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.Hand)
           return target;
         }
 
@@ -5404,7 +5417,7 @@ PROTOBUF_NOINLINE void Hand::Clear() {
         ::size_t Hand::ByteSizeLong() const {
           const Hand& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.Hand)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.Hand)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -5413,7 +5426,7 @@ PROTOBUF_NOINLINE void Hand::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.Card cards = 1;
+            // repeated .rsosor.generated.Card cards = 1;
             {
               total_size += 1UL * this_._internal_cards_size();
               for (const auto& msg : this_._internal_cards()) {
@@ -5428,7 +5441,7 @@ PROTOBUF_NOINLINE void Hand::Clear() {
 void Hand::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<Hand*>(&to_msg);
   auto& from = static_cast<const Hand&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.Hand)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.Hand)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5439,7 +5452,7 @@ void Hand::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::pr
 }
 
 void Hand::CopyFrom(const Hand& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.Hand)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.Hand)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5468,11 +5481,11 @@ PlayValidationRequest::PlayValidationRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayValidationRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayValidationRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayValidationRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PlayValidationRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::PlayValidationRequest& from_msg)
       : cards_{visibility, arena, from.cards_},
         last_played_{visibility, arena, from.last_played_},
         _cached_size_{0} {}
@@ -5492,7 +5505,7 @@ PlayValidationRequest::PlayValidationRequest(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.player_id_ = from._impl_.player_id_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PlayValidationRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PlayValidationRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayValidationRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -5506,7 +5519,7 @@ inline void PlayValidationRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 PlayValidationRequest::~PlayValidationRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayValidationRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayValidationRequest)
   SharedDtor(*this);
 }
 inline void PlayValidationRequest::SharedDtor(MessageLite& self) {
@@ -5583,17 +5596,17 @@ const ::_pbi::TcParseTable<2, 3, 2, 0, 2> PlayValidationRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayValidationRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayValidationRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
     // int32 player_id = 1;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayValidationRequest, _impl_.player_id_), 63>(),
      {8, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.player_id_)}},
-    // repeated .bigtwo.Card cards = 2;
+    // repeated .rsosor.generated.Card cards = 2;
     {::_pbi::TcParser::FastMtR1,
      {18, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.cards_)}},
-    // repeated .bigtwo.Card last_played = 3;
+    // repeated .rsosor.generated.Card last_played = 3;
     {::_pbi::TcParser::FastMtR1,
      {26, 63, 1, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_)}},
   }}, {{
@@ -5602,21 +5615,21 @@ const ::_pbi::TcParseTable<2, 3, 2, 0, 2> PlayValidationRequest::_table_ = {
     // int32 player_id = 1;
     {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .bigtwo.Card cards = 2;
+    // repeated .rsosor.generated.Card cards = 2;
     {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.cards_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // repeated .bigtwo.Card last_played = 3;
+    // repeated .rsosor.generated.Card last_played = 3;
     {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_), 0, 1,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
-    {::_pbi::TcParser::GetTable<::bigtwo::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayValidationRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayValidationRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5639,7 +5652,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayValidationRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayValidationRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayValidationRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -5650,7 +5663,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
                     stream, this_._internal_player_id(), target);
           }
 
-          // repeated .bigtwo.Card cards = 2;
+          // repeated .rsosor.generated.Card cards = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_cards_size());
                i < n; i++) {
@@ -5661,7 +5674,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
                     target, stream);
           }
 
-          // repeated .bigtwo.Card last_played = 3;
+          // repeated .rsosor.generated.Card last_played = 3;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_last_played_size());
                i < n; i++) {
@@ -5677,7 +5690,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayValidationRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayValidationRequest)
           return target;
         }
 
@@ -5688,7 +5701,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
         ::size_t PlayValidationRequest::ByteSizeLong() const {
           const PlayValidationRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayValidationRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayValidationRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -5697,14 +5710,14 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.Card cards = 2;
+            // repeated .rsosor.generated.Card cards = 2;
             {
               total_size += 1UL * this_._internal_cards_size();
               for (const auto& msg : this_._internal_cards()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
-            // repeated .bigtwo.Card last_played = 3;
+            // repeated .rsosor.generated.Card last_played = 3;
             {
               total_size += 1UL * this_._internal_last_played_size();
               for (const auto& msg : this_._internal_last_played()) {
@@ -5726,7 +5739,7 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
 void PlayValidationRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayValidationRequest*>(&to_msg);
   auto& from = static_cast<const PlayValidationRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayValidationRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayValidationRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5742,7 +5755,7 @@ void PlayValidationRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, c
 }
 
 void PlayValidationRequest::CopyFrom(const PlayValidationRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayValidationRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayValidationRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5773,11 +5786,11 @@ PlayValidationResponse::PlayValidationResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayValidationResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayValidationResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayValidationResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PlayValidationResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::PlayValidationResponse& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -5796,7 +5809,7 @@ PlayValidationResponse::PlayValidationResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.is_valid_ = from._impl_.is_valid_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PlayValidationResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PlayValidationResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayValidationResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -5809,7 +5822,7 @@ inline void PlayValidationResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.is_valid_ = {};
 }
 PlayValidationResponse::~PlayValidationResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayValidationResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayValidationResponse)
   SharedDtor(*this);
 }
 inline void PlayValidationResponse::SharedDtor(MessageLite& self) {
@@ -5856,7 +5869,7 @@ const ::google::protobuf::internal::ClassData* PlayValidationResponse::GetClassD
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 45, 2> PlayValidationResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 55, 2> PlayValidationResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -5871,7 +5884,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> PlayValidationResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayValidationResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayValidationResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -5892,14 +5905,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 45, 2> PlayValidationResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\35\0\7\0\0\0\0\0"
-    "bigtwo.PlayValidationResponse"
+    "\47\0\7\0\0\0\0\0"
+    "rsosor.generated.PlayValidationResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayValidationResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayValidationResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -5921,7 +5934,7 @@ PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayValidationResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayValidationResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayValidationResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -5936,7 +5949,7 @@ PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.PlayValidationResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.PlayValidationResponse.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -5945,7 +5958,7 @@ PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayValidationResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayValidationResponse)
           return target;
         }
 
@@ -5956,7 +5969,7 @@ PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
         ::size_t PlayValidationResponse::ByteSizeLong() const {
           const PlayValidationResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayValidationResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayValidationResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -5982,7 +5995,7 @@ PROTOBUF_NOINLINE void PlayValidationResponse::Clear() {
 void PlayValidationResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayValidationResponse*>(&to_msg);
   auto& from = static_cast<const PlayValidationResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayValidationResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayValidationResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5997,7 +6010,7 @@ void PlayValidationResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, 
 }
 
 void PlayValidationResponse::CopyFrom(const PlayValidationResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayValidationResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayValidationResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6029,7 +6042,7 @@ TimeoutRequest::TimeoutRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.TimeoutRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.TimeoutRequest)
 }
 TimeoutRequest::TimeoutRequest(
     ::google::protobuf::Arena* arena, const TimeoutRequest& from)
@@ -6046,7 +6059,7 @@ inline void TimeoutRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 TimeoutRequest::~TimeoutRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.TimeoutRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.TimeoutRequest)
   SharedDtor(*this);
 }
 inline void TimeoutRequest::SharedDtor(MessageLite& self) {
@@ -6107,7 +6120,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> TimeoutRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::TimeoutRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::TimeoutRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 player_id = 1;
@@ -6126,7 +6139,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> TimeoutRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void TimeoutRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.TimeoutRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.TimeoutRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -6147,7 +6160,7 @@ PROTOBUF_NOINLINE void TimeoutRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const TimeoutRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.TimeoutRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.TimeoutRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -6163,7 +6176,7 @@ PROTOBUF_NOINLINE void TimeoutRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.TimeoutRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.TimeoutRequest)
           return target;
         }
 
@@ -6174,7 +6187,7 @@ PROTOBUF_NOINLINE void TimeoutRequest::Clear() {
         ::size_t TimeoutRequest::ByteSizeLong() const {
           const TimeoutRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.TimeoutRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.TimeoutRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -6195,7 +6208,7 @@ PROTOBUF_NOINLINE void TimeoutRequest::Clear() {
 void TimeoutRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<TimeoutRequest*>(&to_msg);
   auto& from = static_cast<const TimeoutRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.TimeoutRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.TimeoutRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6207,7 +6220,7 @@ void TimeoutRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::
 }
 
 void TimeoutRequest::CopyFrom(const TimeoutRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.TimeoutRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.TimeoutRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6236,11 +6249,11 @@ TimeoutResponse::TimeoutResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.TimeoutResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.TimeoutResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE TimeoutResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::TimeoutResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::TimeoutResponse& from_msg)
       : message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -6259,7 +6272,7 @@ TimeoutResponse::TimeoutResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.success_ = from._impl_.success_;
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.TimeoutResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.TimeoutResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE TimeoutResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -6272,7 +6285,7 @@ inline void TimeoutResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.success_ = {};
 }
 TimeoutResponse::~TimeoutResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.TimeoutResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.TimeoutResponse)
   SharedDtor(*this);
 }
 inline void TimeoutResponse::SharedDtor(MessageLite& self) {
@@ -6319,7 +6332,7 @@ const ::google::protobuf::internal::ClassData* TimeoutResponse::GetClassData() c
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 38, 2> TimeoutResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 48, 2> TimeoutResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -6334,7 +6347,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 38, 2> TimeoutResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::TimeoutResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::TimeoutResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // string message = 2;
@@ -6355,14 +6368,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 38, 2> TimeoutResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\26\0\7\0\0\0\0\0"
-    "bigtwo.TimeoutResponse"
+    "\40\0\7\0\0\0\0\0"
+    "rsosor.generated.TimeoutResponse"
     "message"
   }},
 };
 
 PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.TimeoutResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.TimeoutResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -6384,7 +6397,7 @@ PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const TimeoutResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.TimeoutResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.TimeoutResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -6399,7 +6412,7 @@ PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.TimeoutResponse.message");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.TimeoutResponse.message");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -6408,7 +6421,7 @@ PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.TimeoutResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.TimeoutResponse)
           return target;
         }
 
@@ -6419,7 +6432,7 @@ PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
         ::size_t TimeoutResponse::ByteSizeLong() const {
           const TimeoutResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.TimeoutResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.TimeoutResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -6445,7 +6458,7 @@ PROTOBUF_NOINLINE void TimeoutResponse::Clear() {
 void TimeoutResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<TimeoutResponse*>(&to_msg);
   auto& from = static_cast<const TimeoutResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.TimeoutResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.TimeoutResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6460,7 +6473,7 @@ void TimeoutResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const :
 }
 
 void TimeoutResponse::CopyFrom(const TimeoutResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.TimeoutResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.TimeoutResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6542,10 +6555,10 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> ScoreRequest_FinalHandsEntry_DoNotUse:
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ScoreRequest_FinalHandsEntry_DoNotUse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // .bigtwo.Hand value = 2;
+    // .rsosor.generated.Hand value = 2;
     {::_pbi::TcParser::FastMtS1,
      {18, 0, 0, PROTOBUF_FIELD_OFFSET(ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.value_)}},
     // int32 key = 1;
@@ -6557,11 +6570,11 @@ const ::_pbi::TcParseTable<1, 2, 1, 0, 2> ScoreRequest_FinalHandsEntry_DoNotUse:
     // int32 key = 1;
     {PROTOBUF_FIELD_OFFSET(ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.key_), -1, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // .bigtwo.Hand value = 2;
+    // .rsosor.generated.Hand value = 2;
     {PROTOBUF_FIELD_OFFSET(ScoreRequest_FinalHandsEntry_DoNotUse, _impl_.value_), _Internal::kHasBitsOffset + 0, 0,
     (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::Hand>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
   }}, {{
   }},
 };
@@ -6579,11 +6592,11 @@ ScoreRequest::ScoreRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ScoreRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ScoreRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE ScoreRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::ScoreRequest& from_msg)
+    const Impl_& from, const ::rsosor::generated::ScoreRequest& from_msg)
       : player_ids_{visibility, arena, from.player_ids_},
         _player_ids_cached_byte_size_{0},
         final_hands_{visibility, arena, from.final_hands_},
@@ -6603,7 +6616,7 @@ ScoreRequest::ScoreRequest(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.ScoreRequest)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.ScoreRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE ScoreRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -6617,7 +6630,7 @@ inline void ScoreRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 ScoreRequest::~ScoreRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.ScoreRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ScoreRequest)
   SharedDtor(*this);
 }
 inline void ScoreRequest::SharedDtor(MessageLite& self) {
@@ -6698,7 +6711,7 @@ const ::_pbi::TcParseTable<0, 2, 2, 0, 2> ScoreRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ScoreRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ScoreRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // repeated int32 player_ids = 1;
@@ -6710,7 +6723,7 @@ const ::_pbi::TcParseTable<0, 2, 2, 0, 2> ScoreRequest::_table_ = {
     // repeated int32 player_ids = 1;
     {PROTOBUF_FIELD_OFFSET(ScoreRequest, _impl_.player_ids_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kPackedInt32)},
-    // map<int32, .bigtwo.Hand> final_hands = 2;
+    // map<int32, .rsosor.generated.Hand> final_hands = 2;
     {PROTOBUF_FIELD_OFFSET(ScoreRequest, _impl_.final_hands_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
   }}, {{
@@ -6718,13 +6731,13 @@ const ::_pbi::TcParseTable<0, 2, 2, 0, 2> ScoreRequest::_table_ = {
         decltype(ScoreRequest()._impl_.final_hands_)>(
         0, 0, 0, 5,
         11)},
-    {::_pbi::TcParser::GetTable<::bigtwo::Hand>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void ScoreRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ScoreRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ScoreRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -6746,7 +6759,7 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ScoreRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ScoreRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ScoreRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -6759,10 +6772,10 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
             }
           }
 
-          // map<int32, .bigtwo.Hand> final_hands = 2;
+          // map<int32, .rsosor.generated.Hand> final_hands = 2;
           if (!this_._internal_final_hands().empty()) {
-            using MapType = ::google::protobuf::Map<::int32_t, ::bigtwo::Hand>;
-            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::bigtwo::Hand,
+            using MapType = ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>;
+            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
                                            _pbi::WireFormatLite::TYPE_INT32,
                                            _pbi::WireFormatLite::TYPE_MESSAGE>;
             const auto& field = this_._internal_final_hands();
@@ -6785,7 +6798,7 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ScoreRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ScoreRequest)
           return target;
         }
 
@@ -6796,7 +6809,7 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
         ::size_t ScoreRequest::ByteSizeLong() const {
           const ScoreRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ScoreRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ScoreRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -6812,12 +6825,12 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
                       this_._internal_player_ids(), 1,
                       this_._impl_._player_ids_cached_byte_size_);
             }
-            // map<int32, .bigtwo.Hand> final_hands = 2;
+            // map<int32, .rsosor.generated.Hand> final_hands = 2;
             {
               total_size +=
                   1 * ::google::protobuf::internal::FromIntSize(this_._internal_final_hands_size());
               for (const auto& entry : this_._internal_final_hands()) {
-                total_size += _pbi::MapEntryFuncs<::int32_t, ::bigtwo::Hand,
+                total_size += _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
                                                _pbi::WireFormatLite::TYPE_INT32,
                                                _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
               }
@@ -6830,7 +6843,7 @@ PROTOBUF_NOINLINE void ScoreRequest::Clear() {
 void ScoreRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ScoreRequest*>(&to_msg);
   auto& from = static_cast<const ScoreRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ScoreRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ScoreRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6841,7 +6854,7 @@ void ScoreRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
 }
 
 void ScoreRequest::CopyFrom(const ScoreRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ScoreRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ScoreRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6921,7 +6934,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 0, 2> ScoreResponse_ScoresEntry_DoNotUse::_t
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ScoreResponse_ScoresEntry_DoNotUse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 value = 2;
@@ -6958,11 +6971,11 @@ ScoreResponse::ScoreResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ScoreResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ScoreResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE ScoreResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::ScoreResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::ScoreResponse& from_msg)
       : scores_{visibility, arena, from.scores_},
         _cached_size_{0} {}
 
@@ -6980,7 +6993,7 @@ ScoreResponse::ScoreResponse(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.ScoreResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.ScoreResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE ScoreResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -6992,7 +7005,7 @@ inline void ScoreResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 ScoreResponse::~ScoreResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.ScoreResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ScoreResponse)
   SharedDtor(*this);
 }
 inline void ScoreResponse::SharedDtor(MessageLite& self) {
@@ -7069,7 +7082,7 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ScoreResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ScoreResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ScoreResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
@@ -7089,7 +7102,7 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ScoreResponse::_table_ = {
 };
 
 PROTOBUF_NOINLINE void ScoreResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ScoreResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ScoreResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -7110,7 +7123,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ScoreResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ScoreResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ScoreResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -7140,7 +7153,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ScoreResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ScoreResponse)
           return target;
         }
 
@@ -7151,7 +7164,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
         ::size_t ScoreResponse::ByteSizeLong() const {
           const ScoreResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ScoreResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ScoreResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -7178,7 +7191,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
 void ScoreResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ScoreResponse*>(&to_msg);
   auto& from = static_cast<const ScoreResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ScoreResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ScoreResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7188,7 +7201,7 @@ void ScoreResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::g
 }
 
 void ScoreResponse::CopyFrom(const ScoreResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ScoreResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ScoreResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7217,7 +7230,7 @@ RankingRequest::RankingRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.RankingRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.RankingRequest)
 }
 RankingRequest::RankingRequest(
     ::google::protobuf::Arena* arena, const RankingRequest& from)
@@ -7234,7 +7247,7 @@ inline void RankingRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.top_ = {};
 }
 RankingRequest::~RankingRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.RankingRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.RankingRequest)
   SharedDtor(*this);
 }
 inline void RankingRequest::SharedDtor(MessageLite& self) {
@@ -7295,7 +7308,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> RankingRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::RankingRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::RankingRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 top = 1;
@@ -7314,7 +7327,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> RankingRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void RankingRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.RankingRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.RankingRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -7335,7 +7348,7 @@ PROTOBUF_NOINLINE void RankingRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const RankingRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.RankingRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.RankingRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -7351,7 +7364,7 @@ PROTOBUF_NOINLINE void RankingRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.RankingRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.RankingRequest)
           return target;
         }
 
@@ -7362,7 +7375,7 @@ PROTOBUF_NOINLINE void RankingRequest::Clear() {
         ::size_t RankingRequest::ByteSizeLong() const {
           const RankingRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.RankingRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.RankingRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -7383,7 +7396,7 @@ PROTOBUF_NOINLINE void RankingRequest::Clear() {
 void RankingRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<RankingRequest*>(&to_msg);
   auto& from = static_cast<const RankingRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.RankingRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.RankingRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7395,7 +7408,7 @@ void RankingRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::
 }
 
 void RankingRequest::CopyFrom(const RankingRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.RankingRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.RankingRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7424,11 +7437,11 @@ RankingResponse::RankingResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.RankingResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.RankingResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE RankingResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::RankingResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::RankingResponse& from_msg)
       : ranking_{visibility, arena, from.ranking_},
         _cached_size_{0} {}
 
@@ -7446,7 +7459,7 @@ RankingResponse::RankingResponse(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.RankingResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.RankingResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE RankingResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -7458,7 +7471,7 @@ inline void RankingResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 RankingResponse::~RankingResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.RankingResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.RankingResponse)
   SharedDtor(*this);
 }
 inline void RankingResponse::SharedDtor(MessageLite& self) {
@@ -7531,26 +7544,26 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> RankingResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::RankingResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::RankingResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .bigtwo.PlayerRanking ranking = 1;
+    // repeated .rsosor.generated.PlayerRanking ranking = 1;
     {::_pbi::TcParser::FastMtR1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.ranking_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .bigtwo.PlayerRanking ranking = 1;
+    // repeated .rsosor.generated.PlayerRanking ranking = 1;
     {PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.ranking_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::PlayerRanking>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::PlayerRanking>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void RankingResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.RankingResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.RankingResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -7571,11 +7584,11 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const RankingResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.RankingResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.RankingResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .bigtwo.PlayerRanking ranking = 1;
+          // repeated .rsosor.generated.PlayerRanking ranking = 1;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_ranking_size());
                i < n; i++) {
@@ -7591,7 +7604,7 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.RankingResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.RankingResponse)
           return target;
         }
 
@@ -7602,7 +7615,7 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
         ::size_t RankingResponse::ByteSizeLong() const {
           const RankingResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.RankingResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.RankingResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -7611,7 +7624,7 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.PlayerRanking ranking = 1;
+            // repeated .rsosor.generated.PlayerRanking ranking = 1;
             {
               total_size += 1UL * this_._internal_ranking_size();
               for (const auto& msg : this_._internal_ranking()) {
@@ -7626,7 +7639,7 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
 void RankingResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<RankingResponse*>(&to_msg);
   auto& from = static_cast<const RankingResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.RankingResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.RankingResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7637,7 +7650,7 @@ void RankingResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const :
 }
 
 void RankingResponse::CopyFrom(const RankingResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.RankingResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.RankingResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7666,11 +7679,11 @@ PlayerRanking::PlayerRanking(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayerRanking)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayerRanking)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayerRanking::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::PlayerRanking& from_msg)
+    const Impl_& from, const ::rsosor::generated::PlayerRanking& from_msg)
       : player_name_(arena, from.player_name_),
         _cached_size_{0} {}
 
@@ -7695,7 +7708,7 @@ PlayerRanking::PlayerRanking(
                offsetof(Impl_, player_id_) +
                sizeof(Impl_::wins_));
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.PlayerRanking)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.PlayerRanking)
 }
 inline PROTOBUF_NDEBUG_INLINE PlayerRanking::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -7713,7 +7726,7 @@ inline void PlayerRanking::SharedCtor(::_pb::Arena* arena) {
                sizeof(Impl_::wins_));
 }
 PlayerRanking::~PlayerRanking() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayerRanking)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayerRanking)
   SharedDtor(*this);
 }
 inline void PlayerRanking::SharedDtor(MessageLite& self) {
@@ -7760,7 +7773,7 @@ const ::google::protobuf::internal::ClassData* PlayerRanking::GetClassData() con
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 40, 2> PlayerRanking::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 50, 2> PlayerRanking::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -7775,7 +7788,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 40, 2> PlayerRanking::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayerRanking>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayerRanking>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
@@ -7803,14 +7816,14 @@ const ::_pbi::TcParseTable<2, 3, 0, 40, 2> PlayerRanking::_table_ = {
   }},
   // no aux_entries
   {{
-    "\24\0\13\0\0\0\0\0"
-    "bigtwo.PlayerRanking"
+    "\36\0\13\0\0\0\0\0"
+    "rsosor.generated.PlayerRanking"
     "player_name"
   }},
 };
 
 PROTOBUF_NOINLINE void PlayerRanking::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayerRanking)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayerRanking)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -7834,7 +7847,7 @@ PROTOBUF_NOINLINE void PlayerRanking::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayerRanking& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayerRanking)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayerRanking)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -7849,7 +7862,7 @@ PROTOBUF_NOINLINE void PlayerRanking::Clear() {
           if (!this_._internal_player_name().empty()) {
             const std::string& _s = this_._internal_player_name();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.PlayerRanking.player_name");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.PlayerRanking.player_name");
             target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
@@ -7865,7 +7878,7 @@ PROTOBUF_NOINLINE void PlayerRanking::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayerRanking)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayerRanking)
           return target;
         }
 
@@ -7876,7 +7889,7 @@ PROTOBUF_NOINLINE void PlayerRanking::Clear() {
         ::size_t PlayerRanking::ByteSizeLong() const {
           const PlayerRanking& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayerRanking)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayerRanking)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -7908,7 +7921,7 @@ PROTOBUF_NOINLINE void PlayerRanking::Clear() {
 void PlayerRanking::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayerRanking*>(&to_msg);
   auto& from = static_cast<const PlayerRanking&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayerRanking)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayerRanking)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7926,7 +7939,7 @@ void PlayerRanking::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::g
 }
 
 void PlayerRanking::CopyFrom(const PlayerRanking& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayerRanking)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayerRanking)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7963,7 +7976,7 @@ PlayerRateRequest::PlayerRateRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayerRateRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayerRateRequest)
 }
 PlayerRateRequest::PlayerRateRequest(
     ::google::protobuf::Arena* arena, const PlayerRateRequest& from)
@@ -7980,7 +7993,7 @@ inline void PlayerRateRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.player_id_ = {};
 }
 PlayerRateRequest::~PlayerRateRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayerRateRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayerRateRequest)
   SharedDtor(*this);
 }
 inline void PlayerRateRequest::SharedDtor(MessageLite& self) {
@@ -8041,7 +8054,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> PlayerRateRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayerRateRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayerRateRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 player_id = 1;
@@ -8060,7 +8073,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> PlayerRateRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void PlayerRateRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayerRateRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayerRateRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -8081,7 +8094,7 @@ PROTOBUF_NOINLINE void PlayerRateRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayerRateRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayerRateRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayerRateRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -8097,7 +8110,7 @@ PROTOBUF_NOINLINE void PlayerRateRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayerRateRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayerRateRequest)
           return target;
         }
 
@@ -8108,7 +8121,7 @@ PROTOBUF_NOINLINE void PlayerRateRequest::Clear() {
         ::size_t PlayerRateRequest::ByteSizeLong() const {
           const PlayerRateRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayerRateRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayerRateRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -8129,7 +8142,7 @@ PROTOBUF_NOINLINE void PlayerRateRequest::Clear() {
 void PlayerRateRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayerRateRequest*>(&to_msg);
   auto& from = static_cast<const PlayerRateRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayerRateRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayerRateRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8141,7 +8154,7 @@ void PlayerRateRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const
 }
 
 void PlayerRateRequest::CopyFrom(const PlayerRateRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayerRateRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayerRateRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8170,7 +8183,7 @@ PlayerRateResponse::PlayerRateResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.PlayerRateResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.PlayerRateResponse)
 }
 PlayerRateResponse::PlayerRateResponse(
     ::google::protobuf::Arena* arena, const PlayerRateResponse& from)
@@ -8192,7 +8205,7 @@ inline void PlayerRateResponse::SharedCtor(::_pb::Arena* arena) {
                sizeof(Impl_::win_ratio_));
 }
 PlayerRateResponse::~PlayerRateResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.PlayerRateResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.PlayerRateResponse)
   SharedDtor(*this);
 }
 inline void PlayerRateResponse::SharedDtor(MessageLite& self) {
@@ -8253,7 +8266,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 0, 2> PlayerRateResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::PlayerRateResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::PlayerRateResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
@@ -8285,7 +8298,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 0, 2> PlayerRateResponse::_table_ = {
 };
 
 PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.PlayerRateResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.PlayerRateResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -8308,7 +8321,7 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const PlayerRateResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.PlayerRateResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.PlayerRateResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -8338,7 +8351,7 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.PlayerRateResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.PlayerRateResponse)
           return target;
         }
 
@@ -8349,7 +8362,7 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
         ::size_t PlayerRateResponse::ByteSizeLong() const {
           const PlayerRateResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.PlayerRateResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.PlayerRateResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -8380,7 +8393,7 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
 void PlayerRateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<PlayerRateResponse*>(&to_msg);
   auto& from = static_cast<const PlayerRateResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.PlayerRateResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.PlayerRateResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8398,7 +8411,7 @@ void PlayerRateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, cons
 }
 
 void PlayerRateResponse::CopyFrom(const PlayerRateResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.PlayerRateResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.PlayerRateResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8432,7 +8445,7 @@ ActivityLogRequest::ActivityLogRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ActivityLogRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ActivityLogRequest)
 }
 ActivityLogRequest::ActivityLogRequest(
     ::google::protobuf::Arena* arena, const ActivityLogRequest& from)
@@ -8449,7 +8462,7 @@ inline void ActivityLogRequest::SharedCtor(::_pb::Arena* arena) {
   _impl_.limit_ = {};
 }
 ActivityLogRequest::~ActivityLogRequest() {
-  // @@protoc_insertion_point(destructor:bigtwo.ActivityLogRequest)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ActivityLogRequest)
   SharedDtor(*this);
 }
 inline void ActivityLogRequest::SharedDtor(MessageLite& self) {
@@ -8510,7 +8523,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> ActivityLogRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ActivityLogRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ActivityLogRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 limit = 1;
@@ -8529,7 +8542,7 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> ActivityLogRequest::_table_ = {
 };
 
 PROTOBUF_NOINLINE void ActivityLogRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ActivityLogRequest)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ActivityLogRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -8550,7 +8563,7 @@ PROTOBUF_NOINLINE void ActivityLogRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ActivityLogRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ActivityLogRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ActivityLogRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -8566,7 +8579,7 @@ PROTOBUF_NOINLINE void ActivityLogRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ActivityLogRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ActivityLogRequest)
           return target;
         }
 
@@ -8577,7 +8590,7 @@ PROTOBUF_NOINLINE void ActivityLogRequest::Clear() {
         ::size_t ActivityLogRequest::ByteSizeLong() const {
           const ActivityLogRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ActivityLogRequest)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ActivityLogRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -8598,7 +8611,7 @@ PROTOBUF_NOINLINE void ActivityLogRequest::Clear() {
 void ActivityLogRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ActivityLogRequest*>(&to_msg);
   auto& from = static_cast<const ActivityLogRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ActivityLogRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ActivityLogRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8610,7 +8623,7 @@ void ActivityLogRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, cons
 }
 
 void ActivityLogRequest::CopyFrom(const ActivityLogRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ActivityLogRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ActivityLogRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8639,11 +8652,11 @@ ActivityLogResponse::ActivityLogResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ActivityLogResponse)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ActivityLogResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE ActivityLogResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::ActivityLogResponse& from_msg)
+    const Impl_& from, const ::rsosor::generated::ActivityLogResponse& from_msg)
       : entries_{visibility, arena, from.entries_},
         _cached_size_{0} {}
 
@@ -8661,7 +8674,7 @@ ActivityLogResponse::ActivityLogResponse(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.ActivityLogResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.ActivityLogResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE ActivityLogResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -8673,7 +8686,7 @@ inline void ActivityLogResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
 }
 ActivityLogResponse::~ActivityLogResponse() {
-  // @@protoc_insertion_point(destructor:bigtwo.ActivityLogResponse)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ActivityLogResponse)
   SharedDtor(*this);
 }
 inline void ActivityLogResponse::SharedDtor(MessageLite& self) {
@@ -8746,26 +8759,26 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ActivityLogResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ActivityLogResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ActivityLogResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .bigtwo.ActivityEntry entries = 1;
+    // repeated .rsosor.generated.ActivityEntry entries = 1;
     {::_pbi::TcParser::FastMtR1,
      {10, 63, 0, PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.entries_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .bigtwo.ActivityEntry entries = 1;
+    // repeated .rsosor.generated.ActivityEntry entries = 1;
     {PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.entries_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetTable<::bigtwo::ActivityEntry>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::ActivityEntry>()},
   }}, {{
   }},
 };
 
 PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ActivityLogResponse)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ActivityLogResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -8786,11 +8799,11 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ActivityLogResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ActivityLogResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ActivityLogResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .bigtwo.ActivityEntry entries = 1;
+          // repeated .rsosor.generated.ActivityEntry entries = 1;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_entries_size());
                i < n; i++) {
@@ -8806,7 +8819,7 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ActivityLogResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ActivityLogResponse)
           return target;
         }
 
@@ -8817,7 +8830,7 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
         ::size_t ActivityLogResponse::ByteSizeLong() const {
           const ActivityLogResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ActivityLogResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ActivityLogResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -8826,7 +8839,7 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .bigtwo.ActivityEntry entries = 1;
+            // repeated .rsosor.generated.ActivityEntry entries = 1;
             {
               total_size += 1UL * this_._internal_entries_size();
               for (const auto& msg : this_._internal_entries()) {
@@ -8841,7 +8854,7 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
 void ActivityLogResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ActivityLogResponse*>(&to_msg);
   auto& from = static_cast<const ActivityLogResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ActivityLogResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ActivityLogResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8852,7 +8865,7 @@ void ActivityLogResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, con
 }
 
 void ActivityLogResponse::CopyFrom(const ActivityLogResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ActivityLogResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ActivityLogResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8881,11 +8894,11 @@ ActivityEntry::ActivityEntry(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:bigtwo.ActivityEntry)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.ActivityEntry)
 }
 inline PROTOBUF_NDEBUG_INLINE ActivityEntry::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::bigtwo::ActivityEntry& from_msg)
+    const Impl_& from, const ::rsosor::generated::ActivityEntry& from_msg)
       : timestamp_(arena, from.timestamp_),
         _cached_size_{0} {}
 
@@ -8910,7 +8923,7 @@ ActivityEntry::ActivityEntry(
                offsetof(Impl_, game_id_) +
                sizeof(Impl_::winner_));
 
-  // @@protoc_insertion_point(copy_constructor:bigtwo.ActivityEntry)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.ActivityEntry)
 }
 inline PROTOBUF_NDEBUG_INLINE ActivityEntry::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -8928,7 +8941,7 @@ inline void ActivityEntry::SharedCtor(::_pb::Arena* arena) {
                sizeof(Impl_::winner_));
 }
 ActivityEntry::~ActivityEntry() {
-  // @@protoc_insertion_point(destructor:bigtwo.ActivityEntry)
+  // @@protoc_insertion_point(destructor:rsosor.generated.ActivityEntry)
   SharedDtor(*this);
 }
 inline void ActivityEntry::SharedDtor(MessageLite& self) {
@@ -8975,7 +8988,7 @@ const ::google::protobuf::internal::ClassData* ActivityEntry::GetClassData() con
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 38, 2> ActivityEntry::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 48, 2> ActivityEntry::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -8990,7 +9003,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 38, 2> ActivityEntry::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::bigtwo::ActivityEntry>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::ActivityEntry>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
@@ -9018,14 +9031,14 @@ const ::_pbi::TcParseTable<2, 3, 0, 38, 2> ActivityEntry::_table_ = {
   }},
   // no aux_entries
   {{
-    "\24\0\0\11\0\0\0\0"
-    "bigtwo.ActivityEntry"
+    "\36\0\0\11\0\0\0\0"
+    "rsosor.generated.ActivityEntry"
     "timestamp"
   }},
 };
 
 PROTOBUF_NOINLINE void ActivityEntry::Clear() {
-// @@protoc_insertion_point(message_clear_start:bigtwo.ActivityEntry)
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.ActivityEntry)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -9049,7 +9062,7 @@ PROTOBUF_NOINLINE void ActivityEntry::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const ActivityEntry& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:bigtwo.ActivityEntry)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.ActivityEntry)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -9071,7 +9084,7 @@ PROTOBUF_NOINLINE void ActivityEntry::Clear() {
           if (!this_._internal_timestamp().empty()) {
             const std::string& _s = this_._internal_timestamp();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "bigtwo.ActivityEntry.timestamp");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.ActivityEntry.timestamp");
             target = stream->WriteStringMaybeAliased(3, _s, target);
           }
 
@@ -9080,7 +9093,7 @@ PROTOBUF_NOINLINE void ActivityEntry::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:bigtwo.ActivityEntry)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.ActivityEntry)
           return target;
         }
 
@@ -9091,7 +9104,7 @@ PROTOBUF_NOINLINE void ActivityEntry::Clear() {
         ::size_t ActivityEntry::ByteSizeLong() const {
           const ActivityEntry& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:bigtwo.ActivityEntry)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.ActivityEntry)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -9123,7 +9136,7 @@ PROTOBUF_NOINLINE void ActivityEntry::Clear() {
 void ActivityEntry::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<ActivityEntry*>(&to_msg);
   auto& from = static_cast<const ActivityEntry&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:bigtwo.ActivityEntry)
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.ActivityEntry)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9141,7 +9154,7 @@ void ActivityEntry::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::g
 }
 
 void ActivityEntry::CopyFrom(const ActivityEntry& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:bigtwo.ActivityEntry)
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.ActivityEntry)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -9166,7 +9179,8 @@ void ActivityEntry::InternalSwap(ActivityEntry* PROTOBUF_RESTRICT other) {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace bigtwo
+}  // namespace generated
+}  // namespace rsosor
 namespace google {
 namespace protobuf {
 }  // namespace protobuf

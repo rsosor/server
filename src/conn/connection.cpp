@@ -13,8 +13,8 @@
 #include "conn/connection.h"
 #include "util/d2d.h"
 
+using namespace rsosor::game::player;
 using boost::asio::ip::tcp;
-
 /**
  * Connection::start()
  * └── read_name()             // async_read_some

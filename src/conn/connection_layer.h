@@ -4,7 +4,7 @@
  */
 #pragma once
 
-#include "game_room/game_room.h"
+#include "game/game_room/game_room.h"
 
 #include <string>
 #include <memory>
@@ -13,11 +13,13 @@
 
 using json = nlohmann::json;
 
+namespace game_room = rsosor::game::game_room;
+
 class ConnectionLayer {
-    std::shared_ptr<GameRoom> game_room;
+    std::shared_ptr<game_room::GameRoom> game_room;
 
 public:
-    ConnectionLayer(std::shared_ptr<GameRoom> gr) : game_room(gr) {}
+    ConnectionLayer(std::shared_ptr<game_room::GameRoom> gr) : game_room(gr) {}
 
     void handle_message(int player_id, const std::string& msg);
 };

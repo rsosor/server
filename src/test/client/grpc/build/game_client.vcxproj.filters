@@ -7,6 +7,12 @@
     <ClCompile Include="D:\rsosor\cpp\game\src\test\client\grpc\src\grpc\bigtwo_client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\rsosor\cpp\game\src\test\client\grpc\src\login\login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\rsosor\cpp\game\src\test\client\grpc\src\websocket\websocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\rsosor\cpp\game\src\test\client\grpc\src\generated\bigtwo.grpc.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -16,6 +22,9 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\rsosor\cpp\game\src\test\client\grpc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\godpk\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
