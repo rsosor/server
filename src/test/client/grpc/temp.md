@@ -32,7 +32,7 @@ message PassResponse {
 }
 
 message Card {
-  string suit = 1; // "spades", "hearts", "diamonds", "clubs"
+  string suit = 1; // "clubs", "diamonds", "hearts", "spades"
   int32 rank = 2;  // 3 ~ 15，J=11, Q=12, K=13, A=14, 2=15
 }
 
