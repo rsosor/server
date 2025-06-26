@@ -15,11 +15,10 @@ namespace game {
 namespace card {
 
     enum class Suit {
-        Spades = 0,
-        Hearts,
+        Clubs = 0,
         Diamonds,
-        Clubs,
-        unknown
+        Hearts,
+        Spades
     };
 
     struct Card {
@@ -30,6 +29,8 @@ namespace card {
 
         Card() = default;
         Card(Suit s, int r);
+
+        std::string toString() const;
     };
 
 }   // card

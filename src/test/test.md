@@ -76,28 +76,21 @@ protoc --proto_path=src/proto --cpp_out=src/generated --grpc_out=src/generated -
 | `/MT`     | 使用 **靜態連結** 的 MSVC runtime | 所有 runtime 都進 exe 裡 |
 ~~~
 
-靜態連結 bigtwo_client.cpp
+建議使用 cmake 自動構建而非手動編譯：
 ~~~
-cl /std:c++23 /EHsc /MT src/test/client/grpc/bigtwo_client.cpp src/generated/bigtwo.pb.cc src/generated/bigtwo.grpc.pb.cc /Isrc /Isrc/generated /IC:\Users\godpk\vcpkg\installed\x64-windows-static\include /DPROTOBUF_USE_DLLS=0 /DGRPC_USE_DLLS=0 /DABSL_FORCE_INTERNAL_IMPLEMENTATION=1 /Fe:src/test/client/grpc /link /LIBPATH:C:\Users\godpk\vcpkg\installed\x64-windows-static\lib grpc++.lib grpc.lib gpr.lib libprotobuf.lib libprotoc.lib absl_synchronization.lib absl_time.lib absl_strings.lib absl_status.lib absl_base.lib ws2_32.lib
+cmake --build build --config Release
 ~~~
-- fatal error LNK1120: 414 個無法解析的外部符號
-
-動態連結 bigtwo_client.cpp（無 absl_synchronization.lib、absl_time.lib、absl_strings.lib、absl_status.lib、absl_base.lib）
-~~~
-cl /std:c++23 /EHsc /MD src/test/client/grpc/bigtwo_client.cpp src/generated/bigtwo.pb.cc src/generated/bigtwo.grpc.pb.cc /Isrc /Isrc/generated /IC:\Users\godpk\vcpkg\installed\x64-windows\include /DPROTOBUF_USE_DLLS /DGRPC_USE_DLLS /Fe:src/test/client/grpc /link /LIBPATH:C:\Users\godpk\vcpkg\installed\x64-windows\lib grpc++.lib grpc.lib gpr.lib libprotobuf.lib libprotoc.lib ws2_32.lib
-~~~
-- fatal error LNK1120: 455 個無法解析的外部符號
 
 # websocekt
 
-你可以使用 wscat 測試：
+wscat：
 ~~~
-wscat -c wss://localhost:8080 --no-check
+wscat -c wss://localhost:8443 --no-check
 ~~~
 
-或者瀏覽器 JS:
+瀏覽器 JS:
 ~~~
-let ws = new WebSocket("wss://localhost:8080");
+let ws = new WebSocket("wss://localhost:8443");
 ws.onmessage = msg => console.log(msg.data);
 ws.send("Hello from browser!");
 ~~~

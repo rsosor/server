@@ -1,6 +1,7 @@
 #include "grpc/bigtwo_client.h"
 #include "login/login.h"
 #include "websocket/websocket.h"
+#include "game/game_client.h"
 
 namespace beast = boost::beast;
 namespace http = beast::http;
@@ -75,66 +76,72 @@ int main() {
     ioc.run();
 
     /**
+     * 模擬 bigtwo，client 先自主驗證
+     */
+    GameClient client;
+    client.play();
+
+    /**
      * grpc io
      */
     // 1. 由第一位玩家（Alice）啟動遊戲
-    BigTwoClient rpc_client(grpc::CreateChannel(grpc_url, grpc::InsecureChannelCredentials()));
+    // BigTwoClient rpc_client(grpc::CreateChannel(grpc_url, grpc::InsecureChannelCredentials()));
 
-    int alice_id = rpc_client.JoinGame("Alice");
-    int bob_id = rpc_client.JoinGame("Bob");
-    int charlie_id = rpc_client.JoinGame("Charlie");
-    int dave_id = rpc_client.JoinGame("Dave");
+    // int alice_id = rpc_client.JoinGame("Alice");
+    // int bob_id = rpc_client.JoinGame("Bob");
+    // int charlie_id = rpc_client.JoinGame("Charlie");
+    // int dave_id = rpc_client.JoinGame("Dave");
 
-    // 2. 由 Alice 發起遊戲
-    rpc_client.StartGame(alice_id);
+    // // 2. 由 Alice 發起遊戲
+    // rpc_client.StartGame(alice_id);
 
-    // 3. 由 server 發牌
-    rpc_client.Deal(alice_id);
+    // // 3. 由 server 發牌
+    // rpc_client.Deal(alice_id);
 
-    // 4. 每位可以依序出牌
-    // 假如我們事先知道每人的第一張牌
-    gen::Card alice_card;
-    alice_card.set_suit("clubs");
-    alice_card.set_rank(3);
-    rpc_client.PlayCards(alice_id, {alice_card});
+    // // 4. 每位可以依序出牌
+    // // 假如我們事先知道每人的第一張牌
+    // gen::Card alice_card;
+    // alice_card.set_suit("clubs");
+    // alice_card.set_rank(3);
+    // rpc_client.PlayCards(alice_id, {alice_card});
 
-    gen::Card bob_card;
-    bob_card.set_suit("diamonds");
-    bob_card.set_rank(4);
-    rpc_client.PlayCards(bob_id, {bob_card});
+    // gen::Card bob_card;
+    // bob_card.set_suit("diamonds");
+    // bob_card.set_rank(4);
+    // rpc_client.PlayCards(bob_id, {bob_card});
 
-    // Charlie pass
-    rpc_client.Pass(charlie_id);
+    // // Charlie pass
+    // rpc_client.Pass(charlie_id);
 
-    gen::Card dave_card;
-    dave_card.set_suit("hearts");
-    dave_card.set_rank(5);
-    rpc_client.PlayCards(dave_id, {dave_card});
+    // gen::Card dave_card;
+    // dave_card.set_suit("hearts");
+    // dave_card.set_rank(5);
+    // rpc_client.PlayCards(dave_id, {dave_card});
 
-    // 5. 檢查遊戲當前狀態
-    rpc_client.GetGameState(alice_id);
+    // // 5. 檢查遊戲當前狀態
+    // rpc_client.GetGameState(alice_id);
 
-    // 6. 玩家可以發送聊天室消息
-    rpc_client.Chat(bob_id, "Nice");
+    // // 6. 玩家可以發送聊天室消息
+    // rpc_client.Chat(bob_id, "Nice");
 
-    /**
-     * websocket io
-     */
-    const std::string message = "Hello from WSS client!";
-    run_tls_websocket_client(host, ws_port, message);
+    // /**
+    //  * websocket io
+    //  */
+    // const std::string message = "Hello from WSS client!";
+    // run_tls_websocket_client(host, ws_port, message);
 
-    // 7. 一旦遊戲結束，可以由 server 計分
-    std::vector<int> players;
-    players.push_back(alice_id);
-    players.push_back(bob_id);
-    players.push_back(charlie_id);
-    players.push_back(dave_id);
-    rpc_client.Score(players);
+    // // 7. 一旦遊戲結束，可以由 server 計分
+    // std::vector<int> players;
+    // players.push_back(alice_id);
+    // players.push_back(bob_id);
+    // players.push_back(charlie_id);
+    // players.push_back(dave_id);
+    // rpc_client.Score(players);
 
-    // 8. 檢視排行與勝率
-    rpc_client.GetRanking(5);
-    rpc_client.GetPlayerWinRate(alice_id);
-    rpc_client.GetActivityLog(10);
+    // // 8. 檢視排行與勝率
+    // rpc_client.GetRanking(5);
+    // rpc_client.GetPlayerWinRate(alice_id);
+    // rpc_client.GetActivityLog(10);
 
     return 0;
 }
