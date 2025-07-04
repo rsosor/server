@@ -2,7 +2,7 @@
 
 #include <string>
 
-enum class Suit { Clubs, Diamonds, Hearts, Spades };
+enum class Suit { Clubs = 0, Diamonds = 1, Hearts = 2, Spades = 3 };
 // extern const char* suitNames[];
 // extern const char* rankNames[];
 

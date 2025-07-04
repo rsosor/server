@@ -13,17 +13,17 @@ bool FakeServer::validatePlay(const std::vector<Card>& curr_cards, int curr_play
     // 新一輪開始，last_cards 空，第一位玩家必須出牌
     if (last_cards.empty()) {
         if (curr_cards.empty()) {
-            std::cout << "[Server] 新一輪開始，第一位玩家不能 PASS，請出牌！" << '\n';
+            std::cout << "[Fake Server] 新一輪開始，第一位玩家不能 PASS，請出牌！" << '\n';
             return false;
         }
     
         if (curr_type == HandType::Invalid) {
-            std::cout << "[Server] 無效的牌型" << '\n';
+            std::cout << "[Fake Server] 無效的牌型" << '\n';
             return false;
         }
 
         // 第一手出牌成功
-        std::cout << "[Server] 新一輪開始，玩家 " << curr_player_id << " 出了：";
+        std::cout << "[Fake Server] 新一輪開始，玩家 " << curr_player_id << " 出了：";
         for (const auto& c : curr_cards) std::cout << c.toString() << " ";
         std::cout << "\n";
         last_cards = curr_cards;
@@ -36,10 +36,10 @@ bool FakeServer::validatePlay(const std::vector<Card>& curr_cards, int curr_play
     // 非新一輪，玩家 PASS 的情況
     if (curr_cards.empty()) {
         pass_count++;
-        std::cout << "[Server] 玩家 " << curr_player_id << "PASS" << '\n';
+        std::cout << "[Fake Server] 玩家 " << curr_player_id << "PASS" << '\n';
 
         if (pass_count >= total_players - 1) {
-            std::cout << "[Server] 本輪結束，下一位玩家可自由出牌。" << '\n';
+            std::cout << "[Fake Server] 本輪結束，下一位玩家可自由出牌。" << '\n';
             last_cards.clear();
             last_hand_type = HandType::Invalid;
             pass_count = 0;
@@ -50,27 +50,27 @@ bool FakeServer::validatePlay(const std::vector<Card>& curr_cards, int curr_play
 
     // 有牌出，檢查牌型是否有效
     if (curr_type == HandType::Invalid) {
-        std::cout << "[Server] 無效的牌型" << '\n';
+        std::cout << "[Fake Server] 無效的牌型" << '\n';
         return false;
     }
 
     // 要牌型一致才能比較強度
     if (curr_type != last_hand_type) {
-        std::cout << "[Server] 出牌型態不同，請出相同型態。" << '\n';
+        std::cout << "[Fake Server] 出牌型態不同，請出相同型態。" << '\n';
         return false;
     }
 
     // 比較強弱
     if (is_stronger(curr_cards, last_cards)) {
         // 出牌
-        std::cout << "[Server] 玩家 " << curr_player_id << " 出牌成功，壓過上一手。" << '\n';
+        std::cout << "[Fake Server] 玩家 " << curr_player_id << " 出牌成功，壓過上一手。" << '\n';
         last_cards = curr_cards;
         last_hand_type = curr_type;
         last_player_id = curr_player_id;
         pass_count = 0;
         return true;
     } else {
-        std::cout << "[Server] 出的牌無法壓過上一手。" << '\n';
+        std::cout << "[Fake Server] 出的牌無法壓過上一手。" << '\n';
         return false;
     }
 

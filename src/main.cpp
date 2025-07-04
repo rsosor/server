@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <memory>
+// #include <future>
 
 #include <boost/asio/ssl.hpp>
 
@@ -348,6 +349,14 @@ int main() {
 
     /**
      * 整合 grpc
+     * 
+     * Future：
+     * 讓 gRPC 與 ioc.run() 使用 std::jthread（C++20）
+     * 如果未來轉到 C++20，可以用 std::jthread，自動 join()，更安全。
+     * 
+     * 把 thread 包成 ThreadManager 類別
+     * 如伺服器再擴大，有更多 thread（例如資料庫 thread、AI 運算 thread）
+     * 可以封裝 thread + promise/future 成 ManagedThread 類型。
      */
     try {
         // 確認有多少可用的硬體執行緒（CPU 核心數）
@@ -375,34 +384,71 @@ int main() {
         auto http_server = std::make_shared<HttpServer>(ioc, http_port);
         http_server->run();
 
+        /**
+         * gRPC thread 的例外要自己包
+         * 用 lambda 或封裝類包裝 thread
+         * 為了更好管理多執行緒，可以用 std::function<void()> 或封裝類別來統一管理 worker 執行緒
+         */
         // 啟動 gRPC server thread
-        std::thread grpc_thread(rsosor::grpc_api::RunGrpcServer, grpc_addr);
+        std::thread grpc_thread(std::move([&grpc_addr]() {
+            try {
+                rsosor::grpc_api::RunGrpcServer(grpc_addr);
+            } catch (const std::exception& e) {
+                std::cerr << "[gRPC Thread Error] " << e.what() << '\n';
+            }
+        }));
 
         // 啟動 websocket server
         auto ws_server = std::make_shared<WebSocketServer>(ioc, ssl_ctx, ws_port);
         ws_server->run();
 
+        /**
+         * v1.
+         * 每條 thread 用 try-catch 包起來 + 傳送錯誤回主線程
+         */
         // 啟動多個 ioc threads
         std::vector<std::thread> threads;
+        std::vector<std::future<void>> thread_results;
+
         for (unsigned int i = 0; i < thread_count; ++i) {
-            threads.emplace_back([&ioc]() {
-                ioc.run(); // 每條 thread 都執行同一個 ioc 的事件處理迴圈
+            std::promise<void> p;
+            thread_results.push_back(p.get_future());
+
+            threads.emplace_back([&ioc, prom = std::move(p)]() mutable {
+                try {
+                    ioc.run();          // 每條 thread 都執行同一個 ioc 的事件處理迴圈
+                    prom.set_value();   // 成功結束
+                } catch (const std::exception& e) {
+                    std::cerr << "[Thread Error] " << e.what() << '\n';
+                    try {
+                        prom.set_exception(std::current_exception());   // 傳例外給主線程
+                    } catch (...) {}
+                }
             });
         }
 
-        // 執行 gRPC Server 在另一條 thread 裡
-        // std::thread grpc_thread([]() {
-        //     grpc::Channel::RunGrpcServer();
-        // });
-
-        // ioc.run();   // 開始事件循環
-        // grpc_thread.join();
+        // 主線程中等待與檢查
+        for (auto& f : thread_results) {
+            try {
+                f.get();    // 會 rethrow 執行緒中發生的例外
+            } catch (const std::exception& e) {
+                std::cerr << "[Main] A thread threw exception: " << e.what() << '\n';
+            }
+        }
 
         // 等待所有 threads 結束
         for (auto& t : threads) {
             t.join();
         }
         grpc_thread.join();
+
+        /**
+         * v2.
+         * 使用 thread-safe queue 傳送錯誤訊息給主線程
+         * 如果有長時間運作的伺服器、或想做監控
+         * 可用一個 std::queue<std::string> + mutex 將錯誤寫入
+         * 主線程定期檢查 queue。
+         */
     } catch (std::exception& e) {
         std::cerr << "Server error: " << e.what() << '\n';
     }

@@ -24,7 +24,7 @@ int main() {
      * Crow、Pistache、Restbed 等 C++ REST 框架
      * 用你熟悉的其他語言快速實作（Python Flask、Node.js Express），C++ 作為遊戲邏輯後端
      */
-    Client http_client;
+    // Client http_client;
 
     std::string host = "127.0.0.1";
     std::string socket_port = "12345";
@@ -76,10 +76,35 @@ int main() {
     ioc.run();
 
     /**
-     * 模擬 bigtwo，client 先自主驗證
+     * GameClient
      */
-    GameClient client;
+    auto channel = grpc::CreateChannel(grpc_url, grpc::InsecureChannelCredentials());
+    std::cout << "Channel created at " << channel.get() << '\n';
+    GameClient client(channel);
     client.play();
+
+
+    /**
+     * 多線程版本
+     */
+    // std::thread game_thread([&grpc_url]() {
+    //     try {
+    //         auto channel = grpc::CreateChannel(grpc_url, grpc::InsecureChannelCredentials());
+    //         GameClient client(channel);
+    //         client.play();
+    //     } catch (const std::exception& e) {
+    //         std::cerr << "[Game Thread Error] " << e.what() << '\n';
+    //     }
+    // });
+
+    // Boost Asio 的 ioc 事件主迴圈
+    // try {
+    //     ioc.run();
+    // } catch (const std::exception& e) {
+    //     std::cerr << "[Main IO Error] " << e.what() << '\n';
+    // }
+
+    // game_thread.join();
 
     /**
      * grpc io
@@ -93,10 +118,10 @@ int main() {
     // int dave_id = rpc_client.JoinGame("Dave");
 
     // // 2. 由 Alice 發起遊戲
-    // rpc_client.StartGame(alice_id);
+    // rpc_client.Login(alice_id);
 
     // // 3. 由 server 發牌
-    // rpc_client.Deal(alice_id);
+    // rpc_client.Deal(username, psw);
 
     // // 4. 每位可以依序出牌
     // // 假如我們事先知道每人的第一張牌

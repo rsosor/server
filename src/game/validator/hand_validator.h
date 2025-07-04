@@ -12,10 +12,10 @@ namespace validator {
     class HandValidator : public IHandValidator {
     public:
         // 解析目前出的牌是否合法，並轉換為規則手牌型別
-        HandInfo Parse(const std::vector<card::Card>& cards);
+        HandInfo parse(const std::vector<card::Card>& cards);
 
         // 和上一手比較是否可以出
-        bool IsStronger(const HandInfo& prev, const HandInfo& current);
+        bool is_stronger(const std::vector<card::Card>& prev, const std::vector<card::Card>& current);
     };
 
 }   // validator

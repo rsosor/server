@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(game_client CXX)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 #
 # ---------- vscode ----------
 #

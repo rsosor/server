@@ -37,7 +37,7 @@ namespace state {
 
     class GameStateData {
     public:
-        int register_player(const std::string& name);
+        int register_player(const int player_id, const std::string& name);
         void remove_player(int id);
 
         std::shared_ptr<player::Player> get_player(int id);

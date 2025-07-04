@@ -4,7 +4,7 @@ namespace rsosor {
 namespace game {
 namespace state {
 
-    int GameStateData::register_player(const std::string& name) {
+    int GameStateData::register_player(const int player_id, const std::string& name) {
         std::lock_guard<std::mutex> lock(mutex_);
 
         int id = next_player_id_++;
