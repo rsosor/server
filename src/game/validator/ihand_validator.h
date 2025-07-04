@@ -39,9 +39,9 @@ namespace validator {
 
     class IHandValidator {
     public:
-        virtual HandInfo Parse(const std::vector<card::Card>& cards) = 0;
-        virtual bool IsStronger(const HandInfo& prev, const HandInfo& current) = 0;
         virtual ~IHandValidator() = default;
+        virtual HandInfo parse(const std::vector<card::Card>& cards) = 0;
+        virtual bool is_stronger(const std::vector<card::Card>& prev, const std::vector<card::Card>& current) = 0;
     };
 
 }   // validator

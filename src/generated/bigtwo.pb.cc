@@ -79,59 +79,6 @@ struct TimeoutRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TimeoutRequestDefaultTypeInternal _TimeoutRequest_default_instance_;
-
-inline constexpr StartGameResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : message_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        success_{false},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR StartGameResponse::StartGameResponse(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct StartGameResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StartGameResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StartGameResponseDefaultTypeInternal() {}
-  union {
-    StartGameResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StartGameResponseDefaultTypeInternal _StartGameResponse_default_instance_;
-
-inline constexpr StartGameRequest::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : initiator_player_id_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR StartGameRequest::StartGameRequest(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct StartGameRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StartGameRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StartGameRequestDefaultTypeInternal() {}
-  union {
-    StartGameRequest _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StartGameRequestDefaultTypeInternal _StartGameRequest_default_instance_;
               template <typename>
 PROTOBUF_CONSTEXPR ScoreResponse_ScoresEntry_DoNotUse::ScoreResponse_ScoresEntry_DoNotUse(::_pbi::ConstantInitialized)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
@@ -178,7 +125,8 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 
 inline constexpr PlayerRateResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : total_games_{0},
+      : success_{false},
+        total_games_{0},
         wins_{0},
         win_ratio_{0},
         _cached_size_{0} {}
@@ -366,11 +314,106 @@ struct PassRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PassRequestDefaultTypeInternal _PassRequest_default_instance_;
 
+inline constexpr LoginResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : message_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        success_{false},
+        player_id_{0},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR LoginResponse::LoginResponse(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct LoginResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR LoginResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~LoginResponseDefaultTypeInternal() {}
+  union {
+    LoginResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LoginResponseDefaultTypeInternal _LoginResponse_default_instance_;
+
+inline constexpr LoginRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : player_name_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        psw_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR LoginRequest::LoginRequest(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct LoginRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR LoginRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~LoginRequestDefaultTypeInternal() {}
+  union {
+    LoginRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LoginRequestDefaultTypeInternal _LoginRequest_default_instance_;
+
+inline constexpr JoinResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : player_name_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        message_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        success_{false},
+        player_id_{0},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR JoinResponse::JoinResponse(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct JoinResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR JoinResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~JoinResponseDefaultTypeInternal() {}
+  union {
+    JoinResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 JoinResponseDefaultTypeInternal _JoinResponse_default_instance_;
+
 inline constexpr JoinRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : player_name_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
+        room_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        player_id_{0},
         _cached_size_{0} {}
 
 template <typename>
@@ -392,6 +435,24 @@ struct JoinRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 JoinRequestDefaultTypeInternal _JoinRequest_default_instance_;
+              template <typename>
+PROTOBUF_CONSTEXPR GameStateResponse_HandSizesEntry_DoNotUse::GameStateResponse_HandSizesEntry_DoNotUse(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : GameStateResponse_HandSizesEntry_DoNotUse::MapEntry(_class_data_.base()){}
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : GameStateResponse_HandSizesEntry_DoNotUse::MapEntry() {
+}
+#endif  // PROTOBUF_CUSTOM_VTABLE
+struct GameStateResponse_HandSizesEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GameStateResponse_HandSizesEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GameStateResponse_HandSizesEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    GameStateResponse_HandSizesEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameStateResponse_HandSizesEntry_DoNotUseDefaultTypeInternal _GameStateResponse_HandSizesEntry_DoNotUse_default_instance_;
 
 inline constexpr GameStateRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -417,11 +478,58 @@ struct GameStateRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameStateRequestDefaultTypeInternal _GameStateRequest_default_instance_;
+              template <typename>
+PROTOBUF_CONSTEXPR GameState_HandSizesEntry_DoNotUse::GameState_HandSizesEntry_DoNotUse(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : GameState_HandSizesEntry_DoNotUse::MapEntry(_class_data_.base()){}
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : GameState_HandSizesEntry_DoNotUse::MapEntry() {
+}
+#endif  // PROTOBUF_CUSTOM_VTABLE
+struct GameState_HandSizesEntry_DoNotUseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GameState_HandSizesEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GameState_HandSizesEntry_DoNotUseDefaultTypeInternal() {}
+  union {
+    GameState_HandSizesEntry_DoNotUse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameState_HandSizesEntry_DoNotUseDefaultTypeInternal _GameState_HandSizesEntry_DoNotUse_default_instance_;
+
+inline constexpr GameRoomId::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : room_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GameRoomId::GameRoomId(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct GameRoomIdDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GameRoomIdDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GameRoomIdDefaultTypeInternal() {}
+  union {
+    GameRoomId _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameRoomIdDefaultTypeInternal _GameRoomId_default_instance_;
 
 inline constexpr DealRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
-      : player_ids_{},
-        _player_ids_cached_byte_size_{0},
+      : room_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        player_id_{0},
         _cached_size_{0} {}
 
 template <typename>
@@ -582,6 +690,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 inline constexpr ScoreResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : scores_{},
+        success_{false},
         _cached_size_{0} {}
 
 template <typename>
@@ -607,6 +716,7 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 inline constexpr RankingResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : ranking_{},
+        success_{false},
         _cached_size_{0} {}
 
 template <typename>
@@ -632,7 +742,10 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
 inline constexpr PlayValidationRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : cards_{},
-        last_played_{},
+        last_played_cards_{},
+        room_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
         player_id_{0},
         _cached_size_{0} {}
 
@@ -682,35 +795,6 @@ struct PlayRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PlayRequestDefaultTypeInternal _PlayRequest_default_instance_;
 
-inline constexpr JoinResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : hand_{},
-        message_(
-            &::google::protobuf::internal::fixed_address_empty_string,
-            ::_pbi::ConstantInitialized()),
-        player_id_{0},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR JoinResponse::JoinResponse(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct JoinResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR JoinResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~JoinResponseDefaultTypeInternal() {}
-  union {
-    JoinResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 JoinResponseDefaultTypeInternal _JoinResponse_default_instance_;
-
 inline constexpr Hand::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : cards_{},
@@ -740,9 +824,11 @@ inline constexpr GameStateResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : hand_{},
         last_played_cards_{},
+        hand_sizes_{},
         phase_(
             &::google::protobuf::internal::fixed_address_empty_string,
             ::_pbi::ConstantInitialized()),
+        success_{false},
         current_turn_player_id_{0},
         _cached_size_{0} {}
 
@@ -766,9 +852,67 @@ struct GameStateResponseDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameStateResponseDefaultTypeInternal _GameStateResponse_default_instance_;
 
+inline constexpr GameState::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : last_played_cards_{},
+        hand_sizes_{},
+        message_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        success_{false},
+        current_turn_player_id_{0},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR GameState::GameState(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct GameStateDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR GameStateDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~GameStateDefaultTypeInternal() {}
+  union {
+    GameState _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GameStateDefaultTypeInternal _GameState_default_instance_;
+
+inline constexpr DealResponse::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : cards_{},
+        success_{false},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR DealResponse::DealResponse(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct DealResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR DealResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~DealResponseDefaultTypeInternal() {}
+  union {
+    DealResponse _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DealResponseDefaultTypeInternal _DealResponse_default_instance_;
+
 inline constexpr ActivityLogResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : entries_{},
+        success_{false},
         _cached_size_{0} {}
 
 template <typename>
@@ -808,24 +952,6 @@ struct ScoreRequest_FinalHandsEntry_DoNotUseDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ScoreRequest_FinalHandsEntry_DoNotUseDefaultTypeInternal _ScoreRequest_FinalHandsEntry_DoNotUse_default_instance_;
-              template <typename>
-PROTOBUF_CONSTEXPR DealResponse_DealtHandsEntry_DoNotUse::DealResponse_DealtHandsEntry_DoNotUse(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : DealResponse_DealtHandsEntry_DoNotUse::MapEntry(_class_data_.base()){}
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : DealResponse_DealtHandsEntry_DoNotUse::MapEntry() {
-}
-#endif  // PROTOBUF_CUSTOM_VTABLE
-struct DealResponse_DealtHandsEntry_DoNotUseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR DealResponse_DealtHandsEntry_DoNotUseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~DealResponse_DealtHandsEntry_DoNotUseDefaultTypeInternal() {}
-  union {
-    DealResponse_DealtHandsEntry_DoNotUse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DealResponse_DealtHandsEntry_DoNotUseDefaultTypeInternal _DealResponse_DealtHandsEntry_DoNotUse_default_instance_;
 
 inline constexpr ScoreRequest::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -853,31 +979,6 @@ struct ScoreRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ScoreRequestDefaultTypeInternal _ScoreRequest_default_instance_;
-
-inline constexpr DealResponse::Impl_::Impl_(
-    ::_pbi::ConstantInitialized) noexcept
-      : dealt_hands_{},
-        _cached_size_{0} {}
-
-template <typename>
-PROTOBUF_CONSTEXPR DealResponse::DealResponse(::_pbi::ConstantInitialized)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(_class_data_.base()),
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(),
-#endif  // PROTOBUF_CUSTOM_VTABLE
-      _impl_(::_pbi::ConstantInitialized()) {
-}
-struct DealResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR DealResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
-  ~DealResponseDefaultTypeInternal() {}
-  union {
-    DealResponse _instance;
-  };
-};
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DealResponseDefaultTypeInternal _DealResponse_default_instance_;
 }  // namespace generated
 }  // namespace rsosor
 static constexpr const ::_pb::EnumDescriptor**
@@ -934,7 +1035,9 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinRequest, _impl_.player_id_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinRequest, _impl_.player_name_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinRequest, _impl_.room_id_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -943,8 +1046,9 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.player_id_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.hand_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.player_name_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::JoinResponse, _impl_.message_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateRequest, _internal_metadata_),
@@ -955,6 +1059,18 @@ const ::uint32_t
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse, _impl_.key_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse, _impl_.value_),
+        0,
+        1,
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -963,10 +1079,12 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.hand_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.current_turn_player_id_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.last_played_cards_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.phase_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameStateResponse, _impl_.hand_sizes_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatRequest, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -987,24 +1105,26 @@ const ::uint32_t
         ~0u,  // no sizeof(Split)
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::ChatResponse, _impl_.success_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameRequest, _impl_.initiator_player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginRequest, _impl_.player_name_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginRequest, _impl_.psw_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _impl_.success_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::StartGameResponse, _impl_.message_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginResponse, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::LoginResponse, _impl_.message_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::Card, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -1023,19 +1143,8 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealRequest, _impl_.player_ids_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_._has_bits_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _internal_metadata_),
-        ~0u,  // no _extensions_
-        ~0u,  // no _oneof_case_
-        ~0u,  // no _weak_field_map_
-        ~0u,  // no _inlined_string_donated_
-        ~0u,  // no _split_
-        ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_),
-        0,
-        1,
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealRequest, _impl_.room_id_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -1044,7 +1153,8 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _impl_.dealt_hands_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::DealResponse, _impl_.cards_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::Hand, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -1063,8 +1173,9 @@ const ::uint32_t
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.room_id_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.cards_),
-        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.last_played_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationRequest, _impl_.last_played_cards_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayValidationResponse, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -1136,7 +1247,42 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::ScoreResponse, _impl_.scores_),
+        ~0u,  // no _has_bits_
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameRoomId, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameRoomId, _impl_.room_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState_HandSizesEntry_DoNotUse, _impl_._has_bits_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState_HandSizesEntry_DoNotUse, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState_HandSizesEntry_DoNotUse, _impl_.key_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState_HandSizesEntry_DoNotUse, _impl_.value_),
+        0,
+        1,
+        ~0u,  // no _has_bits_
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _impl_.success_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _impl_.current_turn_player_id_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _impl_.last_played_cards_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _impl_.hand_sizes_),
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::GameState, _impl_.message_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingRequest, _internal_metadata_),
         ~0u,  // no _extensions_
@@ -1154,6 +1300,7 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::RankingResponse, _impl_.ranking_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRanking, _internal_metadata_),
@@ -1183,6 +1330,7 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.total_games_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.wins_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::PlayerRateResponse, _impl_.win_ratio_),
@@ -1203,6 +1351,7 @@ const ::uint32_t
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogResponse, _impl_.success_),
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityLogResponse, _impl_.entries_),
         ~0u,  // no _has_bits_
         PROTOBUF_FIELD_OFFSET(::rsosor::generated::ActivityEntry, _internal_metadata_),
@@ -1224,34 +1373,37 @@ static const ::_pbi::MigrationSchema
         {20, -1, -1, sizeof(::rsosor::generated::PassRequest)},
         {29, -1, -1, sizeof(::rsosor::generated::PassResponse)},
         {39, -1, -1, sizeof(::rsosor::generated::JoinRequest)},
-        {48, -1, -1, sizeof(::rsosor::generated::JoinResponse)},
-        {59, -1, -1, sizeof(::rsosor::generated::GameStateRequest)},
-        {68, -1, -1, sizeof(::rsosor::generated::GameStateResponse)},
-        {80, -1, -1, sizeof(::rsosor::generated::ChatRequest)},
-        {90, -1, -1, sizeof(::rsosor::generated::ChatResponse)},
-        {99, -1, -1, sizeof(::rsosor::generated::StartGameRequest)},
-        {108, -1, -1, sizeof(::rsosor::generated::StartGameResponse)},
-        {118, -1, -1, sizeof(::rsosor::generated::Card)},
-        {128, -1, -1, sizeof(::rsosor::generated::DealRequest)},
-        {137, 147, -1, sizeof(::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse)},
-        {149, -1, -1, sizeof(::rsosor::generated::DealResponse)},
-        {158, -1, -1, sizeof(::rsosor::generated::Hand)},
-        {167, -1, -1, sizeof(::rsosor::generated::PlayValidationRequest)},
-        {178, -1, -1, sizeof(::rsosor::generated::PlayValidationResponse)},
-        {188, -1, -1, sizeof(::rsosor::generated::TimeoutRequest)},
-        {197, -1, -1, sizeof(::rsosor::generated::TimeoutResponse)},
-        {207, 217, -1, sizeof(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse)},
-        {219, -1, -1, sizeof(::rsosor::generated::ScoreRequest)},
-        {229, 239, -1, sizeof(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse)},
-        {241, -1, -1, sizeof(::rsosor::generated::ScoreResponse)},
-        {250, -1, -1, sizeof(::rsosor::generated::RankingRequest)},
-        {259, -1, -1, sizeof(::rsosor::generated::RankingResponse)},
-        {268, -1, -1, sizeof(::rsosor::generated::PlayerRanking)},
-        {279, -1, -1, sizeof(::rsosor::generated::PlayerRateRequest)},
-        {288, -1, -1, sizeof(::rsosor::generated::PlayerRateResponse)},
-        {299, -1, -1, sizeof(::rsosor::generated::ActivityLogRequest)},
-        {308, -1, -1, sizeof(::rsosor::generated::ActivityLogResponse)},
-        {317, -1, -1, sizeof(::rsosor::generated::ActivityEntry)},
+        {50, -1, -1, sizeof(::rsosor::generated::JoinResponse)},
+        {62, -1, -1, sizeof(::rsosor::generated::GameStateRequest)},
+        {71, 81, -1, sizeof(::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse)},
+        {83, -1, -1, sizeof(::rsosor::generated::GameStateResponse)},
+        {97, -1, -1, sizeof(::rsosor::generated::ChatRequest)},
+        {107, -1, -1, sizeof(::rsosor::generated::ChatResponse)},
+        {116, -1, -1, sizeof(::rsosor::generated::LoginRequest)},
+        {126, -1, -1, sizeof(::rsosor::generated::LoginResponse)},
+        {137, -1, -1, sizeof(::rsosor::generated::Card)},
+        {147, -1, -1, sizeof(::rsosor::generated::DealRequest)},
+        {157, -1, -1, sizeof(::rsosor::generated::DealResponse)},
+        {167, -1, -1, sizeof(::rsosor::generated::Hand)},
+        {176, -1, -1, sizeof(::rsosor::generated::PlayValidationRequest)},
+        {188, -1, -1, sizeof(::rsosor::generated::PlayValidationResponse)},
+        {198, -1, -1, sizeof(::rsosor::generated::TimeoutRequest)},
+        {207, -1, -1, sizeof(::rsosor::generated::TimeoutResponse)},
+        {217, 227, -1, sizeof(::rsosor::generated::ScoreRequest_FinalHandsEntry_DoNotUse)},
+        {229, -1, -1, sizeof(::rsosor::generated::ScoreRequest)},
+        {239, 249, -1, sizeof(::rsosor::generated::ScoreResponse_ScoresEntry_DoNotUse)},
+        {251, -1, -1, sizeof(::rsosor::generated::ScoreResponse)},
+        {261, -1, -1, sizeof(::rsosor::generated::GameRoomId)},
+        {270, 280, -1, sizeof(::rsosor::generated::GameState_HandSizesEntry_DoNotUse)},
+        {282, -1, -1, sizeof(::rsosor::generated::GameState)},
+        {295, -1, -1, sizeof(::rsosor::generated::RankingRequest)},
+        {304, -1, -1, sizeof(::rsosor::generated::RankingResponse)},
+        {314, -1, -1, sizeof(::rsosor::generated::PlayerRanking)},
+        {325, -1, -1, sizeof(::rsosor::generated::PlayerRateRequest)},
+        {334, -1, -1, sizeof(::rsosor::generated::PlayerRateResponse)},
+        {346, -1, -1, sizeof(::rsosor::generated::ActivityLogRequest)},
+        {355, -1, -1, sizeof(::rsosor::generated::ActivityLogResponse)},
+        {365, -1, -1, sizeof(::rsosor::generated::ActivityEntry)},
 };
 static const ::_pb::Message* const file_default_instances[] = {
     &::rsosor::generated::_PlayRequest_default_instance_._instance,
@@ -1261,14 +1413,14 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::rsosor::generated::_JoinRequest_default_instance_._instance,
     &::rsosor::generated::_JoinResponse_default_instance_._instance,
     &::rsosor::generated::_GameStateRequest_default_instance_._instance,
+    &::rsosor::generated::_GameStateResponse_HandSizesEntry_DoNotUse_default_instance_._instance,
     &::rsosor::generated::_GameStateResponse_default_instance_._instance,
     &::rsosor::generated::_ChatRequest_default_instance_._instance,
     &::rsosor::generated::_ChatResponse_default_instance_._instance,
-    &::rsosor::generated::_StartGameRequest_default_instance_._instance,
-    &::rsosor::generated::_StartGameResponse_default_instance_._instance,
+    &::rsosor::generated::_LoginRequest_default_instance_._instance,
+    &::rsosor::generated::_LoginResponse_default_instance_._instance,
     &::rsosor::generated::_Card_default_instance_._instance,
     &::rsosor::generated::_DealRequest_default_instance_._instance,
-    &::rsosor::generated::_DealResponse_DealtHandsEntry_DoNotUse_default_instance_._instance,
     &::rsosor::generated::_DealResponse_default_instance_._instance,
     &::rsosor::generated::_Hand_default_instance_._instance,
     &::rsosor::generated::_PlayValidationRequest_default_instance_._instance,
@@ -1279,6 +1431,9 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::rsosor::generated::_ScoreRequest_default_instance_._instance,
     &::rsosor::generated::_ScoreResponse_ScoresEntry_DoNotUse_default_instance_._instance,
     &::rsosor::generated::_ScoreResponse_default_instance_._instance,
+    &::rsosor::generated::_GameRoomId_default_instance_._instance,
+    &::rsosor::generated::_GameState_HandSizesEntry_DoNotUse_default_instance_._instance,
+    &::rsosor::generated::_GameState_default_instance_._instance,
     &::rsosor::generated::_RankingRequest_default_instance_._instance,
     &::rsosor::generated::_RankingResponse_default_instance_._instance,
     &::rsosor::generated::_PlayerRanking_default_instance_._instance,
@@ -1296,93 +1451,107 @@ const char descriptor_table_protodef_bigtwo_2eproto[] ABSL_ATTRIBUTE_SECTION_VAR
     "e\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\" \n\013P"
     "assRequest\022\021\n\tplayer_id\030\001 \001(\005\"0\n\014PassRes"
     "ponse\022\017\n\007success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\""
-    "\"\n\013JoinRequest\022\023\n\013player_name\030\001 \001(\t\"X\n\014J"
-    "oinResponse\022\021\n\tplayer_id\030\001 \001(\005\022$\n\004hand\030\002"
-    " \003(\0132\026.rsosor.generated.Card\022\017\n\007message\030"
-    "\003 \001(\t\"%\n\020GameStateRequest\022\021\n\tplayer_id\030\001"
-    " \001(\005\"\233\001\n\021GameStateResponse\022$\n\004hand\030\001 \003(\013"
-    "2\026.rsosor.generated.Card\022\036\n\026current_turn"
-    "_player_id\030\002 \001(\005\0221\n\021last_played_cards\030\003 "
-    "\003(\0132\026.rsosor.generated.Card\022\r\n\005phase\030\004 \001"
-    "(\t\"1\n\013ChatRequest\022\021\n\tplayer_id\030\001 \001(\005\022\017\n\007"
-    "message\030\002 \001(\t\"\037\n\014ChatResponse\022\017\n\007success"
-    "\030\001 \001(\010\"/\n\020StartGameRequest\022\033\n\023initiator_"
-    "player_id\030\001 \001(\005\"5\n\021StartGameResponse\022\017\n\007"
-    "success\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"\"\n\004Card\022\014"
-    "\n\004suit\030\001 \001(\t\022\014\n\004rank\030\002 \001(\005\"!\n\013DealReques"
-    "t\022\022\n\nplayer_ids\030\001 \003(\005\"\236\001\n\014DealResponse\022C"
-    "\n\013dealt_hands\030\001 \003(\0132..rsosor.generated.D"
-    "ealResponse.DealtHandsEntry\032I\n\017DealtHand"
-    "sEntry\022\013\n\003key\030\001 \001(\005\022%\n\005value\030\002 \001(\0132\026.rso"
-    "sor.generated.Hand:\0028\001\"-\n\004Hand\022%\n\005cards\030"
-    "\001 \003(\0132\026.rsosor.generated.Card\"~\n\025PlayVal"
-    "idationRequest\022\021\n\tplayer_id\030\001 \001(\005\022%\n\005car"
-    "ds\030\002 \003(\0132\026.rsosor.generated.Card\022+\n\013last"
-    "_played\030\003 \003(\0132\026.rsosor.generated.Card\";\n"
-    "\026PlayValidationResponse\022\020\n\010is_valid\030\001 \001("
-    "\010\022\017\n\007message\030\002 \001(\t\"#\n\016TimeoutRequest\022\021\n\t"
-    "player_id\030\001 \001(\005\"3\n\017TimeoutResponse\022\017\n\007su"
-    "ccess\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\"\262\001\n\014ScoreRe"
-    "quest\022\022\n\nplayer_ids\030\001 \003(\005\022C\n\013final_hands"
-    "\030\002 \003(\0132..rsosor.generated.ScoreRequest.F"
-    "inalHandsEntry\032I\n\017FinalHandsEntry\022\013\n\003key"
-    "\030\001 \001(\005\022%\n\005value\030\002 \001(\0132\026.rsosor.generated"
-    ".Hand:\0028\001\"{\n\rScoreResponse\022;\n\006scores\030\001 \003"
+    "F\n\013JoinRequest\022\021\n\tplayer_id\030\001 \001(\005\022\023\n\013pla"
+    "yer_name\030\002 \001(\t\022\017\n\007room_id\030\003 \001(\t\"X\n\014JoinR"
+    "esponse\022\017\n\007success\030\001 \001(\010\022\021\n\tplayer_id\030\002 "
+    "\001(\005\022\023\n\013player_name\030\003 \001(\t\022\017\n\007message\030\004 \001("
+    "\t\"%\n\020GameStateRequest\022\021\n\tplayer_id\030\001 \001(\005"
+    "\"\246\002\n\021GameStateResponse\022\017\n\007success\030\001 \001(\010\022"
+    "$\n\004hand\030\002 \003(\0132\026.rsosor.generated.Card\022\036\n"
+    "\026current_turn_player_id\030\003 \001(\005\0221\n\021last_pl"
+    "ayed_cards\030\004 \003(\0132\026.rsosor.generated.Card"
+    "\022\r\n\005phase\030\005 \001(\t\022F\n\nhand_sizes\030\006 \003(\01322.rs"
+    "osor.generated.GameStateResponse.HandSiz"
+    "esEntry\0320\n\016HandSizesEntry\022\013\n\003key\030\001 \001(\005\022\r"
+    "\n\005value\030\002 \001(\005:\0028\001\"1\n\013ChatRequest\022\021\n\tplay"
+    "er_id\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"\037\n\014ChatResp"
+    "onse\022\017\n\007success\030\001 \001(\010\"0\n\014LoginRequest\022\023\n"
+    "\013player_name\030\001 \001(\t\022\013\n\003psw\030\002 \001(\t\"D\n\rLogin"
+    "Response\022\017\n\007success\030\001 \001(\010\022\021\n\tplayer_id\030\002"
+    " \001(\005\022\017\n\007message\030\003 \001(\t\"\"\n\004Card\022\014\n\004suit\030\001 "
+    "\001(\t\022\014\n\004rank\030\002 \001(\005\"1\n\013DealRequest\022\021\n\tplay"
+    "er_id\030\001 \001(\005\022\017\n\007room_id\030\002 \001(\t\"F\n\014DealResp"
+    "onse\022\017\n\007success\030\001 \001(\010\022%\n\005cards\030\002 \003(\0132\026.r"
+    "sosor.generated.Card\"-\n\004Hand\022%\n\005cards\030\001 "
+    "\003(\0132\026.rsosor.generated.Card\"\225\001\n\025PlayVali"
+    "dationRequest\022\021\n\tplayer_id\030\001 \001(\005\022\017\n\007room"
+    "_id\030\002 \001(\t\022%\n\005cards\030\003 \003(\0132\026.rsosor.genera"
+    "ted.Card\0221\n\021last_played_cards\030\004 \003(\0132\026.rs"
+    "osor.generated.Card\";\n\026PlayValidationRes"
+    "ponse\022\020\n\010is_valid\030\001 \001(\010\022\017\n\007message\030\002 \001(\t"
+    "\"#\n\016TimeoutRequest\022\021\n\tplayer_id\030\001 \001(\005\"3\n"
+    "\017TimeoutResponse\022\017\n\007success\030\001 \001(\010\022\017\n\007mes"
+    "sage\030\002 \001(\t\"\262\001\n\014ScoreRequest\022\022\n\nplayer_id"
+    "s\030\001 \003(\005\022C\n\013final_hands\030\002 \003(\0132..rsosor.ge"
+    "nerated.ScoreRequest.FinalHandsEntry\032I\n\017"
+    "FinalHandsEntry\022\013\n\003key\030\001 \001(\005\022%\n\005value\030\002 "
+    "\001(\0132\026.rsosor.generated.Hand:\0028\001\"\214\001\n\rScor"
+    "eResponse\022\017\n\007success\030\001 \001(\010\022;\n\006scores\030\002 \003"
     "(\0132+.rsosor.generated.ScoreResponse.Scor"
     "esEntry\032-\n\013ScoresEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005v"
-    "alue\030\002 \001(\005:\0028\001\"\035\n\016RankingRequest\022\013\n\003top\030"
-    "\001 \001(\005\"C\n\017RankingResponse\0220\n\007ranking\030\001 \003("
-    "\0132\037.rsosor.generated.PlayerRanking\"E\n\rPl"
-    "ayerRanking\022\021\n\tplayer_id\030\001 \001(\005\022\023\n\013player"
-    "_name\030\002 \001(\t\022\014\n\004wins\030\003 \001(\005\"&\n\021PlayerRateR"
-    "equest\022\021\n\tplayer_id\030\001 \001(\005\"J\n\022PlayerRateR"
-    "esponse\022\023\n\013total_games\030\001 \001(\005\022\014\n\004wins\030\002 \001"
-    "(\005\022\021\n\twin_ratio\030\003 \001(\002\"#\n\022ActivityLogRequ"
-    "est\022\r\n\005limit\030\001 \001(\005\"G\n\023ActivityLogRespons"
-    "e\0220\n\007entries\030\001 \003(\0132\037.rsosor.generated.Ac"
-    "tivityEntry\"C\n\rActivityEntry\022\017\n\007game_id\030"
-    "\001 \001(\005\022\016\n\006winner\030\002 \001(\005\022\021\n\ttimestamp\030\003 \001(\t"
-    "2\343\003\n\rBigTwoService\022J\n\tPlayCards\022\035.rsosor"
-    ".generated.PlayRequest\032\036.rsosor.generate"
-    "d.PlayResponse\022E\n\004Pass\022\035.rsosor.generate"
-    "d.PassRequest\032\036.rsosor.generated.PassRes"
-    "ponse\022W\n\014GetGameState\022\".rsosor.generated"
-    ".GameStateRequest\032#.rsosor.generated.Gam"
-    "eStateResponse\022I\n\010JoinGame\022\035.rsosor.gene"
-    "rated.JoinRequest\032\036.rsosor.generated.Joi"
-    "nResponse\022E\n\004Chat\022\035.rsosor.generated.Cha"
-    "tRequest\032\036.rsosor.generated.ChatResponse"
-    "\022T\n\tStartGame\022\".rsosor.generated.StartGa"
-    "meRequest\032#.rsosor.generated.StartGameRe"
-    "sponse2\336\002\n\022BigTwoTableService\022E\n\004Deal\022\035."
-    "rsosor.generated.DealRequest\032\036.rsosor.ge"
-    "nerated.DealResponse\022a\n\014ValidatePlay\022\'.r"
-    "sosor.generated.PlayValidationRequest\032(."
-    "rsosor.generated.PlayValidationResponse\022"
-    "T\n\rHandleTimeout\022 .rsosor.generated.Time"
-    "outRequest\032!.rsosor.generated.TimeoutRes"
-    "ponse\022H\n\005Score\022\036.rsosor.generated.ScoreR"
-    "equest\032\037.rsosor.generated.ScoreResponse2"
-    "\252\002\n\027BigTwoManagementService\022Q\n\nGetRankin"
-    "g\022 .rsosor.generated.RankingRequest\032!.rs"
-    "osor.generated.RankingResponse\022]\n\020GetPla"
-    "yerWinRate\022#.rsosor.generated.PlayerRate"
-    "Request\032$.rsosor.generated.PlayerRateRes"
-    "ponse\022]\n\016GetActivityLog\022$.rsosor.generat"
-    "ed.ActivityLogRequest\032%.rsosor.generated"
-    ".ActivityLogResponseb\006proto3"
+    "alue\030\002 \001(\005:\0028\001\"\035\n\nGameRoomId\022\017\n\007room_id\030"
+    "\001 \001(\t\"\362\001\n\tGameState\022\017\n\007success\030\001 \001(\010\022\036\n\026"
+    "current_turn_player_id\030\002 \001(\005\0221\n\021last_pla"
+    "yed_cards\030\003 \003(\0132\026.rsosor.generated.Card\022"
+    ">\n\nhand_sizes\030\004 \003(\0132*.rsosor.generated.G"
+    "ameState.HandSizesEntry\022\017\n\007message\030\005 \001(\t"
+    "\0320\n\016HandSizesEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value"
+    "\030\002 \001(\005:\0028\001\"\035\n\016RankingRequest\022\013\n\003top\030\001 \001("
+    "\005\"T\n\017RankingResponse\022\017\n\007success\030\001 \001(\010\0220\n"
+    "\007ranking\030\002 \003(\0132\037.rsosor.generated.Player"
+    "Ranking\"E\n\rPlayerRanking\022\021\n\tplayer_id\030\001 "
+    "\001(\005\022\023\n\013player_name\030\002 \001(\t\022\014\n\004wins\030\003 \001(\005\"&"
+    "\n\021PlayerRateRequest\022\021\n\tplayer_id\030\001 \001(\005\"["
+    "\n\022PlayerRateResponse\022\017\n\007success\030\001 \001(\010\022\023\n"
+    "\013total_games\030\002 \001(\005\022\014\n\004wins\030\003 \001(\005\022\021\n\twin_"
+    "ratio\030\004 \001(\002\"#\n\022ActivityLogRequest\022\r\n\005lim"
+    "it\030\001 \001(\005\"X\n\023ActivityLogResponse\022\017\n\007succe"
+    "ss\030\001 \001(\010\0220\n\007entries\030\002 \003(\0132\037.rsosor.gener"
+    "ated.ActivityEntry\"C\n\rActivityEntry\022\017\n\007g"
+    "ame_id\030\001 \001(\005\022\016\n\006winner\030\002 \001(\005\022\021\n\ttimestam"
+    "p\030\003 \001(\t2\327\003\n\rBigTwoService\022J\n\tPlayCards\022\035"
+    ".rsosor.generated.PlayRequest\032\036.rsosor.g"
+    "enerated.PlayResponse\022E\n\004Pass\022\035.rsosor.g"
+    "enerated.PassRequest\032\036.rsosor.generated."
+    "PassResponse\022W\n\014GetGameState\022\".rsosor.ge"
+    "nerated.GameStateRequest\032#.rsosor.genera"
+    "ted.GameStateResponse\022I\n\010JoinGame\022\035.rsos"
+    "or.generated.JoinRequest\032\036.rsosor.genera"
+    "ted.JoinResponse\022E\n\004Chat\022\035.rsosor.genera"
+    "ted.ChatRequest\032\036.rsosor.generated.ChatR"
+    "esponse\022H\n\005Login\022\036.rsosor.generated.Logi"
+    "nRequest\032\037.rsosor.generated.LoginRespons"
+    "e2\261\003\n\022BigTwoTableService\022E\n\004Deal\022\035.rsoso"
+    "r.generated.DealRequest\032\036.rsosor.generat"
+    "ed.DealResponse\022a\n\014ValidatePlay\022\'.rsosor"
+    ".generated.PlayValidationRequest\032(.rsoso"
+    "r.generated.PlayValidationResponse\022T\n\rHa"
+    "ndleTimeout\022 .rsosor.generated.TimeoutRe"
+    "quest\032!.rsosor.generated.TimeoutResponse"
+    "\022H\n\005Score\022\036.rsosor.generated.ScoreReques"
+    "t\032\037.rsosor.generated.ScoreResponse\022Q\n\022Su"
+    "bscribeGameState\022\034.rsosor.generated.Game"
+    "RoomId\032\033.rsosor.generated.GameState0\0012\252\002"
+    "\n\027BigTwoManagementService\022Q\n\nGetRanking\022"
+    " .rsosor.generated.RankingRequest\032!.rsos"
+    "or.generated.RankingResponse\022]\n\020GetPlaye"
+    "rWinRate\022#.rsosor.generated.PlayerRateRe"
+    "quest\032$.rsosor.generated.PlayerRateRespo"
+    "nse\022]\n\016GetActivityLog\022$.rsosor.generated"
+    ".ActivityLogRequest\032%.rsosor.generated.A"
+    "ctivityLogResponseb\006proto3"
 };
 static ::absl::once_flag descriptor_table_bigtwo_2eproto_once;
 PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_bigtwo_2eproto = {
     false,
     false,
-    3228,
+    3786,
     descriptor_table_protodef_bigtwo_2eproto,
     "bigtwo.proto",
     &descriptor_table_bigtwo_2eproto_once,
     nullptr,
     0,
-    33,
+    36,
     schemas,
     file_default_instances,
     TableStruct_bigtwo_2eproto::offsets,
@@ -2398,6 +2567,7 @@ inline PROTOBUF_NDEBUG_INLINE JoinRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from, const ::rsosor::generated::JoinRequest& from_msg)
       : player_name_(arena, from.player_name_),
+        room_id_(arena, from.room_id_),
         _cached_size_{0} {}
 
 JoinRequest::JoinRequest(
@@ -2413,6 +2583,7 @@ JoinRequest::JoinRequest(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.player_id_ = from._impl_.player_id_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.JoinRequest)
 }
@@ -2420,10 +2591,12 @@ inline PROTOBUF_NDEBUG_INLINE JoinRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : player_name_(arena),
+        room_id_(arena),
         _cached_size_{0} {}
 
 inline void JoinRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.player_id_ = {};
 }
 JoinRequest::~JoinRequest() {
   // @@protoc_insertion_point(destructor:rsosor.generated.JoinRequest)
@@ -2434,6 +2607,7 @@ inline void JoinRequest::SharedDtor(MessageLite& self) {
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
   this_._impl_.player_name_.Destroy();
+  this_._impl_.room_id_.Destroy();
   this_._impl_.~Impl_();
 }
 
@@ -2473,15 +2647,15 @@ const ::google::protobuf::internal::ClassData* JoinRequest::GetClassData() const
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 48, 2> JoinRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 55, 2> JoinRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    3, 24,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967288,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    3,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     _class_data_.base(),
@@ -2491,21 +2665,35 @@ const ::_pbi::TcParseTable<0, 1, 0, 48, 2> JoinRequest::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::JoinRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // string player_name = 1;
+    {::_pbi::TcParser::MiniParse, {}},
+    // int32 player_id = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(JoinRequest, _impl_.player_id_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.player_id_)}},
+    // string player_name = 2;
     {::_pbi::TcParser::FastUS1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.player_name_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.player_name_)}},
+    // string room_id = 3;
+    {::_pbi::TcParser::FastUS1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.room_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // string player_name = 1;
+    // int32 player_id = 1;
+    {PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.player_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // string player_name = 2;
     {PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.player_name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string room_id = 3;
+    {PROTOBUF_FIELD_OFFSET(JoinRequest, _impl_.room_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\34\13\0\0\0\0\0\0"
+    "\34\0\13\7\0\0\0\0"
     "rsosor.generated.JoinRequest"
     "player_name"
+    "room_id"
   }},
 };
 
@@ -2517,6 +2705,8 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
   (void) cached_has_bits;
 
   _impl_.player_name_.ClearToEmpty();
+  _impl_.room_id_.ClearToEmpty();
+  _impl_.player_id_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -2535,12 +2725,27 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // string player_name = 1;
+          // int32 player_id = 1;
+          if (this_._internal_player_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt32ToArrayWithField<1>(
+                    stream, this_._internal_player_id(), target);
+          }
+
+          // string player_name = 2;
           if (!this_._internal_player_name().empty()) {
             const std::string& _s = this_._internal_player_name();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
                 _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinRequest.player_name");
-            target = stream->WriteStringMaybeAliased(1, _s, target);
+            target = stream->WriteStringMaybeAliased(2, _s, target);
+          }
+
+          // string room_id = 3;
+          if (!this_._internal_room_id().empty()) {
+            const std::string& _s = this_._internal_room_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinRequest.room_id");
+            target = stream->WriteStringMaybeAliased(3, _s, target);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -2566,11 +2771,22 @@ PROTOBUF_NOINLINE void JoinRequest::Clear() {
           // Prevent compiler warnings about cached_has_bits being unused
           (void)cached_has_bits;
 
+          ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // string player_name = 1;
+            // string player_name = 2;
             if (!this_._internal_player_name().empty()) {
               total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                               this_._internal_player_name());
+            }
+            // string room_id = 3;
+            if (!this_._internal_room_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_room_id());
+            }
+            // int32 player_id = 1;
+            if (this_._internal_player_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+                  this_._internal_player_id());
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -2587,6 +2803,12 @@ void JoinRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
 
   if (!from._internal_player_name().empty()) {
     _this->_internal_set_player_name(from._internal_player_name());
+  }
+  if (!from._internal_room_id().empty()) {
+    _this->_internal_set_room_id(from._internal_room_id());
+  }
+  if (from._internal_player_id() != 0) {
+    _this->_impl_.player_id_ = from._impl_.player_id_;
   }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
@@ -2605,6 +2827,8 @@ void JoinRequest::InternalSwap(JoinRequest* PROTOBUF_RESTRICT other) {
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.player_name_, &other->_impl_.player_name_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.room_id_, &other->_impl_.room_id_, arena);
+        swap(_impl_.player_id_, other->_impl_.player_id_);
 }
 
 ::google::protobuf::Metadata JoinRequest::GetMetadata() const {
@@ -2628,7 +2852,7 @@ JoinResponse::JoinResponse(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE JoinResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from, const ::rsosor::generated::JoinResponse& from_msg)
-      : hand_{visibility, arena, from.hand_},
+      : player_name_(arena, from.player_name_),
         message_(arena, from.message_),
         _cached_size_{0} {}
 
@@ -2645,20 +2869,31 @@ JoinResponse::JoinResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
-  _impl_.player_id_ = from._impl_.player_id_;
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, success_),
+           offsetof(Impl_, player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::player_id_));
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.JoinResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE JoinResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : hand_{visibility, arena},
+      : player_name_(arena),
         message_(arena),
         _cached_size_{0} {}
 
 inline void JoinResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.player_id_ = {};
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           0,
+           offsetof(Impl_, player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::player_id_));
 }
 JoinResponse::~JoinResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.JoinResponse)
@@ -2668,6 +2903,7 @@ inline void JoinResponse::SharedDtor(MessageLite& self) {
   JoinResponse& this_ = static_cast<JoinResponse&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.player_name_.Destroy();
   this_._impl_.message_.Destroy();
   this_._impl_.~Impl_();
 }
@@ -2677,20 +2913,8 @@ inline void* JoinResponse::PlacementNew_(const void*, void* mem,
   return ::new (mem) JoinResponse(arena);
 }
 constexpr auto JoinResponse::InternalNewImpl_() {
-  constexpr auto arena_bits = ::google::protobuf::internal::EncodePlacementArenaOffsets({
-      PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.hand_) +
-          decltype(JoinResponse::_impl_.hand_)::
-              InternalGetArenaOffset(
-                  ::google::protobuf::Message::internal_visibility()),
-  });
-  if (arena_bits.has_value()) {
-    return ::google::protobuf::internal::MessageCreator::CopyInit(
-        sizeof(JoinResponse), alignof(JoinResponse), *arena_bits);
-  } else {
-    return ::google::protobuf::internal::MessageCreator(&JoinResponse::PlacementNew_,
-                                 sizeof(JoinResponse),
-                                 alignof(JoinResponse));
-  }
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(JoinResponse),
+                                            alignof(JoinResponse));
 }
 PROTOBUF_CONSTINIT
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
@@ -2720,17 +2944,17 @@ const ::google::protobuf::internal::ClassData* JoinResponse::GetClassData() cons
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 1, 45, 2> JoinResponse::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 56, 2> JoinResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    3, 24,  // max_field_number, fast_idx_mask
+    4, 24,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967288,  // skipmap
+    4294967280,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    3,  // num_field_entries
-    1,  // num_aux_entries
-    offsetof(decltype(_table_), aux_entries),
+    4,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
     _class_data_.base(),
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
@@ -2738,33 +2962,39 @@ const ::_pbi::TcParseTable<2, 3, 1, 45, 2> JoinResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::JoinResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
-    // int32 player_id = 1;
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(JoinResponse, _impl_.player_id_), 63>(),
-     {8, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_)}},
-    // repeated .rsosor.generated.Card hand = 2;
-    {::_pbi::TcParser::FastMtR1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.hand_)}},
-    // string message = 3;
+    // string message = 4;
     {::_pbi::TcParser::FastUS1,
-     {26, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.message_)}},
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.message_)}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(JoinResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.success_)}},
+    // int32 player_id = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(JoinResponse, _impl_.player_id_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_)}},
+    // string player_name = 3;
+    {::_pbi::TcParser::FastUS1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_name_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // int32 player_id = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // int32 player_id = 2;
     {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .rsosor.generated.Card hand = 2;
-    {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.hand_), 0, 0,
-    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // string message = 3;
+    // string player_name = 3;
+    {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string message = 4;
     {PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.message_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
-  }}, {{
-    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
-  }}, {{
-    "\35\0\0\7\0\0\0\0"
+  }},
+  // no aux_entries
+  {{
+    "\35\0\0\13\7\0\0\0"
     "rsosor.generated.JoinResponse"
+    "player_name"
     "message"
   }},
 };
@@ -2776,9 +3006,11 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.hand_.Clear();
+  _impl_.player_name_.ClearToEmpty();
   _impl_.message_.ClearToEmpty();
-  _impl_.player_id_ = 0;
+  ::memset(&_impl_.success_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.player_id_) -
+      reinterpret_cast<char*>(&_impl_.success_)) + sizeof(_impl_.player_id_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -2797,30 +3029,34 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // int32 player_id = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // int32 player_id = 2;
           if (this_._internal_player_id() != 0) {
             target = ::google::protobuf::internal::WireFormatLite::
-                WriteInt32ToArrayWithField<1>(
+                WriteInt32ToArrayWithField<2>(
                     stream, this_._internal_player_id(), target);
           }
 
-          // repeated .rsosor.generated.Card hand = 2;
-          for (unsigned i = 0, n = static_cast<unsigned>(
-                                   this_._internal_hand_size());
-               i < n; i++) {
-            const auto& repfield = this_._internal_hand().Get(i);
-            target =
-                ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    2, repfield, repfield.GetCachedSize(),
-                    target, stream);
+          // string player_name = 3;
+          if (!this_._internal_player_name().empty()) {
+            const std::string& _s = this_._internal_player_name();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinResponse.player_name");
+            target = stream->WriteStringMaybeAliased(3, _s, target);
           }
 
-          // string message = 3;
+          // string message = 4;
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
                 _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.JoinResponse.message");
-            target = stream->WriteStringMaybeAliased(3, _s, target);
+            target = stream->WriteStringMaybeAliased(4, _s, target);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -2848,21 +3084,21 @@ PROTOBUF_NOINLINE void JoinResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .rsosor.generated.Card hand = 2;
-            {
-              total_size += 1UL * this_._internal_hand_size();
-              for (const auto& msg : this_._internal_hand()) {
-                total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
-              }
+            // string player_name = 3;
+            if (!this_._internal_player_name().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_player_name());
             }
-          }
-           {
-            // string message = 3;
+            // string message = 4;
             if (!this_._internal_message().empty()) {
               total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                               this_._internal_message());
             }
-            // int32 player_id = 1;
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
+            }
+            // int32 player_id = 2;
             if (this_._internal_player_id() != 0) {
               total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
                   this_._internal_player_id());
@@ -2880,10 +3116,14 @@ void JoinResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_hand()->MergeFrom(
-      from._internal_hand());
+  if (!from._internal_player_name().empty()) {
+    _this->_internal_set_player_name(from._internal_player_name());
+  }
   if (!from._internal_message().empty()) {
     _this->_internal_set_message(from._internal_message());
+  }
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
   }
   if (from._internal_player_id() != 0) {
     _this->_impl_.player_id_ = from._impl_.player_id_;
@@ -2904,9 +3144,14 @@ void JoinResponse::InternalSwap(JoinResponse* PROTOBUF_RESTRICT other) {
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.hand_.InternalSwap(&other->_impl_.hand_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.player_name_, &other->_impl_.player_name_, arena);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_, &other->_impl_.message_, arena);
-        swap(_impl_.player_id_, other->_impl_.player_id_);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.player_id_)
+      + sizeof(JoinResponse::_impl_.player_id_)
+      - PROTOBUF_FIELD_OFFSET(JoinResponse, _impl_.success_)>(
+          reinterpret_cast<char*>(&_impl_.success_),
+          reinterpret_cast<char*>(&other->_impl_.success_));
 }
 
 ::google::protobuf::Metadata JoinResponse::GetMetadata() const {
@@ -3121,6 +3366,93 @@ void GameStateRequest::InternalSwap(GameStateRequest* PROTOBUF_RESTRICT other) {
 }
 // ===================================================================
 
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+              GameStateResponse_HandSizesEntry_DoNotUse::GameStateResponse_HandSizesEntry_DoNotUse() : SuperType(_class_data_.base()) {}
+              GameStateResponse_HandSizesEntry_DoNotUse::GameStateResponse_HandSizesEntry_DoNotUse(::google::protobuf::Arena* arena)
+                  : SuperType(arena, _class_data_.base()) {}
+#else   // PROTOBUF_CUSTOM_VTABLE
+              GameStateResponse_HandSizesEntry_DoNotUse::GameStateResponse_HandSizesEntry_DoNotUse() : SuperType() {}
+              GameStateResponse_HandSizesEntry_DoNotUse::GameStateResponse_HandSizesEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
+#endif  // PROTOBUF_CUSTOM_VTABLE
+              inline void* GameStateResponse_HandSizesEntry_DoNotUse::PlacementNew_(const void*, void* mem,
+                                                      ::google::protobuf::Arena* arena) {
+                return ::new (mem) GameStateResponse_HandSizesEntry_DoNotUse(arena);
+              }
+              constexpr auto GameStateResponse_HandSizesEntry_DoNotUse::InternalNewImpl_() {
+                return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(GameStateResponse_HandSizesEntry_DoNotUse),
+                                                          alignof(GameStateResponse_HandSizesEntry_DoNotUse));
+              }
+              PROTOBUF_CONSTINIT
+              PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+              const ::google::protobuf::internal::ClassDataFull GameStateResponse_HandSizesEntry_DoNotUse::_class_data_ = {
+                  ::google::protobuf::internal::ClassData{
+                      &_GameStateResponse_HandSizesEntry_DoNotUse_default_instance_._instance,
+                      &_table_.header,
+                      nullptr,  // OnDemandRegisterArenaDtor
+                      nullptr,  // IsInitialized
+                      &GameStateResponse_HandSizesEntry_DoNotUse::MergeImpl,
+                      ::google::protobuf::Message::GetNewImpl<GameStateResponse_HandSizesEntry_DoNotUse>(),
+              #if defined(PROTOBUF_CUSTOM_VTABLE)
+                      &GameStateResponse_HandSizesEntry_DoNotUse::SharedDtor,
+                      static_cast<void (::google::protobuf::MessageLite::*)()>(
+                          &GameStateResponse_HandSizesEntry_DoNotUse::ClearImpl),
+                          ::google::protobuf::Message::ByteSizeLongImpl, ::google::protobuf::Message::_InternalSerializeImpl
+                          ,
+              #endif  // PROTOBUF_CUSTOM_VTABLE
+                      PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_._cached_size_),
+                      false,
+                  },
+                  &GameStateResponse_HandSizesEntry_DoNotUse::kDescriptorMethods,
+                  &descriptor_table_bigtwo_2eproto,
+                  nullptr,  // tracker
+              };
+              const ::google::protobuf::internal::ClassData* GameStateResponse_HandSizesEntry_DoNotUse::GetClassData() const {
+                ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+                ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+                return _class_data_.base();
+              }
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 0, 0, 2> GameStateResponse_HandSizesEntry_DoNotUse::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_._has_bits_),
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameStateResponse_HandSizesEntry_DoNotUse>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // int32 value = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.value_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.value_)}},
+    // int32 key = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.key_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.key_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int32 key = 1;
+    {PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.key_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 value = 2;
+    {PROTOBUF_FIELD_OFFSET(GameStateResponse_HandSizesEntry_DoNotUse, _impl_.value_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
+// ===================================================================
+
 class GameStateResponse::_Internal {
  public:
 };
@@ -3139,6 +3471,7 @@ inline PROTOBUF_NDEBUG_INLINE GameStateResponse::Impl_::Impl_(
     const Impl_& from, const ::rsosor::generated::GameStateResponse& from_msg)
       : hand_{visibility, arena, from.hand_},
         last_played_cards_{visibility, arena, from.last_played_cards_},
+        hand_sizes_{visibility, arena, from.hand_sizes_},
         phase_(arena, from.phase_),
         _cached_size_{0} {}
 
@@ -3155,7 +3488,13 @@ GameStateResponse::GameStateResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
-  _impl_.current_turn_player_id_ = from._impl_.current_turn_player_id_;
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, success_),
+           offsetof(Impl_, current_turn_player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::current_turn_player_id_));
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.GameStateResponse)
 }
@@ -3164,12 +3503,18 @@ inline PROTOBUF_NDEBUG_INLINE GameStateResponse::Impl_::Impl_(
     ::google::protobuf::Arena* arena)
       : hand_{visibility, arena},
         last_played_cards_{visibility, arena},
+        hand_sizes_{visibility, arena},
         phase_(arena),
         _cached_size_{0} {}
 
 inline void GameStateResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.current_turn_player_id_ = {};
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           0,
+           offsetof(Impl_, current_turn_player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::current_turn_player_id_));
 }
 GameStateResponse::~GameStateResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.GameStateResponse)
@@ -3196,6 +3541,14 @@ constexpr auto GameStateResponse::InternalNewImpl_() {
       PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_) +
           decltype(GameStateResponse::_impl_.last_played_cards_)::
               InternalGetArenaOffset(
+                  ::google::protobuf::Message::internal_visibility()),
+      PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_sizes_) +
+          decltype(GameStateResponse::_impl_.hand_sizes_)::
+              InternalGetArenaOffset(
+                  ::google::protobuf::Message::internal_visibility()),
+      PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_sizes_) +
+          decltype(GameStateResponse::_impl_.hand_sizes_)::
+              InternalGetArenaOffsetAlt(
                   ::google::protobuf::Message::internal_visibility()),
   });
   if (arena_bits.has_value()) {
@@ -3235,16 +3588,16 @@ const ::google::protobuf::internal::ClassData* GameStateResponse::GetClassData()
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 4, 2, 48, 2> GameStateResponse::_table_ = {
+const ::_pbi::TcParseTable<3, 6, 3, 48, 2> GameStateResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    4, 24,  // max_field_number, fast_idx_mask
+    6, 56,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967280,  // skipmap
+    4294967232,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    4,  // num_field_entries
-    2,  // num_aux_entries
+    6,  // num_field_entries
+    3,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
     nullptr,  // post_loop_handler
@@ -3253,38 +3606,54 @@ const ::_pbi::TcParseTable<2, 4, 2, 48, 2> GameStateResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::GameStateResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // string phase = 4;
-    {::_pbi::TcParser::FastUS1,
-     {34, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.phase_)}},
-    // repeated .rsosor.generated.Card hand = 1;
+    {::_pbi::TcParser::MiniParse, {}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(GameStateResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.success_)}},
+    // repeated .rsosor.generated.Card hand = 2;
     {::_pbi::TcParser::FastMtR1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_)}},
-    // int32 current_turn_player_id = 2;
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_)}},
+    // int32 current_turn_player_id = 3;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameStateResponse, _impl_.current_turn_player_id_), 63>(),
-     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_)}},
-    // repeated .rsosor.generated.Card last_played_cards = 3;
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_)}},
+    // repeated .rsosor.generated.Card last_played_cards = 4;
     {::_pbi::TcParser::FastMtR1,
-     {26, 63, 1, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_)}},
+     {34, 63, 1, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_)}},
+    // string phase = 5;
+    {::_pbi::TcParser::FastUS1,
+     {42, 63, 0, PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.phase_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .rsosor.generated.Card hand = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // repeated .rsosor.generated.Card hand = 2;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // int32 current_turn_player_id = 2;
+    // int32 current_turn_player_id = 3;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .rsosor.generated.Card last_played_cards = 3;
+    // repeated .rsosor.generated.Card last_played_cards = 4;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.last_played_cards_), 0, 1,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // string phase = 4;
+    // string phase = 5;
     {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.phase_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // map<int32, int32> hand_sizes = 6;
+    {PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.hand_sizes_), 0, 2,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
   }}, {{
     {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
     {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(GameStateResponse()._impl_.hand_sizes_)>(
+        0, 0, 0, 5,
+        5)},
   }}, {{
-    "\42\0\0\0\5\0\0\0"
+    "\42\0\0\0\0\5\0\0"
     "rsosor.generated.GameStateResponse"
     "phase"
   }},
@@ -3299,8 +3668,11 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
 
   _impl_.hand_.Clear();
   _impl_.last_played_cards_.Clear();
+  _impl_.hand_sizes_.Clear();
   _impl_.phase_.ClearToEmpty();
-  _impl_.current_turn_player_id_ = 0;
+  ::memset(&_impl_.success_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.current_turn_player_id_) -
+      reinterpret_cast<char*>(&_impl_.success_)) + sizeof(_impl_.current_turn_player_id_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -3319,41 +3691,69 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .rsosor.generated.Card hand = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // repeated .rsosor.generated.Card hand = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_hand_size());
                i < n; i++) {
             const auto& repfield = this_._internal_hand().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    1, repfield, repfield.GetCachedSize(),
+                    2, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
-          // int32 current_turn_player_id = 2;
+          // int32 current_turn_player_id = 3;
           if (this_._internal_current_turn_player_id() != 0) {
             target = ::google::protobuf::internal::WireFormatLite::
-                WriteInt32ToArrayWithField<2>(
+                WriteInt32ToArrayWithField<3>(
                     stream, this_._internal_current_turn_player_id(), target);
           }
 
-          // repeated .rsosor.generated.Card last_played_cards = 3;
+          // repeated .rsosor.generated.Card last_played_cards = 4;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_last_played_cards_size());
                i < n; i++) {
             const auto& repfield = this_._internal_last_played_cards().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    3, repfield, repfield.GetCachedSize(),
+                    4, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
-          // string phase = 4;
+          // string phase = 5;
           if (!this_._internal_phase().empty()) {
             const std::string& _s = this_._internal_phase();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
                 _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.GameStateResponse.phase");
-            target = stream->WriteStringMaybeAliased(4, _s, target);
+            target = stream->WriteStringMaybeAliased(5, _s, target);
+          }
+
+          // map<int32, int32> hand_sizes = 6;
+          if (!this_._internal_hand_sizes().empty()) {
+            using MapType = ::google::protobuf::Map<::int32_t, ::int32_t>;
+            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::int32_t,
+                                           _pbi::WireFormatLite::TYPE_INT32,
+                                           _pbi::WireFormatLite::TYPE_INT32>;
+            const auto& field = this_._internal_hand_sizes();
+
+            if (stream->IsSerializationDeterministic() && field.size() > 1) {
+              for (const auto& entry : ::google::protobuf::internal::MapSorterFlat<MapType>(field)) {
+                target = WireHelper::InternalSerialize(
+                    6, entry.first, entry.second, target, stream);
+              }
+            } else {
+              for (const auto& entry : field) {
+                target = WireHelper::InternalSerialize(
+                    6, entry.first, entry.second, target, stream);
+              }
+            }
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -3381,28 +3781,42 @@ PROTOBUF_NOINLINE void GameStateResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .rsosor.generated.Card hand = 1;
+            // repeated .rsosor.generated.Card hand = 2;
             {
               total_size += 1UL * this_._internal_hand_size();
               for (const auto& msg : this_._internal_hand()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
-            // repeated .rsosor.generated.Card last_played_cards = 3;
+            // repeated .rsosor.generated.Card last_played_cards = 4;
             {
               total_size += 1UL * this_._internal_last_played_cards_size();
               for (const auto& msg : this_._internal_last_played_cards()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
+            // map<int32, int32> hand_sizes = 6;
+            {
+              total_size +=
+                  1 * ::google::protobuf::internal::FromIntSize(this_._internal_hand_sizes_size());
+              for (const auto& entry : this_._internal_hand_sizes()) {
+                total_size += _pbi::MapEntryFuncs<::int32_t, ::int32_t,
+                                               _pbi::WireFormatLite::TYPE_INT32,
+                                               _pbi::WireFormatLite::TYPE_INT32>::ByteSizeLong(entry.first, entry.second);
+              }
+            }
           }
            {
-            // string phase = 4;
+            // string phase = 5;
             if (!this_._internal_phase().empty()) {
               total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                               this_._internal_phase());
             }
-            // int32 current_turn_player_id = 2;
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
+            }
+            // int32 current_turn_player_id = 3;
             if (this_._internal_current_turn_player_id() != 0) {
               total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
                   this_._internal_current_turn_player_id());
@@ -3424,8 +3838,12 @@ void GameStateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const
       from._internal_hand());
   _this->_internal_mutable_last_played_cards()->MergeFrom(
       from._internal_last_played_cards());
+  _this->_impl_.hand_sizes_.MergeFrom(from._impl_.hand_sizes_);
   if (!from._internal_phase().empty()) {
     _this->_internal_set_phase(from._internal_phase());
+  }
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
   }
   if (from._internal_current_turn_player_id() != 0) {
     _this->_impl_.current_turn_player_id_ = from._impl_.current_turn_player_id_;
@@ -3448,8 +3866,14 @@ void GameStateResponse::InternalSwap(GameStateResponse* PROTOBUF_RESTRICT other)
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.hand_.InternalSwap(&other->_impl_.hand_);
   _impl_.last_played_cards_.InternalSwap(&other->_impl_.last_played_cards_);
+  _impl_.hand_sizes_.InternalSwap(&other->_impl_.hand_sizes_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.phase_, &other->_impl_.phase_, arena);
-        swap(_impl_.current_turn_player_id_, other->_impl_.current_turn_player_id_);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.current_turn_player_id_)
+      + sizeof(GameStateResponse::_impl_.current_turn_player_id_)
+      - PROTOBUF_FIELD_OFFSET(GameStateResponse, _impl_.success_)>(
+          reinterpret_cast<char*>(&_impl_.success_),
+          reinterpret_cast<char*>(&other->_impl_.success_));
 }
 
 ::google::protobuf::Metadata GameStateResponse::GetMetadata() const {
@@ -3920,308 +4344,102 @@ void ChatResponse::InternalSwap(ChatResponse* PROTOBUF_RESTRICT other) {
 }
 // ===================================================================
 
-class StartGameRequest::_Internal {
+class LoginRequest::_Internal {
  public:
 };
 
-StartGameRequest::StartGameRequest(::google::protobuf::Arena* arena)
+LoginRequest::LoginRequest(::google::protobuf::Arena* arena)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
     : ::google::protobuf::Message(arena, _class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:rsosor.generated.StartGameRequest)
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.LoginRequest)
 }
-StartGameRequest::StartGameRequest(
-    ::google::protobuf::Arena* arena, const StartGameRequest& from)
-    : StartGameRequest(arena) {
-  MergeFrom(from);
-}
-inline PROTOBUF_NDEBUG_INLINE StartGameRequest::Impl_::Impl_(
-    ::google::protobuf::internal::InternalVisibility visibility,
-    ::google::protobuf::Arena* arena)
-      : _cached_size_{0} {}
-
-inline void StartGameRequest::SharedCtor(::_pb::Arena* arena) {
-  new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.initiator_player_id_ = {};
-}
-StartGameRequest::~StartGameRequest() {
-  // @@protoc_insertion_point(destructor:rsosor.generated.StartGameRequest)
-  SharedDtor(*this);
-}
-inline void StartGameRequest::SharedDtor(MessageLite& self) {
-  StartGameRequest& this_ = static_cast<StartGameRequest&>(self);
-  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
-  ABSL_DCHECK(this_.GetArena() == nullptr);
-  this_._impl_.~Impl_();
-}
-
-inline void* StartGameRequest::PlacementNew_(const void*, void* mem,
-                                        ::google::protobuf::Arena* arena) {
-  return ::new (mem) StartGameRequest(arena);
-}
-constexpr auto StartGameRequest::InternalNewImpl_() {
-  return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(StartGameRequest),
-                                            alignof(StartGameRequest));
-}
-PROTOBUF_CONSTINIT
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::google::protobuf::internal::ClassDataFull StartGameRequest::_class_data_ = {
-    ::google::protobuf::internal::ClassData{
-        &_StartGameRequest_default_instance_._instance,
-        &_table_.header,
-        nullptr,  // OnDemandRegisterArenaDtor
-        nullptr,  // IsInitialized
-        &StartGameRequest::MergeImpl,
-        ::google::protobuf::Message::GetNewImpl<StartGameRequest>(),
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-        &StartGameRequest::SharedDtor,
-        ::google::protobuf::Message::GetClearImpl<StartGameRequest>(), &StartGameRequest::ByteSizeLong,
-            &StartGameRequest::_InternalSerialize,
-#endif  // PROTOBUF_CUSTOM_VTABLE
-        PROTOBUF_FIELD_OFFSET(StartGameRequest, _impl_._cached_size_),
-        false,
-    },
-    &StartGameRequest::kDescriptorMethods,
-    &descriptor_table_bigtwo_2eproto,
-    nullptr,  // tracker
-};
-const ::google::protobuf::internal::ClassData* StartGameRequest::GetClassData() const {
-  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
-  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
-  return _class_data_.base();
-}
-PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 0, 2> StartGameRequest::_table_ = {
-  {
-    0,  // no _has_bits_
-    0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
-    offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
-    offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
-    0,  // num_aux_entries
-    offsetof(decltype(_table_), field_names),  // no aux_entries
-    _class_data_.base(),
-    nullptr,  // post_loop_handler
-    ::_pbi::TcParser::GenericFallback,  // fallback
-    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::rsosor::generated::StartGameRequest>(),  // to_prefetch
-    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
-  }, {{
-    // int32 initiator_player_id = 1;
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(StartGameRequest, _impl_.initiator_player_id_), 63>(),
-     {8, 63, 0, PROTOBUF_FIELD_OFFSET(StartGameRequest, _impl_.initiator_player_id_)}},
-  }}, {{
-    65535, 65535
-  }}, {{
-    // int32 initiator_player_id = 1;
-    {PROTOBUF_FIELD_OFFSET(StartGameRequest, _impl_.initiator_player_id_), 0, 0,
-    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-  }},
-  // no aux_entries
-  {{
-  }},
-};
-
-PROTOBUF_NOINLINE void StartGameRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:rsosor.generated.StartGameRequest)
-  ::google::protobuf::internal::TSanWrite(&_impl_);
-  ::uint32_t cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  _impl_.initiator_player_id_ = 0;
-  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
-}
-
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-        ::uint8_t* StartGameRequest::_InternalSerialize(
-            const MessageLite& base, ::uint8_t* target,
-            ::google::protobuf::io::EpsCopyOutputStream* stream) {
-          const StartGameRequest& this_ = static_cast<const StartGameRequest&>(base);
-#else   // PROTOBUF_CUSTOM_VTABLE
-        ::uint8_t* StartGameRequest::_InternalSerialize(
-            ::uint8_t* target,
-            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
-          const StartGameRequest& this_ = *this;
-#endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.StartGameRequest)
-          ::uint32_t cached_has_bits = 0;
-          (void)cached_has_bits;
-
-          // int32 initiator_player_id = 1;
-          if (this_._internal_initiator_player_id() != 0) {
-            target = ::google::protobuf::internal::WireFormatLite::
-                WriteInt32ToArrayWithField<1>(
-                    stream, this_._internal_initiator_player_id(), target);
-          }
-
-          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
-            target =
-                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
-                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
-          }
-          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.StartGameRequest)
-          return target;
-        }
-
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-        ::size_t StartGameRequest::ByteSizeLong(const MessageLite& base) {
-          const StartGameRequest& this_ = static_cast<const StartGameRequest&>(base);
-#else   // PROTOBUF_CUSTOM_VTABLE
-        ::size_t StartGameRequest::ByteSizeLong() const {
-          const StartGameRequest& this_ = *this;
-#endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.StartGameRequest)
-          ::size_t total_size = 0;
-
-          ::uint32_t cached_has_bits = 0;
-          // Prevent compiler warnings about cached_has_bits being unused
-          (void)cached_has_bits;
-
-           {
-            // int32 initiator_player_id = 1;
-            if (this_._internal_initiator_player_id() != 0) {
-              total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
-                  this_._internal_initiator_player_id());
-            }
-          }
-          return this_.MaybeComputeUnknownFieldsSize(total_size,
-                                                     &this_._impl_._cached_size_);
-        }
-
-void StartGameRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
-  auto* const _this = static_cast<StartGameRequest*>(&to_msg);
-  auto& from = static_cast<const StartGameRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.StartGameRequest)
-  ABSL_DCHECK_NE(&from, _this);
-  ::uint32_t cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from._internal_initiator_player_id() != 0) {
-    _this->_impl_.initiator_player_id_ = from._impl_.initiator_player_id_;
-  }
-  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
-}
-
-void StartGameRequest::CopyFrom(const StartGameRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.StartGameRequest)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-
-void StartGameRequest::InternalSwap(StartGameRequest* PROTOBUF_RESTRICT other) {
-  using std::swap;
-  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-        swap(_impl_.initiator_player_id_, other->_impl_.initiator_player_id_);
-}
-
-::google::protobuf::Metadata StartGameRequest::GetMetadata() const {
-  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
-}
-// ===================================================================
-
-class StartGameResponse::_Internal {
- public:
-};
-
-StartGameResponse::StartGameResponse(::google::protobuf::Arena* arena)
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-    : ::google::protobuf::Message(arena, _class_data_.base()) {
-#else   // PROTOBUF_CUSTOM_VTABLE
-    : ::google::protobuf::Message(arena) {
-#endif  // PROTOBUF_CUSTOM_VTABLE
-  SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:rsosor.generated.StartGameResponse)
-}
-inline PROTOBUF_NDEBUG_INLINE StartGameResponse::Impl_::Impl_(
+inline PROTOBUF_NDEBUG_INLINE LoginRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::rsosor::generated::StartGameResponse& from_msg)
-      : message_(arena, from.message_),
+    const Impl_& from, const ::rsosor::generated::LoginRequest& from_msg)
+      : player_name_(arena, from.player_name_),
+        psw_(arena, from.psw_),
         _cached_size_{0} {}
 
-StartGameResponse::StartGameResponse(
+LoginRequest::LoginRequest(
     ::google::protobuf::Arena* arena,
-    const StartGameResponse& from)
+    const LoginRequest& from)
 #if defined(PROTOBUF_CUSTOM_VTABLE)
     : ::google::protobuf::Message(arena, _class_data_.base()) {
 #else   // PROTOBUF_CUSTOM_VTABLE
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
-  StartGameResponse* const _this = this;
+  LoginRequest* const _this = this;
   (void)_this;
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
-  _impl_.success_ = from._impl_.success_;
 
-  // @@protoc_insertion_point(copy_constructor:rsosor.generated.StartGameResponse)
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.LoginRequest)
 }
-inline PROTOBUF_NDEBUG_INLINE StartGameResponse::Impl_::Impl_(
+inline PROTOBUF_NDEBUG_INLINE LoginRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : message_(arena),
+      : player_name_(arena),
+        psw_(arena),
         _cached_size_{0} {}
 
-inline void StartGameResponse::SharedCtor(::_pb::Arena* arena) {
+inline void LoginRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
-  _impl_.success_ = {};
 }
-StartGameResponse::~StartGameResponse() {
-  // @@protoc_insertion_point(destructor:rsosor.generated.StartGameResponse)
+LoginRequest::~LoginRequest() {
+  // @@protoc_insertion_point(destructor:rsosor.generated.LoginRequest)
   SharedDtor(*this);
 }
-inline void StartGameResponse::SharedDtor(MessageLite& self) {
-  StartGameResponse& this_ = static_cast<StartGameResponse&>(self);
+inline void LoginRequest::SharedDtor(MessageLite& self) {
+  LoginRequest& this_ = static_cast<LoginRequest&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
-  this_._impl_.message_.Destroy();
+  this_._impl_.player_name_.Destroy();
+  this_._impl_.psw_.Destroy();
   this_._impl_.~Impl_();
 }
 
-inline void* StartGameResponse::PlacementNew_(const void*, void* mem,
+inline void* LoginRequest::PlacementNew_(const void*, void* mem,
                                         ::google::protobuf::Arena* arena) {
-  return ::new (mem) StartGameResponse(arena);
+  return ::new (mem) LoginRequest(arena);
 }
-constexpr auto StartGameResponse::InternalNewImpl_() {
-  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(StartGameResponse),
-                                            alignof(StartGameResponse));
+constexpr auto LoginRequest::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(LoginRequest),
+                                            alignof(LoginRequest));
 }
 PROTOBUF_CONSTINIT
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::google::protobuf::internal::ClassDataFull StartGameResponse::_class_data_ = {
+const ::google::protobuf::internal::ClassDataFull LoginRequest::_class_data_ = {
     ::google::protobuf::internal::ClassData{
-        &_StartGameResponse_default_instance_._instance,
+        &_LoginRequest_default_instance_._instance,
         &_table_.header,
         nullptr,  // OnDemandRegisterArenaDtor
         nullptr,  // IsInitialized
-        &StartGameResponse::MergeImpl,
-        ::google::protobuf::Message::GetNewImpl<StartGameResponse>(),
+        &LoginRequest::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<LoginRequest>(),
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-        &StartGameResponse::SharedDtor,
-        ::google::protobuf::Message::GetClearImpl<StartGameResponse>(), &StartGameResponse::ByteSizeLong,
-            &StartGameResponse::_InternalSerialize,
+        &LoginRequest::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<LoginRequest>(), &LoginRequest::ByteSizeLong,
+            &LoginRequest::_InternalSerialize,
 #endif  // PROTOBUF_CUSTOM_VTABLE
-        PROTOBUF_FIELD_OFFSET(StartGameResponse, _impl_._cached_size_),
+        PROTOBUF_FIELD_OFFSET(LoginRequest, _impl_._cached_size_),
         false,
     },
-    &StartGameResponse::kDescriptorMethods,
+    &LoginRequest::kDescriptorMethods,
     &descriptor_table_bigtwo_2eproto,
     nullptr,  // tracker
 };
-const ::google::protobuf::internal::ClassData* StartGameResponse::GetClassData() const {
+const ::google::protobuf::internal::ClassData* LoginRequest::GetClassData() const {
   ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
   ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 50, 2> StartGameResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 52, 2> LoginRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -4236,57 +4454,336 @@ const ::_pbi::TcParseTable<1, 2, 0, 50, 2> StartGameResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::rsosor::generated::StartGameResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::rsosor::generated::LoginRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // string message = 2;
+    // string psw = 2;
     {::_pbi::TcParser::FastUS1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(StartGameResponse, _impl_.message_)}},
-    // bool success = 1;
-    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(StartGameResponse, _impl_.success_), 63>(),
-     {8, 63, 0, PROTOBUF_FIELD_OFFSET(StartGameResponse, _impl_.success_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(LoginRequest, _impl_.psw_)}},
+    // string player_name = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(LoginRequest, _impl_.player_name_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // bool success = 1;
-    {PROTOBUF_FIELD_OFFSET(StartGameResponse, _impl_.success_), 0, 0,
-    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
-    // string message = 2;
-    {PROTOBUF_FIELD_OFFSET(StartGameResponse, _impl_.message_), 0, 0,
+    // string player_name = 1;
+    {PROTOBUF_FIELD_OFFSET(LoginRequest, _impl_.player_name_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string psw = 2;
+    {PROTOBUF_FIELD_OFFSET(LoginRequest, _impl_.psw_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
-    "\42\0\7\0\0\0\0\0"
-    "rsosor.generated.StartGameResponse"
+    "\35\13\3\0\0\0\0\0"
+    "rsosor.generated.LoginRequest"
+    "player_name"
+    "psw"
+  }},
+};
+
+PROTOBUF_NOINLINE void LoginRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.LoginRequest)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.player_name_.ClearToEmpty();
+  _impl_.psw_.ClearToEmpty();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::uint8_t* LoginRequest::_InternalSerialize(
+            const MessageLite& base, ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) {
+          const LoginRequest& this_ = static_cast<const LoginRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::uint8_t* LoginRequest::_InternalSerialize(
+            ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+          const LoginRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.LoginRequest)
+          ::uint32_t cached_has_bits = 0;
+          (void)cached_has_bits;
+
+          // string player_name = 1;
+          if (!this_._internal_player_name().empty()) {
+            const std::string& _s = this_._internal_player_name();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.LoginRequest.player_name");
+            target = stream->WriteStringMaybeAliased(1, _s, target);
+          }
+
+          // string psw = 2;
+          if (!this_._internal_psw().empty()) {
+            const std::string& _s = this_._internal_psw();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.LoginRequest.psw");
+            target = stream->WriteStringMaybeAliased(2, _s, target);
+          }
+
+          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+            target =
+                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+          }
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.LoginRequest)
+          return target;
+        }
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::size_t LoginRequest::ByteSizeLong(const MessageLite& base) {
+          const LoginRequest& this_ = static_cast<const LoginRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::size_t LoginRequest::ByteSizeLong() const {
+          const LoginRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.LoginRequest)
+          ::size_t total_size = 0;
+
+          ::uint32_t cached_has_bits = 0;
+          // Prevent compiler warnings about cached_has_bits being unused
+          (void)cached_has_bits;
+
+          ::_pbi::Prefetch5LinesFrom7Lines(&this_);
+           {
+            // string player_name = 1;
+            if (!this_._internal_player_name().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_player_name());
+            }
+            // string psw = 2;
+            if (!this_._internal_psw().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_psw());
+            }
+          }
+          return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                                     &this_._impl_._cached_size_);
+        }
+
+void LoginRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<LoginRequest*>(&to_msg);
+  auto& from = static_cast<const LoginRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.LoginRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_player_name().empty()) {
+    _this->_internal_set_player_name(from._internal_player_name());
+  }
+  if (!from._internal_psw().empty()) {
+    _this->_internal_set_psw(from._internal_psw());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void LoginRequest::CopyFrom(const LoginRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.LoginRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void LoginRequest::InternalSwap(LoginRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.player_name_, &other->_impl_.player_name_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.psw_, &other->_impl_.psw_, arena);
+}
+
+::google::protobuf::Metadata LoginRequest::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class LoginResponse::_Internal {
+ public:
+};
+
+LoginResponse::LoginResponse(::google::protobuf::Arena* arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.LoginResponse)
+}
+inline PROTOBUF_NDEBUG_INLINE LoginResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from, const ::rsosor::generated::LoginResponse& from_msg)
+      : message_(arena, from.message_),
+        _cached_size_{0} {}
+
+LoginResponse::LoginResponse(
+    ::google::protobuf::Arena* arena,
+    const LoginResponse& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  LoginResponse* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, success_),
+           offsetof(Impl_, player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::player_id_));
+
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.LoginResponse)
+}
+inline PROTOBUF_NDEBUG_INLINE LoginResponse::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : message_(arena),
+        _cached_size_{0} {}
+
+inline void LoginResponse::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           0,
+           offsetof(Impl_, player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::player_id_));
+}
+LoginResponse::~LoginResponse() {
+  // @@protoc_insertion_point(destructor:rsosor.generated.LoginResponse)
+  SharedDtor(*this);
+}
+inline void LoginResponse::SharedDtor(MessageLite& self) {
+  LoginResponse& this_ = static_cast<LoginResponse&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.message_.Destroy();
+  this_._impl_.~Impl_();
+}
+
+inline void* LoginResponse::PlacementNew_(const void*, void* mem,
+                                        ::google::protobuf::Arena* arena) {
+  return ::new (mem) LoginResponse(arena);
+}
+constexpr auto LoginResponse::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(LoginResponse),
+                                            alignof(LoginResponse));
+}
+PROTOBUF_CONSTINIT
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::google::protobuf::internal::ClassDataFull LoginResponse::_class_data_ = {
+    ::google::protobuf::internal::ClassData{
+        &_LoginResponse_default_instance_._instance,
+        &_table_.header,
+        nullptr,  // OnDemandRegisterArenaDtor
+        nullptr,  // IsInitialized
+        &LoginResponse::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<LoginResponse>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        &LoginResponse::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<LoginResponse>(), &LoginResponse::ByteSizeLong,
+            &LoginResponse::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+        PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_._cached_size_),
+        false,
+    },
+    &LoginResponse::kDescriptorMethods,
+    &descriptor_table_bigtwo_2eproto,
+    nullptr,  // tracker
+};
+const ::google::protobuf::internal::ClassData* LoginResponse::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+  return _class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 0, 46, 2> LoginResponse::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::rsosor::generated::LoginResponse>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(LoginResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.success_)}},
+    // int32 player_id = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(LoginResponse, _impl_.player_id_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.player_id_)}},
+    // string message = 3;
+    {::_pbi::TcParser::FastUS1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.message_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // int32 player_id = 2;
+    {PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.player_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // string message = 3;
+    {PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.message_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\36\0\0\7\0\0\0\0"
+    "rsosor.generated.LoginResponse"
     "message"
   }},
 };
 
-PROTOBUF_NOINLINE void StartGameResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:rsosor.generated.StartGameResponse)
+PROTOBUF_NOINLINE void LoginResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.LoginResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.message_.ClearToEmpty();
-  _impl_.success_ = false;
+  ::memset(&_impl_.success_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.player_id_) -
+      reinterpret_cast<char*>(&_impl_.success_)) + sizeof(_impl_.player_id_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-        ::uint8_t* StartGameResponse::_InternalSerialize(
+        ::uint8_t* LoginResponse::_InternalSerialize(
             const MessageLite& base, ::uint8_t* target,
             ::google::protobuf::io::EpsCopyOutputStream* stream) {
-          const StartGameResponse& this_ = static_cast<const StartGameResponse&>(base);
+          const LoginResponse& this_ = static_cast<const LoginResponse&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-        ::uint8_t* StartGameResponse::_InternalSerialize(
+        ::uint8_t* LoginResponse::_InternalSerialize(
             ::uint8_t* target,
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
-          const StartGameResponse& this_ = *this;
+          const LoginResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.StartGameResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.LoginResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -4297,12 +4794,19 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
                 1, this_._internal_success(), target);
           }
 
-          // string message = 2;
+          // int32 player_id = 2;
+          if (this_._internal_player_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt32ToArrayWithField<2>(
+                    stream, this_._internal_player_id(), target);
+          }
+
+          // string message = 3;
           if (!this_._internal_message().empty()) {
             const std::string& _s = this_._internal_message();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.StartGameResponse.message");
-            target = stream->WriteStringMaybeAliased(2, _s, target);
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.LoginResponse.message");
+            target = stream->WriteStringMaybeAliased(3, _s, target);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -4310,18 +4814,18 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.StartGameResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.LoginResponse)
           return target;
         }
 
 #if defined(PROTOBUF_CUSTOM_VTABLE)
-        ::size_t StartGameResponse::ByteSizeLong(const MessageLite& base) {
-          const StartGameResponse& this_ = static_cast<const StartGameResponse&>(base);
+        ::size_t LoginResponse::ByteSizeLong(const MessageLite& base) {
+          const LoginResponse& this_ = static_cast<const LoginResponse&>(base);
 #else   // PROTOBUF_CUSTOM_VTABLE
-        ::size_t StartGameResponse::ByteSizeLong() const {
-          const StartGameResponse& this_ = *this;
+        ::size_t LoginResponse::ByteSizeLong() const {
+          const LoginResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.StartGameResponse)
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.LoginResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -4330,7 +4834,7 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // string message = 2;
+            // string message = 3;
             if (!this_._internal_message().empty()) {
               total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
                                               this_._internal_message());
@@ -4339,15 +4843,20 @@ PROTOBUF_NOINLINE void StartGameResponse::Clear() {
             if (this_._internal_success() != 0) {
               total_size += 2;
             }
+            // int32 player_id = 2;
+            if (this_._internal_player_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+                  this_._internal_player_id());
+            }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
                                                      &this_._impl_._cached_size_);
         }
 
-void StartGameResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
-  auto* const _this = static_cast<StartGameResponse*>(&to_msg);
-  auto& from = static_cast<const StartGameResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.StartGameResponse)
+void LoginResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<LoginResponse*>(&to_msg);
+  auto& from = static_cast<const LoginResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.LoginResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4358,27 +4867,35 @@ void StartGameResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const
   if (from._internal_success() != 0) {
     _this->_impl_.success_ = from._impl_.success_;
   }
+  if (from._internal_player_id() != 0) {
+    _this->_impl_.player_id_ = from._impl_.player_id_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void StartGameResponse::CopyFrom(const StartGameResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.StartGameResponse)
+void LoginResponse::CopyFrom(const LoginResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.LoginResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 
-void StartGameResponse::InternalSwap(StartGameResponse* PROTOBUF_RESTRICT other) {
+void LoginResponse::InternalSwap(LoginResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
   auto* arena = GetArena();
   ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_, &other->_impl_.message_, arena);
-        swap(_impl_.success_, other->_impl_.success_);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.player_id_)
+      + sizeof(LoginResponse::_impl_.player_id_)
+      - PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.success_)>(
+          reinterpret_cast<char*>(&_impl_.success_),
+          reinterpret_cast<char*>(&other->_impl_.success_));
 }
 
-::google::protobuf::Metadata StartGameResponse::GetMetadata() const {
+::google::protobuf::Metadata LoginResponse::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // ===================================================================
@@ -4656,8 +5173,7 @@ DealRequest::DealRequest(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE DealRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from, const ::rsosor::generated::DealRequest& from_msg)
-      : player_ids_{visibility, arena, from.player_ids_},
-        _player_ids_cached_byte_size_{0},
+      : room_id_(arena, from.room_id_),
         _cached_size_{0} {}
 
 DealRequest::DealRequest(
@@ -4673,18 +5189,19 @@ DealRequest::DealRequest(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.player_id_ = from._impl_.player_id_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.DealRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE DealRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : player_ids_{visibility, arena},
-        _player_ids_cached_byte_size_{0},
+      : room_id_(arena),
         _cached_size_{0} {}
 
 inline void DealRequest::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.player_id_ = {};
 }
 DealRequest::~DealRequest() {
   // @@protoc_insertion_point(destructor:rsosor.generated.DealRequest)
@@ -4694,6 +5211,7 @@ inline void DealRequest::SharedDtor(MessageLite& self) {
   DealRequest& this_ = static_cast<DealRequest&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.room_id_.Destroy();
   this_._impl_.~Impl_();
 }
 
@@ -4702,20 +5220,8 @@ inline void* DealRequest::PlacementNew_(const void*, void* mem,
   return ::new (mem) DealRequest(arena);
 }
 constexpr auto DealRequest::InternalNewImpl_() {
-  constexpr auto arena_bits = ::google::protobuf::internal::EncodePlacementArenaOffsets({
-      PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.player_ids_) +
-          decltype(DealRequest::_impl_.player_ids_)::
-              InternalGetArenaOffset(
-                  ::google::protobuf::Message::internal_visibility()),
-  });
-  if (arena_bits.has_value()) {
-    return ::google::protobuf::internal::MessageCreator::ZeroInit(
-        sizeof(DealRequest), alignof(DealRequest), *arena_bits);
-  } else {
-    return ::google::protobuf::internal::MessageCreator(&DealRequest::PlacementNew_,
-                                 sizeof(DealRequest),
-                                 alignof(DealRequest));
-  }
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(DealRequest),
+                                            alignof(DealRequest));
 }
 PROTOBUF_CONSTINIT
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
@@ -4745,15 +5251,15 @@ const ::google::protobuf::internal::ClassData* DealRequest::GetClassData() const
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 0, 0, 2> DealRequest::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 44, 2> DealRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     _class_data_.base(),
@@ -4763,18 +5269,27 @@ const ::_pbi::TcParseTable<0, 1, 0, 0, 2> DealRequest::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::DealRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated int32 player_ids = 1;
-    {::_pbi::TcParser::FastV32P1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.player_ids_)}},
+    // string room_id = 2;
+    {::_pbi::TcParser::FastUS1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.room_id_)}},
+    // int32 player_id = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(DealRequest, _impl_.player_id_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.player_id_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated int32 player_ids = 1;
-    {PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.player_ids_), 0, 0,
-    (0 | ::_fl::kFcRepeated | ::_fl::kPackedInt32)},
+    // int32 player_id = 1;
+    {PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.player_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // string room_id = 2;
+    {PROTOBUF_FIELD_OFFSET(DealRequest, _impl_.room_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
   }},
   // no aux_entries
   {{
+    "\34\0\7\0\0\0\0\0"
+    "rsosor.generated.DealRequest"
+    "room_id"
   }},
 };
 
@@ -4785,7 +5300,8 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.player_ids_.Clear();
+  _impl_.room_id_.ClearToEmpty();
+  _impl_.player_id_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -4804,13 +5320,19 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated int32 player_ids = 1;
-          {
-            int byte_size = this_._impl_._player_ids_cached_byte_size_.Get();
-            if (byte_size > 0) {
-              target = stream->WriteInt32Packed(
-                  1, this_._internal_player_ids(), byte_size, target);
-            }
+          // int32 player_id = 1;
+          if (this_._internal_player_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt32ToArrayWithField<1>(
+                    stream, this_._internal_player_id(), target);
+          }
+
+          // string room_id = 2;
+          if (!this_._internal_room_id().empty()) {
+            const std::string& _s = this_._internal_room_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.DealRequest.room_id");
+            target = stream->WriteStringMaybeAliased(2, _s, target);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -4838,12 +5360,15 @@ PROTOBUF_NOINLINE void DealRequest::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated int32 player_ids = 1;
-            {
-              total_size +=
-                  ::_pbi::WireFormatLite::Int32SizeWithPackedTagSize(
-                      this_._internal_player_ids(), 1,
-                      this_._impl_._player_ids_cached_byte_size_);
+            // string room_id = 2;
+            if (!this_._internal_room_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_room_id());
+            }
+            // int32 player_id = 1;
+            if (this_._internal_player_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+                  this_._internal_player_id());
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -4858,7 +5383,12 @@ void DealRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::goo
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_internal_mutable_player_ids()->MergeFrom(from._internal_player_ids());
+  if (!from._internal_room_id().empty()) {
+    _this->_internal_set_room_id(from._internal_room_id());
+  }
+  if (from._internal_player_id() != 0) {
+    _this->_impl_.player_id_ = from._impl_.player_id_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -4872,100 +5402,16 @@ void DealRequest::CopyFrom(const DealRequest& from) {
 
 void DealRequest::InternalSwap(DealRequest* PROTOBUF_RESTRICT other) {
   using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.player_ids_.InternalSwap(&other->_impl_.player_ids_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.room_id_, &other->_impl_.room_id_, arena);
+        swap(_impl_.player_id_, other->_impl_.player_id_);
 }
 
 ::google::protobuf::Metadata DealRequest::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
-// ===================================================================
-
-#if defined(PROTOBUF_CUSTOM_VTABLE)
-              DealResponse_DealtHandsEntry_DoNotUse::DealResponse_DealtHandsEntry_DoNotUse() : SuperType(_class_data_.base()) {}
-              DealResponse_DealtHandsEntry_DoNotUse::DealResponse_DealtHandsEntry_DoNotUse(::google::protobuf::Arena* arena)
-                  : SuperType(arena, _class_data_.base()) {}
-#else   // PROTOBUF_CUSTOM_VTABLE
-              DealResponse_DealtHandsEntry_DoNotUse::DealResponse_DealtHandsEntry_DoNotUse() : SuperType() {}
-              DealResponse_DealtHandsEntry_DoNotUse::DealResponse_DealtHandsEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
-#endif  // PROTOBUF_CUSTOM_VTABLE
-              inline void* DealResponse_DealtHandsEntry_DoNotUse::PlacementNew_(const void*, void* mem,
-                                                      ::google::protobuf::Arena* arena) {
-                return ::new (mem) DealResponse_DealtHandsEntry_DoNotUse(arena);
-              }
-              constexpr auto DealResponse_DealtHandsEntry_DoNotUse::InternalNewImpl_() {
-                return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(DealResponse_DealtHandsEntry_DoNotUse),
-                                                          alignof(DealResponse_DealtHandsEntry_DoNotUse));
-              }
-              PROTOBUF_CONSTINIT
-              PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-              const ::google::protobuf::internal::ClassDataFull DealResponse_DealtHandsEntry_DoNotUse::_class_data_ = {
-                  ::google::protobuf::internal::ClassData{
-                      &_DealResponse_DealtHandsEntry_DoNotUse_default_instance_._instance,
-                      &_table_.header,
-                      nullptr,  // OnDemandRegisterArenaDtor
-                      nullptr,  // IsInitialized
-                      &DealResponse_DealtHandsEntry_DoNotUse::MergeImpl,
-                      ::google::protobuf::Message::GetNewImpl<DealResponse_DealtHandsEntry_DoNotUse>(),
-              #if defined(PROTOBUF_CUSTOM_VTABLE)
-                      &DealResponse_DealtHandsEntry_DoNotUse::SharedDtor,
-                      static_cast<void (::google::protobuf::MessageLite::*)()>(
-                          &DealResponse_DealtHandsEntry_DoNotUse::ClearImpl),
-                          ::google::protobuf::Message::ByteSizeLongImpl, ::google::protobuf::Message::_InternalSerializeImpl
-                          ,
-              #endif  // PROTOBUF_CUSTOM_VTABLE
-                      PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_._cached_size_),
-                      false,
-                  },
-                  &DealResponse_DealtHandsEntry_DoNotUse::kDescriptorMethods,
-                  &descriptor_table_bigtwo_2eproto,
-                  nullptr,  // tracker
-              };
-              const ::google::protobuf::internal::ClassData* DealResponse_DealtHandsEntry_DoNotUse::GetClassData() const {
-                ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
-                ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
-                return _class_data_.base();
-              }
-PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 1, 0, 2> DealResponse_DealtHandsEntry_DoNotUse::_table_ = {
-  {
-    PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_._has_bits_),
-    0, // no _extensions_
-    2, 8,  // max_field_number, fast_idx_mask
-    offsetof(decltype(_table_), field_lookup_table),
-    4294967292,  // skipmap
-    offsetof(decltype(_table_), field_entries),
-    2,  // num_field_entries
-    1,  // num_aux_entries
-    offsetof(decltype(_table_), aux_entries),
-    _class_data_.base(),
-    nullptr,  // post_loop_handler
-    ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
-    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::rsosor::generated::DealResponse_DealtHandsEntry_DoNotUse>(),  // to_prefetch
-    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
-  }, {{
-    // .rsosor.generated.Hand value = 2;
-    {::_pbi::TcParser::FastMtS1,
-     {18, 0, 0, PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_)}},
-    // int32 key = 1;
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_), 63>(),
-     {8, 63, 0, PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_)}},
-  }}, {{
-    65535, 65535
-  }}, {{
-    // int32 key = 1;
-    {PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.key_), -1, 0,
-    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // .rsosor.generated.Hand value = 2;
-    {PROTOBUF_FIELD_OFFSET(DealResponse_DealtHandsEntry_DoNotUse, _impl_.value_), _Internal::kHasBitsOffset + 0, 0,
-    (0 | ::_fl::kFcOptional | ::_fl::kMessage | ::_fl::kTvTable)},
-  }}, {{
-    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
-  }}, {{
-  }},
-};
-
 // ===================================================================
 
 class DealResponse::_Internal {
@@ -4984,7 +5430,7 @@ DealResponse::DealResponse(::google::protobuf::Arena* arena)
 inline PROTOBUF_NDEBUG_INLINE DealResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from, const ::rsosor::generated::DealResponse& from_msg)
-      : dealt_hands_{visibility, arena, from.dealt_hands_},
+      : cards_{visibility, arena, from.cards_},
         _cached_size_{0} {}
 
 DealResponse::DealResponse(
@@ -5000,17 +5446,19 @@ DealResponse::DealResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.success_ = from._impl_.success_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.DealResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE DealResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
-      : dealt_hands_{visibility, arena},
+      : cards_{visibility, arena},
         _cached_size_{0} {}
 
 inline void DealResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.success_ = {};
 }
 DealResponse::~DealResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.DealResponse)
@@ -5029,17 +5477,13 @@ inline void* DealResponse::PlacementNew_(const void*, void* mem,
 }
 constexpr auto DealResponse::InternalNewImpl_() {
   constexpr auto arena_bits = ::google::protobuf::internal::EncodePlacementArenaOffsets({
-      PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.dealt_hands_) +
-          decltype(DealResponse::_impl_.dealt_hands_)::
+      PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.cards_) +
+          decltype(DealResponse::_impl_.cards_)::
               InternalGetArenaOffset(
-                  ::google::protobuf::Message::internal_visibility()),
-      PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.dealt_hands_) +
-          decltype(DealResponse::_impl_.dealt_hands_)::
-              InternalGetArenaOffsetAlt(
                   ::google::protobuf::Message::internal_visibility()),
   });
   if (arena_bits.has_value()) {
-    return ::google::protobuf::internal::MessageCreator::CopyInit(
+    return ::google::protobuf::internal::MessageCreator::ZeroInit(
         sizeof(DealResponse), alignof(DealResponse), *arena_bits);
   } else {
     return ::google::protobuf::internal::MessageCreator(&DealResponse::PlacementNew_,
@@ -5075,16 +5519,16 @@ const ::google::protobuf::internal::ClassData* DealResponse::GetClassData() cons
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 2, 0, 2> DealResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 1, 0, 2> DealResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
-    2,  // num_aux_entries
+    2,  // num_field_entries
+    1,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
     nullptr,  // post_loop_handler
@@ -5093,19 +5537,23 @@ const ::_pbi::TcParseTable<0, 1, 2, 0, 2> DealResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::DealResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
+    // repeated .rsosor.generated.Card cards = 2;
+    {::_pbi::TcParser::FastMtR1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.cards_)}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(DealResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.success_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
-    {PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.dealt_hands_), 0, 0,
-    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // repeated .rsosor.generated.Card cards = 2;
+    {PROTOBUF_FIELD_OFFSET(DealResponse, _impl_.cards_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
-    {::_pbi::TcParser::GetMapAuxInfo<
-        decltype(DealResponse()._impl_.dealt_hands_)>(
-        0, 0, 0, 5,
-        11)},
-    {::_pbi::TcParser::GetTable<::rsosor::generated::Hand>()},
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
   }},
 };
@@ -5117,7 +5565,8 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.dealt_hands_.Clear();
+  _impl_.cards_.Clear();
+  _impl_.success_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -5136,25 +5585,22 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
-          if (!this_._internal_dealt_hands().empty()) {
-            using MapType = ::google::protobuf::Map<::int32_t, ::rsosor::generated::Hand>;
-            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
-                                           _pbi::WireFormatLite::TYPE_INT32,
-                                           _pbi::WireFormatLite::TYPE_MESSAGE>;
-            const auto& field = this_._internal_dealt_hands();
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
 
-            if (stream->IsSerializationDeterministic() && field.size() > 1) {
-              for (const auto& entry : ::google::protobuf::internal::MapSorterFlat<MapType>(field)) {
-                target = WireHelper::InternalSerialize(
-                    1, entry.first, entry.second, target, stream);
-              }
-            } else {
-              for (const auto& entry : field) {
-                target = WireHelper::InternalSerialize(
-                    1, entry.first, entry.second, target, stream);
-              }
-            }
+          // repeated .rsosor.generated.Card cards = 2;
+          for (unsigned i = 0, n = static_cast<unsigned>(
+                                   this_._internal_cards_size());
+               i < n; i++) {
+            const auto& repfield = this_._internal_cards().Get(i);
+            target =
+                ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+                    2, repfield, repfield.GetCachedSize(),
+                    target, stream);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -5182,15 +5628,18 @@ PROTOBUF_NOINLINE void DealResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // map<int32, .rsosor.generated.Hand> dealt_hands = 1;
+            // repeated .rsosor.generated.Card cards = 2;
             {
-              total_size +=
-                  1 * ::google::protobuf::internal::FromIntSize(this_._internal_dealt_hands_size());
-              for (const auto& entry : this_._internal_dealt_hands()) {
-                total_size += _pbi::MapEntryFuncs<::int32_t, ::rsosor::generated::Hand,
-                                               _pbi::WireFormatLite::TYPE_INT32,
-                                               _pbi::WireFormatLite::TYPE_MESSAGE>::ByteSizeLong(entry.first, entry.second);
+              total_size += 1UL * this_._internal_cards_size();
+              for (const auto& msg : this_._internal_cards()) {
+                total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
+            }
+          }
+           {
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -5205,7 +5654,11 @@ void DealResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::go
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.dealt_hands_.MergeFrom(from._impl_.dealt_hands_);
+  _this->_internal_mutable_cards()->MergeFrom(
+      from._internal_cards());
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -5220,7 +5673,8 @@ void DealResponse::CopyFrom(const DealResponse& from) {
 void DealResponse::InternalSwap(DealResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.dealt_hands_.InternalSwap(&other->_impl_.dealt_hands_);
+  _impl_.cards_.InternalSwap(&other->_impl_.cards_);
+        swap(_impl_.success_, other->_impl_.success_);
 }
 
 ::google::protobuf::Metadata DealResponse::GetMetadata() const {
@@ -5487,7 +5941,8 @@ inline PROTOBUF_NDEBUG_INLINE PlayValidationRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
     const Impl_& from, const ::rsosor::generated::PlayValidationRequest& from_msg)
       : cards_{visibility, arena, from.cards_},
-        last_played_{visibility, arena, from.last_played_},
+        last_played_cards_{visibility, arena, from.last_played_cards_},
+        room_id_(arena, from.room_id_),
         _cached_size_{0} {}
 
 PlayValidationRequest::PlayValidationRequest(
@@ -5511,7 +5966,8 @@ inline PROTOBUF_NDEBUG_INLINE PlayValidationRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
     ::google::protobuf::Arena* arena)
       : cards_{visibility, arena},
-        last_played_{visibility, arena},
+        last_played_cards_{visibility, arena},
+        room_id_(arena),
         _cached_size_{0} {}
 
 inline void PlayValidationRequest::SharedCtor(::_pb::Arena* arena) {
@@ -5526,6 +5982,7 @@ inline void PlayValidationRequest::SharedDtor(MessageLite& self) {
   PlayValidationRequest& this_ = static_cast<PlayValidationRequest&>(self);
   this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
   ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.room_id_.Destroy();
   this_._impl_.~Impl_();
 }
 
@@ -5539,13 +5996,13 @@ constexpr auto PlayValidationRequest::InternalNewImpl_() {
           decltype(PlayValidationRequest::_impl_.cards_)::
               InternalGetArenaOffset(
                   ::google::protobuf::Message::internal_visibility()),
-      PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_) +
-          decltype(PlayValidationRequest::_impl_.last_played_)::
+      PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_cards_) +
+          decltype(PlayValidationRequest::_impl_.last_played_cards_)::
               InternalGetArenaOffset(
                   ::google::protobuf::Message::internal_visibility()),
   });
   if (arena_bits.has_value()) {
-    return ::google::protobuf::internal::MessageCreator::ZeroInit(
+    return ::google::protobuf::internal::MessageCreator::CopyInit(
         sizeof(PlayValidationRequest), alignof(PlayValidationRequest), *arena_bits);
   } else {
     return ::google::protobuf::internal::MessageCreator(&PlayValidationRequest::PlacementNew_,
@@ -5581,15 +6038,15 @@ const ::google::protobuf::internal::ClassData* PlayValidationRequest::GetClassDa
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 2, 0, 2> PlayValidationRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 2, 54, 2> PlayValidationRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    3, 24,  // max_field_number, fast_idx_mask
+    4, 24,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967288,  // skipmap
+    4294967280,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    3,  // num_field_entries
+    4,  // num_field_entries
     2,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
@@ -5599,32 +6056,40 @@ const ::_pbi::TcParseTable<2, 3, 2, 0, 2> PlayValidationRequest::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::PlayValidationRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
+    // repeated .rsosor.generated.Card last_played_cards = 4;
+    {::_pbi::TcParser::FastMtR1,
+     {34, 63, 1, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_cards_)}},
     // int32 player_id = 1;
     {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayValidationRequest, _impl_.player_id_), 63>(),
      {8, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.player_id_)}},
-    // repeated .rsosor.generated.Card cards = 2;
+    // string room_id = 2;
+    {::_pbi::TcParser::FastUS1,
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.room_id_)}},
+    // repeated .rsosor.generated.Card cards = 3;
     {::_pbi::TcParser::FastMtR1,
-     {18, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.cards_)}},
-    // repeated .rsosor.generated.Card last_played = 3;
-    {::_pbi::TcParser::FastMtR1,
-     {26, 63, 1, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_)}},
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.cards_)}},
   }}, {{
     65535, 65535
   }}, {{
     // int32 player_id = 1;
     {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.player_id_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // repeated .rsosor.generated.Card cards = 2;
+    // string room_id = 2;
+    {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.room_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // repeated .rsosor.generated.Card cards = 3;
     {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.cards_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
-    // repeated .rsosor.generated.Card last_played = 3;
-    {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_), 0, 1,
+    // repeated .rsosor.generated.Card last_played_cards = 4;
+    {PROTOBUF_FIELD_OFFSET(PlayValidationRequest, _impl_.last_played_cards_), 0, 1,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
     {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
     {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
   }}, {{
+    "\46\0\7\0\0\0\0\0"
+    "rsosor.generated.PlayValidationRequest"
+    "room_id"
   }},
 };
 
@@ -5636,7 +6101,8 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
   (void) cached_has_bits;
 
   _impl_.cards_.Clear();
-  _impl_.last_played_.Clear();
+  _impl_.last_played_cards_.Clear();
+  _impl_.room_id_.ClearToEmpty();
   _impl_.player_id_ = 0;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
@@ -5663,25 +6129,33 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
                     stream, this_._internal_player_id(), target);
           }
 
-          // repeated .rsosor.generated.Card cards = 2;
+          // string room_id = 2;
+          if (!this_._internal_room_id().empty()) {
+            const std::string& _s = this_._internal_room_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.PlayValidationRequest.room_id");
+            target = stream->WriteStringMaybeAliased(2, _s, target);
+          }
+
+          // repeated .rsosor.generated.Card cards = 3;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_cards_size());
                i < n; i++) {
             const auto& repfield = this_._internal_cards().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    2, repfield, repfield.GetCachedSize(),
+                    3, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
-          // repeated .rsosor.generated.Card last_played = 3;
+          // repeated .rsosor.generated.Card last_played_cards = 4;
           for (unsigned i = 0, n = static_cast<unsigned>(
-                                   this_._internal_last_played_size());
+                                   this_._internal_last_played_cards_size());
                i < n; i++) {
-            const auto& repfield = this_._internal_last_played().Get(i);
+            const auto& repfield = this_._internal_last_played_cards().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    3, repfield, repfield.GetCachedSize(),
+                    4, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
@@ -5710,22 +6184,27 @@ PROTOBUF_NOINLINE void PlayValidationRequest::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .rsosor.generated.Card cards = 2;
+            // repeated .rsosor.generated.Card cards = 3;
             {
               total_size += 1UL * this_._internal_cards_size();
               for (const auto& msg : this_._internal_cards()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
-            // repeated .rsosor.generated.Card last_played = 3;
+            // repeated .rsosor.generated.Card last_played_cards = 4;
             {
-              total_size += 1UL * this_._internal_last_played_size();
-              for (const auto& msg : this_._internal_last_played()) {
+              total_size += 1UL * this_._internal_last_played_cards_size();
+              for (const auto& msg : this_._internal_last_played_cards()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
             }
           }
            {
+            // string room_id = 2;
+            if (!this_._internal_room_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_room_id());
+            }
             // int32 player_id = 1;
             if (this_._internal_player_id() != 0) {
               total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
@@ -5746,8 +6225,11 @@ void PlayValidationRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, c
 
   _this->_internal_mutable_cards()->MergeFrom(
       from._internal_cards());
-  _this->_internal_mutable_last_played()->MergeFrom(
-      from._internal_last_played());
+  _this->_internal_mutable_last_played_cards()->MergeFrom(
+      from._internal_last_played_cards());
+  if (!from._internal_room_id().empty()) {
+    _this->_internal_set_room_id(from._internal_room_id());
+  }
   if (from._internal_player_id() != 0) {
     _this->_impl_.player_id_ = from._impl_.player_id_;
   }
@@ -5764,9 +6246,12 @@ void PlayValidationRequest::CopyFrom(const PlayValidationRequest& from) {
 
 void PlayValidationRequest::InternalSwap(PlayValidationRequest* PROTOBUF_RESTRICT other) {
   using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.cards_.InternalSwap(&other->_impl_.cards_);
-  _impl_.last_played_.InternalSwap(&other->_impl_.last_played_);
+  _impl_.last_played_cards_.InternalSwap(&other->_impl_.last_played_cards_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.room_id_, &other->_impl_.room_id_, arena);
         swap(_impl_.player_id_, other->_impl_.player_id_);
 }
 
@@ -6992,6 +7477,7 @@ ScoreResponse::ScoreResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.success_ = from._impl_.success_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.ScoreResponse)
 }
@@ -7003,6 +7489,7 @@ inline PROTOBUF_NDEBUG_INLINE ScoreResponse::Impl_::Impl_(
 
 inline void ScoreResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.success_ = {};
 }
 ScoreResponse::~ScoreResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.ScoreResponse)
@@ -7067,15 +7554,15 @@ const ::google::protobuf::internal::ClassData* ScoreResponse::GetClassData() con
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ScoreResponse::_table_ = {
+const ::_pbi::TcParseTable<0, 2, 1, 0, 2> ScoreResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 0,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     1,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
@@ -7085,11 +7572,16 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ScoreResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::ScoreResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(ScoreResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(ScoreResponse, _impl_.success_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // map<int32, int32> scores = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(ScoreResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // map<int32, int32> scores = 2;
     {PROTOBUF_FIELD_OFFSET(ScoreResponse, _impl_.scores_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
   }}, {{
@@ -7109,6 +7601,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
   (void) cached_has_bits;
 
   _impl_.scores_.Clear();
+  _impl_.success_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -7127,7 +7620,14 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // map<int32, int32> scores = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // map<int32, int32> scores = 2;
           if (!this_._internal_scores().empty()) {
             using MapType = ::google::protobuf::Map<::int32_t, ::int32_t>;
             using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::int32_t,
@@ -7138,12 +7638,12 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
             if (stream->IsSerializationDeterministic() && field.size() > 1) {
               for (const auto& entry : ::google::protobuf::internal::MapSorterFlat<MapType>(field)) {
                 target = WireHelper::InternalSerialize(
-                    1, entry.first, entry.second, target, stream);
+                    2, entry.first, entry.second, target, stream);
               }
             } else {
               for (const auto& entry : field) {
                 target = WireHelper::InternalSerialize(
-                    1, entry.first, entry.second, target, stream);
+                    2, entry.first, entry.second, target, stream);
               }
             }
           }
@@ -7173,7 +7673,7 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // map<int32, int32> scores = 1;
+            // map<int32, int32> scores = 2;
             {
               total_size +=
                   1 * ::google::protobuf::internal::FromIntSize(this_._internal_scores_size());
@@ -7182,6 +7682,12 @@ PROTOBUF_NOINLINE void ScoreResponse::Clear() {
                                                _pbi::WireFormatLite::TYPE_INT32,
                                                _pbi::WireFormatLite::TYPE_INT32>::ByteSizeLong(entry.first, entry.second);
               }
+            }
+          }
+           {
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -7197,6 +7703,9 @@ void ScoreResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::g
   (void) cached_has_bits;
 
   _this->_impl_.scores_.MergeFrom(from._impl_.scores_);
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -7212,9 +7721,722 @@ void ScoreResponse::InternalSwap(ScoreResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.scores_.InternalSwap(&other->_impl_.scores_);
+        swap(_impl_.success_, other->_impl_.success_);
 }
 
 ::google::protobuf::Metadata ScoreResponse::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class GameRoomId::_Internal {
+ public:
+};
+
+GameRoomId::GameRoomId(::google::protobuf::Arena* arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.GameRoomId)
+}
+inline PROTOBUF_NDEBUG_INLINE GameRoomId::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from, const ::rsosor::generated::GameRoomId& from_msg)
+      : room_id_(arena, from.room_id_),
+        _cached_size_{0} {}
+
+GameRoomId::GameRoomId(
+    ::google::protobuf::Arena* arena,
+    const GameRoomId& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  GameRoomId* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.GameRoomId)
+}
+inline PROTOBUF_NDEBUG_INLINE GameRoomId::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : room_id_(arena),
+        _cached_size_{0} {}
+
+inline void GameRoomId::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+}
+GameRoomId::~GameRoomId() {
+  // @@protoc_insertion_point(destructor:rsosor.generated.GameRoomId)
+  SharedDtor(*this);
+}
+inline void GameRoomId::SharedDtor(MessageLite& self) {
+  GameRoomId& this_ = static_cast<GameRoomId&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.room_id_.Destroy();
+  this_._impl_.~Impl_();
+}
+
+inline void* GameRoomId::PlacementNew_(const void*, void* mem,
+                                        ::google::protobuf::Arena* arena) {
+  return ::new (mem) GameRoomId(arena);
+}
+constexpr auto GameRoomId::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(GameRoomId),
+                                            alignof(GameRoomId));
+}
+PROTOBUF_CONSTINIT
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::google::protobuf::internal::ClassDataFull GameRoomId::_class_data_ = {
+    ::google::protobuf::internal::ClassData{
+        &_GameRoomId_default_instance_._instance,
+        &_table_.header,
+        nullptr,  // OnDemandRegisterArenaDtor
+        nullptr,  // IsInitialized
+        &GameRoomId::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<GameRoomId>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        &GameRoomId::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<GameRoomId>(), &GameRoomId::ByteSizeLong,
+            &GameRoomId::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+        PROTOBUF_FIELD_OFFSET(GameRoomId, _impl_._cached_size_),
+        false,
+    },
+    &GameRoomId::kDescriptorMethods,
+    &descriptor_table_bigtwo_2eproto,
+    nullptr,  // tracker
+};
+const ::google::protobuf::internal::ClassData* GameRoomId::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+  return _class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<0, 1, 0, 43, 2> GameRoomId::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    1, 0,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967294,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    1,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameRoomId>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // string room_id = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(GameRoomId, _impl_.room_id_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string room_id = 1;
+    {PROTOBUF_FIELD_OFFSET(GameRoomId, _impl_.room_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\33\7\0\0\0\0\0\0"
+    "rsosor.generated.GameRoomId"
+    "room_id"
+  }},
+};
+
+PROTOBUF_NOINLINE void GameRoomId::Clear() {
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.GameRoomId)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.room_id_.ClearToEmpty();
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::uint8_t* GameRoomId::_InternalSerialize(
+            const MessageLite& base, ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) {
+          const GameRoomId& this_ = static_cast<const GameRoomId&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::uint8_t* GameRoomId::_InternalSerialize(
+            ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+          const GameRoomId& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.GameRoomId)
+          ::uint32_t cached_has_bits = 0;
+          (void)cached_has_bits;
+
+          // string room_id = 1;
+          if (!this_._internal_room_id().empty()) {
+            const std::string& _s = this_._internal_room_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.GameRoomId.room_id");
+            target = stream->WriteStringMaybeAliased(1, _s, target);
+          }
+
+          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+            target =
+                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+          }
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.GameRoomId)
+          return target;
+        }
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::size_t GameRoomId::ByteSizeLong(const MessageLite& base) {
+          const GameRoomId& this_ = static_cast<const GameRoomId&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::size_t GameRoomId::ByteSizeLong() const {
+          const GameRoomId& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.GameRoomId)
+          ::size_t total_size = 0;
+
+          ::uint32_t cached_has_bits = 0;
+          // Prevent compiler warnings about cached_has_bits being unused
+          (void)cached_has_bits;
+
+           {
+            // string room_id = 1;
+            if (!this_._internal_room_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_room_id());
+            }
+          }
+          return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                                     &this_._impl_._cached_size_);
+        }
+
+void GameRoomId::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<GameRoomId*>(&to_msg);
+  auto& from = static_cast<const GameRoomId&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.GameRoomId)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_room_id().empty()) {
+    _this->_internal_set_room_id(from._internal_room_id());
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GameRoomId::CopyFrom(const GameRoomId& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.GameRoomId)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void GameRoomId::InternalSwap(GameRoomId* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.room_id_, &other->_impl_.room_id_, arena);
+}
+
+::google::protobuf::Metadata GameRoomId::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+              GameState_HandSizesEntry_DoNotUse::GameState_HandSizesEntry_DoNotUse() : SuperType(_class_data_.base()) {}
+              GameState_HandSizesEntry_DoNotUse::GameState_HandSizesEntry_DoNotUse(::google::protobuf::Arena* arena)
+                  : SuperType(arena, _class_data_.base()) {}
+#else   // PROTOBUF_CUSTOM_VTABLE
+              GameState_HandSizesEntry_DoNotUse::GameState_HandSizesEntry_DoNotUse() : SuperType() {}
+              GameState_HandSizesEntry_DoNotUse::GameState_HandSizesEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
+#endif  // PROTOBUF_CUSTOM_VTABLE
+              inline void* GameState_HandSizesEntry_DoNotUse::PlacementNew_(const void*, void* mem,
+                                                      ::google::protobuf::Arena* arena) {
+                return ::new (mem) GameState_HandSizesEntry_DoNotUse(arena);
+              }
+              constexpr auto GameState_HandSizesEntry_DoNotUse::InternalNewImpl_() {
+                return ::google::protobuf::internal::MessageCreator::ZeroInit(sizeof(GameState_HandSizesEntry_DoNotUse),
+                                                          alignof(GameState_HandSizesEntry_DoNotUse));
+              }
+              PROTOBUF_CONSTINIT
+              PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+              const ::google::protobuf::internal::ClassDataFull GameState_HandSizesEntry_DoNotUse::_class_data_ = {
+                  ::google::protobuf::internal::ClassData{
+                      &_GameState_HandSizesEntry_DoNotUse_default_instance_._instance,
+                      &_table_.header,
+                      nullptr,  // OnDemandRegisterArenaDtor
+                      nullptr,  // IsInitialized
+                      &GameState_HandSizesEntry_DoNotUse::MergeImpl,
+                      ::google::protobuf::Message::GetNewImpl<GameState_HandSizesEntry_DoNotUse>(),
+              #if defined(PROTOBUF_CUSTOM_VTABLE)
+                      &GameState_HandSizesEntry_DoNotUse::SharedDtor,
+                      static_cast<void (::google::protobuf::MessageLite::*)()>(
+                          &GameState_HandSizesEntry_DoNotUse::ClearImpl),
+                          ::google::protobuf::Message::ByteSizeLongImpl, ::google::protobuf::Message::_InternalSerializeImpl
+                          ,
+              #endif  // PROTOBUF_CUSTOM_VTABLE
+                      PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_._cached_size_),
+                      false,
+                  },
+                  &GameState_HandSizesEntry_DoNotUse::kDescriptorMethods,
+                  &descriptor_table_bigtwo_2eproto,
+                  nullptr,  // tracker
+              };
+              const ::google::protobuf::internal::ClassData* GameState_HandSizesEntry_DoNotUse::GetClassData() const {
+                ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+                ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+                return _class_data_.base();
+              }
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<1, 2, 0, 0, 2> GameState_HandSizesEntry_DoNotUse::_table_ = {
+  {
+    PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_._has_bits_),
+    0, // no _extensions_
+    2, 8,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967292,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    2,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::DiscardEverythingFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameState_HandSizesEntry_DoNotUse>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // int32 value = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameState_HandSizesEntry_DoNotUse, _impl_.value_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_.value_)}},
+    // int32 key = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameState_HandSizesEntry_DoNotUse, _impl_.key_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_.key_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // int32 key = 1;
+    {PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_.key_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // int32 value = 2;
+    {PROTOBUF_FIELD_OFFSET(GameState_HandSizesEntry_DoNotUse, _impl_.value_), -1, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+  }},
+  // no aux_entries
+  {{
+  }},
+};
+
+// ===================================================================
+
+class GameState::_Internal {
+ public:
+};
+
+GameState::GameState(::google::protobuf::Arena* arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:rsosor.generated.GameState)
+}
+inline PROTOBUF_NDEBUG_INLINE GameState::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from, const ::rsosor::generated::GameState& from_msg)
+      : last_played_cards_{visibility, arena, from.last_played_cards_},
+        hand_sizes_{visibility, arena, from.hand_sizes_},
+        message_(arena, from.message_),
+        _cached_size_{0} {}
+
+GameState::GameState(
+    ::google::protobuf::Arena* arena,
+    const GameState& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  GameState* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  ::memcpy(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           reinterpret_cast<const char *>(&from._impl_) +
+               offsetof(Impl_, success_),
+           offsetof(Impl_, current_turn_player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::current_turn_player_id_));
+
+  // @@protoc_insertion_point(copy_constructor:rsosor.generated.GameState)
+}
+inline PROTOBUF_NDEBUG_INLINE GameState::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : last_played_cards_{visibility, arena},
+        hand_sizes_{visibility, arena},
+        message_(arena),
+        _cached_size_{0} {}
+
+inline void GameState::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  ::memset(reinterpret_cast<char *>(&_impl_) +
+               offsetof(Impl_, success_),
+           0,
+           offsetof(Impl_, current_turn_player_id_) -
+               offsetof(Impl_, success_) +
+               sizeof(Impl_::current_turn_player_id_));
+}
+GameState::~GameState() {
+  // @@protoc_insertion_point(destructor:rsosor.generated.GameState)
+  SharedDtor(*this);
+}
+inline void GameState::SharedDtor(MessageLite& self) {
+  GameState& this_ = static_cast<GameState&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.message_.Destroy();
+  this_._impl_.~Impl_();
+}
+
+inline void* GameState::PlacementNew_(const void*, void* mem,
+                                        ::google::protobuf::Arena* arena) {
+  return ::new (mem) GameState(arena);
+}
+constexpr auto GameState::InternalNewImpl_() {
+  constexpr auto arena_bits = ::google::protobuf::internal::EncodePlacementArenaOffsets({
+      PROTOBUF_FIELD_OFFSET(GameState, _impl_.last_played_cards_) +
+          decltype(GameState::_impl_.last_played_cards_)::
+              InternalGetArenaOffset(
+                  ::google::protobuf::Message::internal_visibility()),
+      PROTOBUF_FIELD_OFFSET(GameState, _impl_.hand_sizes_) +
+          decltype(GameState::_impl_.hand_sizes_)::
+              InternalGetArenaOffset(
+                  ::google::protobuf::Message::internal_visibility()),
+      PROTOBUF_FIELD_OFFSET(GameState, _impl_.hand_sizes_) +
+          decltype(GameState::_impl_.hand_sizes_)::
+              InternalGetArenaOffsetAlt(
+                  ::google::protobuf::Message::internal_visibility()),
+  });
+  if (arena_bits.has_value()) {
+    return ::google::protobuf::internal::MessageCreator::CopyInit(
+        sizeof(GameState), alignof(GameState), *arena_bits);
+  } else {
+    return ::google::protobuf::internal::MessageCreator(&GameState::PlacementNew_,
+                                 sizeof(GameState),
+                                 alignof(GameState));
+  }
+}
+PROTOBUF_CONSTINIT
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::google::protobuf::internal::ClassDataFull GameState::_class_data_ = {
+    ::google::protobuf::internal::ClassData{
+        &_GameState_default_instance_._instance,
+        &_table_.header,
+        nullptr,  // OnDemandRegisterArenaDtor
+        nullptr,  // IsInitialized
+        &GameState::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<GameState>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        &GameState::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<GameState>(), &GameState::ByteSizeLong,
+            &GameState::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+        PROTOBUF_FIELD_OFFSET(GameState, _impl_._cached_size_),
+        false,
+    },
+    &GameState::kDescriptorMethods,
+    &descriptor_table_bigtwo_2eproto,
+    nullptr,  // tracker
+};
+const ::google::protobuf::internal::ClassData* GameState::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+  return _class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<3, 5, 2, 42, 2> GameState::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    5, 56,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967264,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    5,  // num_field_entries
+    2,  // num_aux_entries
+    offsetof(decltype(_table_), aux_entries),
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::rsosor::generated::GameState>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(GameState, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(GameState, _impl_.success_)}},
+    // int32 current_turn_player_id = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(GameState, _impl_.current_turn_player_id_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(GameState, _impl_.current_turn_player_id_)}},
+    // repeated .rsosor.generated.Card last_played_cards = 3;
+    {::_pbi::TcParser::FastMtR1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(GameState, _impl_.last_played_cards_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    // string message = 5;
+    {::_pbi::TcParser::FastUS1,
+     {42, 63, 0, PROTOBUF_FIELD_OFFSET(GameState, _impl_.message_)}},
+    {::_pbi::TcParser::MiniParse, {}},
+    {::_pbi::TcParser::MiniParse, {}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(GameState, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // int32 current_turn_player_id = 2;
+    {PROTOBUF_FIELD_OFFSET(GameState, _impl_.current_turn_player_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
+    // repeated .rsosor.generated.Card last_played_cards = 3;
+    {PROTOBUF_FIELD_OFFSET(GameState, _impl_.last_played_cards_), 0, 0,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
+    // map<int32, int32> hand_sizes = 4;
+    {PROTOBUF_FIELD_OFFSET(GameState, _impl_.hand_sizes_), 0, 1,
+    (0 | ::_fl::kFcRepeated | ::_fl::kMap)},
+    // string message = 5;
+    {PROTOBUF_FIELD_OFFSET(GameState, _impl_.message_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }}, {{
+    {::_pbi::TcParser::GetTable<::rsosor::generated::Card>()},
+    {::_pbi::TcParser::GetMapAuxInfo<
+        decltype(GameState()._impl_.hand_sizes_)>(
+        0, 0, 0, 5,
+        5)},
+  }}, {{
+    "\32\0\0\0\0\7\0\0"
+    "rsosor.generated.GameState"
+    "message"
+  }},
+};
+
+PROTOBUF_NOINLINE void GameState::Clear() {
+// @@protoc_insertion_point(message_clear_start:rsosor.generated.GameState)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.last_played_cards_.Clear();
+  _impl_.hand_sizes_.Clear();
+  _impl_.message_.ClearToEmpty();
+  ::memset(&_impl_.success_, 0, static_cast<::size_t>(
+      reinterpret_cast<char*>(&_impl_.current_turn_player_id_) -
+      reinterpret_cast<char*>(&_impl_.success_)) + sizeof(_impl_.current_turn_player_id_));
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::uint8_t* GameState::_InternalSerialize(
+            const MessageLite& base, ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) {
+          const GameState& this_ = static_cast<const GameState&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::uint8_t* GameState::_InternalSerialize(
+            ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+          const GameState& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(serialize_to_array_start:rsosor.generated.GameState)
+          ::uint32_t cached_has_bits = 0;
+          (void)cached_has_bits;
+
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // int32 current_turn_player_id = 2;
+          if (this_._internal_current_turn_player_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt32ToArrayWithField<2>(
+                    stream, this_._internal_current_turn_player_id(), target);
+          }
+
+          // repeated .rsosor.generated.Card last_played_cards = 3;
+          for (unsigned i = 0, n = static_cast<unsigned>(
+                                   this_._internal_last_played_cards_size());
+               i < n; i++) {
+            const auto& repfield = this_._internal_last_played_cards().Get(i);
+            target =
+                ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
+                    3, repfield, repfield.GetCachedSize(),
+                    target, stream);
+          }
+
+          // map<int32, int32> hand_sizes = 4;
+          if (!this_._internal_hand_sizes().empty()) {
+            using MapType = ::google::protobuf::Map<::int32_t, ::int32_t>;
+            using WireHelper = _pbi::MapEntryFuncs<::int32_t, ::int32_t,
+                                           _pbi::WireFormatLite::TYPE_INT32,
+                                           _pbi::WireFormatLite::TYPE_INT32>;
+            const auto& field = this_._internal_hand_sizes();
+
+            if (stream->IsSerializationDeterministic() && field.size() > 1) {
+              for (const auto& entry : ::google::protobuf::internal::MapSorterFlat<MapType>(field)) {
+                target = WireHelper::InternalSerialize(
+                    4, entry.first, entry.second, target, stream);
+              }
+            } else {
+              for (const auto& entry : field) {
+                target = WireHelper::InternalSerialize(
+                    4, entry.first, entry.second, target, stream);
+              }
+            }
+          }
+
+          // string message = 5;
+          if (!this_._internal_message().empty()) {
+            const std::string& _s = this_._internal_message();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "rsosor.generated.GameState.message");
+            target = stream->WriteStringMaybeAliased(5, _s, target);
+          }
+
+          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+            target =
+                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+          }
+          // @@protoc_insertion_point(serialize_to_array_end:rsosor.generated.GameState)
+          return target;
+        }
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::size_t GameState::ByteSizeLong(const MessageLite& base) {
+          const GameState& this_ = static_cast<const GameState&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::size_t GameState::ByteSizeLong() const {
+          const GameState& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(message_byte_size_start:rsosor.generated.GameState)
+          ::size_t total_size = 0;
+
+          ::uint32_t cached_has_bits = 0;
+          // Prevent compiler warnings about cached_has_bits being unused
+          (void)cached_has_bits;
+
+          ::_pbi::Prefetch5LinesFrom7Lines(&this_);
+           {
+            // repeated .rsosor.generated.Card last_played_cards = 3;
+            {
+              total_size += 1UL * this_._internal_last_played_cards_size();
+              for (const auto& msg : this_._internal_last_played_cards()) {
+                total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
+              }
+            }
+            // map<int32, int32> hand_sizes = 4;
+            {
+              total_size +=
+                  1 * ::google::protobuf::internal::FromIntSize(this_._internal_hand_sizes_size());
+              for (const auto& entry : this_._internal_hand_sizes()) {
+                total_size += _pbi::MapEntryFuncs<::int32_t, ::int32_t,
+                                               _pbi::WireFormatLite::TYPE_INT32,
+                                               _pbi::WireFormatLite::TYPE_INT32>::ByteSizeLong(entry.first, entry.second);
+              }
+            }
+          }
+           {
+            // string message = 5;
+            if (!this_._internal_message().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_message());
+            }
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
+            }
+            // int32 current_turn_player_id = 2;
+            if (this_._internal_current_turn_player_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
+                  this_._internal_current_turn_player_id());
+            }
+          }
+          return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                                     &this_._impl_._cached_size_);
+        }
+
+void GameState::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<GameState*>(&to_msg);
+  auto& from = static_cast<const GameState&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:rsosor.generated.GameState)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_internal_mutable_last_played_cards()->MergeFrom(
+      from._internal_last_played_cards());
+  _this->_impl_.hand_sizes_.MergeFrom(from._impl_.hand_sizes_);
+  if (!from._internal_message().empty()) {
+    _this->_internal_set_message(from._internal_message());
+  }
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
+  if (from._internal_current_turn_player_id() != 0) {
+    _this->_impl_.current_turn_player_id_ = from._impl_.current_turn_player_id_;
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GameState::CopyFrom(const GameState& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:rsosor.generated.GameState)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void GameState::InternalSwap(GameState* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.last_played_cards_.InternalSwap(&other->_impl_.last_played_cards_);
+  _impl_.hand_sizes_.InternalSwap(&other->_impl_.hand_sizes_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.message_, &other->_impl_.message_, arena);
+  ::google::protobuf::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GameState, _impl_.current_turn_player_id_)
+      + sizeof(GameState::_impl_.current_turn_player_id_)
+      - PROTOBUF_FIELD_OFFSET(GameState, _impl_.success_)>(
+          reinterpret_cast<char*>(&_impl_.success_),
+          reinterpret_cast<char*>(&other->_impl_.success_));
+}
+
+::google::protobuf::Metadata GameState::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // ===================================================================
@@ -7458,6 +8680,7 @@ RankingResponse::RankingResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.success_ = from._impl_.success_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.RankingResponse)
 }
@@ -7469,6 +8692,7 @@ inline PROTOBUF_NDEBUG_INLINE RankingResponse::Impl_::Impl_(
 
 inline void RankingResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.success_ = {};
 }
 RankingResponse::~RankingResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.RankingResponse)
@@ -7529,15 +8753,15 @@ const ::google::protobuf::internal::ClassData* RankingResponse::GetClassData() c
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 1, 0, 2> RankingResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 1, 0, 2> RankingResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     1,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
@@ -7547,13 +8771,19 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> RankingResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::RankingResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .rsosor.generated.PlayerRanking ranking = 1;
+    // repeated .rsosor.generated.PlayerRanking ranking = 2;
     {::_pbi::TcParser::FastMtR1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.ranking_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.ranking_)}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(RankingResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.success_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .rsosor.generated.PlayerRanking ranking = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // repeated .rsosor.generated.PlayerRanking ranking = 2;
     {PROTOBUF_FIELD_OFFSET(RankingResponse, _impl_.ranking_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
@@ -7570,6 +8800,7 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
   (void) cached_has_bits;
 
   _impl_.ranking_.Clear();
+  _impl_.success_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -7588,14 +8819,21 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .rsosor.generated.PlayerRanking ranking = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // repeated .rsosor.generated.PlayerRanking ranking = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_ranking_size());
                i < n; i++) {
             const auto& repfield = this_._internal_ranking().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    1, repfield, repfield.GetCachedSize(),
+                    2, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
@@ -7624,12 +8862,18 @@ PROTOBUF_NOINLINE void RankingResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .rsosor.generated.PlayerRanking ranking = 1;
+            // repeated .rsosor.generated.PlayerRanking ranking = 2;
             {
               total_size += 1UL * this_._internal_ranking_size();
               for (const auto& msg : this_._internal_ranking()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
+            }
+          }
+           {
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -7646,6 +8890,9 @@ void RankingResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const :
 
   _this->_internal_mutable_ranking()->MergeFrom(
       from._internal_ranking());
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -7661,6 +8908,7 @@ void RankingResponse::InternalSwap(RankingResponse* PROTOBUF_RESTRICT other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.ranking_.InternalSwap(&other->_impl_.ranking_);
+        swap(_impl_.success_, other->_impl_.success_);
 }
 
 ::google::protobuf::Metadata RankingResponse::GetMetadata() const {
@@ -8198,10 +9446,10 @@ inline PROTOBUF_NDEBUG_INLINE PlayerRateResponse::Impl_::Impl_(
 inline void PlayerRateResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
   ::memset(reinterpret_cast<char *>(&_impl_) +
-               offsetof(Impl_, total_games_),
+               offsetof(Impl_, success_),
            0,
            offsetof(Impl_, win_ratio_) -
-               offsetof(Impl_, total_games_) +
+               offsetof(Impl_, success_) +
                sizeof(Impl_::win_ratio_));
 }
 PlayerRateResponse::~PlayerRateResponse() {
@@ -8251,15 +9499,15 @@ const ::google::protobuf::internal::ClassData* PlayerRateResponse::GetClassData(
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 0, 2> PlayerRateResponse::_table_ = {
+const ::_pbi::TcParseTable<2, 4, 0, 0, 2> PlayerRateResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    3, 24,  // max_field_number, fast_idx_mask
+    4, 24,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967288,  // skipmap
+    4294967280,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    3,  // num_field_entries
+    4,  // num_field_entries
     0,  // num_aux_entries
     offsetof(decltype(_table_), field_names),  // no aux_entries
     _class_data_.base(),
@@ -8269,26 +9517,31 @@ const ::_pbi::TcParseTable<2, 3, 0, 0, 2> PlayerRateResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::PlayerRateResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    {::_pbi::TcParser::MiniParse, {}},
-    // int32 total_games = 1;
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayerRateResponse, _impl_.total_games_), 63>(),
-     {8, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.total_games_)}},
-    // int32 wins = 2;
-    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayerRateResponse, _impl_.wins_), 63>(),
-     {16, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.wins_)}},
-    // float win_ratio = 3;
+    // float win_ratio = 4;
     {::_pbi::TcParser::FastF32S1,
-     {29, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.win_ratio_)}},
+     {37, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.win_ratio_)}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(PlayerRateResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.success_)}},
+    // int32 total_games = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayerRateResponse, _impl_.total_games_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.total_games_)}},
+    // int32 wins = 3;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint32_t, offsetof(PlayerRateResponse, _impl_.wins_), 63>(),
+     {24, 63, 0, PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.wins_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // int32 total_games = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // int32 total_games = 2;
     {PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.total_games_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // int32 wins = 2;
+    // int32 wins = 3;
     {PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.wins_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kInt32)},
-    // float win_ratio = 3;
+    // float win_ratio = 4;
     {PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.win_ratio_), 0, 0,
     (0 | ::_fl::kFcSingular | ::_fl::kFloat)},
   }},
@@ -8304,9 +9557,9 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&_impl_.total_games_, 0, static_cast<::size_t>(
+  ::memset(&_impl_.success_, 0, static_cast<::size_t>(
       reinterpret_cast<char*>(&_impl_.win_ratio_) -
-      reinterpret_cast<char*>(&_impl_.total_games_)) + sizeof(_impl_.win_ratio_));
+      reinterpret_cast<char*>(&_impl_.success_)) + sizeof(_impl_.win_ratio_));
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -8325,25 +9578,32 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // int32 total_games = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // int32 total_games = 2;
           if (this_._internal_total_games() != 0) {
             target = ::google::protobuf::internal::WireFormatLite::
-                WriteInt32ToArrayWithField<1>(
+                WriteInt32ToArrayWithField<2>(
                     stream, this_._internal_total_games(), target);
           }
 
-          // int32 wins = 2;
+          // int32 wins = 3;
           if (this_._internal_wins() != 0) {
             target = ::google::protobuf::internal::WireFormatLite::
-                WriteInt32ToArrayWithField<2>(
+                WriteInt32ToArrayWithField<3>(
                     stream, this_._internal_wins(), target);
           }
 
-          // float win_ratio = 3;
+          // float win_ratio = 4;
           if (::absl::bit_cast<::uint32_t>(this_._internal_win_ratio()) != 0) {
             target = stream->EnsureSpace(target);
             target = ::_pbi::WireFormatLite::WriteFloatToArray(
-                3, this_._internal_win_ratio(), target);
+                4, this_._internal_win_ratio(), target);
           }
 
           if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
@@ -8371,17 +9631,21 @@ PROTOBUF_NOINLINE void PlayerRateResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // int32 total_games = 1;
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
+            }
+            // int32 total_games = 2;
             if (this_._internal_total_games() != 0) {
               total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
                   this_._internal_total_games());
             }
-            // int32 wins = 2;
+            // int32 wins = 3;
             if (this_._internal_wins() != 0) {
               total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(
                   this_._internal_wins());
             }
-            // float win_ratio = 3;
+            // float win_ratio = 4;
             if (::absl::bit_cast<::uint32_t>(this_._internal_win_ratio()) != 0) {
               total_size += 5;
             }
@@ -8398,6 +9662,9 @@ void PlayerRateResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, cons
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
   if (from._internal_total_games() != 0) {
     _this->_impl_.total_games_ = from._impl_.total_games_;
   }
@@ -8424,9 +9691,9 @@ void PlayerRateResponse::InternalSwap(PlayerRateResponse* PROTOBUF_RESTRICT othe
   ::google::protobuf::internal::memswap<
       PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.win_ratio_)
       + sizeof(PlayerRateResponse::_impl_.win_ratio_)
-      - PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.total_games_)>(
-          reinterpret_cast<char*>(&_impl_.total_games_),
-          reinterpret_cast<char*>(&other->_impl_.total_games_));
+      - PROTOBUF_FIELD_OFFSET(PlayerRateResponse, _impl_.success_)>(
+          reinterpret_cast<char*>(&_impl_.success_),
+          reinterpret_cast<char*>(&other->_impl_.success_));
 }
 
 ::google::protobuf::Metadata PlayerRateResponse::GetMetadata() const {
@@ -8673,6 +9940,7 @@ ActivityLogResponse::ActivityLogResponse(
   _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
       from._internal_metadata_);
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.success_ = from._impl_.success_;
 
   // @@protoc_insertion_point(copy_constructor:rsosor.generated.ActivityLogResponse)
 }
@@ -8684,6 +9952,7 @@ inline PROTOBUF_NDEBUG_INLINE ActivityLogResponse::Impl_::Impl_(
 
 inline void ActivityLogResponse::SharedCtor(::_pb::Arena* arena) {
   new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.success_ = {};
 }
 ActivityLogResponse::~ActivityLogResponse() {
   // @@protoc_insertion_point(destructor:rsosor.generated.ActivityLogResponse)
@@ -8744,15 +10013,15 @@ const ::google::protobuf::internal::ClassData* ActivityLogResponse::GetClassData
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ActivityLogResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 1, 0, 2> ActivityLogResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
-    1, 0,  // max_field_number, fast_idx_mask
+    2, 8,  // max_field_number, fast_idx_mask
     offsetof(decltype(_table_), field_lookup_table),
-    4294967294,  // skipmap
+    4294967292,  // skipmap
     offsetof(decltype(_table_), field_entries),
-    1,  // num_field_entries
+    2,  // num_field_entries
     1,  // num_aux_entries
     offsetof(decltype(_table_), aux_entries),
     _class_data_.base(),
@@ -8762,13 +10031,19 @@ const ::_pbi::TcParseTable<0, 1, 1, 0, 2> ActivityLogResponse::_table_ = {
     ::_pbi::TcParser::GetTable<::rsosor::generated::ActivityLogResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
-    // repeated .rsosor.generated.ActivityEntry entries = 1;
+    // repeated .rsosor.generated.ActivityEntry entries = 2;
     {::_pbi::TcParser::FastMtR1,
-     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.entries_)}},
+     {18, 63, 0, PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.entries_)}},
+    // bool success = 1;
+    {::_pbi::TcParser::SingularVarintNoZag1<bool, offsetof(ActivityLogResponse, _impl_.success_), 63>(),
+     {8, 63, 0, PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.success_)}},
   }}, {{
     65535, 65535
   }}, {{
-    // repeated .rsosor.generated.ActivityEntry entries = 1;
+    // bool success = 1;
+    {PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.success_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kBool)},
+    // repeated .rsosor.generated.ActivityEntry entries = 2;
     {PROTOBUF_FIELD_OFFSET(ActivityLogResponse, _impl_.entries_), 0, 0,
     (0 | ::_fl::kFcRepeated | ::_fl::kMessage | ::_fl::kTvTable)},
   }}, {{
@@ -8785,6 +10060,7 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
   (void) cached_has_bits;
 
   _impl_.entries_.Clear();
+  _impl_.success_ = false;
   _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
 }
 
@@ -8803,14 +10079,21 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
-          // repeated .rsosor.generated.ActivityEntry entries = 1;
+          // bool success = 1;
+          if (this_._internal_success() != 0) {
+            target = stream->EnsureSpace(target);
+            target = ::_pbi::WireFormatLite::WriteBoolToArray(
+                1, this_._internal_success(), target);
+          }
+
+          // repeated .rsosor.generated.ActivityEntry entries = 2;
           for (unsigned i = 0, n = static_cast<unsigned>(
                                    this_._internal_entries_size());
                i < n; i++) {
             const auto& repfield = this_._internal_entries().Get(i);
             target =
                 ::google::protobuf::internal::WireFormatLite::InternalWriteMessage(
-                    1, repfield, repfield.GetCachedSize(),
+                    2, repfield, repfield.GetCachedSize(),
                     target, stream);
           }
 
@@ -8839,12 +10122,18 @@ PROTOBUF_NOINLINE void ActivityLogResponse::Clear() {
 
           ::_pbi::Prefetch5LinesFrom7Lines(&this_);
            {
-            // repeated .rsosor.generated.ActivityEntry entries = 1;
+            // repeated .rsosor.generated.ActivityEntry entries = 2;
             {
               total_size += 1UL * this_._internal_entries_size();
               for (const auto& msg : this_._internal_entries()) {
                 total_size += ::google::protobuf::internal::WireFormatLite::MessageSize(msg);
               }
+            }
+          }
+           {
+            // bool success = 1;
+            if (this_._internal_success() != 0) {
+              total_size += 2;
             }
           }
           return this_.MaybeComputeUnknownFieldsSize(total_size,
@@ -8861,6 +10150,9 @@ void ActivityLogResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, con
 
   _this->_internal_mutable_entries()->MergeFrom(
       from._internal_entries());
+  if (from._internal_success() != 0) {
+    _this->_impl_.success_ = from._impl_.success_;
+  }
   _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -8876,6 +10168,7 @@ void ActivityLogResponse::InternalSwap(ActivityLogResponse* PROTOBUF_RESTRICT ot
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.entries_.InternalSwap(&other->_impl_.entries_);
+        swap(_impl_.success_, other->_impl_.success_);
 }
 
 ::google::protobuf::Metadata ActivityLogResponse::GetMetadata() const {

@@ -12,7 +12,7 @@ namespace adapter {
             throw std::out_of_range("Invalid card index");
         }
         card::Suit suit = static_cast<card::Suit>(index / 13);
-        int rank = (index % 13) + 1;
+        int rank = (index % 13) + 3;
         return {suit, rank};
     }
 

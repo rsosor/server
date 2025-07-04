@@ -13,7 +13,7 @@ service BigTwoService {
   rpc Chat (ChatRequest) returns (ChatResponse);
 
   // 新增：可以由遊戲主持人/server 觸發遊戲開始
-  rpc  StartGame (StartGameRequest) returns (StartGameResponse);
+  rpc Login (LoginRequest) returns (LoginResponse);
 }
 
 message PlayRequest {
@@ -36,13 +36,16 @@ message PassResponse {
 }
 
 message JoinRequest {
-  string player_name = 1;
+  int32 player_id = 1;
+  string player_name = 2;
+  string room_id = 3;
 }
 
 message JoinResponse {
-  int32 player_id = 1;
-  repeated Card hand = 2;
-  string message = 3;
+  bool success = 1;
+  int32 player_id = 2;
+  string player_name = 3;
+  string message = 4;
 }
 
 message GameStateRequest {
@@ -50,10 +53,12 @@ message GameStateRequest {
 }
 
 message GameStateResponse {
-  repeated Card hand = 1;
-  int32 current_turn_player_id = 2;
-  repeated Card last_played_cards = 3;
-  string phase = 4;
+  bool success = 1;
+  repeated Card hand = 2;
+  int32 current_turn_player_id = 3;
+  repeated Card last_played_cards = 4;
+  string phase = 5;
+  map<int32, int32> hand_sizes = 6;
 }
 
 message ChatRequest {
@@ -65,13 +70,15 @@ message ChatResponse {
   bool success = 1;
 }
 
-message StartGameRequest {
-  int32 initiator_player_id = 1;
+message LoginRequest {
+  string player_name = 1;
+  string psw = 2;
 }
 
-message StartGameResponse {
+message LoginResponse {
   bool success = 1;
-  string message = 2;
+  int32 player_id = 2;
+  string message = 3;
 }
 
 message Card {
@@ -94,14 +101,18 @@ service BigTwoTableService {
   
   // Score the game at the end of a match
   rpc Score (ScoreRequest) returns (ScoreResponse);
+
+  rpc SubscribeGameState(GameRoomId) returns (stream GameState);
 }
 
 message DealRequest {
-  repeated int32 player_ids = 1;
+  int32 player_id = 1;
+  string room_id = 2;
 }
 
 message DealResponse {
-  map<int32, Hand> dealt_hands = 1; // key = player_id
+  bool success = 1;
+  repeated Card cards = 2;
 }
 
 message Hand {
@@ -110,8 +121,9 @@ message Hand {
 
 message PlayValidationRequest {
   int32 player_id = 1;
-  repeated Card cards = 2;
-  repeated Card last_played = 3;
+  string room_id = 2;
+  repeated Card cards = 3;
+  repeated Card last_played_cards = 4;
 }
 
 message PlayValidationResponse {
@@ -134,7 +146,20 @@ message ScoreRequest {
 }
 
 message ScoreResponse {
-  map<int32, int32> scores = 1;
+  bool success = 1;
+  map<int32, int32> scores = 2;
+}
+
+message GameRoomId  {
+  string room_id = 1;
+}
+
+message GameState {
+  bool success = 1;
+  int32 current_turn_player_id = 2;
+  repeated Card last_played_cards = 3;
+  map<int32, int32> hand_sizes = 4; // player_id -> cards left
+  string message = 5; // optional status info
 }
 
 // ---------------------------------------------------------------------------
@@ -151,7 +176,8 @@ message RankingRequest {
 }
 
 message RankingResponse {
-  repeated PlayerRanking ranking = 1;
+  bool success = 1;
+  repeated PlayerRanking ranking = 2;
 }
 
 message PlayerRanking {
@@ -165,9 +191,10 @@ message PlayerRateRequest {
 }
 
 message PlayerRateResponse {
-  int32 total_games = 1;
-  int32 wins = 2;
-  float win_ratio = 3;
+  bool success = 1;
+  int32 total_games = 2;
+  int32 wins = 3;
+  float win_ratio = 4;
 }
 
 message ActivityLogRequest {
@@ -175,7 +202,8 @@ message ActivityLogRequest {
 }
 
 message ActivityLogResponse {
-  repeated ActivityEntry entries = 1;
+  bool success = 1;
+  repeated ActivityEntry entries = 2;
 }
 
 message ActivityEntry {

@@ -5,6 +5,8 @@
 
 #include <grpcpp/grpcpp.h>
 
+#include <queue>
+
 namespace state = rsosor::game::state;
 namespace gen = rsosor::generated;
 
@@ -12,15 +14,40 @@ namespace rsosor {
 namespace grpc_api {
 
   void RunGrpcServer(const std::string& grpc_addr);
-  
+
+  struct Subscriber {
+    std::mutex mtx;
+    std::condition_variable cv;
+    std::queue<gen::GameState> queue;
+    bool active = true;
+  };
+
+  struct RoomInfo {
+    std::mutex mtx;
+    std::vector<std::shared_ptr<Subscriber>> subscribers;
+  };
+
+  struct RoomRegistry {
+    std::mutex mutex;
+    std::unordered_map<std::string, std::vector<int>> room_to_players;
+
+    std::mutex hand_mutex;
+    std::unordered_map<int, std::vector<gen::Card>> player_hands; // player_id -> 玩家手牌（Card 列表）
+
+    std::mutex room_mutex;
+    std::map<std::string, RoomInfo> game_rooms;
+  };
+
+  // inline RoomRegistry global_room_registry;  // 放在 *.h
+  extern RoomRegistry global_room_registry;
 
   class BigTwoServiceImpl final : public gen::BigTwoService::Service {
   public:
     state::GameStateData game_data;
 
-    grpc::Status StartGame(grpc::ServerContext* context,
-                      const gen::StartGameRequest* request,
-                      gen::StartGameResponse* response) override;
+    grpc::Status Login(grpc::ServerContext* context,
+                      const gen::LoginRequest* request,
+                      gen::LoginResponse* response) override;
 
     grpc::Status JoinGame(grpc::ServerContext* context,
                           const gen::JoinRequest* request,
@@ -41,6 +68,10 @@ namespace grpc_api {
     grpc::Status Chat(grpc::ServerContext* context,
                       const gen::ChatRequest* request,
                       gen::ChatResponse* response) override;
+  private:
+    int current_turn_player_id_ = -1;
+    std::string current_phase_;
+    std::vector<gen::Card> last_played_cards_;
   };
 
   class BigTwoTableServiceImpl final : public gen::BigTwoTableService::Service {
@@ -60,6 +91,15 @@ namespace grpc_api {
     grpc::Status Score(grpc::ServerContext* context,
                       const gen::ScoreRequest* request,
                       gen::ScoreResponse* response) override;
+
+    grpc::Status SubscribeGameState(grpc::ServerContext* context,
+        const gen::GameRoomId* request,
+        grpc::ServerWriter<gen::GameState>* writer);
+  private:
+    // 你還可以寫個推播用的成員函式
+    void BroadcastGameState(const std::string& room_id, const gen::GameState& state);
+    std::vector<int> getAllPlayersInRoom(const std::string& room_id);
+    int cnt = 0;
   };
 
   class BigTwoManagementServiceImpl final : public gen::BigTwoManagementService::Service {

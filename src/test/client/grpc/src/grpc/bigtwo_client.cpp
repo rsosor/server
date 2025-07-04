@@ -19,13 +19,14 @@ BigTwoClient::BigTwoClient(std::shared_ptr<Channel> channel)
     table_stub_(BigTwoTableService::NewStub(channel)), 
     management_stub_(BigTwoManagementService::NewStub(channel)) {};
 
-void BigTwoClient::StartGame(int initiator) {
+gen::LoginResponse BigTwoClient::Login(const std::string player_name, const std::string& psw) {
     std::cout << "---------- StartGame Started ----------" << '\n';
-    StartGameRequest req;
-    StartGameResponse res;
+    LoginRequest req;
+    LoginResponse res;
     ClientContext context;
-    req.set_initiator_player_id(initiator);
-    auto s = game_stub_->StartGame(&context, req, &res);
+    req.set_player_name(player_name);
+    req.set_psw(psw);
+    auto s = game_stub_->Login(&context, req, &res);
     if (s.ok()) {
         // std::cout << "StartGame: " << res.message() << '\n';
         LOG_INFO("StartGame: " << res.message());
@@ -36,14 +37,17 @@ void BigTwoClient::StartGame(int initiator) {
     }
     std::cout << "---------- StartGame Ended ----------" << '\n';
     std::cout << '\n';
+    return res;
 }
 
 // 呼叫 JoinGame RPC
-int BigTwoClient::JoinGame(const std::string& player_name) {
+gen::JoinResponse BigTwoClient::JoinGame(const int player_id, const std::string& player_name, const std::string& room_id) {
     std::cout << "---------- JoinGame Started ----------" << '\n';
 
     JoinRequest request;
+    request.set_player_id(player_id);
     request.set_player_name(player_name);
+    request.set_room_id(room_id);
 
     JoinResponse response;
     ClientContext context;
@@ -51,21 +55,22 @@ int BigTwoClient::JoinGame(const std::string& player_name) {
     Status status = game_stub_->JoinGame(&context, request, &response);
 
     if (status.ok()) {
-        std::cout << "JoinGame success! Player ID: " << response.player_id() << '\n';
-        std::cout << "You have " << response.hand_size() << " cards in hand." << '\n';
-        for (const auto& card : response.hand()) {
-            std::cout << "Card: " << card.suit() << " " << card.rank() << '\n';
+        if (response.success()) {
+            int player_id = response.player_id();
+            std::string player_name = response.player_name();
+            std::cout << "JoinGame success! Player name: " << player_name << "（ID：" << player_id << "）\n";
+            std::cout << "---------- JoinGame Ended ----------" << '\n';
+            std::cout << '\n';
+        } else {
+            std::cout << "Joined room failed" << '\n';
         }
-        std::cout << "---------- JoinGame Ended ----------" << '\n';
-        std::cout << '\n';
         // 初始化玩家本地狀態
-        return response.player_id();
     } else {
         std::cerr << "[Error] JoinGame RPC failed: " << status.error_message() << '\n';
         std::cout << "---------- JoinGame Ended ----------" << '\n';
         std::cout << '\n';
-        return -1;
     }
+    return response;
 }
 
 // 呼叫 PlayCards RPC
@@ -163,7 +168,7 @@ void BigTwoClient::Deal(int player_id) {
     DealResponse res;
     ClientContext context;
 
-    req.add_player_ids(player_id);
+    // req.add_player_ids(player_id);
     if (table_stub_->Deal(&context, req, &res).ok()) {
         std::cout << "Dealt successfully to players in game " << player_id << '\n';
     }
